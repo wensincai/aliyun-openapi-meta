@@ -1,0 +1,71 @@
+{
+	"isvProtocol":{
+		"method":"PUT",
+		"pattern":"/FlowControl/[
+			ProductName
+		]/[
+			VersionName
+		]/[
+			ApiName
+		]",
+		"protocol":"HTTP|HTTPS"
+	},
+	"name":"PutFlowControl",
+	"parameters":{
+		"parameters":[
+			{
+				"required":"true",
+				"tagName":"Accept",
+				"tagPosition":"Header",
+				"type":"String",
+				"value":"application/xml",
+				"valueSwitch":{
+					
+				}
+			},
+			{
+				"required":"true",
+				"tagName":"ProductName",
+				"tagPosition":"Path",
+				"type":"String",
+				"valueSwitch":{
+					
+				}
+			},
+			{
+				"required":"true",
+				"tagName":"VersionName",
+				"tagPosition":"Path",
+				"type":"String",
+				"valueSwitch":{
+					
+				}
+			},
+			{
+				"required":"true",
+				"tagName":"ApiName",
+				"tagPosition":"Path",
+				"type":"String",
+				"valueSwitch":{
+					
+				}
+			},
+			{
+				"required":"true",
+				"tagName":"BodyContent",
+				"tagPosition":"Body",
+				"type":"String",
+				"valueSwitch":{
+					
+				}
+			}
+		]
+	},
+	"product":"Acs",
+	"resultMapping":{
+		"members":[
+			
+		]
+	},
+	"version":"2015-01-01"
+}

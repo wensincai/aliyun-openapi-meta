@@ -1,0 +1,15 @@
+{
+	"apiStyle":"ROA",
+	"apis":{
+		"apis":[
+			{
+				"name":"RoaHttpApi"
+			},
+			{
+				"name":"RoaDubboApi"
+			}
+		]
+	},
+	"name":"2015-02-02",
+	"product":"Ft"
+}

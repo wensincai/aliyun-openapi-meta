@@ -1,0 +1,44 @@
+{
+	"isvProtocol":{
+		"method":"GET",
+		"pattern":"/RoaDubboApi",
+		"protocol":"HTTP|HTTPS"
+	},
+	"name":"RoaDubboApi",
+	"parameters":{
+		"parameters":[
+			{
+				"required":"false",
+				"tagName":"x-acs-success",
+				"tagPosition":"Header",
+				"type":"Boolean",
+				"valueSwitch":{
+					
+				}
+			},
+			{
+				"required":"false",
+				"tagName":"x-acs-string-value",
+				"tagPosition":"Header",
+				"type":"String",
+				"valueSwitch":{
+					
+				}
+			}
+		]
+	},
+	"product":"Ft",
+	"resultMapping":{
+		"members":[
+			{
+				"tagName":"RegionId",
+				"type":"String"
+			},
+			{
+				"tagName":"Success",
+				"type":"String"
+			}
+		]
+	},
+	"version":"2015-02-02"
+}

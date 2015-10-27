@@ -1,0 +1,39 @@
+{
+	"isvProtocol":{
+		"method":"POST",
+		"protocol":"HTTP|HTTPS"
+	},
+	"name":"RpcPOSTAllowedApi",
+	"parameters":{
+		"parameters":[
+			{
+				"required":"false",
+				"tagName":"IntValue",
+				"tagPosition":"Query",
+				"type":"Integer",
+				"valueSwitch":{
+					
+				}
+			},
+			{
+				"required":"false",
+				"tagName":"StringValue",
+				"tagPosition":"Query",
+				"type":"String",
+				"valueSwitch":{
+					
+				}
+			}
+		]
+	},
+	"product":"Ft",
+	"resultMapping":{
+		"members":[
+			{
+				"tagName":"Data",
+				"type":"String"
+			}
+		]
+	},
+	"version":"2015-01-01"
+}

@@ -1,0 +1,27 @@
+{
+	"isvProtocol":{
+		"method":"POST|GET",
+		"protocol":"HTTP|HTTPS"
+	},
+	"name":"TestPutApiParametersApi",
+	"parameters":{
+		"parameters":[
+			{
+				"required":"false",
+				"tagName":"TestApiParameters",
+				"tagPosition":"Query",
+				"type":"String",
+				"valueSwitch":{
+					
+				}
+			}
+		]
+	},
+	"product":"Ft",
+	"resultMapping":{
+		"members":[
+			
+		]
+	},
+	"version":"1999-09-09"
+}

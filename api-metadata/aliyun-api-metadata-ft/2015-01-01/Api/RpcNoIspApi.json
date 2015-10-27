@@ -1,0 +1,41 @@
+{
+	"isvProtocol":{
+		"method":"GET",
+		"protocol":"HTTP|HTTPS"
+	},
+	"name":"RpcNoIspApi",
+	"parameters":{
+		"parameters":[
+			{
+				"required":"false",
+				"tagName":"IntValue",
+				"tagPosition":"Query",
+				"type":"Integer",
+				"valueSwitch":{
+					
+				}
+			},
+			{
+				"maxValue":"5",
+				"minValue":"3",
+				"required":"false",
+				"tagName":"NumberRange",
+				"tagPosition":"Query",
+				"type":"Integer",
+				"valueSwitch":{
+					
+				}
+			}
+		]
+	},
+	"product":"Ft",
+	"resultMapping":{
+		"members":[
+			{
+				"tagName":"IntValue",
+				"type":"String"
+			}
+		]
+	},
+	"version":"2015-01-01"
+}
