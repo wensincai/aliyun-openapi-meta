@@ -1,3 +1,6 @@
+* 关于域名     
+所有产品的endpoint都在endpoints.xml，OpenAPI需要支持region化部署，所以产品不同region的域名会不同，请根据配置文件进行域名的使用。
+-----
 * 版本信息描述文件      
  * 描述：API分为产品、版本、API三级，在每个版本的目录下都有个版本第一文件，命名为：Version-Info.json，此文件包含了API版本的描述信息。        
  * 属性：    
