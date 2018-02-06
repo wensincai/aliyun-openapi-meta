@@ -1,0 +1,14 @@
+name: OnoffGroupApRadio
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ApgroupId
+  type: Long
+  required: true
+  subparameters: []
+- name: Disabled
+  type: Integer
+  required: true
+  subparameters: []

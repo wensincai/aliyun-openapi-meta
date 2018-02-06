@@ -1,0 +1,18 @@
+name: DescribeBatchResult
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: TraceId
+  type: String
+  required: true
+  subparameters: []

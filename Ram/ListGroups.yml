@@ -1,0 +1,14 @@
+name: ListGroups
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: Marker
+  type: String
+  required: false
+  subparameters: []
+- name: MaxItems
+  type: Integer
+  required: false
+  subparameters: []

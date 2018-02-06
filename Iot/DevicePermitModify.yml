@@ -1,0 +1,26 @@
+name: DevicePermitModify
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ProductKey
+  type: Long
+  required: true
+  subparameters: []
+- name: RuleId
+  type: Long
+  required: true
+  subparameters: []
+- name: DeviceName
+  type: String
+  required: true
+  subparameters: []
+- name: TopicFullName
+  type: String
+  required: true
+  subparameters: []
+- name: GrantType
+  type: String
+  required: true
+  subparameters: []

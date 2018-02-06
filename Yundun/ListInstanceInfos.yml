@@ -1,0 +1,34 @@
+name: ListInstanceInfos
+parameters:
+- name: JstOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: PageNumber
+  type: Integer
+  required: false
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: false
+  subparameters: []
+- name: Region
+  type: String
+  required: false
+  subparameters: []
+- name: EventType
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceName
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceType
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceIds
+  type: String
+  required: false
+  subparameters: []

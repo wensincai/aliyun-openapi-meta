@@ -1,0 +1,6 @@
+name: ProfileGet
+parameters:
+- name: UserId
+  type: Long
+  required: true
+  subparameters: []

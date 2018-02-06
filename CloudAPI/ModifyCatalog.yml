@@ -1,0 +1,18 @@
+name: ModifyCatalog
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: CatalogId
+  type: String
+  required: true
+  subparameters: []
+- name: CatalogName
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

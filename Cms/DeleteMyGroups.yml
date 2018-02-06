@@ -1,0 +1,6 @@
+name: DeleteMyGroups
+parameters:
+- name: GroupId
+  type: Long
+  required: false
+  subparameters: []

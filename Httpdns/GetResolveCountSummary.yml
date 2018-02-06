@@ -1,0 +1,14 @@
+name: GetResolveCountSummary
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Granularity
+  type: String
+  required: true
+  subparameters: []
+- name: TimeSpan
+  type: Integer
+  required: true
+  subparameters: []

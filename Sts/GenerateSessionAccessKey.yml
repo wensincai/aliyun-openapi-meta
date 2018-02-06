@@ -1,0 +1,6 @@
+name: GenerateSessionAccessKey
+parameters:
+- name: DurationSeconds
+  type: Long
+  required: false
+  subparameters: []

@@ -1,0 +1,6 @@
+name: PushMeteringData
+parameters:
+- name: Metering
+  type: String
+  required: false
+  subparameters: []

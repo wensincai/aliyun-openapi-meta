@@ -1,0 +1,30 @@
+name: ListAIVideoCensorJob
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: AIVideoCensorJobIds
+  type: String
+  required: true
+  subparameters: []

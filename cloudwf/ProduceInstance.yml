@@ -1,0 +1,14 @@
+name: ProduceInstance
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: TraceId
+  type: String
+  required: true
+  subparameters: []
+- name: ProduceParameter
+  type: String
+  required: true
+  subparameters: []

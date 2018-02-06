@@ -1,0 +1,66 @@
+name: AddCasterLayout
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: Version
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: SecurityToken
+  type: String
+  required: false
+  subparameters: []
+- name: CasterId
+  type: String
+  required: true
+  subparameters: []
+- name: VideoLayer
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: HeightNormalized
+    type: Float
+    required: false
+    subparameters: []
+  - name: WidthNormalized
+    type: Float
+    required: false
+    subparameters: []
+  - name: PositionRefer
+    type: String
+    required: false
+    subparameters: []
+  - name: PositionNormalized
+    type: RepeatList
+    required: false
+    subparameters: []
+- name: AudioLayer
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: VolumeRate
+    type: Float
+    required: false
+    subparameters: []
+  - name: ValidChannel
+    type: String
+    required: false
+    subparameters: []
+- name: BlendList
+  type: RepeatList
+  required: true
+  subparameters: []
+- name: MixList
+  type: RepeatList
+  required: true
+  subparameters: []

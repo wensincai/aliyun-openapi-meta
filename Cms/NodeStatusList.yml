@@ -1,0 +1,6 @@
+name: NodeStatusList
+parameters:
+- name: InstanceIds
+  type: String
+  required: true
+  subparameters: []

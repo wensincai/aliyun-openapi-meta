@@ -1,0 +1,26 @@
+name: SaveBatchTaskForCreatingOrderRenew
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: OrderRenewParam
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: DomainName
+    type: String
+    required: false
+    subparameters: []
+  - name: CurrentExpirationDate
+    type: Long
+    required: false
+    subparameters: []
+  - name: SubscriptionDuration
+    type: Integer
+    required: false
+    subparameters: []

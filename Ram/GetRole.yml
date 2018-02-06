@@ -1,0 +1,10 @@
+name: GetRole
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: RoleName
+  type: String
+  required: false
+  subparameters: []

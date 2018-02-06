@@ -1,0 +1,26 @@
+name: EditPhotoStore
+parameters:
+- name: AutoCleanEnabled
+  type: String
+  required: false
+  subparameters: []
+- name: AutoCleanDays
+  type: Integer
+  required: false
+  subparameters: []
+- name: DefaultQuota
+  type: Long
+  required: false
+  subparameters: []
+- name: DefaultTrashQuota
+  type: Long
+  required: false
+  subparameters: []
+- name: Remark
+  type: String
+  required: false
+  subparameters: []
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []

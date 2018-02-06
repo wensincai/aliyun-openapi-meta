@@ -1,0 +1,34 @@
+name: DescribeOperatorPermission
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: DBInstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: OwnerAccount
+  type: String
+  required: false
+  subparameters: []

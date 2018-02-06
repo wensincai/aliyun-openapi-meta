@@ -1,0 +1,14 @@
+name: SaveApScanConfig
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ApConfigId
+  type: Long
+  required: true
+  subparameters: []
+- name: JsonData
+  type: String
+  required: false
+  subparameters: []

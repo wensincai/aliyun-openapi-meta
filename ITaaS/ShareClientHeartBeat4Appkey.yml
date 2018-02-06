@@ -1,0 +1,34 @@
+name: ShareClientHeartBeat4Appkey
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SysFrom
+  type: String
+  required: false
+  subparameters: []
+- name: Operator
+  type: String
+  required: false
+  subparameters: []
+- name: MSG
+  type: String
+  required: false
+  subparameters: []
+- name: TS
+  type: String
+  required: false
+  subparameters: []
+- name: AccessToken
+  type: String
+  required: false
+  subparameters: []
+- name: ClientAppid
+  type: String
+  required: false
+  subparameters: []
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,10 @@
+name: SetAccountAlias
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AccountAlias
+  type: String
+  required: false
+  subparameters: []

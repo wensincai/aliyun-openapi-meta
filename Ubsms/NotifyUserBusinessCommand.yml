@@ -1,0 +1,30 @@
+name: NotifyUserBusinessCommand
+parameters:
+- name: Uid
+  type: String
+  required: true
+  subparameters: []
+- name: ServiceCode
+  type: String
+  required: true
+  subparameters: []
+- name: Cmd
+  type: String
+  required: true
+  subparameters: []
+- name: Region
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: false
+  subparameters: []
+- name: ClientToken
+  type: String
+  required: true
+  subparameters: []
+- name: Password
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,10 @@
+name: BindImagePackage
+parameters:
+- name: EcsInstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: ImagePackageInstanceId
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,42 @@
+name: ResetAutoRenewal
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: EcsResetAutoRenewDo
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: EcsId
+    type: String
+    required: true
+    subparameters: []
+  - name: EcsAutoRenew
+    type: Boolean
+    required: true
+    subparameters: []
+  - name: EcsAutoRenewDuration
+    type: String
+    required: true
+    subparameters: []
+  - name: EmrAutoRenew
+    type: Boolean
+    required: true
+    subparameters: []
+  - name: EmrAutoRenewDuration
+    type: String
+    required: true
+    subparameters: []

@@ -1,0 +1,26 @@
+name: UpdateMyGroups
+parameters:
+- name: GroupId
+  type: String
+  required: true
+  subparameters: []
+- name: GroupName
+  type: String
+  required: false
+  subparameters: []
+- name: ServiceId
+  type: Long
+  required: false
+  subparameters: []
+- name: BindUrls
+  type: String
+  required: false
+  subparameters: []
+- name: Type
+  type: String
+  required: false
+  subparameters: []
+- name: ContactGroups
+  type: String
+  required: false
+  subparameters: []

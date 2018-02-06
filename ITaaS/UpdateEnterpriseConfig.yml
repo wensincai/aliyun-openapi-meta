@@ -1,0 +1,30 @@
+name: UpdateEnterpriseConfig
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SysFrom
+  type: String
+  required: false
+  subparameters: []
+- name: Operator
+  type: String
+  required: false
+  subparameters: []
+- name: ConfigKey
+  type: String
+  required: false
+  subparameters: []
+- name: ConfigValue
+  type: String
+  required: false
+  subparameters: []
+- name: Memo
+  type: String
+  required: false
+  subparameters: []
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []

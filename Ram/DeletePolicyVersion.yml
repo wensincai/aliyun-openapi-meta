@@ -1,0 +1,14 @@
+name: DeletePolicyVersion
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: PolicyName
+  type: String
+  required: false
+  subparameters: []
+- name: VersionId
+  type: String
+  required: false
+  subparameters: []

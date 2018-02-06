@@ -1,0 +1,66 @@
+name: ModifyResourceQueue
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: String
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: QualifiedName
+  type: String
+  required: false
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: ParentQueueId
+  type: Long
+  required: false
+  subparameters: []
+- name: Leaf
+  type: Boolean
+  required: false
+  subparameters: []
+- name: ResourcePoolId
+  type: Long
+  required: true
+  subparameters: []
+- name: Config
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: Id
+    type: Long
+    required: false
+    subparameters: []
+  - name: ConfigKey
+    type: String
+    required: true
+    subparameters: []
+  - name: ConfigValue
+    type: String
+    required: true
+    subparameters: []
+  - name: Category
+    type: String
+    required: false
+    subparameters: []
+  - name: Note
+    type: String
+    required: false
+    subparameters: []

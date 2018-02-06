@@ -1,0 +1,22 @@
+name: AreaUpdate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Sid
+  type: Long
+  required: true
+  subparameters: []
+- name: Aid
+  type: Long
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: Dids
+  type: String
+  required: false
+  subparameters: []

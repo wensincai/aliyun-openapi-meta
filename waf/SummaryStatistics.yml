@@ -1,0 +1,10 @@
+name: SummaryStatistics
+parameters:
+- name: days
+  type: Integer
+  required: false
+  subparameters: []
+- name: Region
+  type: String
+  required: false
+  subparameters: []

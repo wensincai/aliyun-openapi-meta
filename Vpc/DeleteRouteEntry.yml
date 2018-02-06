@@ -1,0 +1,50 @@
+name: DeleteRouteEntry
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: RouteTableId
+  type: String
+  required: true
+  subparameters: []
+- name: DestinationCidrBlock
+  type: String
+  required: true
+  subparameters: []
+- name: NextHopId
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: NextHopList
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: NextHopType
+    type: String
+    required: false
+    subparameters: []
+  - name: NextHopId
+    type: String
+    required: false
+    subparameters: []

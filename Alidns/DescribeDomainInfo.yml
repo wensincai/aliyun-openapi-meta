@@ -1,0 +1,22 @@
+name: DescribeDomainInfo
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: NeedDetailAttributes
+  type: Boolean
+  required: false
+  subparameters: []

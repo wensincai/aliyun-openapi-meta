@@ -1,0 +1,10 @@
+name: QueryOrder
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: OrderID
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,14 @@
+name: WebAttackCount
+parameters:
+- name: Time
+  type: String
+  required: false
+  subparameters: []
+- name: Region
+  type: String
+  required: false
+  subparameters: []
+- name: Domains
+  type: String
+  required: false
+  subparameters: []

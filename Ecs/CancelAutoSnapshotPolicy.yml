@@ -1,0 +1,26 @@
+name: CancelAutoSnapshotPolicy
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: regionId
+  type: String
+  required: true
+  subparameters: []
+- name: diskIds
+  type: String
+  required: true
+  subparameters: []

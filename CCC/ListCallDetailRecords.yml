@@ -1,0 +1,34 @@
+name: ListCallDetailRecords
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: PhoneNumber
+  type: String
+  required: false
+  subparameters: []
+- name: StartTime
+  type: Long
+  required: false
+  subparameters: []
+- name: StopTime
+  type: Long
+  required: false
+  subparameters: []
+- name: Criteria
+  type: String
+  required: false
+  subparameters: []
+- name: PageNumber
+  type: Integer
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []

@@ -1,0 +1,30 @@
+name: GetReadyFlag
+parameters:
+- name: DomainCode
+  type: String
+  required: true
+  subparameters: []
+- name: DataType
+  type: String
+  required: true
+  subparameters: []
+- name: ApiType
+  type: String
+  required: true
+  subparameters: []
+- name: Filter
+  type: String
+  required: true
+  subparameters: []
+- name: MaxResult
+  type: Integer
+  required: true
+  subparameters: []
+- name: NextToken
+  type: String
+  required: false
+  subparameters: []
+- name: CompressEnable
+  type: Boolean
+  required: false
+  subparameters: []

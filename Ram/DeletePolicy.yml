@@ -1,0 +1,10 @@
+name: DeletePolicy
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: PolicyName
+  type: String
+  required: false
+  subparameters: []

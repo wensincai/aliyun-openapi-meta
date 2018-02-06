@@ -1,0 +1,22 @@
+name: ProfileHistory
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Agsid
+  type: Long
+  required: true
+  subparameters: []
+- name: Idtype
+  type: Long
+  required: true
+  subparameters: []
+- name: BeginMonth
+  type: String
+  required: true
+  subparameters: []
+- name: EndMonth
+  type: String
+  required: true
+  subparameters: []

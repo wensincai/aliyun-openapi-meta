@@ -1,0 +1,22 @@
+name: AddDomain
+parameters:
+- name: Region
+  type: String
+  required: false
+  subparameters: []
+- name: Domain
+  type: String
+  required: true
+  subparameters: []
+- name: SourceIps
+  type: String
+  required: true
+  subparameters: []
+- name: Protocols
+  type: String
+  required: true
+  subparameters: []
+- name: IsProxy
+  type: Integer
+  required: false
+  subparameters: []

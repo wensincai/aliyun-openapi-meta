@@ -1,0 +1,30 @@
+name: SaveSingleTaskForUpdatingContactInfo
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: false
+  subparameters: []
+- name: RegistrantProfileId
+  type: Long
+  required: true
+  subparameters: []
+- name: ContactType
+  type: String
+  required: true
+  subparameters: []
+- name: AddTransferLock
+  type: Boolean
+  required: false
+  subparameters: []

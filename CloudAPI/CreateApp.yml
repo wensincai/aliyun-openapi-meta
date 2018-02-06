@@ -1,0 +1,14 @@
+name: CreateApp
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AppName
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,6 @@
+name: GetInstanceCount
+parameters:
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []

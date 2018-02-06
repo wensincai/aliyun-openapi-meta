@@ -1,0 +1,14 @@
+name: UnbindPhone
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AppKey
+  type: Long
+  required: true
+  subparameters: []
+- name: DeviceId
+  type: String
+  required: true
+  subparameters: []

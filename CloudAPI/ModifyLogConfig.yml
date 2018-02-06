@@ -1,0 +1,18 @@
+name: ModifyLogConfig
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SlsProject
+  type: String
+  required: true
+  subparameters: []
+- name: SlsLogStore
+  type: String
+  required: true
+  subparameters: []
+- name: LogType
+  type: String
+  required: false
+  subparameters: []

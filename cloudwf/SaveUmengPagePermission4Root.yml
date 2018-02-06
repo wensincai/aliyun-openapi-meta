@@ -1,0 +1,26 @@
+name: SaveUmengPagePermission4Root
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: false
+  subparameters: []
+- name: PagePermission
+  type: Long
+  required: true
+  subparameters: []
+- name: GsPermission
+  type: String
+  required: false
+  subparameters: []
+- name: AliyunPk
+  type: Long
+  required: true
+  subparameters: []
+- name: Bid
+  type: Long
+  required: false
+  subparameters: []

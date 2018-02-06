@@ -1,0 +1,10 @@
+name: ListRegisteredTags
+parameters:
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: Lang
+  type: RepeatList
+  required: true
+  subparameters: []

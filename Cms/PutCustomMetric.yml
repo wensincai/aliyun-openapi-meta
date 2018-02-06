@@ -1,0 +1,6 @@
+name: PutCustomMetric
+parameters:
+- name: MetricList
+  type: String
+  required: false
+  subparameters: []

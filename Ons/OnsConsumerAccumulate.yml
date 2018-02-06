@@ -1,0 +1,22 @@
+name: OnsConsumerAccumulate
+parameters:
+- name: OnsRegionId
+  type: String
+  required: true
+  subparameters: []
+- name: OnsPlatform
+  type: String
+  required: false
+  subparameters: []
+- name: PreventCache
+  type: Long
+  required: true
+  subparameters: []
+- name: ConsumerId
+  type: String
+  required: true
+  subparameters: []
+- name: Detail
+  type: Boolean
+  required: false
+  subparameters: []

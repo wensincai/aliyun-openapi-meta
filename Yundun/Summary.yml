@@ -1,0 +1,10 @@
+name: Summary
+parameters:
+- name: JstOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: InstanceIds
+  type: String
+  required: false
+  subparameters: []

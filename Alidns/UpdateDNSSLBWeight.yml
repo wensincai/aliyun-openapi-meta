@@ -1,0 +1,22 @@
+name: UpdateDNSSLBWeight
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: RecordId
+  type: String
+  required: true
+  subparameters: []
+- name: Weight
+  type: Integer
+  required: true
+  subparameters: []

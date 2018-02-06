@@ -1,0 +1,30 @@
+name: RevokeSecurityGroup
+parameters:
+- name: TOKEN
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: SourceIp
+  type: String
+  required: true
+  subparameters: []
+- name: Policy
+  type: String
+  required: false
+  subparameters: []
+- name: Priority
+  type: String
+  required: true
+  subparameters: []
+- name: NicType
+  type: String
+  required: false
+  subparameters: []

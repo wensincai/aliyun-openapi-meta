@@ -1,0 +1,10 @@
+name: GetAuditResult
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: VideoId
+  type: String
+  required: true
+  subparameters: []

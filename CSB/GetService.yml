@@ -1,0 +1,14 @@
+name: GetService
+parameters:
+- name: CsbId
+  type: Long
+  required: true
+  subparameters: []
+- name: ServiceId
+  type: Long
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

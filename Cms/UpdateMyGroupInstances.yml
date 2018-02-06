@@ -1,0 +1,10 @@
+name: UpdateMyGroupInstances
+parameters:
+- name: GroupId
+  type: Long
+  required: true
+  subparameters: []
+- name: Instances
+  type: String
+  required: false
+  subparameters: []

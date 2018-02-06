@@ -1,0 +1,22 @@
+name: ModifySignature
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: SignatureId
+  type: String
+  required: true
+  subparameters: []
+- name: SignatureName
+  type: String
+  required: false
+  subparameters: []
+- name: SignatureKey
+  type: String
+  required: false
+  subparameters: []
+- name: SignatureSecret
+  type: String
+  required: false
+  subparameters: []

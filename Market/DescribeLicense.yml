@@ -1,0 +1,6 @@
+name: DescribeLicense
+parameters:
+- name: LicenseCode
+  type: String
+  required: true
+  subparameters: []

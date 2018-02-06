@@ -1,0 +1,22 @@
+name: NodeProcessCreate
+parameters:
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: ProcessName
+  type: String
+  required: false
+  subparameters: []
+- name: ProcessUser
+  type: String
+  required: false
+  subparameters: []
+- name: Command
+  type: String
+  required: false
+  subparameters: []

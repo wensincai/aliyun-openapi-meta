@@ -1,0 +1,18 @@
+name: UnSub
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ProductKey
+  type: Long
+  required: true
+  subparameters: []
+- name: TopicList
+  type: String
+  required: false
+  subparameters: []
+- name: Topic
+  type: RepeatList
+  required: false
+  subparameters: []

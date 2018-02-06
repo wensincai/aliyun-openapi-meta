@@ -1,0 +1,14 @@
+name: GetUser
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: UserId
+  type: String
+  required: true
+  subparameters: []

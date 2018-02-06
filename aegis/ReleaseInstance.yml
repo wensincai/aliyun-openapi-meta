@@ -1,0 +1,10 @@
+name: ReleaseInstance
+parameters:
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []

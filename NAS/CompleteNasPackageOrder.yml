@@ -1,0 +1,26 @@
+name: CompleteNasPackageOrder
+parameters:
+- name: data
+  type: String
+  required: true
+  subparameters: []
+- name: product
+  type: String
+  required: false
+  subparameters: []
+- name: version
+  type: String
+  required: false
+  subparameters: []
+- name: action
+  type: String
+  required: false
+  subparameters: []
+- name: regionId
+  type: String
+  required: false
+  subparameters: []
+- name: domain
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,26 @@
+name: UpdateProduct
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ProductName
+  type: String
+  required: true
+  subparameters: []
+- name: ProductDesc
+  type: String
+  required: false
+  subparameters: []
+- name: ExtProps
+  type: String
+  required: false
+  subparameters: []
+- name: CatId
+  type: Long
+  required: true
+  subparameters: []
+- name: ProductKey
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,30 @@
+name: CreateApiStageVariable
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupId
+  type: String
+  required: true
+  subparameters: []
+- name: StageId
+  type: String
+  required: true
+  subparameters: []
+- name: VariableName
+  type: String
+  required: true
+  subparameters: []
+- name: SupportRoute
+  type: Boolean
+  required: false
+  subparameters: []
+- name: VariableValue
+  type: String
+  required: false
+  subparameters: []
+- name: StageRouteModel
+  type: String
+  required: false
+  subparameters: []

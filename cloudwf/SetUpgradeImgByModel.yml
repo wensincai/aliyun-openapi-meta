@@ -1,0 +1,22 @@
+name: SetUpgradeImgByModel
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ApModelId
+  type: Long
+  required: true
+  subparameters: []
+- name: ImgAddr
+  type: String
+  required: true
+  subparameters: []
+- name: ImgVersion
+  type: String
+  required: true
+  subparameters: []
+- name: Comment
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: DeletePositionMap
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: MapId
+  type: Long
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: ShopGroupDelete
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Gid
+  type: Long
+  required: true
+  subparameters: []

@@ -1,0 +1,6 @@
+name: GetBindAp4Umeng
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

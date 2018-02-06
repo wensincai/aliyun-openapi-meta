@@ -1,0 +1,22 @@
+name: SearchPhotos
+parameters:
+- name: Page
+  type: Integer
+  required: true
+  subparameters: []
+- name: Size
+  type: Integer
+  required: true
+  subparameters: []
+- name: Keyword
+  type: String
+  required: true
+  subparameters: []
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: LibraryId
+  type: String
+  required: false
+  subparameters: []

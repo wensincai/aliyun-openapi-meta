@@ -1,0 +1,14 @@
+name: DelApPosition
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: MapId
+  type: Long
+  required: true
+  subparameters: []
+- name: ApAssetId
+  type: Long
+  required: true
+  subparameters: []

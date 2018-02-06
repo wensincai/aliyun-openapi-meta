@@ -1,0 +1,14 @@
+name: ResumeInstance
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: TraceId
+  type: String
+  required: true
+  subparameters: []
+- name: SpMsg
+  type: String
+  required: true
+  subparameters: []

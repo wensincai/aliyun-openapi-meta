@@ -1,0 +1,22 @@
+name: ListUsersOfSkillGroup
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: SkillGroupId
+  type: String
+  required: true
+  subparameters: []
+- name: PageNumber
+  type: Integer
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []

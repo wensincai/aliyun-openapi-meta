@@ -1,0 +1,22 @@
+name: ListBriefConfigByAction
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: FuzzySearch
+  type: String
+  required: false
+  subparameters: []
+- name: Limit
+  type: Integer
+  required: true
+  subparameters: []
+- name: AncestorApgroupId
+  type: Long
+  required: true
+  subparameters: []
+- name: Action
+  type: String
+  required: true
+  subparameters: []

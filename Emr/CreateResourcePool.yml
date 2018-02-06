@@ -1,0 +1,66 @@
+name: CreateResourcePool
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: PoolType
+  type: String
+  required: true
+  subparameters: []
+- name: Active
+  type: Boolean
+  required: true
+  subparameters: []
+- name: Note
+  type: String
+  required: false
+  subparameters: []
+- name: YarnSiteConfig
+  type: String
+  required: false
+  subparameters: []
+- name: Config
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: ConfigKey
+    type: String
+    required: true
+    subparameters: []
+  - name: ConfigValue
+    type: String
+    required: true
+    subparameters: []
+  - name: configType
+    type: String
+    required: true
+    subparameters: []
+  - name: TargetId
+    type: String
+    required: true
+    subparameters: []
+  - name: Category
+    type: String
+    required: true
+    subparameters: []
+  - name: Note
+    type: String
+    required: false
+    subparameters: []

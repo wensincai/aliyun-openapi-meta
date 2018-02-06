@@ -1,0 +1,18 @@
+name: AddLabelForBid
+parameters:
+- name: PK
+  type: String
+  required: false
+  subparameters: []
+- name: Label
+  type: String
+  required: false
+  subparameters: []
+- name: LabelSeries
+  type: String
+  required: false
+  subparameters: []
+- name: EndTime
+  type: String
+  required: false
+  subparameters: []

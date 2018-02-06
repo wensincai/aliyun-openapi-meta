@@ -1,0 +1,30 @@
+name: CreateDrdsDB
+parameters:
+- name: Action
+  type: String
+  required: true
+  subparameters: []
+- name: DrdsInstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: DbName
+  type: String
+  required: true
+  subparameters: []
+- name: Encode
+  type: String
+  required: true
+  subparameters: []
+- name: Password
+  type: String
+  required: true
+  subparameters: []
+- name: RdsInstances
+  type: String
+  required: true
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

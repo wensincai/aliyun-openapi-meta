@@ -1,0 +1,18 @@
+name: SetWelcomePageURIToBoxByTP
+parameters:
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []
+- name: WelcomeUri
+  type: String
+  required: false
+  subparameters: []
+- name: ScreenCode
+  type: String
+  required: false
+  subparameters: []
+- name: Cid
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,22 @@
+name: DescribeParagraph
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: NoteId
+  type: String
+  required: true
+  subparameters: []
+- name: Id
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: ShopInfo
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Sid
+  type: Long
+  required: true
+  subparameters: []

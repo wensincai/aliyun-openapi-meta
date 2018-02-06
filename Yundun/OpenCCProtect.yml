@@ -1,0 +1,10 @@
+name: OpenCCProtect
+parameters:
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: InstanceType
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,26 @@
+name: CreateProduct
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: Desc
+  type: String
+  required: false
+  subparameters: []
+- name: CatId
+  type: Long
+  required: true
+  subparameters: []
+- name: ExtProps
+  type: String
+  required: false
+  subparameters: []
+- name: SecurityPolicy
+  type: String
+  required: false
+  subparameters: []

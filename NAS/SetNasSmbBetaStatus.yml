@@ -1,0 +1,10 @@
+name: SetNasSmbBetaStatus
+parameters:
+- name: Uid
+  type: String
+  required: true
+  subparameters: []
+- name: Status
+  type: String
+  required: true
+  subparameters: []

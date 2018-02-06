@@ -1,0 +1,14 @@
+name: NodeInstall
+parameters:
+- name: UserId
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: false
+  subparameters: []
+- name: Force
+  type: Boolean
+  required: false
+  subparameters: []

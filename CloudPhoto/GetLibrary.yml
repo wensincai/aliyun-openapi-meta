@@ -1,0 +1,10 @@
+name: GetLibrary
+parameters:
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: LibraryId
+  type: String
+  required: false
+  subparameters: []

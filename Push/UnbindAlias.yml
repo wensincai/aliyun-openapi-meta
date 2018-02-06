@@ -1,0 +1,22 @@
+name: UnbindAlias
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AppKey
+  type: Long
+  required: true
+  subparameters: []
+- name: AliasName
+  type: String
+  required: false
+  subparameters: []
+- name: UnbindAll
+  type: Boolean
+  required: false
+  subparameters: []
+- name: DeviceId
+  type: String
+  required: true
+  subparameters: []

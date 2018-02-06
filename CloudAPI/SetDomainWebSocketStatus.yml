@@ -1,0 +1,18 @@
+name: SetDomainWebSocketStatus
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupId
+  type: String
+  required: true
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: ActionValue
+  type: String
+  required: true
+  subparameters: []

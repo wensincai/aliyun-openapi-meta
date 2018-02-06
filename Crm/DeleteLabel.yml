@@ -1,0 +1,22 @@
+name: DeleteLabel
+parameters:
+- name: PK
+  type: String
+  required: false
+  subparameters: []
+- name: LabelName
+  type: String
+  required: false
+  subparameters: []
+- name: LabelSeries
+  type: String
+  required: false
+  subparameters: []
+- name: UserName
+  type: String
+  required: false
+  subparameters: []
+- name: Organization
+  type: String
+  required: false
+  subparameters: []

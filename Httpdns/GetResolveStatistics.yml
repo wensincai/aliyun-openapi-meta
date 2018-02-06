@@ -1,0 +1,22 @@
+name: GetResolveStatistics
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: Granularity
+  type: String
+  required: true
+  subparameters: []
+- name: TimeSpan
+  type: Integer
+  required: true
+  subparameters: []
+- name: ProtocolName
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,18 @@
+name: GetBoxCodeList
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SysFrom
+  type: String
+  required: false
+  subparameters: []
+- name: Operator
+  type: String
+  required: false
+  subparameters: []
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []

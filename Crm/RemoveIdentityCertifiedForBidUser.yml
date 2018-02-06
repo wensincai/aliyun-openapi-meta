@@ -1,0 +1,6 @@
+name: RemoveIdentityCertifiedForBidUser
+parameters:
+- name: PK
+  type: String
+  required: true
+  subparameters: []

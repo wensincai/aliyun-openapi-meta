@@ -1,0 +1,34 @@
+name: BindInputBucket
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: Bucket
+  type: String
+  required: true
+  subparameters: []
+- name: RoleArn
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerAccount
+  type: String
+  required: false
+  subparameters: []

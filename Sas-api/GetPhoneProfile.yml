@@ -1,0 +1,18 @@
+name: GetPhoneProfile
+parameters:
+- name: Phone
+  type: String
+  required: true
+  subparameters: []
+- name: SensType
+  type: Integer
+  required: false
+  subparameters: []
+- name: BusinessType
+  type: Integer
+  required: false
+  subparameters: []
+- name: DataVersion
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,14 @@
+name: VerifyEmail
+parameters:
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: Token
+  type: String
+  required: true
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []

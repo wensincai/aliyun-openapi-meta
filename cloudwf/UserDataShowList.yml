@@ -1,0 +1,26 @@
+name: UserDataShowList
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Bid
+  type: Long
+  required: true
+  subparameters: []
+- name: Iid
+  type: Long
+  required: false
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: Page
+  type: Integer
+  required: true
+  subparameters: []
+- name: Per
+  type: Integer
+  required: true
+  subparameters: []

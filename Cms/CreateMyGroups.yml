@@ -1,0 +1,22 @@
+name: CreateMyGroups
+parameters:
+- name: GroupName
+  type: String
+  required: false
+  subparameters: []
+- name: ServiceId
+  type: Long
+  required: false
+  subparameters: []
+- name: BindUrl
+  type: String
+  required: false
+  subparameters: []
+- name: Type
+  type: String
+  required: false
+  subparameters: []
+- name: ContactGroups
+  type: String
+  required: false
+  subparameters: []

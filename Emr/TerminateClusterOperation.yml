@@ -1,0 +1,22 @@
+name: TerminateClusterOperation
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: OperationId
+  type: String
+  required: true
+  subparameters: []

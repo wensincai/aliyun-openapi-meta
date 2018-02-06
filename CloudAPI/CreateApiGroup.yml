@@ -1,0 +1,14 @@
+name: CreateApiGroup
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupName
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: true
+  subparameters: []

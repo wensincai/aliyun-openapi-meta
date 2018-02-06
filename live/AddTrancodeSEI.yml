@@ -1,0 +1,34 @@
+name: AddTrancodeSEI
+parameters:
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: AppName
+  type: String
+  required: true
+  subparameters: []
+- name: StreamName
+  type: String
+  required: true
+  subparameters: []
+- name: Text
+  type: String
+  required: true
+  subparameters: []
+- name: Pattern
+  type: String
+  required: true
+  subparameters: []
+- name: Repeat
+  type: Integer
+  required: true
+  subparameters: []
+- name: Delay
+  type: Integer
+  required: true
+  subparameters: []

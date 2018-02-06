@@ -1,0 +1,18 @@
+name: CheckTopicPermission
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: TopicOperation
+  type: String
+  required: true
+  subparameters: []
+- name: Topic
+  type: String
+  required: true
+  subparameters: []
+- name: ProductKey
+  type: Long
+  required: true
+  subparameters: []

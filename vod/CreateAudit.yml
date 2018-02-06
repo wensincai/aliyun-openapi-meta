@@ -1,0 +1,10 @@
+name: CreateAudit
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AuditContent
+  type: String
+  required: true
+  subparameters: []

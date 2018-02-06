@@ -1,0 +1,10 @@
+name: BatchChangeGroupApName
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: JsonData
+  type: String
+  required: true
+  subparameters: []

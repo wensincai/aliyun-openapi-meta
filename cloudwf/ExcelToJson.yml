@@ -1,0 +1,10 @@
+name: ExcelToJson
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: UploadData
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,6 @@
+name: GetPhotoStore
+parameters:
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,22 @@
+name: DescribeCouponList
+parameters:
+- name: Status
+  type: String
+  required: false
+  subparameters: []
+- name: StartDeliveryTime
+  type: String
+  required: false
+  subparameters: []
+- name: EndDeliveryTime
+  type: String
+  required: false
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: false
+  subparameters: []
+- name: PageNum
+  type: Integer
+  required: false
+  subparameters: []

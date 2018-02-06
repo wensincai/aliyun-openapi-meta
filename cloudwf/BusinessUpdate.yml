@@ -1,0 +1,34 @@
+name: BusinessUpdate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Bid
+  type: Long
+  required: true
+  subparameters: []
+- name: BusinessProvince
+  type: String
+  required: false
+  subparameters: []
+- name: BusinessCity
+  type: String
+  required: false
+  subparameters: []
+- name: BusinessAddress
+  type: String
+  required: false
+  subparameters: []
+- name: BusinessManager
+  type: String
+  required: false
+  subparameters: []
+- name: Warn
+  type: Integer
+  required: false
+  subparameters: []
+- name: WarnEmail
+  type: String
+  required: false
+  subparameters: []

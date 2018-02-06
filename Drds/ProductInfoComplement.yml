@@ -1,0 +1,14 @@
+name: ProductInfoComplement
+parameters:
+- name: name
+  type: String
+  required: true
+  subparameters: []
+- name: gender
+  type: String
+  required: true
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

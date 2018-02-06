@@ -1,0 +1,14 @@
+name: SdkGenerateByApp
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AppId
+  type: Long
+  required: true
+  subparameters: []
+- name: Language
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: DescribeAccessRules
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: AccessGroupName
+  type: String
+  required: true
+  subparameters: []

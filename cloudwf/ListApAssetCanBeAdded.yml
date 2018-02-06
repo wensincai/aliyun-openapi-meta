@@ -1,0 +1,30 @@
+name: ListApAssetCanBeAdded
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: PageIndex
+  type: Integer
+  required: true
+  subparameters: []
+- name: Length
+  type: Integer
+  required: true
+  subparameters: []
+- name: ApgroupId
+  type: Long
+  required: true
+  subparameters: []
+- name: SearchMac
+  type: String
+  required: false
+  subparameters: []
+- name: SearchName
+  type: String
+  required: false
+  subparameters: []
+- name: SearchModel
+  type: String
+  required: false
+  subparameters: []

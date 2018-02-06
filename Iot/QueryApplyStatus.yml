@@ -1,0 +1,10 @@
+name: QueryApplyStatus
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ApplyId
+  type: Long
+  required: true
+  subparameters: []

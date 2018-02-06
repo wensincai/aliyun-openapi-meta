@@ -1,0 +1,30 @@
+name: UpdateIPSegment
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SysFrom
+  type: String
+  required: false
+  subparameters: []
+- name: Operator
+  type: String
+  required: false
+  subparameters: []
+- name: Uuid
+  type: String
+  required: false
+  subparameters: []
+- name: IpSegment
+  type: String
+  required: false
+  subparameters: []
+- name: Memo
+  type: String
+  required: false
+  subparameters: []
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []

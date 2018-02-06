@@ -1,0 +1,22 @@
+name: UpdateInstance
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: access_key_id
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceName
+  type: String
+  required: true
+  subparameters: []
+- name: Network
+  type: String
+  required: false
+  subparameters: []

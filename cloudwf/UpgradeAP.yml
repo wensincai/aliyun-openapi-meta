@@ -1,0 +1,10 @@
+name: UpgradeAP
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Ids
+  type: RepeatList
+  required: true
+  subparameters: []

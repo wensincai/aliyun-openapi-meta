@@ -1,0 +1,30 @@
+name: QueryTaskInfoHistory
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: BeginCreateTime
+  type: Long
+  required: false
+  subparameters: []
+- name: EndCreateTime
+  type: Long
+  required: false
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []
+- name: CreateTimeCursor
+  type: Long
+  required: false
+  subparameters: []
+- name: TaskNoCursor
+  type: String
+  required: false
+  subparameters: []

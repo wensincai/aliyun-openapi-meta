@@ -1,0 +1,22 @@
+name: QueryInstanceInfoByConn
+parameters:
+- name: Action
+  type: String
+  required: true
+  subparameters: []
+- name: Host
+  type: String
+  required: true
+  subparameters: []
+- name: Port
+  type: Integer
+  required: true
+  subparameters: []
+- name: UserName
+  type: String
+  required: true
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,26 @@
+name: CreateNote
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: Type
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: false
+  subparameters: []

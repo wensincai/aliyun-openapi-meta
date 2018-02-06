@@ -1,0 +1,26 @@
+name: RenewInstance
+parameters:
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ClientToken
+  type: String
+  required: true
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: VmNumber
+  type: String
+  required: true
+  subparameters: []
+- name: Duration
+  type: Integer
+  required: true
+  subparameters: []
+- name: PricingCycle
+  type: String
+  required: true
+  subparameters: []

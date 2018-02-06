@@ -1,0 +1,14 @@
+name: QueryPushStatByMsg
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AppKey
+  type: Long
+  required: true
+  subparameters: []
+- name: MessageId
+  type: String
+  required: true
+  subparameters: []

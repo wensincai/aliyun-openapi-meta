@@ -1,0 +1,198 @@
+name: ModifyClusterTemplate
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: String
+  required: true
+  subparameters: []
+- name: TemplateName
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ZoneId
+  type: String
+  required: false
+  subparameters: []
+- name: LogPath
+  type: String
+  required: false
+  subparameters: []
+- name: SecurityGroupId
+  type: String
+  required: false
+  subparameters: []
+- name: IsOpenPublicIp
+  type: Boolean
+  required: false
+  subparameters: []
+- name: SecurityGroupName
+  type: String
+  required: false
+  subparameters: []
+- name: ChargeType
+  type: String
+  required: false
+  subparameters: []
+- name: Period
+  type: Integer
+  required: false
+  subparameters: []
+- name: AutoRenew
+  type: Boolean
+  required: false
+  subparameters: []
+- name: VpcId
+  type: String
+  required: false
+  subparameters: []
+- name: VSwitchId
+  type: String
+  required: false
+  subparameters: []
+- name: NetType
+  type: String
+  required: false
+  subparameters: []
+- name: UserDefinedEmrEcsRole
+  type: String
+  required: false
+  subparameters: []
+- name: EmrVer
+  type: String
+  required: true
+  subparameters: []
+- name: OptionSoftWareList
+  type: RepeatList
+  required: false
+  subparameters: []
+- name: ClusterType
+  type: String
+  required: true
+  subparameters: []
+- name: HighAvailabilityEnable
+  type: Boolean
+  required: false
+  subparameters: []
+- name: UseLocalMetaDb
+  type: Boolean
+  required: false
+  subparameters: []
+- name: lIoOptimized
+  type: Boolean
+  required: false
+  subparameters: []
+- name: SshEnable
+  type: Boolean
+  required: false
+  subparameters: []
+- name: InstanceGeneration
+  type: String
+  required: false
+  subparameters: []
+- name: MasterPwd
+  type: String
+  required: false
+  subparameters: []
+- name: HostGroup
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: HostGroupId
+    type: String
+    required: false
+    subparameters: []
+  - name: HostGroupName
+    type: String
+    required: false
+    subparameters: []
+  - name: HostGroupType
+    type: String
+    required: true
+    subparameters: []
+  - name: ClusterId
+    type: String
+    required: false
+    subparameters: []
+  - name: Comment
+    type: String
+    required: false
+    subparameters: []
+  - name: CreateType
+    type: String
+    required: false
+    subparameters: []
+  - name: ChargeType
+    type: String
+    required: false
+    subparameters: []
+  - name: Period
+    type: Integer
+    required: false
+    subparameters: []
+  - name: NodeCount
+    type: Integer
+    required: true
+    subparameters: []
+  - name: InstanceType
+    type: String
+    required: true
+    subparameters: []
+  - name: DiskType
+    type: String
+    required: false
+    subparameters: []
+  - name: DiskCapacity
+    type: Integer
+    required: false
+    subparameters: []
+  - name: DiskCount
+    type: Integer
+    required: false
+    subparameters: []
+  - name: SysDiskCapacity
+    type: Integer
+    required: false
+    subparameters: []
+  - name: AutoRenew
+    type: Boolean
+    required: false
+    subparameters: []
+  - name: VSwitchId
+    type: String
+    required: false
+    subparameters: []
+- name: BootstrapAction
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: Name
+    type: String
+    required: true
+    subparameters: []
+  - name: Path
+    type: String
+    required: true
+    subparameters: []
+  - name: Arg
+    type: String
+    required: false
+    subparameters: []
+- name: Configurations
+  type: String
+  required: false
+  subparameters: []
+- name: EasEnable
+  type: Boolean
+  required: false
+  subparameters: []

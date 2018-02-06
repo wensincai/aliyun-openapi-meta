@@ -1,0 +1,34 @@
+name: SaveBatchTaskForCreatingOrderActivate
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: OrderActivateParam
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: DomainName
+    type: String
+    required: false
+    subparameters: []
+  - name: SubscriptionDuration
+    type: Integer
+    required: false
+    subparameters: []
+  - name: RegistrantProfileId
+    type: Long
+    required: false
+    subparameters: []
+  - name: EnableDomainProxy
+    type: Boolean
+    required: false
+    subparameters: []
+  - name: PermitPremiumActivation
+    type: Boolean
+    required: false
+    subparameters: []

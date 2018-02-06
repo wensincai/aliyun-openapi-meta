@@ -1,0 +1,14 @@
+name: DeviceBatchCreate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Sn
+  type: String
+  required: true
+  subparameters: []
+- name: DeviceType
+  type: Integer
+  required: true
+  subparameters: []

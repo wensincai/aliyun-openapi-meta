@@ -1,0 +1,22 @@
+name: CreateEnterprise
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SysFrom
+  type: String
+  required: false
+  subparameters: []
+- name: Operator
+  type: String
+  required: false
+  subparameters: []
+- name: BoxNumber
+  type: Integer
+  required: false
+  subparameters: []
+- name: ServiceFlag
+  type: Boolean
+  required: false
+  subparameters: []

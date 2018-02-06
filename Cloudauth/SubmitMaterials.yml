@@ -1,0 +1,22 @@
+name: SubmitMaterials
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: VerifyToken
+  type: String
+  required: true
+  subparameters: []
+- name: Material
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: MaterialType
+    type: String
+    required: false
+    subparameters: []
+  - name: Value
+    type: String
+    required: false
+    subparameters: []

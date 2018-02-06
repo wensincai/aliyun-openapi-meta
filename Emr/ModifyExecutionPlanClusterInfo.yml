@@ -1,0 +1,146 @@
+name: ModifyExecutionPlanClusterInfo
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: false
+  subparameters: []
+- name: ClusterName
+  type: String
+  required: false
+  subparameters: []
+- name: ZoneId
+  type: String
+  required: false
+  subparameters: []
+- name: LogEnable
+  type: Boolean
+  required: false
+  subparameters: []
+- name: LogPath
+  type: String
+  required: false
+  subparameters: []
+- name: SecurityGroupId
+  type: String
+  required: false
+  subparameters: []
+- name: IsOpenPublicIp
+  type: Boolean
+  required: false
+  subparameters: []
+- name: CreateClusterOnDemand
+  type: Boolean
+  required: false
+  subparameters: []
+- name: EmrVer
+  type: String
+  required: false
+  subparameters: []
+- name: OptionSoftWareList
+  type: RepeatList
+  required: false
+  subparameters: []
+- name: ClusterType
+  type: String
+  required: false
+  subparameters: []
+- name: HighAvailabilityEnable
+  type: Boolean
+  required: false
+  subparameters: []
+- name: UseLocalMetaDb
+  type: Boolean
+  required: false
+  subparameters: []
+- name: VpcId
+  type: String
+  required: false
+  subparameters: []
+- name: VSwitchId
+  type: String
+  required: false
+  subparameters: []
+- name: NetType
+  type: String
+  required: false
+  subparameters: []
+- name: IoOptimized
+  type: Boolean
+  required: false
+  subparameters: []
+- name: InstanceGeneration
+  type: String
+  required: false
+  subparameters: []
+- name: EasEnable
+  type: Boolean
+  required: false
+  subparameters: []
+- name: EcsOrder
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: Index
+    type: Integer
+    required: false
+    subparameters: []
+  - name: NodeCount
+    type: Integer
+    required: true
+    subparameters: []
+  - name: InstanceType
+    type: String
+    required: true
+    subparameters: []
+  - name: DiskType
+    type: String
+    required: true
+    subparameters: []
+  - name: DiskCapacity
+    type: Integer
+    required: true
+    subparameters: []
+  - name: NodeType
+    type: String
+    required: true
+    subparameters: []
+  - name: DiskCount
+    type: Integer
+    required: true
+    subparameters: []
+- name: BootstrapAction
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: Name
+    type: String
+    required: true
+    subparameters: []
+  - name: Path
+    type: String
+    required: true
+    subparameters: []
+  - name: Arg
+    type: String
+    required: false
+    subparameters: []
+- name: Configurations
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: StartRule
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RuleId
+  type: Long
+  required: true
+  subparameters: []

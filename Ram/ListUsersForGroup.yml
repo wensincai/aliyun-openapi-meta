@@ -1,0 +1,10 @@
+name: ListUsersForGroup
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupName
+  type: String
+  required: false
+  subparameters: []

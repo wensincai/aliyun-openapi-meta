@@ -1,0 +1,10 @@
+name: GetOssServerSign
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: DirType
+  type: Integer
+  required: true
+  subparameters: []

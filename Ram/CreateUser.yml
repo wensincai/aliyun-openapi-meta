@@ -1,0 +1,26 @@
+name: CreateUser
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: UserName
+  type: String
+  required: false
+  subparameters: []
+- name: DisplayName
+  type: String
+  required: false
+  subparameters: []
+- name: MobilePhone
+  type: String
+  required: false
+  subparameters: []
+- name: Email
+  type: String
+  required: false
+  subparameters: []
+- name: Comments
+  type: String
+  required: false
+  subparameters: []

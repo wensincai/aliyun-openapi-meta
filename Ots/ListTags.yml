@@ -1,0 +1,38 @@
+name: ListTags
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: access_key_id
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceName
+  type: String
+  required: false
+  subparameters: []
+- name: PageNum
+  type: Long
+  required: false
+  subparameters: []
+- name: PageSize
+  type: Long
+  required: false
+  subparameters: []
+- name: TagInfo
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: TagKey
+    type: String
+    required: false
+    subparameters: []
+  - name: TagValue
+    type: String
+    required: false
+    subparameters: []

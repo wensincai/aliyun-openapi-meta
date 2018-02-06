@@ -1,0 +1,10 @@
+name: GetAccessPolicyConfig
+parameters:
+- name: AliUid
+  type: String
+  required: true
+  subparameters: []
+- name: CompressEnable
+  type: Boolean
+  required: false
+  subparameters: []

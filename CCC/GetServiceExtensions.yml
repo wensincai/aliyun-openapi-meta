@@ -1,0 +1,14 @@
+name: GetServiceExtensions
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: ServiceType
+  type: String
+  required: true
+  subparameters: []

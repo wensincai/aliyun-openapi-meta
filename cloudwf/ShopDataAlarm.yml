@@ -1,0 +1,26 @@
+name: ShopDataAlarm
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Sid
+  type: Long
+  required: true
+  subparameters: []
+- name: Warn
+  type: Integer
+  required: false
+  subparameters: []
+- name: WarnEmail
+  type: String
+  required: false
+  subparameters: []
+- name: WarnPhone
+  type: String
+  required: false
+  subparameters: []
+- name: CloseWarn
+  type: Integer
+  required: false
+  subparameters: []

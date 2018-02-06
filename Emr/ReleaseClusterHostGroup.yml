@@ -1,0 +1,26 @@
+name: ReleaseClusterHostGroup
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: HostGroupId
+  type: String
+  required: true
+  subparameters: []
+- name: InstanceIdList
+  type: String
+  required: false
+  subparameters: []

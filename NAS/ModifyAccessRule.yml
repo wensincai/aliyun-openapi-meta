@@ -1,0 +1,30 @@
+name: ModifyAccessRule
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: AccessGroupName
+  type: String
+  required: true
+  subparameters: []
+- name: RuleId
+  type: String
+  required: true
+  subparameters: []
+- name: SourceCidrIp
+  type: String
+  required: true
+  subparameters: []
+- name: Policy
+  type: String
+  required: true
+  subparameters: []
+- name: SquashType
+  type: String
+  required: true
+  subparameters: []
+- name: Priority
+  type: String
+  required: true
+  subparameters: []

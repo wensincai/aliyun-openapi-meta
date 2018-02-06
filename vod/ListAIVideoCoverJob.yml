@@ -1,0 +1,30 @@
+name: ListAIVideoCoverJob
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: AIVideoCoverJobIds
+  type: String
+  required: true
+  subparameters: []

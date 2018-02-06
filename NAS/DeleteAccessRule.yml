@@ -1,0 +1,14 @@
+name: DeleteAccessRule
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: AccessGroupName
+  type: String
+  required: true
+  subparameters: []
+- name: RuleId
+  type: String
+  required: true
+  subparameters: []

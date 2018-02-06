@@ -1,0 +1,18 @@
+name: AddApgroupConfig
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: ParentApgroupId
+  type: Long
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

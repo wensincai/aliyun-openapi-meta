@@ -1,0 +1,14 @@
+name: CheckServiceExist
+parameters:
+- name: CsbId
+  type: Long
+  required: true
+  subparameters: []
+- name: ServiceName
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

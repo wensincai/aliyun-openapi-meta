@@ -1,0 +1,6 @@
+name: CheckDomain
+parameters:
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []

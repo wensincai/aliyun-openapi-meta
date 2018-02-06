@@ -1,0 +1,22 @@
+name: UserDataCreate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Bid
+  type: Long
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: Type
+  type: String
+  required: true
+  subparameters: []
+- name: UploadFile
+  type: String
+  required: true
+  subparameters: []

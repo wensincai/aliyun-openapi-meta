@@ -1,0 +1,58 @@
+name: ModifyResourcePool
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: String
+  required: true
+  subparameters: []
+- name: Active
+  type: Boolean
+  required: false
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: Yarnsiteconfig
+  type: String
+  required: false
+  subparameters: []
+- name: Config
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: Id
+    type: String
+    required: false
+    subparameters: []
+  - name: ConfigKey
+    type: String
+    required: false
+    subparameters: []
+  - name: ConfigValue
+    type: String
+    required: false
+    subparameters: []
+  - name: Category
+    type: String
+    required: false
+    subparameters: []
+  - name: Note
+    type: String
+    required: false
+    subparameters: []

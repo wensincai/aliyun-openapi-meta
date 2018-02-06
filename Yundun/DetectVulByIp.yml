@@ -1,0 +1,10 @@
+name: DetectVulByIp
+parameters:
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: VulIp
+  type: String
+  required: true
+  subparameters: []

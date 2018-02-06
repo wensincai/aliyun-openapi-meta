@@ -1,0 +1,26 @@
+name: QueryDeviceStat
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AppKey
+  type: Long
+  required: true
+  subparameters: []
+- name: StartTime
+  type: String
+  required: true
+  subparameters: []
+- name: EndTime
+  type: String
+  required: true
+  subparameters: []
+- name: DeviceType
+  type: String
+  required: true
+  subparameters: []
+- name: QueryType
+  type: String
+  required: true
+  subparameters: []

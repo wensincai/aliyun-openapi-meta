@@ -1,0 +1,10 @@
+name: ShopActionCustome
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Gsid
+  type: Long
+  required: true
+  subparameters: []

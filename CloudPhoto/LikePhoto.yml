@@ -1,0 +1,14 @@
+name: LikePhoto
+parameters:
+- name: PhotoId
+  type: Long
+  required: true
+  subparameters: []
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: LibraryId
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,14 @@
+name: GetSidsAndGids4Bid
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: QueryId
+  type: Long
+  required: true
+  subparameters: []
+- name: QueryType
+  type: Integer
+  required: true
+  subparameters: []

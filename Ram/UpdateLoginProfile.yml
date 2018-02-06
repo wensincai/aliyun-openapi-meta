@@ -1,0 +1,22 @@
+name: UpdateLoginProfile
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: UserName
+  type: String
+  required: false
+  subparameters: []
+- name: Password
+  type: String
+  required: false
+  subparameters: []
+- name: PasswordResetRequired
+  type: Boolean
+  required: false
+  subparameters: []
+- name: MFABindRequired
+  type: Boolean
+  required: false
+  subparameters: []

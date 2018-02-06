@@ -1,0 +1,10 @@
+name: ReportZoneRealtime
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Agsid
+  type: Long
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: InnerRefund
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: data
+  type: String
+  required: true
+  subparameters: []

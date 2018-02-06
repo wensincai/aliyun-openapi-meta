@@ -1,0 +1,14 @@
+name: GetReadyFlagAlertConfig
+parameters:
+- name: DomainCode
+  type: String
+  required: true
+  subparameters: []
+- name: DataType
+  type: String
+  required: true
+  subparameters: []
+- name: CompressEnable
+  type: Boolean
+  required: false
+  subparameters: []

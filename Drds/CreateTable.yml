@@ -1,0 +1,34 @@
+name: CreateTable
+parameters:
+- name: Action
+  type: String
+  required: true
+  subparameters: []
+- name: DrdsInstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: DbName
+  type: String
+  required: true
+  subparameters: []
+- name: DdlSql
+  type: String
+  required: true
+  subparameters: []
+- name: ShardType
+  type: String
+  required: true
+  subparameters: []
+- name: ShardKey
+  type: String
+  required: false
+  subparameters: []
+- name: AllowFullTableScan
+  type: String
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

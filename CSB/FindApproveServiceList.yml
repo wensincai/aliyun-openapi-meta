@@ -1,0 +1,30 @@
+name: FindApproveServiceList
+parameters:
+- name: showDelService
+  type: Boolean
+  required: false
+  subparameters: []
+- name: serviceName
+  type: String
+  required: false
+  subparameters: []
+- name: alias
+  type: String
+  required: false
+  subparameters: []
+- name: projectName
+  type: String
+  required: false
+  subparameters: []
+- name: csbId
+  type: Long
+  required: true
+  subparameters: []
+- name: approveLevel
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

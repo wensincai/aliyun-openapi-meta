@@ -1,0 +1,26 @@
+name: FindOrderableList
+parameters:
+- name: CsbId
+  type: Long
+  required: true
+  subparameters: []
+- name: ServiceName
+  type: String
+  required: false
+  subparameters: []
+- name: Alias
+  type: String
+  required: false
+  subparameters: []
+- name: ProjectName
+  type: String
+  required: false
+  subparameters: []
+- name: PageNum
+  type: Integer
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []

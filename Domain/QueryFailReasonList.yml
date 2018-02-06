@@ -1,0 +1,26 @@
+name: QueryFailReasonList
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: ContactTemplateId
+  type: Long
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: false
+  subparameters: []
+- name: SaleId
+  type: String
+  required: false
+  subparameters: []

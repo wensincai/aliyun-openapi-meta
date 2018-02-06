@@ -1,0 +1,14 @@
+name: ToggleFeatures
+parameters:
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: EnabledFeatures
+  type: RepeatList
+  required: false
+  subparameters: []
+- name: DisabledFeatures
+  type: RepeatList
+  required: false
+  subparameters: []

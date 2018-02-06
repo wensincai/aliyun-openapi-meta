@@ -1,0 +1,22 @@
+name: ShopGroupCreate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Bid
+  type: Long
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: ShopIds
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

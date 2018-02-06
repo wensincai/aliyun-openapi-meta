@@ -1,0 +1,18 @@
+name: MergeFaces
+parameters:
+- name: FaceId
+  type: RepeatList
+  required: true
+  subparameters: []
+- name: TargetFaceId
+  type: Long
+  required: true
+  subparameters: []
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: LibraryId
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,22 @@
+name: ModifyJobExecutionPlanParam
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: true
+  subparameters: []
+- name: ParamName
+  type: String
+  required: true
+  subparameters: []
+- name: ParamValue
+  type: String
+  required: true
+  subparameters: []

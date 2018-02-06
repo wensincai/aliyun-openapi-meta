@@ -1,0 +1,34 @@
+name: ModifyTrafficControl
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: TrafficControlId
+  type: String
+  required: true
+  subparameters: []
+- name: TrafficControlName
+  type: String
+  required: false
+  subparameters: []
+- name: TrafficControlUnit
+  type: String
+  required: false
+  subparameters: []
+- name: ApiDefault
+  type: Integer
+  required: false
+  subparameters: []
+- name: UserDefault
+  type: Integer
+  required: false
+  subparameters: []
+- name: AppDefault
+  type: Integer
+  required: false
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

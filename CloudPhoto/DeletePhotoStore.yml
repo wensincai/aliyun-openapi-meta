@@ -1,0 +1,6 @@
+name: DeletePhotoStore
+parameters:
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []

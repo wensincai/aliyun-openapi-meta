@@ -1,0 +1,14 @@
+name: BindVolumeStoragePackage
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: VolumeId
+  type: String
+  required: true
+  subparameters: []
+- name: PackageId
+  type: String
+  required: true
+  subparameters: []

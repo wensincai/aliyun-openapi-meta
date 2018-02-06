@@ -1,0 +1,14 @@
+name: DeleteBackDoorFile
+parameters:
+- name: JstOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Path
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,26 @@
+name: ListNotifyPolicy
+parameters:
+- name: AlertName
+  type: String
+  required: false
+  subparameters: []
+- name: PolicyType
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: String
+  required: false
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: false
+  subparameters: []
+- name: Dimensions
+  type: String
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

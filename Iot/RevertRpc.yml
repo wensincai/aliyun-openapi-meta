@@ -1,0 +1,22 @@
+name: RevertRpc
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ProductKey
+  type: Long
+  required: true
+  subparameters: []
+- name: DeviceName
+  type: String
+  required: true
+  subparameters: []
+- name: RpcContent
+  type: String
+  required: true
+  subparameters: []
+- name: TimeOut
+  type: Integer
+  required: true
+  subparameters: []

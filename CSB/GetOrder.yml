@@ -1,0 +1,14 @@
+name: GetOrder
+parameters:
+- name: OrderId
+  type: Long
+  required: true
+  subparameters: []
+- name: ServiceName
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,14 @@
+name: GetProject
+parameters:
+- name: CsbId
+  type: Long
+  required: true
+  subparameters: []
+- name: ProjectName
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,30 @@
+name: SavePortalTemplate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: false
+  subparameters: []
+- name: TempName
+  type: String
+  required: true
+  subparameters: []
+- name: OssFileId
+  type: Long
+  required: false
+  subparameters: []
+- name: TextAlign
+  type: String
+  required: true
+  subparameters: []
+- name: TextColor
+  type: String
+  required: true
+  subparameters: []
+- name: TextContent
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,26 @@
+name: UserDataUpdate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Bid
+  type: Long
+  required: true
+  subparameters: []
+- name: Iid
+  type: Long
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: Type
+  type: String
+  required: false
+  subparameters: []
+- name: UploadFile
+  type: String
+  required: false
+  subparameters: []

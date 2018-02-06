@@ -1,0 +1,14 @@
+name: CeaseInstance
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: TraceId
+  type: String
+  required: false
+  subparameters: []
+- name: SpMsg
+  type: String
+  required: false
+  subparameters: []

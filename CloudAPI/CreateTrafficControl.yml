@@ -1,0 +1,30 @@
+name: CreateTrafficControl
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: TrafficControlName
+  type: String
+  required: true
+  subparameters: []
+- name: TrafficControlUnit
+  type: String
+  required: true
+  subparameters: []
+- name: ApiDefault
+  type: Integer
+  required: true
+  subparameters: []
+- name: UserDefault
+  type: Integer
+  required: false
+  subparameters: []
+- name: AppDefault
+  type: Integer
+  required: false
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

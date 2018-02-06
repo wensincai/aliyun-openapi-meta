@@ -1,0 +1,10 @@
+name: DeleteVirtualMFADevice
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: SerialNumber
+  type: String
+  required: false
+  subparameters: []

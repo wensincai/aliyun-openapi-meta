@@ -1,0 +1,10 @@
+name: PutMetricData
+parameters:
+- name: callby_cms_owner
+  type: String
+  required: false
+  subparameters: []
+- name: Body
+  type: String
+  required: false
+  subparameters: []

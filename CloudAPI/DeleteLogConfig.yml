@@ -1,0 +1,10 @@
+name: DeleteLogConfig
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: LogType
+  type: String
+  required: false
+  subparameters: []

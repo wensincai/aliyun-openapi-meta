@@ -1,0 +1,30 @@
+name: ListFaces
+parameters:
+- name: Direction
+  type: String
+  required: false
+  subparameters: []
+- name: Size
+  type: Integer
+  required: false
+  subparameters: []
+- name: Cursor
+  type: String
+  required: false
+  subparameters: []
+- name: State
+  type: String
+  required: true
+  subparameters: []
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: LibraryId
+  type: String
+  required: false
+  subparameters: []
+- name: HasFaceName
+  type: String
+  required: false
+  subparameters: []

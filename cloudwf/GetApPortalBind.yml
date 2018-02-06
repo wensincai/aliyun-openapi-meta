@@ -1,0 +1,14 @@
+name: GetApPortalBind
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: BindId
+  type: Long
+  required: true
+  subparameters: []
+- name: ConfigType
+  type: Integer
+  required: true
+  subparameters: []

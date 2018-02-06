@@ -1,0 +1,14 @@
+name: SetNasBetaStatus
+parameters:
+- name: Uid
+  type: String
+  required: true
+  subparameters: []
+- name: Feature
+  type: String
+  required: true
+  subparameters: []
+- name: Status
+  type: String
+  required: true
+  subparameters: []

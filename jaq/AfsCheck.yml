@@ -1,0 +1,26 @@
+name: AfsCheck
+parameters:
+- name: CallerName
+  type: String
+  required: false
+  subparameters: []
+- name: Session
+  type: String
+  required: true
+  subparameters: []
+- name: Token
+  type: String
+  required: true
+  subparameters: []
+- name: Sig
+  type: String
+  required: true
+  subparameters: []
+- name: Platform
+  type: Integer
+  required: true
+  subparameters: []
+- name: Scene
+  type: String
+  required: false
+  subparameters: []

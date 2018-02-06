@@ -1,0 +1,10 @@
+name: DescribeSQLDiagnosisList
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: DBInstanceId
+  type: String
+  required: true
+  subparameters: []

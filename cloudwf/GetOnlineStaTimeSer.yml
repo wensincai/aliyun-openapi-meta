@@ -1,0 +1,30 @@
+name: GetOnlineStaTimeSer
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ApgroupId
+  type: Long
+  required: false
+  subparameters: []
+- name: CompanyId
+  type: Long
+  required: false
+  subparameters: []
+- name: Start
+  type: Long
+  required: false
+  subparameters: []
+- name: End
+  type: Long
+  required: false
+  subparameters: []
+- name: ZoomStart
+  type: Long
+  required: false
+  subparameters: []
+- name: ZoomEnd
+  type: Long
+  required: false
+  subparameters: []

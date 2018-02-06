@@ -1,0 +1,14 @@
+name: DeleteRegistrantProfile
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: RegistrantProfileId
+  type: Long
+  required: true
+  subparameters: []

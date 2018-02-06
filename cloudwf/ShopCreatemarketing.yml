@@ -1,0 +1,22 @@
+name: ShopCreatemarketing
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Sid
+  type: Long
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: Stime
+  type: String
+  required: true
+  subparameters: []
+- name: Etime
+  type: String
+  required: true
+  subparameters: []

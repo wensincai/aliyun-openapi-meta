@@ -1,0 +1,14 @@
+name: DeleteProjectList
+parameters:
+- name: CsbId
+  type: Long
+  required: true
+  subparameters: []
+- name: Data
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

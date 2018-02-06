@@ -1,0 +1,14 @@
+name: SetUserVolumeSkipAuth
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: Volumes
+  type: String
+  required: true
+  subparameters: []
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []

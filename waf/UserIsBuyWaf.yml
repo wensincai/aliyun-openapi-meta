@@ -1,0 +1,10 @@
+name: UserIsBuyWaf
+parameters:
+- name: UserId
+  type: Long
+  required: true
+  subparameters: []
+- name: Region
+  type: String
+  required: false
+  subparameters: []

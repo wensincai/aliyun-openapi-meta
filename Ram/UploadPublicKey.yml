@@ -1,0 +1,14 @@
+name: UploadPublicKey
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: UserName
+  type: String
+  required: false
+  subparameters: []
+- name: PublicKeySpec
+  type: String
+  required: false
+  subparameters: []

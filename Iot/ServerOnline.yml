@@ -1,0 +1,10 @@
+name: ServerOnline
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ProductKey
+  type: Long
+  required: true
+  subparameters: []

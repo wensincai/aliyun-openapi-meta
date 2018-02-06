@@ -1,0 +1,14 @@
+name: GetMaterials
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: Biz
+  type: String
+  required: true
+  subparameters: []
+- name: TicketId
+  type: String
+  required: true
+  subparameters: []

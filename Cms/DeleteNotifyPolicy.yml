@@ -1,0 +1,22 @@
+name: DeleteNotifyPolicy
+parameters:
+- name: Dimensions
+  type: String
+  required: false
+  subparameters: []
+- name: PolicyType
+  type: String
+  required: true
+  subparameters: []
+- name: Id
+  type: String
+  required: false
+  subparameters: []
+- name: AlertName
+  type: String
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

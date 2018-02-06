@@ -1,0 +1,22 @@
+name: GetClusterInstance
+parameters:
+- name: Cluster
+  type: String
+  required: true
+  subparameters: []
+- name: PageNum
+  type: Integer
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []
+- name: Status
+  type: String
+  required: false
+  subparameters: []
+- name: Region
+  type: String
+  required: false
+  subparameters: []

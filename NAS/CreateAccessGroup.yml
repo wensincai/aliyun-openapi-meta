@@ -1,0 +1,18 @@
+name: CreateAccessGroup
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: AccessGroupName
+  type: String
+  required: true
+  subparameters: []
+- name: AccessGroupType
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

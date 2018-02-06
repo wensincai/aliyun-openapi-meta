@@ -1,0 +1,14 @@
+name: ProduceInstance
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: TraceId
+  type: String
+  required: false
+  subparameters: []
+- name: ProduceParameter
+  type: String
+  required: false
+  subparameters: []

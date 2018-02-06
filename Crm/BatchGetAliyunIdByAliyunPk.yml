@@ -1,0 +1,6 @@
+name: BatchGetAliyunIdByAliyunPk
+parameters:
+- name: PkList
+  type: RepeatList
+  required: true
+  subparameters: []

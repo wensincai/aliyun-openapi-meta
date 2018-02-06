@@ -1,0 +1,10 @@
+name: DeleteIpControl
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: IpControlId
+  type: String
+  required: true
+  subparameters: []

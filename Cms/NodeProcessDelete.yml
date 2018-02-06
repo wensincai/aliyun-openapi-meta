@@ -1,0 +1,14 @@
+name: NodeProcessDelete
+parameters:
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: String
+  required: false
+  subparameters: []

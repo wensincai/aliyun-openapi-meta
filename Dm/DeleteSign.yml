@@ -1,0 +1,30 @@
+name: DeleteSign
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: SignId
+  type: Long
+  required: true
+  subparameters: []
+- name: FromType
+  type: Integer
+  required: false
+  subparameters: []

@@ -1,0 +1,34 @@
+name: ModifySkillGroup
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: SkillGroupId
+  type: String
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []
+- name: OutboundPhoneNumberId
+  type: RepeatList
+  required: false
+  subparameters: []
+- name: UserId
+  type: RepeatList
+  required: false
+  subparameters: []
+- name: SkillLevel
+  type: RepeatList
+  required: false
+  subparameters: []

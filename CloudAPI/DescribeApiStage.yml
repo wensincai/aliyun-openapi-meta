@@ -1,0 +1,14 @@
+name: DescribeApiStage
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupId
+  type: String
+  required: true
+  subparameters: []
+- name: StageId
+  type: String
+  required: true
+  subparameters: []

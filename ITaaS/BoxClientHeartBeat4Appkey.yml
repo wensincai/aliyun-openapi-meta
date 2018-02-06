@@ -1,0 +1,18 @@
+name: BoxClientHeartBeat4Appkey
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: MSG
+  type: String
+  required: false
+  subparameters: []
+- name: ClientAppid
+  type: String
+  required: false
+  subparameters: []
+- name: AuthTypeDefault
+  type: String
+  required: false
+  subparameters: []

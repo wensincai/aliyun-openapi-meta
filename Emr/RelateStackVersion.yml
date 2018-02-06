@@ -1,0 +1,30 @@
+name: RelateStackVersion
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: UserId
+  type: String
+  required: false
+  subparameters: []
+- name: MainVersion
+  type: String
+  required: true
+  subparameters: []
+- name: StackVersion
+  type: String
+  required: true
+  subparameters: []

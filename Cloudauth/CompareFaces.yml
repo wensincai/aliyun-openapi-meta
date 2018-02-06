@@ -1,0 +1,22 @@
+name: CompareFaces
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: TargetImageType
+  type: String
+  required: false
+  subparameters: []
+- name: SourceImageType
+  type: String
+  required: false
+  subparameters: []
+- name: SourceImageValue
+  type: String
+  required: false
+  subparameters: []
+- name: TargetImageValue
+  type: String
+  required: false
+  subparameters: []

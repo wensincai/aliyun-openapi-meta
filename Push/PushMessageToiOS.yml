@@ -1,0 +1,30 @@
+name: PushMessageToiOS
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AppKey
+  type: Long
+  required: true
+  subparameters: []
+- name: Target
+  type: String
+  required: true
+  subparameters: []
+- name: TargetValue
+  type: String
+  required: true
+  subparameters: []
+- name: Title
+  type: String
+  required: true
+  subparameters: []
+- name: Body
+  type: String
+  required: true
+  subparameters: []
+- name: JobKey
+  type: String
+  required: false
+  subparameters: []

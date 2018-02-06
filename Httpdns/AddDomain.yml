@@ -1,0 +1,14 @@
+name: AddDomain
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AccountId
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []

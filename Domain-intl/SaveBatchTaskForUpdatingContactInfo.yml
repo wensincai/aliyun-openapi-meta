@@ -1,0 +1,26 @@
+name: SaveBatchTaskForUpdatingContactInfo
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: RegistrantProfileId
+  type: Long
+  required: true
+  subparameters: []
+- name: ContactType
+  type: String
+  required: true
+  subparameters: []
+- name: AddTransferLock
+  type: Boolean
+  required: false
+  subparameters: []
+- name: DomainName
+  type: RepeatList
+  required: true
+  subparameters: []

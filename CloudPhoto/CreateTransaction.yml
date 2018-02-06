@@ -1,0 +1,26 @@
+name: CreateTransaction
+parameters:
+- name: Size
+  type: Long
+  required: true
+  subparameters: []
+- name: Ext
+  type: String
+  required: false
+  subparameters: []
+- name: Force
+  type: String
+  required: false
+  subparameters: []
+- name: Md5
+  type: String
+  required: false
+  subparameters: []
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: LibraryId
+  type: String
+  required: false
+  subparameters: []

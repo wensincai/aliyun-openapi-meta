@@ -1,0 +1,30 @@
+name: CreateSubAccountPermission
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Uid
+  type: Long
+  required: true
+  subparameters: []
+- name: PermissionType
+  type: Integer
+  required: true
+  subparameters: []
+- name: PagePermission
+  type: String
+  required: true
+  subparameters: []
+- name: BusinessIds
+  type: RepeatList
+  required: true
+  subparameters: []
+- name: ShopIds
+  type: RepeatList
+  required: false
+  subparameters: []
+- name: ShopGroupIds
+  type: RepeatList
+  required: false
+  subparameters: []

@@ -1,0 +1,10 @@
+name: GetRuleAction
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ActionId
+  type: Long
+  required: true
+  subparameters: []

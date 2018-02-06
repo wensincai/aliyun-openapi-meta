@@ -1,0 +1,10 @@
+name: SubscriptionCreateOrderApi
+parameters:
+- name: ownerId
+  type: String
+  required: true
+  subparameters: []
+- name: productCode
+  type: String
+  required: true
+  subparameters: []

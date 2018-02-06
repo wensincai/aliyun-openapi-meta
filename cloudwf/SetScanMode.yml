@@ -1,0 +1,14 @@
+name: SetScanMode
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Operation
+  type: Integer
+  required: true
+  subparameters: []
+- name: MacList
+  type: RepeatList
+  required: true
+  subparameters: []

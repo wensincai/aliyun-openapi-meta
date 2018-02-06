@@ -1,0 +1,30 @@
+name: FindApprovalOrderList
+parameters:
+- name: ServiceName
+  type: String
+  required: false
+  subparameters: []
+- name: PageNum
+  type: Integer
+  required: true
+  subparameters: []
+- name: Alias
+  type: String
+  required: false
+  subparameters: []
+- name: ProjectName
+  type: String
+  required: false
+  subparameters: []
+- name: OnlyPending
+  type: Boolean
+  required: false
+  subparameters: []
+- name: ServiceId
+  type: Long
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

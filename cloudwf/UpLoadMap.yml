@@ -1,0 +1,26 @@
+name: UpLoadMap
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: FileName
+  type: String
+  required: true
+  subparameters: []
+- name: ObjectName
+  type: String
+  required: true
+  subparameters: []
+- name: ChunkIndex
+  type: Integer
+  required: false
+  subparameters: []
+- name: ChunkCnt
+  type: Integer
+  required: false
+  subparameters: []
+- name: UploadId
+  type: String
+  required: false
+  subparameters: []

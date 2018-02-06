@@ -1,0 +1,14 @@
+name: GetPortalTempDetail
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: true
+  subparameters: []
+- name: UniqueId
+  type: String
+  required: false
+  subparameters: []

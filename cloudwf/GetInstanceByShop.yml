@@ -1,0 +1,10 @@
+name: GetInstanceByShop
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ShopId
+  type: Long
+  required: true
+  subparameters: []

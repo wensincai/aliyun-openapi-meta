@@ -1,0 +1,10 @@
+name: ApgroupBatchDeleteAp
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ApAssetIds
+  type: String
+  required: true
+  subparameters: []

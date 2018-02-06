@@ -1,0 +1,14 @@
+name: ListRule
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: CurrenPage
+  type: Integer
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []

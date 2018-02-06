@@ -1,0 +1,10 @@
+name: GetFiNasTargetIp
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: StorageId
+  type: String
+  required: true
+  subparameters: []

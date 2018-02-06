@@ -1,0 +1,22 @@
+name: SaveBatchTaskForModifyingDomainDns
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: RepeatList
+  required: true
+  subparameters: []
+- name: AliyunDns
+  type: Boolean
+  required: true
+  subparameters: []
+- name: DomainNameServer
+  type: RepeatList
+  required: false
+  subparameters: []

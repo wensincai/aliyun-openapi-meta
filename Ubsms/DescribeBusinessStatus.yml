@@ -1,0 +1,10 @@
+name: DescribeBusinessStatus
+parameters:
+- name: callerBid
+  type: String
+  required: true
+  subparameters: []
+- name: Password
+  type: String
+  required: false
+  subparameters: []

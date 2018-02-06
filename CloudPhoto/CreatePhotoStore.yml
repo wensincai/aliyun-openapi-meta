@@ -1,0 +1,18 @@
+name: CreatePhotoStore
+parameters:
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: DefaultQuota
+  type: Long
+  required: true
+  subparameters: []
+- name: BucketName
+  type: String
+  required: true
+  subparameters: []
+- name: Remark
+  type: String
+  required: false
+  subparameters: []

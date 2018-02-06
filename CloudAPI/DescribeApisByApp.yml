@@ -1,0 +1,18 @@
+name: DescribeApisByApp
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AppId
+  type: Long
+  required: true
+  subparameters: []
+- name: PageNumber
+  type: Integer
+  required: false
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: false
+  subparameters: []

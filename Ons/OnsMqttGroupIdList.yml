@@ -1,0 +1,14 @@
+name: OnsMqttGroupIdList
+parameters:
+- name: OnsRegionId
+  type: String
+  required: true
+  subparameters: []
+- name: OnsPlatform
+  type: String
+  required: false
+  subparameters: []
+- name: PreventCache
+  type: Long
+  required: true
+  subparameters: []

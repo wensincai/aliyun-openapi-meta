@@ -1,0 +1,34 @@
+name: DescribeLiveStreamRecordIndexFile
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: SecurityToken
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: AppName
+  type: String
+  required: true
+  subparameters: []
+- name: StreamName
+  type: String
+  required: true
+  subparameters: []
+- name: RecordId
+  type: String
+  required: true
+  subparameters: []

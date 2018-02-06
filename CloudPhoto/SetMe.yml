@@ -1,0 +1,14 @@
+name: SetMe
+parameters:
+- name: FaceId
+  type: Long
+  required: true
+  subparameters: []
+- name: StoreName
+  type: String
+  required: true
+  subparameters: []
+- name: LibraryId
+  type: String
+  required: false
+  subparameters: []

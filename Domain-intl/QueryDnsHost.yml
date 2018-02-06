@@ -1,0 +1,10 @@
+name: QueryDnsHost
+parameters:
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []

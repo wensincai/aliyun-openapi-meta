@@ -1,0 +1,18 @@
+name: UpdateGroup
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupName
+  type: String
+  required: false
+  subparameters: []
+- name: NewGroupName
+  type: String
+  required: false
+  subparameters: []
+- name: NewComments
+  type: String
+  required: false
+  subparameters: []

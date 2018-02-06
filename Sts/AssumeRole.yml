@@ -1,0 +1,18 @@
+name: AssumeRole
+parameters:
+- name: DurationSeconds
+  type: Long
+  required: false
+  subparameters: []
+- name: Policy
+  type: String
+  required: false
+  subparameters: []
+- name: RoleArn
+  type: String
+  required: true
+  subparameters: []
+- name: RoleSessionName
+  type: String
+  required: true
+  subparameters: []

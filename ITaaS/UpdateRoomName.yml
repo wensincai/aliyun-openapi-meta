@@ -1,0 +1,26 @@
+name: UpdateRoomName
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SysFrom
+  type: String
+  required: false
+  subparameters: []
+- name: Operator
+  type: String
+  required: false
+  subparameters: []
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []
+- name: ScreenCode
+  type: String
+  required: false
+  subparameters: []
+- name: DrName
+  type: String
+  required: false
+  subparameters: []

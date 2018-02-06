@@ -1,0 +1,30 @@
+name: CfAccountQuery
+parameters:
+- name: AppKey
+  type: String
+  required: true
+  subparameters: []
+- name: SceneId
+  type: String
+  required: true
+  subparameters: []
+- name: Ip
+  type: String
+  required: true
+  subparameters: []
+- name: PhoneNumber
+  type: String
+  required: true
+  subparameters: []
+- name: Trans
+  type: String
+  required: false
+  subparameters: []
+- name: CFTimestamp
+  type: String
+  required: true
+  subparameters: []
+- name: AppToken
+  type: String
+  required: true
+  subparameters: []

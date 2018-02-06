@@ -1,0 +1,22 @@
+name: BoxLoginoutReport
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: UserCode
+  type: String
+  required: false
+  subparameters: []
+- name: AppUUID
+  type: String
+  required: false
+  subparameters: []
+- name: ShareVersion
+  type: Integer
+  required: false
+  subparameters: []
+- name: AuthUri
+  type: String
+  required: false
+  subparameters: []

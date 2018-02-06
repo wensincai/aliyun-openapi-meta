@@ -1,0 +1,14 @@
+name: CreateGroup
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupName
+  type: String
+  required: false
+  subparameters: []
+- name: Comments
+  type: String
+  required: false
+  subparameters: []

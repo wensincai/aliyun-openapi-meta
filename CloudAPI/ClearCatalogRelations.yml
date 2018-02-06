@@ -1,0 +1,10 @@
+name: ClearCatalogRelations
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: CatalogId
+  type: String
+  required: true
+  subparameters: []

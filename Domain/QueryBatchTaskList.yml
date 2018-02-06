@@ -1,0 +1,30 @@
+name: QueryBatchTaskList
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: BeginCreateTime
+  type: String
+  required: false
+  subparameters: []
+- name: EndCreateTime
+  type: String
+  required: false
+  subparameters: []
+- name: PageNum
+  type: Integer
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []

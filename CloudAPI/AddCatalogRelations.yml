@@ -1,0 +1,14 @@
+name: AddCatalogRelations
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: CatalogId
+  type: String
+  required: true
+  subparameters: []
+- name: ApiIds
+  type: String
+  required: true
+  subparameters: []

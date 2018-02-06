@@ -1,0 +1,30 @@
+name: EditVideoIndexFile
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: VideoId
+  type: String
+  required: true
+  subparameters: []
+- name: EditType
+  type: String
+  required: true
+  subparameters: []
+- name: EditConfig
+  type: String
+  required: true
+  subparameters: []

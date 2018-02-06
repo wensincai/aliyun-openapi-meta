@@ -1,0 +1,30 @@
+name: ListPushRecords
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: AppKey
+  type: Long
+  required: true
+  subparameters: []
+- name: PushType
+  type: String
+  required: true
+  subparameters: []
+- name: StartTime
+  type: String
+  required: true
+  subparameters: []
+- name: EndTime
+  type: String
+  required: true
+  subparameters: []
+- name: Page
+  type: Integer
+  required: false
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: false
+  subparameters: []

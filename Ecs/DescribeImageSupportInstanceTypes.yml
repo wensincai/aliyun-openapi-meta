@@ -1,0 +1,42 @@
+name: DescribeImageSupportInstanceTypes
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ImageId
+  type: String
+  required: false
+  subparameters: []
+- name: ActionType
+  type: String
+  required: false
+  subparameters: []
+- name: Filter
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: Key
+    type: String
+    required: false
+    subparameters: []
+  - name: Value
+    type: String
+    required: false
+    subparameters: []

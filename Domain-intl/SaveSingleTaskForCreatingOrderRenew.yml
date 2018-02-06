@@ -1,0 +1,26 @@
+name: SaveSingleTaskForCreatingOrderRenew
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: SubscriptionDuration
+  type: Integer
+  required: true
+  subparameters: []
+- name: CurrentExpirationDate
+  type: Long
+  required: true
+  subparameters: []

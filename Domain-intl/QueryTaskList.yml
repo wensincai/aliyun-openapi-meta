@@ -1,0 +1,26 @@
+name: QueryTaskList
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: BeginCreateTime
+  type: Long
+  required: false
+  subparameters: []
+- name: EndCreateTime
+  type: Long
+  required: false
+  subparameters: []
+- name: PageNum
+  type: Integer
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []

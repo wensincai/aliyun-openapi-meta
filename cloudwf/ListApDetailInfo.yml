@@ -1,0 +1,10 @@
+name: ListApDetailInfo
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ApAssetId
+  type: Long
+  required: true
+  subparameters: []

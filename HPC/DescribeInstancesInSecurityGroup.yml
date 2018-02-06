@@ -1,0 +1,14 @@
+name: DescribeInstancesInSecurityGroup
+parameters:
+- name: TOKEN
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

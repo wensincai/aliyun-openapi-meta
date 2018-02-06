@@ -1,0 +1,18 @@
+name: DescribeApisBySignature
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: SignatureId
+  type: String
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: false
+  subparameters: []
+- name: PageNumber
+  type: Integer
+  required: false
+  subparameters: []

@@ -1,0 +1,26 @@
+name: DeviceCreate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Sid
+  type: Long
+  required: true
+  subparameters: []
+- name: DeviceName
+  type: String
+  required: true
+  subparameters: []
+- name: DeviceType
+  type: Integer
+  required: true
+  subparameters: []
+- name: DeviceNum
+  type: String
+  required: true
+  subparameters: []
+- name: DevicePosition
+  type: String
+  required: false
+  subparameters: []

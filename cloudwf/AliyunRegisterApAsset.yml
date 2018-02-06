@@ -1,0 +1,18 @@
+name: AliyunRegisterApAsset
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Mac
+  type: String
+  required: true
+  subparameters: []
+- name: SerialNo
+  type: String
+  required: true
+  subparameters: []
+- name: ApgroupId
+  type: Long
+  required: true
+  subparameters: []

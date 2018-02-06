@@ -1,0 +1,14 @@
+name: DeleteApgroupSsidConfig
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: true
+  subparameters: []
+- name: ApgroupId
+  type: Long
+  required: true
+  subparameters: []

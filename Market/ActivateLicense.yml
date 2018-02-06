@@ -1,0 +1,10 @@
+name: ActivateLicense
+parameters:
+- name: LicenseCode
+  type: String
+  required: true
+  subparameters: []
+- name: Identification
+  type: String
+  required: true
+  subparameters: []

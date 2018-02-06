@@ -1,0 +1,14 @@
+name: BusinessShowList
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Page
+  type: Integer
+  required: true
+  subparameters: []
+- name: Per
+  type: Integer
+  required: true
+  subparameters: []

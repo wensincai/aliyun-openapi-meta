@@ -1,0 +1,14 @@
+name: UserDataDelete
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Bid
+  type: Long
+  required: true
+  subparameters: []
+- name: Iid
+  type: Long
+  required: true
+  subparameters: []

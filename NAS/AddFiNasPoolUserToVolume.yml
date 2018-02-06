@@ -1,0 +1,22 @@
+name: AddFiNasPoolUserToVolume
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: StorageId
+  type: String
+  required: true
+  subparameters: []
+- name: UserName
+  type: String
+  required: true
+  subparameters: []
+- name: FsName
+  type: String
+  required: true
+  subparameters: []
+- name: Mode
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,26 @@
+name: OSuborderDomain
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: type
+  type: String
+  required: true
+  subparameters: []
+- name: startDate
+  type: String
+  required: true
+  subparameters: []
+- name: endDate
+  type: String
+  required: true
+  subparameters: []
+- name: pageNum
+  type: Integer
+  required: true
+  subparameters: []
+- name: pageSize
+  type: Integer
+  required: true
+  subparameters: []

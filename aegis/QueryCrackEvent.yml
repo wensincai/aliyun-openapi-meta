@@ -1,0 +1,22 @@
+name: QueryCrackEvent
+parameters:
+- name: Uuid
+  type: String
+  required: false
+  subparameters: []
+- name: Status
+  type: Integer
+  required: false
+  subparameters: []
+- name: CurrentPage
+  type: Integer
+  required: true
+  subparameters: []
+- name: StartTime
+  type: String
+  required: false
+  subparameters: []
+- name: EndTime
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,6 @@
+name: DescribeSystemParameters
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []

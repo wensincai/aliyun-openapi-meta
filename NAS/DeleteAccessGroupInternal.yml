@@ -1,0 +1,14 @@
+name: DeleteAccessGroupInternal
+parameters:
+- name: ResourceOwner
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: AccessGroupName
+  type: String
+  required: true
+  subparameters: []

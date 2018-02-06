@@ -1,0 +1,34 @@
+name: CfAccountFeedback
+parameters:
+- name: AppKey
+  type: String
+  required: true
+  subparameters: []
+- name: EventId
+  type: String
+  required: true
+  subparameters: []
+- name: UserFeedback
+  type: Integer
+  required: true
+  subparameters: []
+- name: CustomerDecision
+  type: String
+  required: true
+  subparameters: []
+- name: AliDecision
+  type: String
+  required: true
+  subparameters: []
+- name: DenyReason
+  type: String
+  required: true
+  subparameters: []
+- name: CFTimestamp
+  type: String
+  required: true
+  subparameters: []
+- name: AppToken
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,6 @@
+name: UploadAudioDataWithRules4Pre
+parameters:
+- name: JsonStr
+  type: String
+  required: true
+  subparameters: []

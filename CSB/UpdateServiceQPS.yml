@@ -1,0 +1,14 @@
+name: UpdateServiceQPS
+parameters:
+- name: ServiceId
+  type: Long
+  required: true
+  subparameters: []
+- name: Qps
+  type: String
+  required: true
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []

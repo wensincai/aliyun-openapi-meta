@@ -1,0 +1,22 @@
+name: GetVerifyToken
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: Biz
+  type: String
+  required: true
+  subparameters: []
+- name: TicketId
+  type: String
+  required: true
+  subparameters: []
+- name: Binding
+  type: Map
+  required: false
+  subparameters: []
+- name: UserData
+  type: Map
+  required: false
+  subparameters: []

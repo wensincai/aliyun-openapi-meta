@@ -1,0 +1,26 @@
+name: ModifyExecutionPlanBasicInfo
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: Id
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: false
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,6 @@
+name: QueryCustomerLabel
+parameters:
+- name: LabelSeries
+  type: String
+  required: false
+  subparameters: []

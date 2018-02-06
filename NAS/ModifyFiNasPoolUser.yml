@@ -1,0 +1,22 @@
+name: ModifyFiNasPoolUser
+parameters:
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: StorageId
+  type: String
+  required: true
+  subparameters: []
+- name: UserName
+  type: String
+  required: true
+  subparameters: []
+- name: QuotaSize
+  type: String
+  required: true
+  subparameters: []
+- name: Passwd
+  type: String
+  required: true
+  subparameters: []

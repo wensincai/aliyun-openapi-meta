@@ -1,0 +1,18 @@
+name: RemoveVpcAccess
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: VpcId
+  type: String
+  required: true
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Port
+  type: Integer
+  required: true
+  subparameters: []

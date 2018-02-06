@@ -1,0 +1,30 @@
+name: SetErrorPageConfig
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: SecurityToken
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: PageType
+  type: String
+  required: true
+  subparameters: []
+- name: CustomPageUrl
+  type: String
+  required: false
+  subparameters: []

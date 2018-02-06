@@ -1,0 +1,74 @@
+name: ImportImage
+parameters:
+- name: DiskDeviceMapping
+  type: RepeatList
+  required: false
+  subparameters:
+  - name: Format
+    type: String
+    required: false
+    subparameters: []
+  - name: OSSBucket
+    type: String
+    required: false
+    subparameters: []
+  - name: OSSObject
+    type: String
+    required: false
+    subparameters: []
+  - name: DiskImSize
+    type: Integer
+    required: false
+    subparameters: []
+  - name: DiskImageSize
+    type: Integer
+    required: false
+    subparameters: []
+  - name: Device
+    type: String
+    required: false
+    subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ImageName
+  type: String
+  required: false
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []
+- name: Architecture
+  type: String
+  required: false
+  subparameters: []
+- name: OSType
+  type: String
+  required: false
+  subparameters: []
+- name: Platform
+  type: String
+  required: false
+  subparameters: []
+- name: RoleName
+  type: String
+  required: false
+  subparameters: []

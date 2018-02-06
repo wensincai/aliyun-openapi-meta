@@ -1,0 +1,10 @@
+name: GetInstancesStatusCount
+parameters:
+- name: Region
+  type: String
+  required: true
+  subparameters: []
+- name: Cluster
+  type: String
+  required: false
+  subparameters: []

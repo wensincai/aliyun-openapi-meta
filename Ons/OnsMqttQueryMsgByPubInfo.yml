@@ -1,0 +1,30 @@
+name: OnsMqttQueryMsgByPubInfo
+parameters:
+- name: OnsRegionId
+  type: String
+  required: true
+  subparameters: []
+- name: OnsPlatform
+  type: String
+  required: false
+  subparameters: []
+- name: PreventCache
+  type: Long
+  required: true
+  subparameters: []
+- name: Topic
+  type: String
+  required: true
+  subparameters: []
+- name: ClientId
+  type: String
+  required: true
+  subparameters: []
+- name: BeginTime
+  type: Long
+  required: true
+  subparameters: []
+- name: EndTime
+  type: Long
+  required: true
+  subparameters: []

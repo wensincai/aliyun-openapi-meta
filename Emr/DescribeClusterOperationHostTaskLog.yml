@@ -1,0 +1,34 @@
+name: DescribeClusterOperationHostTaskLog
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: OperationId
+  type: String
+  required: true
+  subparameters: []
+- name: HostId
+  type: String
+  required: true
+  subparameters: []
+- name: TaskId
+  type: String
+  required: true
+  subparameters: []
+- name: Status
+  type: String
+  required: false
+  subparameters: []

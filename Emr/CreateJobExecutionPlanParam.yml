@@ -1,0 +1,30 @@
+name: CreateJobExecutionPlanParam
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ParamBizType
+  type: String
+  required: true
+  subparameters: []
+- name: RelateId
+  type: String
+  required: true
+  subparameters: []
+- name: WorkParamPair
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: Name
+    type: String
+    required: false
+    subparameters: []
+  - name: Value
+    type: String
+    required: false
+    subparameters: []

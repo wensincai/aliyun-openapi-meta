@@ -1,0 +1,30 @@
+name: ShareSenderRegister4Appkey
+parameters:
+- name: RegionId
+  type: String
+  required: false
+  subparameters: []
+- name: SysFrom
+  type: String
+  required: false
+  subparameters: []
+- name: Operator
+  type: String
+  required: false
+  subparameters: []
+- name: SessionId
+  type: String
+  required: false
+  subparameters: []
+- name: MqEnable
+  type: String
+  required: false
+  subparameters: []
+- name: ShareVersion
+  type: Integer
+  required: false
+  subparameters: []
+- name: AuthType
+  type: String
+  required: false
+  subparameters: []

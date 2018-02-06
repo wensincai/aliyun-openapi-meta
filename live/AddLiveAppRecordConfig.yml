@@ -1,0 +1,54 @@
+name: AddLiveAppRecordConfig
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: SecurityToken
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: AppName
+  type: String
+  required: true
+  subparameters: []
+- name: OssEndpoint
+  type: String
+  required: true
+  subparameters: []
+- name: OssBucket
+  type: String
+  required: true
+  subparameters: []
+- name: RecordFormat
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: Format
+    type: String
+    required: false
+    subparameters: []
+  - name: OssObjectPrefix
+    type: String
+    required: false
+    subparameters: []
+  - name: SliceOssObjectPrefix
+    type: String
+    required: false
+    subparameters: []
+  - name: CycleDuration
+    type: Integer
+    required: false
+    subparameters: []

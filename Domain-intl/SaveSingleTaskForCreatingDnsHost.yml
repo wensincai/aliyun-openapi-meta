@@ -1,0 +1,18 @@
+name: SaveSingleTaskForCreatingDnsHost
+parameters:
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: DnsName
+  type: String
+  required: true
+  subparameters: []
+- name: Ip
+  type: RepeatList
+  required: true
+  subparameters: []

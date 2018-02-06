@@ -1,0 +1,10 @@
+name: DeleteApp
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: AppId
+  type: Long
+  required: true
+  subparameters: []

@@ -1,0 +1,26 @@
+name: ChangeDomainOfDnsProduct
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: NewDomain
+  type: String
+  required: false
+  subparameters: []
+- name: Force
+  type: Boolean
+  required: false
+  subparameters: []

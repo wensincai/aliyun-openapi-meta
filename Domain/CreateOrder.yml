@@ -1,0 +1,30 @@
+name: CreateOrder
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: SubOrderParam
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: SaleID
+    type: String
+    required: false
+    subparameters: []
+  - name: RelatedName
+    type: String
+    required: false
+    subparameters: []
+  - name: Action
+    type: String
+    required: false
+    subparameters: []
+  - name: Period
+    type: Integer
+    required: false
+    subparameters: []
+  - name: DomainTemplateID
+    type: String
+    required: false
+    subparameters: []

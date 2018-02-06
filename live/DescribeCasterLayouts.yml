@@ -1,0 +1,30 @@
+name: DescribeCasterLayouts
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: Version
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: SecurityToken
+  type: String
+  required: false
+  subparameters: []
+- name: CasterId
+  type: String
+  required: true
+  subparameters: []
+- name: LayoutId
+  type: String
+  required: false
+  subparameters: []

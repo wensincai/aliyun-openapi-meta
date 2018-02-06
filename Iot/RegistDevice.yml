@@ -1,0 +1,14 @@
+name: RegistDevice
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: DeviceName
+  type: String
+  required: false
+  subparameters: []
+- name: ProductKey
+  type: String
+  required: true
+  subparameters: []

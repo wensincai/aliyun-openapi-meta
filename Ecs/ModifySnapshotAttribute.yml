@@ -1,0 +1,34 @@
+name: ModifySnapshotAttribute
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: OwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: SnapshotId
+  type: String
+  required: true
+  subparameters: []
+- name: SnapshotName
+  type: String
+  required: false
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,14 @@
+name: DescribeProduct
+parameters:
+- name: AliUid
+  type: String
+  required: false
+  subparameters: []
+- name: Code
+  type: String
+  required: true
+  subparameters: []
+- name: QueryDraft
+  type: Boolean
+  required: false
+  subparameters: []

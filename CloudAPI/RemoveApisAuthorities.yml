@@ -1,0 +1,26 @@
+name: RemoveApisAuthorities
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupId
+  type: String
+  required: true
+  subparameters: []
+- name: AppId
+  type: Long
+  required: true
+  subparameters: []
+- name: StageName
+  type: String
+  required: true
+  subparameters: []
+- name: ApiIds
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

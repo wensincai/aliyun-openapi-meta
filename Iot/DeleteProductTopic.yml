@@ -1,0 +1,10 @@
+name: DeleteProductTopic
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: TopicId
+  type: String
+  required: true
+  subparameters: []

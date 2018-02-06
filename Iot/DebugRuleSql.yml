@@ -1,0 +1,14 @@
+name: DebugRuleSql
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Sql
+  type: String
+  required: true
+  subparameters: []
+- name: JsonInfo
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,14 @@
+name: ListUpgradeImg
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: PageIndex
+  type: Integer
+  required: true
+  subparameters: []
+- name: Length
+  type: Integer
+  required: true
+  subparameters: []

@@ -1,0 +1,34 @@
+name: EipFillParams
+parameters:
+- name: data
+  type: String
+  required: true
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ClientToken
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: UserCidr
+  type: String
+  required: false
+  subparameters: []

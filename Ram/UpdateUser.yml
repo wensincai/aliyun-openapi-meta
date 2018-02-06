@@ -1,0 +1,30 @@
+name: UpdateUser
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: UserName
+  type: String
+  required: false
+  subparameters: []
+- name: NewUserName
+  type: String
+  required: false
+  subparameters: []
+- name: NewDisplayName
+  type: String
+  required: false
+  subparameters: []
+- name: NewMobilePhone
+  type: String
+  required: false
+  subparameters: []
+- name: NewEmail
+  type: String
+  required: false
+  subparameters: []
+- name: NewComments
+  type: String
+  required: false
+  subparameters: []

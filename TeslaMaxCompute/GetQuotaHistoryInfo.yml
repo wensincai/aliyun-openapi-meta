@@ -1,0 +1,22 @@
+name: GetQuotaHistoryInfo
+parameters:
+- name: Cluster
+  type: String
+  required: true
+  subparameters: []
+- name: EndTime
+  type: Integer
+  required: true
+  subparameters: []
+- name: QuotaName
+  type: String
+  required: true
+  subparameters: []
+- name: Region
+  type: String
+  required: false
+  subparameters: []
+- name: StartTime
+  type: Integer
+  required: true
+  subparameters: []

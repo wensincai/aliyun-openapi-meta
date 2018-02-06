@@ -1,0 +1,6 @@
+name: UploadData
+parameters:
+- name: JsonStr
+  type: String
+  required: true
+  subparameters: []

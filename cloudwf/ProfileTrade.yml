@@ -1,0 +1,22 @@
+name: ProfileTrade
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Gsid
+  type: Long
+  required: true
+  subparameters: []
+- name: DataType
+  type: Integer
+  required: false
+  subparameters: []
+- name: BeginDate
+  type: String
+  required: false
+  subparameters: []
+- name: EndDate
+  type: String
+  required: false
+  subparameters: []

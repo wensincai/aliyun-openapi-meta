@@ -1,0 +1,22 @@
+name: OnsMqttQueryTraceByTraceId
+parameters:
+- name: OnsRegionId
+  type: String
+  required: true
+  subparameters: []
+- name: OnsPlatform
+  type: String
+  required: false
+  subparameters: []
+- name: PreventCache
+  type: Long
+  required: true
+  subparameters: []
+- name: TraceId
+  type: String
+  required: true
+  subparameters: []
+- name: Topic
+  type: String
+  required: true
+  subparameters: []

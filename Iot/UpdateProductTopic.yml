@@ -1,0 +1,22 @@
+name: UpdateProductTopic
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Desc
+  type: String
+  required: false
+  subparameters: []
+- name: Operation
+  type: String
+  required: false
+  subparameters: []
+- name: TopicShortName
+  type: String
+  required: false
+  subparameters: []
+- name: TopicId
+  type: String
+  required: false
+  subparameters: []

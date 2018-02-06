@@ -1,0 +1,10 @@
+name: ListPoliciesForUser
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: UserName
+  type: String
+  required: false
+  subparameters: []

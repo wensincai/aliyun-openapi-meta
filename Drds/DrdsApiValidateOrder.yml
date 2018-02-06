@@ -1,0 +1,10 @@
+name: DrdsApiValidateOrder
+parameters:
+- name: data
+  type: String
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

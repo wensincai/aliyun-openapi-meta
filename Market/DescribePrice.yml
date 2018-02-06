@@ -1,0 +1,10 @@
+name: DescribePrice
+parameters:
+- name: OrderType
+  type: String
+  required: true
+  subparameters: []
+- name: Commodity
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: DeleteMyGroupInstances
+parameters:
+- name: GroupId
+  type: Long
+  required: true
+  subparameters: []
+- name: InstanceIds
+  type: String
+  required: false
+  subparameters: []

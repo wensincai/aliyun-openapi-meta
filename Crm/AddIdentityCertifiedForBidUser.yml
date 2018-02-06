@@ -1,0 +1,26 @@
+name: AddIdentityCertifiedForBidUser
+parameters:
+- name: PK
+  type: String
+  required: true
+  subparameters: []
+- name: Phone
+  type: String
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
+- name: LicenseType
+  type: String
+  required: true
+  subparameters: []
+- name: LicenseNumber
+  type: String
+  required: true
+  subparameters: []
+- name: IsEnterprise
+  type: Boolean
+  required: true
+  subparameters: []

@@ -1,0 +1,6 @@
+name: GetSendCommandByMacProgress
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

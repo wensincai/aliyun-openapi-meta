@@ -1,0 +1,14 @@
+name: QueryDeviceByName
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: DeviceName
+  type: String
+  required: true
+  subparameters: []
+- name: ProductKey
+  type: String
+  required: true
+  subparameters: []

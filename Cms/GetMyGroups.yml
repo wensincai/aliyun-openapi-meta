@@ -1,0 +1,26 @@
+name: GetMyGroups
+parameters:
+- name: GroupId
+  type: Long
+  required: false
+  subparameters: []
+- name: Type
+  type: String
+  required: false
+  subparameters: []
+- name: SelectContactGroups
+  type: Boolean
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: false
+  subparameters: []
+- name: BindUrl
+  type: String
+  required: false
+  subparameters: []
+- name: GroupName
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,22 @@
+name: ShopGroupUpdate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Gid
+  type: Long
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: false
+  subparameters: []
+- name: ShopIds
+  type: String
+  required: false
+  subparameters: []
+- name: Description
+  type: String
+  required: false
+  subparameters: []

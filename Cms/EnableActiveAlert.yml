@@ -1,0 +1,10 @@
+name: EnableActiveAlert
+parameters:
+- name: Product
+  type: String
+  required: true
+  subparameters: []
+- name: UserId
+  type: String
+  required: false
+  subparameters: []

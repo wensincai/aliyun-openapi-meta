@@ -1,0 +1,22 @@
+name: Pub
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ProductKey
+  type: Long
+  required: true
+  subparameters: []
+- name: Qos
+  type: Integer
+  required: false
+  subparameters: []
+- name: TopicFullName
+  type: String
+  required: true
+  subparameters: []
+- name: MessageContent
+  type: String
+  required: true
+  subparameters: []

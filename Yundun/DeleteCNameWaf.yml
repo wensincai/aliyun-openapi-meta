@@ -1,0 +1,18 @@
+name: DeleteCNameWaf
+parameters:
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Domain
+  type: String
+  required: true
+  subparameters: []
+- name: CnameId
+  type: Integer
+  required: true
+  subparameters: []
+- name: InstanceType
+  type: String
+  required: false
+  subparameters: []

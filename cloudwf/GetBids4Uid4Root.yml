@@ -1,0 +1,10 @@
+name: GetBids4Uid4Root
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Uid
+  type: Long
+  required: true
+  subparameters: []

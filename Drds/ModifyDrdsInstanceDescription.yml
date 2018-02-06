@@ -1,0 +1,18 @@
+name: ModifyDrdsInstanceDescription
+parameters:
+- name: Action
+  type: String
+  required: true
+  subparameters: []
+- name: DrdsInstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: Description
+  type: String
+  required: true
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

@@ -1,0 +1,30 @@
+name: QueryChangeLogList
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: false
+  subparameters: []
+- name: PageNum
+  type: Integer
+  required: true
+  subparameters: []
+- name: PageSize
+  type: Integer
+  required: true
+  subparameters: []
+- name: StartDate
+  type: Long
+  required: false
+  subparameters: []
+- name: EndDate
+  type: Long
+  required: false
+  subparameters: []

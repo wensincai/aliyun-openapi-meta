@@ -1,0 +1,86 @@
+name: ResizeClusterV2
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  subparameters: []
+- name: HostGroup
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: ClusterId
+    type: String
+    required: false
+    subparameters: []
+  - name: HostGroupId
+    type: String
+    required: false
+    subparameters: []
+  - name: HostGroupName
+    type: String
+    required: false
+    subparameters: []
+  - name: HostGroupType
+    type: String
+    required: true
+    subparameters: []
+  - name: Comment
+    type: String
+    required: false
+    subparameters: []
+  - name: CreateType
+    type: String
+    required: false
+    subparameters: []
+  - name: InstanceType
+    type: String
+    required: true
+    subparameters: []
+  - name: NodeCount
+    type: Integer
+    required: true
+    subparameters: []
+  - name: DiskType
+    type: String
+    required: false
+    subparameters: []
+  - name: DiskCapacity
+    type: Integer
+    required: false
+    subparameters: []
+  - name: DiskCount
+    type: Integer
+    required: false
+    subparameters: []
+  - name: SysDiskCapacity
+    type: Integer
+    required: false
+    subparameters: []
+  - name: ChargeType
+    type: String
+    required: false
+    subparameters: []
+  - name: Period
+    type: Integer
+    required: false
+    subparameters: []
+  - name: AutoRenew
+    type: Boolean
+    required: false
+    subparameters: []
+  - name: VswitchId
+    type: Integer
+    required: false
+    subparameters: []
+  - name: SystemDiskType
+    type: Integer
+    required: false
+    subparameters: []

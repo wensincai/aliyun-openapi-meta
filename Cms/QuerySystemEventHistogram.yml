@@ -1,0 +1,6 @@
+name: QuerySystemEventHistogram
+parameters:
+- name: QueryJson
+  type: String
+  required: false
+  subparameters: []

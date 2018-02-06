@@ -1,0 +1,6 @@
+name: ListBusinesses
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

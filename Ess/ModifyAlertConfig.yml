@@ -1,0 +1,34 @@
+name: ModifyAlertConfig
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ResourceOwnerAccount
+  type: String
+  required: false
+  subparameters: []
+- name: ScalingGroupId
+  type: String
+  required: true
+  subparameters: []
+- name: SuccessConfig
+  type: Integer
+  required: true
+  subparameters: []
+- name: FailConfig
+  type: Integer
+  required: true
+  subparameters: []
+- name: RejectConfig
+  type: Integer
+  required: true
+  subparameters: []

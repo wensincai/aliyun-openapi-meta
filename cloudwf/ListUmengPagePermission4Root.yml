@@ -1,0 +1,26 @@
+name: ListUmengPagePermission4Root
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: SearchEmail
+  type: String
+  required: false
+  subparameters: []
+- name: PageIndex
+  type: Integer
+  required: true
+  subparameters: []
+- name: Length
+  type: Integer
+  required: true
+  subparameters: []
+- name: OrderCol
+  type: String
+  required: true
+  subparameters: []
+- name: OrderDir
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: QueryMarketImages
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Param
+  type: String
+  required: false
+  subparameters: []

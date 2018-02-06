@@ -1,0 +1,10 @@
+name: DelPageConfigTemplate
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: true
+  subparameters: []

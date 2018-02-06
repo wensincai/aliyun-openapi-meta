@@ -1,0 +1,46 @@
+name: MetastoreCreateTable
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  subparameters: []
+- name: DbName
+  type: String
+  required: true
+  subparameters: []
+- name: TableName
+  type: String
+  required: true
+  subparameters: []
+- name: LocationUri
+  type: String
+  required: true
+  subparameters: []
+- name: FieldDelimiter
+  type: String
+  required: false
+  subparameters: []
+- name: Column
+  type: RepeatList
+  required: true
+  subparameters:
+  - name: Name
+    type: String
+    required: true
+    subparameters: []
+  - name: Type
+    type: String
+    required: true
+    subparameters: []
+  - name: Comment
+    type: String
+    required: false
+    subparameters: []

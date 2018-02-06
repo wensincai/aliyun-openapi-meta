@@ -1,0 +1,10 @@
+name: GetRadioRunHistoryTimeSer
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: true
+  subparameters: []

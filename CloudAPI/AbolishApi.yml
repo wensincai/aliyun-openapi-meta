@@ -1,0 +1,18 @@
+name: AbolishApi
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: GroupId
+  type: String
+  required: true
+  subparameters: []
+- name: ApiId
+  type: String
+  required: true
+  subparameters: []
+- name: StageName
+  type: String
+  required: true
+  subparameters: []

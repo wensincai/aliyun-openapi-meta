@@ -1,0 +1,10 @@
+name: DeleteTrafficControl
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: TrafficControlId
+  type: String
+  required: true
+  subparameters: []

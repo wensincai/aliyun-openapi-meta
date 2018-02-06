@@ -1,0 +1,14 @@
+name: OnsRegionList
+parameters:
+- name: OnsRegionId
+  type: String
+  required: false
+  subparameters: []
+- name: OnsPlatform
+  type: String
+  required: false
+  subparameters: []
+- name: PreventCache
+  type: Long
+  required: true
+  subparameters: []

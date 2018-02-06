@@ -1,0 +1,6 @@
+name: ListProductOfActiveAlert
+parameters:
+- name: UserId
+  type: String
+  required: false
+  subparameters: []

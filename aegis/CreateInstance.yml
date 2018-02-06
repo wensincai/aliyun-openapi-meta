@@ -1,0 +1,34 @@
+name: CreateInstance
+parameters:
+- name: OwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: ClientToken
+  type: String
+  required: true
+  subparameters: []
+- name: Duration
+  type: Integer
+  required: true
+  subparameters: []
+- name: PricingCycle
+  type: String
+  required: true
+  subparameters: []
+- name: VersionCode
+  type: Integer
+  required: true
+  subparameters: []
+- name: VmNumber
+  type: Integer
+  required: true
+  subparameters: []
+- name: IsAutoRenew
+  type: Boolean
+  required: false
+  subparameters: []
+- name: AutoRenewDuration
+  type: Integer
+  required: false
+  subparameters: []

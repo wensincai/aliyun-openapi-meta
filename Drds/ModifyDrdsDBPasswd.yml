@@ -1,0 +1,22 @@
+name: ModifyDrdsDBPasswd
+parameters:
+- name: Action
+  type: String
+  required: true
+  subparameters: []
+- name: DrdsInstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: DbName
+  type: String
+  required: true
+  subparameters: []
+- name: NewPasswd
+  type: String
+  required: true
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []

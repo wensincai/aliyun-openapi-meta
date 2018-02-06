@@ -1,0 +1,18 @@
+name: SaveSingleTaskForUpdateProhibitionLock
+parameters:
+- name: UserClientIp
+  type: String
+  required: false
+  subparameters: []
+- name: Lang
+  type: String
+  required: false
+  subparameters: []
+- name: DomainName
+  type: String
+  required: true
+  subparameters: []
+- name: Status
+  type: Boolean
+  required: true
+  subparameters: []

@@ -1,0 +1,10 @@
+name: ListActiveAlertRule
+parameters:
+- name: UserId
+  type: String
+  required: false
+  subparameters: []
+- name: Product
+  type: String
+  required: true
+  subparameters: []

@@ -1,0 +1,22 @@
+name: SetIpControlApis
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: IpControlId
+  type: String
+  required: true
+  subparameters: []
+- name: GroupId
+  type: String
+  required: true
+  subparameters: []
+- name: ApiIds
+  type: String
+  required: true
+  subparameters: []
+- name: StageName
+  type: String
+  required: true
+  subparameters: []

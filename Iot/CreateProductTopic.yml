@@ -1,0 +1,22 @@
+name: CreateProductTopic
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: ProductKey
+  type: String
+  required: true
+  subparameters: []
+- name: TopicShortName
+  type: String
+  required: true
+  subparameters: []
+- name: Operation
+  type: String
+  required: false
+  subparameters: []
+- name: Desc
+  type: String
+  required: false
+  subparameters: []

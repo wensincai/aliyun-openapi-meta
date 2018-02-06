@@ -1,0 +1,14 @@
+name: DeleteAccessKey
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: UserName
+  type: String
+  required: false
+  subparameters: []
+- name: UserAccessKeyId
+  type: String
+  required: false
+  subparameters: []

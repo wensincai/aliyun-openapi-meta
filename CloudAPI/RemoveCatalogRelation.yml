@@ -1,0 +1,14 @@
+name: RemoveCatalogRelation
+parameters:
+- name: Action
+  type: String
+  required: false
+  subparameters: []
+- name: CatalogId
+  type: String
+  required: true
+  subparameters: []
+- name: ApiId
+  type: String
+  required: true
+  subparameters: []

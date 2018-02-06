@@ -1,0 +1,10 @@
+name: SetUserVolumeCountLimit
+parameters:
+- name: UserId
+  type: String
+  required: true
+  subparameters: []
+- name: CountLimit
+  type: String
+  required: true
+  subparameters: []

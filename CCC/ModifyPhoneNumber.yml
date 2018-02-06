@@ -1,0 +1,22 @@
+name: ModifyPhoneNumber
+parameters:
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: InstanceId
+  type: String
+  required: true
+  subparameters: []
+- name: PhoneNumberId
+  type: String
+  required: true
+  subparameters: []
+- name: Usage
+  type: String
+  required: true
+  subparameters: []
+- name: ContactFlowId
+  type: String
+  required: false
+  subparameters: []

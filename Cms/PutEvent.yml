@@ -1,0 +1,6 @@
+name: PutEvent
+parameters:
+- name: EventInfo
+  type: String
+  required: false
+  subparameters: []

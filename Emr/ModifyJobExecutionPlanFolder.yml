@@ -1,0 +1,22 @@
+name: ModifyJobExecutionPlanFolder
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  subparameters: []
+- name: Id
+  type: Long
+  required: true
+  subparameters: []
+- name: ParentId
+  type: Long
+  required: true
+  subparameters: []
+- name: Name
+  type: String
+  required: true
+  subparameters: []
