@@ -3,32 +3,40 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: IsDesc
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: QueryType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: QueryString
   type: String
   required: false
+  hidden: false
   subparameters: []

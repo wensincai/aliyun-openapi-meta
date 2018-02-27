@@ -3,40 +3,50 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SnatTableId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SnatEntryId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []

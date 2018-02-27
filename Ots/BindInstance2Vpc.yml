@@ -3,36 +3,45 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: access_key_id
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: VpcId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: VirtualSwitchId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: InstanceName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: InstanceVpcName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionNo
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Network
   type: String
   required: false
+  hidden: false
   subparameters: []

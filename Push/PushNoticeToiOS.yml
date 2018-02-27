@@ -3,36 +3,45 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AppKey
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Target
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TargetValue
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ApnsEnv
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Title
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Body
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: JobKey
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ExtParameters
   type: String
   required: false
+  hidden: false
   subparameters: []

@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Agsid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Idtype
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: BeginMonth
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EndMonth
   type: String
   required: true
+  hidden: false
   subparameters: []

@@ -3,36 +3,45 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Type
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RunParameter
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: FailAct
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: MaxRetry
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: RetryInterval
   type: Integer
   required: false
+  hidden: false
   subparameters: []

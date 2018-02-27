@@ -3,12 +3,15 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Bid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Gids
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []

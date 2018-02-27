@@ -3,32 +3,40 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RenewEcsDo
   type: RepeatList
   required: true
+  hidden: false
   subparameters:
   - name: EcsId
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: EcsPeriod
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: EmrPeriod
     type: String
     required: false
+    hidden: false
     subparameters: []

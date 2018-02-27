@@ -3,120 +3,150 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: SourceDBInstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Engine
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EngineVersion
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DBInstanceClass
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DBInstanceStorage
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SystemDBCharset
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DBInstanceNetType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DBInstanceDescription
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecurityIPList
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ClientToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PayType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ZoneId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceNetworkType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ConnectionMode
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VPCId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VSwitchId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PrivateIpAddress
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ReplicaDescription
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: UsedTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Period
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ReplicaMode
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainMode
   type: String
   required: false
+  hidden: false
   subparameters: []

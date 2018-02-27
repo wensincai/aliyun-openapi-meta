@@ -3,176 +3,220 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Id
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Ssid
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ApAssetId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: EncKey
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SsidLb
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: DisassocWeakRssi
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: IgnoreWeakProbe
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Encryption
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Disabled
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Maxassoc
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Hidden
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: ShortPreamble
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: DisassocLowAck
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Isolate
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Wmm
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: AuthCache
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: MaxInactivity
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Ieee80211w
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: DynamicVlan
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: VlanDhcp
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: MulticastForward
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Cir
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: Network
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Mac
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RadioIndex
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: InstantlyEffective
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: AuthServer
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AuthPort
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: AuthSecret
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AcctServer
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AcctPort
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: AcctSecret
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecondaryAuthServer
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecondaryAuthPort
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SecondaryAuthSecret
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecondaryAcctServer
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecondaryAcctPort
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SecondaryAcctSecret
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Nasid
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Ownip
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DaeClient
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DaePort
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: DaeSecret
   type: String
   required: false
+  hidden: false
   subparameters: []

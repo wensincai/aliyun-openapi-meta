@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ProductKey
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TopicShortName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Operation
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Desc
   type: String
   required: false
+  hidden: false
   subparameters: []

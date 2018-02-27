@@ -3,8 +3,10 @@ parameters:
 - name: StoreName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Lang
   type: RepeatList
   required: true
+  hidden: false
   subparameters: []

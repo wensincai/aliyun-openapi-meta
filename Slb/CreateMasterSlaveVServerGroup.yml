@@ -3,48 +3,60 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: access_key_id
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tags
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: LoadBalancerId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: MasterSlaveVServerGroupName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MasterSlaveBackendServers
   type: String
   required: false
+  hidden: false
   subparameters: []

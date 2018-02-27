@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ApModelId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: ImgAddr
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ImgVersion
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Comment
   type: String
   required: true
+  hidden: false
   subparameters: []

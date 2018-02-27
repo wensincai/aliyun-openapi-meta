@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Granularity
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TimeSpan
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: ProtocolName
   type: String
   required: false
+  hidden: false
   subparameters: []

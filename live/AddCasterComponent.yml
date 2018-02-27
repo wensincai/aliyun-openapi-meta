@@ -3,52 +3,65 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: Version
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: SecurityToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CasterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ComponentName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: LocationId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ComponentType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Effect
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ComponentLayer
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TextLayerContent
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ImageLayerContent
   type: String
   required: false
+  hidden: false
   subparameters: []

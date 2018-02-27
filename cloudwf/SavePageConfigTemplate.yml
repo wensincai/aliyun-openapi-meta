@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Id
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: TempName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TempDesc
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TempType
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: TempPermission
   type: String
   required: true
+  hidden: false
   subparameters: []

@@ -3,28 +3,35 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Uid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: PermissionType
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: PagePermission
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: BusinessIds
   type: RepeatList
   required: true
+  hidden: false
   subparameters: []
 - name: ShopIds
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []
 - name: ShopGroupIds
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []

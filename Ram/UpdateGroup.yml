@@ -3,16 +3,20 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: GroupName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: NewGroupName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: NewComments
   type: String
   required: false
+  hidden: false
   subparameters: []

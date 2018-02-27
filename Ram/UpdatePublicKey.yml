@@ -3,16 +3,20 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: UserName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserPublicKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Status
   type: String
   required: false
+  hidden: false
   subparameters: []

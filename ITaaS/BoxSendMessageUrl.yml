@@ -3,24 +3,30 @@ parameters:
 - name: RegionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ClientAppid
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MSG
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TS
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AuthType
   type: String
   required: false
+  hidden: false
   subparameters: []

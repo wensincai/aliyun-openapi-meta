@@ -3,44 +3,55 @@ parameters:
 - name: OnsRegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OnsPlatform
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PreventCache
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: TpsType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TransType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ParentTopic
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SubTopic
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MsgType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Qos
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: BeginTime
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: EndTime
   type: Long
   required: true
+  hidden: false
   subparameters: []

@@ -3,108 +3,135 @@ parameters:
 - name: CallerName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Ip
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ProtocolVersion
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Source
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: PhoneNumber
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Email
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IdType
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: CurrentUrl
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Agent
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Cookie
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SessionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MacAddress
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Referer
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CompanyName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Address
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IDNumber
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: BankCardNumber
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegisterIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegisterDate
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: LoginIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: LoginDate
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: ExtendData
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PasswordHash
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: JsToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SDKToken
   type: String
   required: false
+  hidden: false
   subparameters: []

@@ -3,120 +3,150 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingGroupId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.1
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.2
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.3
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.4
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.5
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.6
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.7
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.8
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.9
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationId.10
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.1
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.2
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.3
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.4
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.5
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.6
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.7
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.8
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.9
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScalingConfigurationName.10
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []

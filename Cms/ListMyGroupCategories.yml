@@ -3,4 +3,5 @@ parameters:
 - name: GroupId
   type: Long
   required: true
+  hidden: false
   subparameters: []

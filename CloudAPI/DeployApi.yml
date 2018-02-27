@@ -3,20 +3,25 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: GroupId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ApiId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: StageName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: true
+  hidden: false
   subparameters: []

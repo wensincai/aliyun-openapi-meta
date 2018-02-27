@@ -3,24 +3,30 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: IpControlId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IpControlName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IpControlType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []

@@ -3,16 +3,20 @@ parameters:
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ZoneId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: FileSystemType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ProtocolType
   type: String
   required: false
+  hidden: false
   subparameters: []

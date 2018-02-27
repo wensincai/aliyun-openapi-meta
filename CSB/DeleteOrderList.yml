@@ -3,8 +3,10 @@ parameters:
 - name: Data
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []

@@ -3,52 +3,65 @@ parameters:
 - name: StartExpirationDate
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: QueryType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EndExpirationDate
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: StartRegistrationDate
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: EndRegistrationDate
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OrderByType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OrderKeyType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ProductDomainType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageNum
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: true
+  hidden: false
   subparameters: []

@@ -3,12 +3,15 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Sql
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: JsonInfo
   type: String
   required: true
+  hidden: false
   subparameters: []

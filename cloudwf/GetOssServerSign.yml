@@ -3,8 +3,10 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DirType
   type: Integer
   required: true
+  hidden: false
   subparameters: []

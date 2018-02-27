@@ -3,12 +3,15 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DBInstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SQLDiagId
   type: String
   required: true
+  hidden: false
   subparameters: []

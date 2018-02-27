@@ -3,52 +3,65 @@ parameters:
 - name: RegionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SysFrom
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Operator
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SessionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MqEnable
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ShareVersion
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: TS
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Cid
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Uid
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Umid
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Sid
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AuthType
   type: String
   required: false
+  hidden: false
   subparameters: []

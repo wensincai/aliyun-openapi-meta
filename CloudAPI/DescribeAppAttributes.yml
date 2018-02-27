@@ -3,16 +3,20 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: AppId
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []

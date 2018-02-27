@@ -3,68 +3,85 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccountName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AddressType
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: TagName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ReplyToAddress
   type: Boolean
   required: true
+  hidden: false
   subparameters: []
 - name: ToAddress
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Subject
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: HtmlBody
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TextBody
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: FromAlias
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ReplyAddress
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ReplyAddressAlias
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ClickTrace
   type: String
   required: false
+  hidden: false
   subparameters: []

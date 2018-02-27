@@ -3,24 +3,30 @@ parameters:
 - name: data
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: product
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: version
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: action
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: regionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: domain
   type: String
   required: false
+  hidden: false
   subparameters: []

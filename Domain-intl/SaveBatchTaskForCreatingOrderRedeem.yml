@@ -3,20 +3,25 @@ parameters:
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OrderRedeemParam
   type: RepeatList
   required: true
+  hidden: false
   subparameters:
   - name: DomainName
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: CurrentExpirationDate
     type: Long
     required: false
+    hidden: false
     subparameters: []

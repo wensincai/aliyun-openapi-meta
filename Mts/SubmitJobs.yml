@@ -3,44 +3,55 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: Input
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Outputs
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OutputBucket
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OutputLocation
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PipelineId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []

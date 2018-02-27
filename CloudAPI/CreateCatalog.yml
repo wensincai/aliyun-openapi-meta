@@ -3,16 +3,20 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: CatalogName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ParentId
   type: String
   required: false
+  hidden: false
   subparameters: []

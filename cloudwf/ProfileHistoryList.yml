@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Agsid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Idtype
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Page
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Per
   type: Integer
   required: true
+  hidden: false
   subparameters: []

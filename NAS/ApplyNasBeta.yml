@@ -3,20 +3,25 @@ parameters:
 - name: Feature
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Email
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Phone
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Company
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Desc
   type: String
   required: true
+  hidden: false
   subparameters: []

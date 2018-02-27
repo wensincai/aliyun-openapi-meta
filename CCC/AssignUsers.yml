@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: UserRamId
   type: RepeatList
   required: true
+  hidden: false
   subparameters: []
 - name: RoleId
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []
 - name: SkillGroupId
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []
 - name: SkillLevel
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []

@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Gid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ShopIds
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: false
+  hidden: false
   subparameters: []

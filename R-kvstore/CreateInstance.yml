@@ -3,112 +3,140 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: SecurityToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Token
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Password
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Capacity
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceClass
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ZoneId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Config
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ChargeType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: NodeType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: NetworkType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VpcId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VSwitchId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Period
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: BusinessInfo
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CouponNo
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SrcDBInstanceId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: BackupId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EngineVersion
   type: String
   required: false
+  hidden: false
   subparameters: []

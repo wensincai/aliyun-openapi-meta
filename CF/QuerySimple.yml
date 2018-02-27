@@ -3,24 +3,30 @@ parameters:
 - name: SerialNo
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TokenId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SceneId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TimeStamp
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Trans
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AppKey
   type: String
   required: true
+  hidden: false
   subparameters: []

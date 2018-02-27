@@ -3,40 +3,50 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: DiskId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: Password
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: KeyPairName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AutoStartInstance
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: SecurityEnhancementStrategy
   type: String
   required: false
+  hidden: false
   subparameters: []

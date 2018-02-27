@@ -3,28 +3,35 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Id
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: TempName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OssFileId
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: TextAlign
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TextColor
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TextContent
   type: String
   required: false
+  hidden: false
   subparameters: []

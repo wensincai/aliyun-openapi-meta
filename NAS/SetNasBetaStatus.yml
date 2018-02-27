@@ -3,12 +3,15 @@ parameters:
 - name: Uid
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Feature
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Status
   type: String
   required: true
+  hidden: false
   subparameters: []

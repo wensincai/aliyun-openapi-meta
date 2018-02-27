@@ -3,56 +3,70 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: TemplateType
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: TemplateName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TemplateSubject
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TemplateNickName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TemplateText
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SmsType
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SmsContent
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Remark
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: FromType
   type: Integer
   required: false
+  hidden: false
   subparameters: []

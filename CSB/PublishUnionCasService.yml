@@ -3,12 +3,15 @@ parameters:
 - name: CasCsbName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Data
   type: String
   required: true
+  hidden: false
   subparameters: []

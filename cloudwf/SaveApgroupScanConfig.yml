@@ -3,12 +3,15 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ApgroupId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: JsonData
   type: String
   required: false
+  hidden: false
   subparameters: []

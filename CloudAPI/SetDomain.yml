@@ -3,24 +3,30 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: GroupId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: CertificateName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CertificateBody
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CertificatePrivateKey
   type: String
   required: false
+  hidden: false
   subparameters: []

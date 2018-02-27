@@ -3,52 +3,65 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: SecurityToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AuthType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TimeOut
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AuthAddr
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AuthCrash
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AuthEnable
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AuthProvider
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AuthPath
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AuthFileType
   type: String
   required: false
+  hidden: false
   subparameters: []

@@ -3,4 +3,5 @@ parameters:
 - name: InstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []

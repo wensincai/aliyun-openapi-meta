@@ -3,40 +3,50 @@ parameters:
 - name: SessionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScreenCode
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MqEnable
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ShareVersion
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AppKey
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OsType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AppVersion
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DeviceInfo
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SignatureType
   type: String
   required: false
+  hidden: false
   subparameters: []

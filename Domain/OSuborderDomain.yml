@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: type
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: startDate
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: endDate
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: pageNum
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: pageSize
   type: Integer
   required: true
+  hidden: false
   subparameters: []

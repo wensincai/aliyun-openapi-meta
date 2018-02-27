@@ -3,8 +3,10 @@ parameters:
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AccessGroupName
   type: String
   required: true
+  hidden: false
   subparameters: []

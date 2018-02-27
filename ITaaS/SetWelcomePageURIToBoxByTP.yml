@@ -3,16 +3,20 @@ parameters:
 - name: AuthType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: WelcomeUri
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ScreenCode
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Cid
   type: String
   required: false
+  hidden: false
   subparameters: []

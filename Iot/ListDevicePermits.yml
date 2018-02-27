@@ -3,12 +3,15 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ProductKey
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: DeviceName
   type: String
   required: true
+  hidden: false
   subparameters: []

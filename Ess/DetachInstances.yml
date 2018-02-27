@@ -3,108 +3,135 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ScalingGroupId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: InstanceId.1
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: InstanceId.2
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.3
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.4
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.5
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.6
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.7
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.8
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.9
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.10
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.11
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.12
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.13
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.14
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.15
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.16
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.17
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.18
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.19
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId.20
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []

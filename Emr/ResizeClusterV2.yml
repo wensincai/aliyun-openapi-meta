@@ -3,84 +3,105 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: HostGroup
   type: RepeatList
   required: true
+  hidden: false
   subparameters:
   - name: ClusterId
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: HostGroupId
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: HostGroupName
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: HostGroupType
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: Comment
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: CreateType
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: InstanceType
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: NodeCount
     type: Integer
     required: true
+    hidden: false
     subparameters: []
   - name: DiskType
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: DiskCapacity
     type: Integer
     required: false
+    hidden: false
     subparameters: []
   - name: DiskCount
     type: Integer
     required: false
+    hidden: false
     subparameters: []
   - name: SysDiskCapacity
     type: Integer
     required: false
+    hidden: false
     subparameters: []
   - name: ChargeType
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: Period
     type: Integer
     required: false
+    hidden: false
     subparameters: []
   - name: AutoRenew
     type: Boolean
     required: false
+    hidden: false
     subparameters: []
   - name: VswitchId
     type: Integer
     required: false
+    hidden: false
     subparameters: []
   - name: SystemDiskType
     type: Integer
     required: false
+    hidden: false
     subparameters: []

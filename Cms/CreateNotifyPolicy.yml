@@ -3,24 +3,30 @@ parameters:
 - name: Dimensions
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PolicyType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: StartTime
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: EndTime
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: AlertName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []

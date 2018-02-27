@@ -3,36 +3,45 @@ parameters:
 - name: RegionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MAC
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DrIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DrStatus
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AppUUID
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegisterVersion
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: ClientAppid
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AuthTypeDefault
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AuthType
   type: String
   required: false
+  hidden: false
   subparameters: []

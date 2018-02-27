@@ -3,28 +3,35 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: IpControlName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: IpControlType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IpControlPolicys
   type: RepeatList
   required: false
+  hidden: false
   subparameters:
   - name: AppId
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: CidrIp
     type: String
     required: false
+    hidden: false
     subparameters: []

@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: SecurityToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PushDomain
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PullDomain
   type: String
   required: false
+  hidden: false
   subparameters: []

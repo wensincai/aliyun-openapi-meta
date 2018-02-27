@@ -3,8 +3,10 @@ parameters:
 - name: Product
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: UserId
   type: String
   required: false
+  hidden: false
   subparameters: []

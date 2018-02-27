@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Id
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: PagePermission
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: GsPermission
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AliyunPk
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Bid
   type: Long
   required: false
+  hidden: false
   subparameters: []

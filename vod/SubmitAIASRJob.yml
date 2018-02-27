@@ -3,36 +3,45 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerId
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: MediaId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AIASRConfig
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserData
   type: String
   required: false
+  hidden: false
   subparameters: []

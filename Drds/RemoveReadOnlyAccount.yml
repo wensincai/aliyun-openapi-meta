@@ -3,20 +3,25 @@ parameters:
 - name: Action
   type: String
   required: true
+  hidden: true
   subparameters: []
 - name: DrdsInstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DbName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AccountName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []

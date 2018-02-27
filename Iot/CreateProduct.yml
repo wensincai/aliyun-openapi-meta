@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Desc
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CatId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: ExtProps
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecurityPolicy
   type: String
   required: false
+  hidden: false
   subparameters: []

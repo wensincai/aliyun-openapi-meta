@@ -3,20 +3,25 @@ parameters:
 - name: Page
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Size
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Keyword
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: StoreName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: LibraryId
   type: String
   required: false
+  hidden: false
   subparameters: []

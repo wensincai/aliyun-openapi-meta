@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Sid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Warn
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: WarnEmail
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: WarnPhone
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CloseWarn
   type: Integer
   required: false
+  hidden: false
   subparameters: []

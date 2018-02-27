@@ -3,172 +3,215 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ZoneId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DiskIds
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DiskType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Category
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Status
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SnapshotId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Portable
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: DeleteWithInstance
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: DeleteAutoSnapshot
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: DiskName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AutoSnapshotPolicyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EnableAutoSnapshot
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: EnableAutomatedSnapshotPolicy
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: DiskChargeType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: LockReason
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.1.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.2.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.1.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.2.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.1.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.2.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.3.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.4.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.5.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.1.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.2.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.3.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.4.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.5.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ResourceGroupId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EnableShared
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: Encrypted
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: AdditionalAttributes
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []
 - name: DryRun
   type: Boolean
   required: false
+  hidden: false
   subparameters: []

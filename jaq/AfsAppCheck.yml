@@ -3,8 +3,10 @@ parameters:
 - name: CallerName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Session
   type: String
   required: true
+  hidden: false
   subparameters: []

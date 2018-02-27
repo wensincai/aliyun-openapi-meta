@@ -3,32 +3,40 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OperationId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: HostId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TaskId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Status
   type: String
   required: false
+  hidden: false
   subparameters: []

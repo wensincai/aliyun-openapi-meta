@@ -3,64 +3,80 @@ parameters:
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Id
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: QualifiedName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ParentQueueId
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Leaf
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: ResourcePoolId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Config
   type: RepeatList
   required: true
+  hidden: false
   subparameters:
   - name: Id
     type: Long
     required: false
+    hidden: false
     subparameters: []
   - name: ConfigKey
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: ConfigValue
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: Category
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: Note
     type: String
     required: false
+    hidden: false
     subparameters: []

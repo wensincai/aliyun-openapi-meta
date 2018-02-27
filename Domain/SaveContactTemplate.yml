@@ -3,88 +3,110 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ContactTemplateId
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: DefaultTemplate
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: CCity
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CCompany
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CCountry
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CProvince
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CVenu
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ECity
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ECompany
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EProvince
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EVenu
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Email
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PostalCode
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TelArea
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TelMain
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TelExt
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegType
   type: String
   required: false
+  hidden: false
   subparameters: []

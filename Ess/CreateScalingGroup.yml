@@ -3,64 +3,80 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ScalingGroupName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: MinSize
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: MaxSize
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: DefaultCooldown
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: LoadBalancerIds
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DBInstanceIds
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemovalPolicy.1
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemovalPolicy.2
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: VSwitchId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VSwitchIds
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []

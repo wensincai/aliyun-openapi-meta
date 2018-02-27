@@ -3,36 +3,45 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Period
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: StartTimeStamp
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: EndTimeStamp
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: MetricName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: HostRole
   type: String
   required: false
+  hidden: false
   subparameters: []

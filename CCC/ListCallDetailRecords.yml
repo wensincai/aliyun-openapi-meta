@@ -3,32 +3,55 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: PhoneNumber
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: StartTime
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: StopTime
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Criteria
   type: String
   required: false
+  hidden: false
+  subparameters: []
+- name: ContactType
+  type: String
+  required: false
+  hidden: false
+  subparameters: []
+- name: ContactDisposition
+  type: String
+  required: false
+  hidden: false
+  subparameters: []
+- name: WithRecording
+  type: Boolean
+  required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: true
+  hidden: false
   subparameters: []

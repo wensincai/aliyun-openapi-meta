@@ -3,20 +3,25 @@ parameters:
 - name: PhotoId
   type: RepeatList
   required: true
+  hidden: false
   subparameters: []
 - name: ZoomType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DomainType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: StoreName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: LibraryId
   type: String
   required: false
+  hidden: false
   subparameters: []

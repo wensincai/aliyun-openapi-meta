@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ProductName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ProductDesc
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ExtProps
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CatId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: ProductKey
   type: String
   required: true
+  hidden: false
   subparameters: []

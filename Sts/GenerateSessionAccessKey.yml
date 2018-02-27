@@ -3,4 +3,5 @@ parameters:
 - name: DurationSeconds
   type: Long
   required: false
+  hidden: false
   subparameters: []

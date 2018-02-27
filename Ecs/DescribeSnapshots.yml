@@ -3,132 +3,165 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: InstanceId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DiskId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SnapshotLinkId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SnapshotIds
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: SnapshotName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Status
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SnapshotType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.1.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.2.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.1.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Filter.2.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Usage
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SourceDiskType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.1.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.2.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.3.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.4.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.5.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.1.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.2.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.3.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.4.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.5.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Encrypted
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: DryRun
   type: Boolean
   required: false
+  hidden: false
   subparameters: []

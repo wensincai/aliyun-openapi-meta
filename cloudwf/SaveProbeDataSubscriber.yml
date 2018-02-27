@@ -3,36 +3,45 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Id
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: ApiUrl
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ParamGenScript
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Type
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: HttpMethod
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ResourceIds
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []

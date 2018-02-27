@@ -3,16 +3,20 @@ parameters:
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainName
   type: RepeatList
   required: true
+  hidden: false
   subparameters: []
 - name: status
   type: Boolean
   required: true
+  hidden: false
   subparameters: []

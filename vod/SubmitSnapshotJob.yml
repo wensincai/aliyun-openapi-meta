@@ -3,48 +3,60 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: VideoId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SpecifiedOffsetTime
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Width
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Height
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Count
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Interval
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: SpriteSnapshotConfig
   type: String
   required: false
+  hidden: false
   subparameters: []

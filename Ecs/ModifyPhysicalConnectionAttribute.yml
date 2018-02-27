@@ -3,72 +3,90 @@ parameters:
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: PhysicalConnectionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: LineOperator
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: bandwidth
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PeerLocation
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PortType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RedundantPhysicalConnectionId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ClientToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ClientToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: UserCidr
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CircuitCode
   type: String
   required: false
+  hidden: false
   subparameters: []

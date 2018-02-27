@@ -3,96 +3,120 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ZoneId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Engine
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DBType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DBVersion
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DBInstanceClass
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DBInstanceStorage
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterNetworkType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DBClusterDescription
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecurityIPList
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: PayType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Period
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UsedTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VPCId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VSwitchId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PrivateIpAddress
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ClientToken
   type: String
   required: false
+  hidden: false
   subparameters: []

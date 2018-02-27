@@ -3,52 +3,65 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: SystemDiskPolicyEnabled
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: SystemDiskPolicyTimePeriod
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SystemDiskPolicyRetentionDays
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SystemDiskPolicyRetentionLastWeek
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: DataDiskPolicyEnabled
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: DataDiskPolicyTimePeriod
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: DataDiskPolicyRetentionDays
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: DataDiskPolicyRetentionLastWeek
   type: Boolean
   required: false
+  hidden: false
   subparameters: []

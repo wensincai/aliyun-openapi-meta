@@ -3,16 +3,20 @@ parameters:
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: VpcId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: VswId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: PoolSize
   type: String
   required: true
+  hidden: false
   subparameters: []

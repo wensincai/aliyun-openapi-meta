@@ -3,20 +3,25 @@ parameters:
 - name: OnsRegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OnsPlatform
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PreventCache
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: ConsumerId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ReadEnable
   type: Boolean
   required: true
+  hidden: false
   subparameters: []

@@ -3,60 +3,75 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ClientToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: DBInstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SecurityIps
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DBInstanceIPArrayName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DBInstanceIPArrayAttribute
   type: String
   required: false
+  hidden: false
   subparameters: []
-- name: WhitelistNetType
+- name: WhitelistNetworkType
   type: String
   required: false
+  hidden: false
   subparameters: []
-- name: SecurityGroupName
+- name: SecurityGroupId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ModifyMode
   type: String
   required: false
+  hidden: false
   subparameters: []

@@ -3,180 +3,225 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Strategy
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TimeInterval
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: StartTime
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: TimeUnit
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DayOfWeek
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DayOfMonth
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: JobIdList
   type: RepeatList
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CreateClusterOnDemand
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: ClusterName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ZoneId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: LogEnable
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: LogPath
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SecurityGroupId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IsOpenPublicIp
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: EmrVer
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OptionSoftWareList
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []
 - name: ClusterType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: HighAvailabilityEnable
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: UseLocalMetaDb
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: VpcId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VSwitchId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: NetType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserDefinedEmrEcsRole
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IoOptimized
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceGeneration
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EcsOrder
   type: RepeatList
   required: false
+  hidden: false
   subparameters:
   - name: Index
     type: Integer
     required: false
+    hidden: false
     subparameters: []
   - name: NodeCount
     type: Integer
     required: true
+    hidden: false
     subparameters: []
   - name: NodeType
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: InstanceType
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: DiskType
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: DiskCapacity
     type: Integer
     required: true
+    hidden: false
     subparameters: []
   - name: DiskCount
     type: Integer
     required: true
+    hidden: false
     subparameters: []
 - name: BootstrapAction
   type: RepeatList
   required: false
+  hidden: false
   subparameters:
   - name: Name
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: Path
     type: String
     required: true
+    hidden: false
     subparameters: []
   - name: Arg
     type: String
     required: false
+    hidden: false
     subparameters: []
 - name: Configurations
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EasEnable
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: WorkflowDefinition
   type: String
   required: false
+  hidden: false
   subparameters: []

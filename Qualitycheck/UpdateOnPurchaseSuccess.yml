@@ -3,4 +3,5 @@ parameters:
 - name: data
   type: String
   required: true
+  hidden: false
   subparameters: []

@@ -3,8 +3,10 @@ parameters:
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: InstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []

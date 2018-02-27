@@ -3,16 +3,20 @@ parameters:
 - name: ResourceOwner
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: FileSystemName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: true
+  hidden: false
   subparameters: []

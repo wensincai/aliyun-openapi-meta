@@ -3,8 +3,10 @@ parameters:
 - name: StartTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EndTime
   type: String
   required: false
+  hidden: false
   subparameters: []

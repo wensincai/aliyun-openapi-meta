@@ -3,64 +3,80 @@ parameters:
 - name: Name
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: callby_cms_owner
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Namespace
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: MetricName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Dimensions
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Period
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: Statistics
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ComparisonOperator
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Threshold
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EvaluationCount
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: ContactGroups
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: StartTime
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: EndTime
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SilenceTime
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: NotifyType
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: Webhook
   type: String
   required: false
+  hidden: false
   subparameters: []

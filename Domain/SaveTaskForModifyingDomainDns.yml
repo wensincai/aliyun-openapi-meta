@@ -3,28 +3,35 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SaleId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AliyunDns
   type: Boolean
   required: true
+  hidden: false
   subparameters: []
 - name: DnsList
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []

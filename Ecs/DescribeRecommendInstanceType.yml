@@ -3,52 +3,65 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: token
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: proxyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: channel
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: operator
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Scene
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: NetworkType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []

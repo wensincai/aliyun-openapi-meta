@@ -3,36 +3,45 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ServiceName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Comment
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ConfigParams
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CustomConfigParams
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: GroupId
   type: Long
   required: false
+  hidden: false
   subparameters: []

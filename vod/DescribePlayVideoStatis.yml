@@ -1,0 +1,22 @@
+name: DescribePlayVideoStatis
+parameters:
+- name: OwnerId
+  type: Long
+  required: false
+  hidden: true
+  subparameters: []
+- name: StartTime
+  type: String
+  required: true
+  hidden: false
+  subparameters: []
+- name: EndTime
+  type: String
+  required: true
+  hidden: false
+  subparameters: []
+- name: VideoId
+  type: String
+  required: true
+  hidden: false
+  subparameters: []

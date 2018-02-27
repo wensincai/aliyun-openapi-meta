@@ -3,20 +3,25 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: BizId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: true
+  hidden: false
   subparameters: []

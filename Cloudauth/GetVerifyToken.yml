@@ -3,20 +3,25 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: Biz
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TicketId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Binding
   type: Map
   required: false
+  hidden: false
   subparameters: []
 - name: UserData
   type: Map
   required: false
+  hidden: false
   subparameters: []

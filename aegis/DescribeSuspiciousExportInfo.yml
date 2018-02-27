@@ -1,0 +1,17 @@
+name: DescribeSuspiciousExportInfo
+parameters:
+- name: SourceIp
+  type: String
+  required: false
+  hidden: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  hidden: true
+  subparameters: []
+- name: ExportId
+  type: Integer
+  required: false
+  hidden: false
+  subparameters: []

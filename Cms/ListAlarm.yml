@@ -3,36 +3,45 @@ parameters:
 - name: callby_cms_owner
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Id
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Namespace
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Dimension
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: State
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IsEnable
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []

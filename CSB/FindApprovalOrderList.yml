@@ -3,28 +3,35 @@ parameters:
 - name: ServiceName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageNum
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Alias
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ProjectName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OnlyPending
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: ServiceId
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []

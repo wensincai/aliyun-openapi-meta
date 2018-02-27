@@ -3,12 +3,15 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: AppId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Language
   type: String
   required: true
+  hidden: false
   subparameters: []

@@ -3,24 +3,30 @@ parameters:
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ClientToken
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: VmNumber
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Duration
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: PricingCycle
   type: String
   required: true
+  hidden: false
   subparameters: []

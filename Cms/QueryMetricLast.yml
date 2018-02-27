@@ -3,52 +3,65 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: callby_cms_owner
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Project
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Metric
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Period
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: StartTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EndTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Dimensions
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Cursor
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Page
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Length
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Express
   type: String
   required: false
+  hidden: false
   subparameters: []

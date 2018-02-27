@@ -3,24 +3,30 @@ parameters:
 - name: GroupId
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Type
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SelectContactGroups
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: BindUrl
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: GroupName
   type: String
   required: false
+  hidden: false
   subparameters: []

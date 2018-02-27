@@ -3,16 +3,20 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: VpcId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Port
   type: Integer
   required: true
+  hidden: false
   subparameters: []

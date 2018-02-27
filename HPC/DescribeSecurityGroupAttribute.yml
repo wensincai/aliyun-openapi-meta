@@ -3,16 +3,20 @@ parameters:
 - name: TOKEN
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: true
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: NicType
   type: String
   required: false
+  hidden: false
   subparameters: []

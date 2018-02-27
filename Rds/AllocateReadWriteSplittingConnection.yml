@@ -3,56 +3,70 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: DBInstanceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ConnectionStringPrefix
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Port
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: MaxDelayTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IPType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DistributionType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Weight
   type: String
   required: false
+  hidden: false
   subparameters: []

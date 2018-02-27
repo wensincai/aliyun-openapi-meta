@@ -3,20 +3,25 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: SignatureId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: SignatureName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SignatureKey
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SignatureSecret
   type: String
   required: false
+  hidden: false
   subparameters: []

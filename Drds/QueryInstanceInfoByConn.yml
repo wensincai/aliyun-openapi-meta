@@ -3,20 +3,25 @@ parameters:
 - name: Action
   type: String
   required: true
+  hidden: true
   subparameters: []
 - name: Host
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Port
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: UserName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []

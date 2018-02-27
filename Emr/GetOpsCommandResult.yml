@@ -1,0 +1,37 @@
+name: GetOpsCommandResult
+parameters:
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  hidden: true
+  subparameters: []
+- name: AccessKeyId
+  type: String
+  required: false
+  hidden: false
+  subparameters: []
+- name: RegionId
+  type: String
+  required: true
+  hidden: false
+  subparameters: []
+- name: TaskId
+  type: Long
+  required: true
+  hidden: false
+  subparameters: []
+- name: ClusterId
+  type: String
+  required: true
+  hidden: false
+  subparameters: []
+- name: StartCursor
+  type: Long
+  required: true
+  hidden: false
+  subparameters: []
+- name: EndCursor
+  type: Long
+  required: true
+  hidden: false
+  subparameters: []

@@ -3,108 +3,135 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ImageId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AddAccount.1
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.2
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.3
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.4
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.5
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.6
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.7
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.8
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.9
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AddAccount.10
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.1
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.2
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.3
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.4
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.5
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.6
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.7
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.8
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.9
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RemoveAccount.10
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []

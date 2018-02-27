@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DataSource
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: DataContent
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: WhoisProtect
   type: Boolean
   required: true
+  hidden: false
   subparameters: []

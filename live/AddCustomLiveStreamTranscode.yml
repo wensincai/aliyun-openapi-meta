@@ -3,52 +3,65 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: Version
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: SecurityToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Domain
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: App
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Template
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TemplateType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Height
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Width
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: FPS
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: VideoBitrate
   type: Integer
   required: true
+  hidden: false
   subparameters: []

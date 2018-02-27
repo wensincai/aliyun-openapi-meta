@@ -3,12 +3,15 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Did
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Mac
   type: String
   required: false
+  hidden: false
   subparameters: []

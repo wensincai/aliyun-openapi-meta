@@ -3,68 +3,85 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ResourceType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ResourceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Tag.1.Key
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Tag.2.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.3.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.4.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.5.Key
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.1.Value
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Tag.2.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.3.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.4.Value
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Tag.5.Value
   type: String
   required: false
+  hidden: false
   subparameters: []

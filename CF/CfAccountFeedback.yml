@@ -3,32 +3,40 @@ parameters:
 - name: AppKey
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EventId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: UserFeedback
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: CustomerDecision
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AliDecision
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DenyReason
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: CFTimestamp
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AppToken
   type: String
   required: true
+  hidden: false
   subparameters: []

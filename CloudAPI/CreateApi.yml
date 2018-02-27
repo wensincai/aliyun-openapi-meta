@@ -3,84 +3,105 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: GroupId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ApiName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Visibility
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AuthType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RequestConfig
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ServiceConfig
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RequestParameters
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SystemParameters
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ConstantParameters
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ServiceParameters
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ServiceParametersMap
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ResultType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ResultSample
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: FailResultSample
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ErrorCodeSamples
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ResultDescriptions
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OpenIdConnectConfig
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AllowSignatureMethod
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: WebSocketApiType
   type: String
   required: false
+  hidden: false
   subparameters: []

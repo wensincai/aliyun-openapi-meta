@@ -3,4 +3,5 @@ parameters:
 - name: StoreName
   type: String
   required: true
+  hidden: false
   subparameters: []

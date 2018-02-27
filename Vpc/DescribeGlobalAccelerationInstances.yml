@@ -3,60 +3,75 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: GlobalAccelerationInstanceId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IpAddress
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Status
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: BandwidthType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ServiceLocation
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ServerId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []

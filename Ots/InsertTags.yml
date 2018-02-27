@@ -3,28 +3,35 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: access_key_id
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: InstanceName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: TagInfo
   type: RepeatList
   required: false
+  hidden: false
   subparameters:
   - name: TagKey
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: TagValue
     type: String
     required: false
+    hidden: false
     subparameters: []

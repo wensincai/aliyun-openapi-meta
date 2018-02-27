@@ -3,60 +3,75 @@ parameters:
 - name: BandwidthPackageId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: PayType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PricingCycle
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Duration
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: AutoPay
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: Bandwidth
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: KbpsBandwidth
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceBid
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ResourceUid
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []

@@ -3,48 +3,60 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OwnerId
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: DomainName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: LogDay
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: StartTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: EndTime
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: PageNo
   type: Long
   required: false
+  hidden: false
   subparameters: []

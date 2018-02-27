@@ -3,60 +3,75 @@ parameters:
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: HostIdList
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ServiceName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ServiceActionName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: CustomCommand
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ComponentNameList
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Comment
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IsRolling
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: NodeCountPerBatch
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: TotlerateFailCount
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: OnlyRestartStaleConfigNodes
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: TurnOnMaintenanceMode
   type: Boolean
   required: false
+  hidden: false
   subparameters: []

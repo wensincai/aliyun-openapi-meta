@@ -3,44 +3,55 @@ parameters:
 - name: Action
   type: String
   required: true
+  hidden: true
   subparameters: []
 - name: Description
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: ZoneId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Type
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Quantity
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Specification
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: PayType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: VpcId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: VswitchId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []

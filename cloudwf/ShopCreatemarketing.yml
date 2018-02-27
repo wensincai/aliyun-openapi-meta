@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Sid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Name
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Stime
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Etime
   type: String
   required: true
+  hidden: false
   subparameters: []

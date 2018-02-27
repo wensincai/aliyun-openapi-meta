@@ -3,12 +3,15 @@ parameters:
 - name: StoreName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EnabledFeatures
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []
 - name: DisabledFeatures
   type: RepeatList
   required: false
+  hidden: false
   subparameters: []

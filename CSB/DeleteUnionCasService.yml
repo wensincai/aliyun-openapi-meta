@@ -3,20 +3,25 @@ parameters:
 - name: SrcUserId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: CasServiceId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: CasCsbName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: LeafOnly
   type: Boolean
   required: true
+  hidden: false
   subparameters: []

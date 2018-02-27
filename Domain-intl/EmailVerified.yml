@@ -3,12 +3,15 @@ parameters:
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Email
   type: String
   required: true
+  hidden: false
   subparameters: []

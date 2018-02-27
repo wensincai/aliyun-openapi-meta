@@ -1,0 +1,12 @@
+name: DescribeSuspiciousEvents
+parameters:
+- name: SourceIp
+  type: String
+  required: false
+  hidden: false
+  subparameters: []
+- name: ResourceOwnerId
+  type: Long
+  required: false
+  hidden: true
+  subparameters: []

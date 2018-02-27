@@ -3,20 +3,25 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RecordId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Status
   type: String
   required: true
+  hidden: false
   subparameters: []

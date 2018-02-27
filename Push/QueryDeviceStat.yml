@@ -3,24 +3,30 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: AppKey
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: StartTime
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EndTime
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: DeviceType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: QueryType
   type: String
   required: true
+  hidden: false
   subparameters: []

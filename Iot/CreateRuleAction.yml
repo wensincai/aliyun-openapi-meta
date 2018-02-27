@@ -3,16 +3,20 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RuleId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Type
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Configuration
   type: String
   required: true
+  hidden: false
   subparameters: []

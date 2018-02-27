@@ -3,28 +3,35 @@ parameters:
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegistrantProfileId
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: ContactType
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AddTransferLock
   type: Boolean
   required: false
+  hidden: false
   subparameters: []

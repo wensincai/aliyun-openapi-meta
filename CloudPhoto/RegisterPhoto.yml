@@ -3,52 +3,65 @@ parameters:
 - name: TakenAt
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Location
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: StoreName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: LibraryId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Latitude
   type: Float
   required: false
+  hidden: false
   subparameters: []
 - name: Longitude
   type: Float
   required: false
+  hidden: false
   subparameters: []
 - name: Width
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: Height
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: IsVideo
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Md5
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Size
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: PhotoTitle
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Remark
   type: String
   required: false
+  hidden: false
   subparameters: []

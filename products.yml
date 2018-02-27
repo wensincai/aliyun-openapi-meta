@@ -1,58 +1,14 @@
 products:
-- name: CS
-  version: 2015-12-15
-  location_service_code: ""
-  descriptions:
-    en: Container Service
-    zh: 容器服务
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/26043.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/26043.html
-    zh: https://help.aliyun.com/document_detail/26043.html
-  endpoint_patterns:
-  - cs.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: cs.aliyuncs.com
-    cn-beijing: cs.aliyuncs.com
-    cn-beijing-inner: cs.aliyuncs.com
-    cn-hangzhou: cs.aliyuncs.com
-    cn-hangzhou-d: cs.aliyuncs.com
-    cn-hongkong: cs.aliyuncs.com
-    cn-qingdao: cs.aliyuncs.com
-    cn-qingdao-cm9: cs.aliyuncs.com
-    cn-shanghai: cs.aliyuncs.com
-    cn-shanghai-et2-b01: cs.aliyuncs.com
-    cn-shanghai-inner: cs.aliyuncs.com
-    cn-shenzhen: cs.aliyuncs.com
-    cn-shenzhen-inner: cs.aliyuncs.com
-    us-east-1: cs.aliyuncs.com
-    us-west-1: cs.aliyuncs.com
-  known_endpoints:
-    cn-hangzhou: csb.cn-hangzhou.aliyuncs.com
-  api_style: ROA
-  apis: []
-- name: Cds
-  version: 2017-09-25
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns:
-  - cds.[RegionId].aliyuncs.com
-  endpoints: {}
-  known_endpoints:
-    cn-beijing: cds.cn-beijing.aliyuncs.com
-  api_style: ROA
-  apis: []
-- name: BatchCompute
+- code: BatchCompute
   version: 2015-11-11
-  location_service_code: vpc
-  descriptions:
-    en: Batch Computing Service *
-    zh: 批量计算服务
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/44717.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/44717.html
-    zh: https://help.aliyun.com/document_detail/44717.html
+  location_service_code: ""
+  name:
+    en: BatchCompute
+    zh: 批量计算
+  document_id: "44717"
+  site_url: https://www.aliyun.com/product/batchcompute
+  sites:
+  - zh
   endpoint_patterns:
   - batchcompute.[RegionId].aliyuncs.com
   - batchcompute-vpc.[RegionId].aliyuncs.com
@@ -84,13 +40,53 @@ products:
     me-east-1: vpc.me-east-1.aliyuncs.com
     us-east-1: vpc.aliyuncs.com
     us-west-1: vpc.aliyuncs.com
-  api_style: ROA
+  api_style: restful
   apis: []
-- name: cr
+- code: CS
+  version: 2015-12-15
+  location_service_code: ""
+  name:
+    en: Container Service
+    zh: 容器服务
+  document_id: "26043"
+  site_url: https://www.aliyun.com/product/containerservice
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - cs.aliyuncs.com
+  - cs-anony.aliyuncs.com
+  endpoints:
+    ap-southeast-1: cs.aliyuncs.com
+    cn-beijing: cs.aliyuncs.com
+    cn-beijing-inner: cs.aliyuncs.com
+    cn-hangzhou: cs.aliyuncs.com
+    cn-hangzhou-d: cs.aliyuncs.com
+    cn-hongkong: cs.aliyuncs.com
+    cn-qingdao: cs.aliyuncs.com
+    cn-qingdao-cm9: cs.aliyuncs.com
+    cn-shanghai: cs.aliyuncs.com
+    cn-shanghai-et2-b01: cs.aliyuncs.com
+    cn-shanghai-inner: cs.aliyuncs.com
+    cn-shenzhen: cs.aliyuncs.com
+    cn-shenzhen-inner: cs.aliyuncs.com
+    us-east-1: cs.aliyuncs.com
+    us-west-1: cs.aliyuncs.com
+  known_endpoints:
+    cn-hangzhou: csb.cn-hangzhou.aliyuncs.com
+  api_style: restful
+  apis: []
+- code: cr
   version: 2016-06-07
   location_service_code: ""
-  descriptions: {}
-  links: {}
+  name:
+    en: Container Registry
+    zh: 容器镜像服务
+  document_id: ""
+  site_url: https://www.aliyun.com/product/acr
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - cr.aliyuncs.com
   - cr.[RegionId].aliyuncs.com
@@ -98,36 +94,53 @@ products:
   - cr-share.[RegionId].aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ROA
+  api_style: restful
   apis: []
-- name: Chatbot
+- code: Cds
+  version: 2017-09-25
+  location_service_code: ""
+  name:
+    en: CodePipeline
+    zh: CodePipeline
+  document_id: ""
+  site_url: https://www.aliyun.com/product/codepipeline
+  sites:
+  - zh
+  endpoint_patterns:
+  - cds.[RegionId].aliyuncs.com
+  endpoints: {}
+  known_endpoints:
+    cn-beijing: cds.cn-beijing.aliyuncs.com
+  api_style: restful
+  apis: []
+- code: Chatbot
   version: 2017-10-11
   location_service_code: beebot
-  descriptions:
-    en: Intelligent Chatbot *
+  name:
+    en: BeeBot
     zh: 云小蜜
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/60760.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/60760.html
-    zh: https://help.aliyun.com/document_detail/60760.html
+  document_id: "60760"
+  site_url: https://www.aliyun.com/product/beebot
+  sites:
+  - zh
   endpoint_patterns:
   - chatbot.[RegionId].aliyuncs.com
   endpoints: {}
   known_endpoints:
     cn-shanghai: chatbot.cn-shanghai.aliyuncs.com
-  api_style: RPC
+  api_style: rpc
   apis:
   - Chat
-- name: ARMS
+- code: ARMS
   version: 2016-11-25
   location_service_code: ""
-  descriptions:
+  name:
     en: Application Real-Time Monitoring Service
-    zh: 业务实时监控服务ARMS
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/42924.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/42924.html
-    zh: https://help.aliyun.com/document_detail/42924.html
+    zh: 业务实时监控服务 ARMS
+  document_id: "42924"
+  site_url: https://www.aliyun.com/product/arms
+  sites:
+  - zh
   endpoint_patterns:
   - arms.aliyuncs.com
   - arms.[RegionId].aliyuncs.com
@@ -144,113 +157,20 @@ products:
     cn-qingdao: arms.cn-qingdao.aliyuncs.com
     cn-shanghai: arms.cn-shanghai.aliyuncs.com
     cn-shenzhen: arms.cn-shenzhen.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
   - WhereInDimQuery
   - ARMSQueryDataSet
-- name: ARMS4FINANCE
-  version: 2017-11-30
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns:
-  - arms4finance.aliyuncs.com
-  - arms4finance.[RegionId].aliyuncs.com
-  endpoints: {}
-  known_endpoints:
-    cn-hangzhou: arms4finance.cn-hangzhou.aliyuncs.com
-  api_style: ""
-  apis:
-  - WhereInDimQuery
-  - ARMSQueryDataSet
-- name: Commondriver
-  version: 2016-04-28
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns:
-  - commondriver-inner.aliyuncs.com
-  - commondriver-share.[RegionId].aliyuncs.com
-  - commondriver-share.aliyuncs.com
-  endpoints:
-    ap-southeast-1: common.driver.aliyuncs.com
-    cn-beijing: common.driver.aliyuncs.com
-    cn-beijing-inner: common.driver.aliyuncs.com
-    cn-hangzhou: common.driver.aliyuncs.com
-    cn-hangzhou-d: common.driver.aliyuncs.com
-    cn-hongkong: common.driver.aliyuncs.com
-    cn-qingdao: common.driver.aliyuncs.com
-    cn-qingdao-cm9: common.driver.aliyuncs.com
-    cn-shanghai: common.driver.aliyuncs.com
-    cn-shanghai-et2-b01: common.driver.aliyuncs.com
-    cn-shanghai-inner: common.driver.aliyuncs.com
-    cn-shenzhen: common.driver.aliyuncs.com
-    cn-shenzhen-inner: common.driver.aliyuncs.com
-    us-east-1: common.driver.aliyuncs.com
-    us-west-1: common.driver.aliyuncs.com
-  known_endpoints:
-    ap-southeast-1: common.driver.aliyuncs.com
-    cn-beijing: common.driver.aliyuncs.com
-    cn-hangzhou: common.driver.aliyuncs.com
-    cn-hongkong: common.driver.aliyuncs.com
-    cn-qingdao: common.driver.aliyuncs.com
-    cn-shanghai: common.driver.aliyuncs.com
-    cn-shenzhen: common.driver.aliyuncs.com
-    us-east-1: common.driver.aliyuncs.com
-    us-west-1: common.driver.aliyuncs.com
-  api_style: ""
-  apis: []
-- name: Cloudauth
-  version: 2017-10-10
-  location_service_code: ""
-  descriptions:
-    en: Real Person Authentication **
-    zh: 实人认证
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/60687.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/60687.html
-    zh: https://help.aliyun.com/document_detail/60687.html
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: RPC
-  apis:
-  - SubmitMaterials
-  - GetVerifyToken
-  - GetStatus
-  - GetMaterials
-  - CompareFaces
-- name: CF
-  version: 2015-11-27
-  location_service_code: ""
-  descriptions:
-    en: Antifraud **
-    zh: 数据风控
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/28326.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/28326.html
-    zh: https://help.aliyun.com/document_detail/28326.html
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: ""
-  apis:
-  - CFMonthlyPayment
-  - MonthlyPaymentCheckOrder
-  - CfAccountQuery
-  - CfAccountFeedback
-  - Authenticate
-  - QuerySimple
-- name: Green
+- code: Green
   version: 2017-01-12
   location_service_code: green
-  descriptions:
-    en: Contents Security **
+  name:
+    en: Alibaba Content Security Service
     zh: 内容安全
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/28427.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/28427.html
-    zh: https://help.aliyun.com/document_detail/28427.html
+  document_id: "28427"
+  site_url: https://www.aliyun.com/product/lvwang
+  sites:
+  - zh
   endpoint_patterns:
   - green.aliyuncs.com
   - green.[RegionId].aliyuncs.com
@@ -280,76 +200,85 @@ products:
     cn-shenzhen: green.aliyuncs.com
     us-east-1: green.aliyuncs.com
     us-west-1: green.aliyuncs.com
-  api_style: ROA
+  api_style: restful
   apis: []
-- name: aegis
-  version: 2016-11-11
-  location_service_code: ""
-  descriptions: {}
-  links: {}
+- code: Cloudauth
+  version: 2017-10-10
+  location_service_code: cloudauth
+  name:
+    en: ID Verification
+    zh: 实人认证
+  document_id: "60687"
+  site_url: https://www.aliyun.com/product/cloudauth
+  sites:
+  - zh
+  - en
   endpoint_patterns:
-  - aegis.[RegionId].aliyuncs.com
-  endpoints: {}
-  known_endpoints:
-    cn-hangzhou: aegis.cn-hangzhou.aliyuncs.com
-  api_style: ""
-  apis:
-  - QueryLoginEvent
-  - QueryCrackEvent
-  - GetStatisticsByUuid
-  - GetStatistics
-  - GetEntityList
-  - GetCrackStatistics
-  - GetAccountStatistics
-  - UpgradeInstance
-  - RenewInstance
-  - ReleaseInstance
-  - CreateInstance
-- name: Crm
-  version: 2015-04-08
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
+  - cloudauth.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ""
+  api_style: rpc
   apis:
-  - DeleteLabelForBid
-  - CheckLabelForBid
-  - AddLabelForBid
-  - GetAliyunPkByAliyunId
-  - BatchGetAliyunIdByAliyunPk
-  - RemoveIdentityCertifiedForBidUser
-  - QueryBidUserCertifiedInfo
-  - AddIdentityCertifiedForBidUser
-  - DeleteLabel
-  - CheckLabel
-  - AddLabel
-  - QueryCustomerLabel
-- name: IDST
-  version: 2017-09-22
-  location_service_code: imagesearch
-  descriptions: {}
-  links: {}
+  - SubmitMaterials
+  - GetVerifyToken
+  - GetStatus
+  - GetMaterials
+  - CompareFaces
+- code: CF
+  version: 2015-11-27
+  location_service_code: ""
+  name:
+    en: Alibaba Antifraud Service
+    zh: 数据风控
+  document_id: "28326"
+  site_url: https://www.aliyun.com/product/antifraud
+  sites:
+  - zh
   endpoint_patterns:
-  - idst.[RegionId].aliyuncs.com
+  - cf.aliyuncs.com
   endpoints: {}
-  known_endpoints:
-    ap-southeast-1: imagesearch.ap-southeast-1.aliyuncs.com
-    cn-shanghai: idst.cn-shanghai.aliyuncs.com
-  api_style: ROA
-  apis: []
-- name: HPC
+  known_endpoints: {}
+  api_style: rpc
+  apis:
+  - CFMonthlyPayment
+  - MonthlyPaymentCheckOrder
+  - CfAccountQuery
+  - CfAccountFeedback
+  - Authenticate
+  - QuerySimple
+- code: Httpdns
+  version: 2016-02-01
+  location_service_code: ""
+  name:
+    en: HttpDNS
+    zh: HTTPDNS
+  document_id: "52679"
+  site_url: https://www.aliyun.com/product/httpdns
+  sites:
+  - zh
+  endpoint_patterns:
+  - httpdns-api.aliyuncs.com
+  endpoints: {}
+  known_endpoints: {}
+  api_style: rpc
+  apis:
+  - GetResolveCountSummary
+  - ListDomains
+  - GetResolveStatistics
+  - GetAccountInfo
+  - DescribeDomains
+  - DeleteDomain
+  - AddDomain
+- code: HPC
   version: 2016-12-13
   location_service_code: hpc
-  descriptions:
-    en: High Performance Computing *
-    zh: 高性能计算
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/35201.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/35201.html
-    zh: https://help.aliyun.com/document_detail/35201.html
+  name:
+    en: Alibaba Cloud HPC
+    zh: 高性能计算 HPC
+  document_id: "35201"
+  site_url: https://www.aliyun.com/product/hpc
+  sites:
+  - zh
   endpoint_patterns:
   - hpc.aliyuncs.com
   - hpc.[RegionId].aliyuncs.com
@@ -379,7 +308,7 @@ products:
     cn-shenzhen: hpc.aliyuncs.com
     us-east-1: hpc.aliyuncs.com
     us-west-1: hpc.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
   - StopJumpserver
   - StartJumpserver
@@ -392,43 +321,23 @@ products:
   - DescribeInstancesInSecurityGroup
   - DescribeInstances
   - AuthorizeSecurityGroup
-- name: Bss
-  version: 2014-07-14
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: ""
-  apis:
-  - OpenCallback
-  - QueryForCssOrder
-  - CreateOrder
-  - vnoPayCallBackNotify
-  - vnoBatchRefundOrder
-  - SubscriptionCreateOrderApi
-  - SetResourceBusinessStatus
-  - DescribeCouponList
-  - DescribeCouponDetail
-  - DescribeCashDetail
-- name: CCC
+- code: CCC
   version: 2017-07-05
   location_service_code: ""
-  descriptions:
-    en: Cloud Call Center *
+  name:
+    en: cloud call center
     zh: 云呼叫中心
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/63027.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/63027.html
-    zh: https://help.aliyun.com/document_detail/63027.html
+  document_id: "63027"
+  site_url: https://www.aliyun.com/product/ccc
+  sites:
+  - zh
   endpoint_patterns:
   - ccc.[RegionId].aliyuncs.com
   endpoints: {}
   known_endpoints:
     cn-hangzhou: ccc.cn-hangzhou.aliyuncs.com
     cn-shanghai: ccc.cn-shanghai.aliyuncs.com
-  api_style: RPC
+  api_style: rpc
   apis:
   - ListCallDetailRecords
   - ListRecordings
@@ -455,38 +364,100 @@ products:
   - ModifySkillGroup
   - ModifyUser
   - RefreshToken
-- name: Httpdns
-  version: 2016-02-01
+- code: aegis
+  version: 2016-11-11
   location_service_code: ""
-  descriptions:
-    en: HTTP DNS *
-    zh: HTTPDNS
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/52679.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/52679.html
-    zh: https://help.aliyun.com/document_detail/52679.html
-  endpoint_patterns: []
+  name:
+    en: Server Guard
+    zh: 服务器安全（安骑士）
+  document_id: ""
+  site_url: https://www.aliyun.com/product/aegis
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - aegis.[RegionId].aliyuncs.com
+  endpoints: {}
+  known_endpoints:
+    cn-hangzhou: aegis.cn-hangzhou.aliyuncs.com
+  api_style: rpc
+  apis:
+  - DescribeSuspiciousExportInfo
+  - CreateSuspiciousExport
+  - ModifyStrategyTarget
+  - ModifyStrategy
+  - ModifyBatchIgnoreVul
+  - DescribeWebshell
+  - DescribeWarning
+  - DescribeVulList
+  - DescribeVulDetails
+  - DescribeSuspiciousEvents
+  - DescribeStratetyDetail
+  - DescribeStratety
+  - DescribeStrategyTarget
+  - DescribeLoginLogs
+  - DeleteStrategy
+  - QueryLoginEvent
+  - QueryCrackEvent
+  - GetStatisticsByUuid
+  - GetStatistics
+  - GetEntityList
+  - GetCrackStatistics
+  - GetAccountStatistics
+  - UpgradeInstance
+  - RenewInstance
+  - ReleaseInstance
+  - CreateInstance
+- code: Domain
+  version: 2016-05-11
+  location_service_code: ""
+  name:
+    en: domain
+    zh: 域名
+  document_id: "42875"
+  site_url: https://wanwang.aliyun.com/domain/
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - domain.aliyuncs.com
+  - domain-share.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ""
+  api_style: rpc
   apis:
-  - GetResolveCountSummary
-  - ListDomains
-  - GetResolveStatistics
-  - GetAccountInfo
-  - DescribeDomains
-  - DeleteDomain
-  - AddDomain
-- name: jaq
+  - SaveTaskForUpdatingContactByTempateId
+  - SaveTaskForUpdatingContactByTemplateId
+  - SaveTaskForSubmittingDomainNameCredentialByTemplateId
+  - SaveTaskForSubmittingDomainNameCredential
+  - SaveTaskForModifyingDomainDns
+  - SaveContactTemplateCredential
+  - QueryFailReasonList
+  - WhoisProtection
+  - QueryBatchTaskList
+  - QueryBatchTaskDetailList
+  - QueryDomainList
+  - QueryDomainBySaleId
+  - QueryContact
+  - DeleteContactTemplate
+  - SaveContactTemplate
+  - QueryContactTemplate
+  - OSuborderDomain
+  - QueryOrder
+  - GetWhoisInfo
+  - CreateOrder
+  - CheckDomain
+- code: jaq
   version: 2016-11-23
   location_service_code: ""
-  descriptions:
+  name:
     en: Mobile Security
     zh: 移动安全
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/35037.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/35037.html
-    zh: https://help.aliyun.com/document_detail/35037.html
+  document_id: "35037"
+  site_url: https://www.aliyun.com/product/mobsec
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - jaq.aliyuncs.com
   - jaq-share.aliyuncs.com
@@ -517,7 +488,7 @@ products:
     cn-shenzhen: jaq.aliyuncs.com
     us-east-1: jaq.aliyuncs.com
     us-west-1: jaq.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
   - MessagePrevention
   - SpamRegisterPrevention
@@ -528,103 +499,73 @@ products:
   - BbsPrevention
   - AfsCheck
   - AfsAppCheck
-- name: Domain
-  version: 2016-05-11
+- code: CSB
+  version: 2017-11-18
   location_service_code: ""
-  descriptions:
-    en: Domain Name *
-    zh: 域名
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/42875.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/42875.html
-    zh: https://help.aliyun.com/document_detail/42875.html
-  endpoint_patterns: []
+  name:
+    en: Cloud Service Bus
+    zh: 云服务总线 CSB
+  document_id: "64837"
+  site_url: https://www.aliyun.com/product/csb
+  sites:
+  - zh
+  endpoint_patterns:
+  - csb.[RegionId].aliyuncs.com
   endpoints: {}
-  known_endpoints: {}
-  api_style: RPC
+  known_endpoints:
+    cn-hangzhou: csb.cn-hangzhou.aliyuncs.com
+  api_style: rpc
   apis:
-  - SaveTaskForUpdatingContactByTempateId
-  - SaveTaskForUpdatingContactByTemplateId
-  - SaveTaskForSubmittingDomainNameCredentialByTemplateId
-  - SaveTaskForSubmittingDomainNameCredential
-  - SaveTaskForModifyingDomainDns
-  - SaveContactTemplateCredential
-  - QueryFailReasonList
-  - WhoisProtection
-  - QueryBatchTaskList
-  - QueryBatchTaskDetailList
-  - QueryDomainList
-  - QueryDomainBySaleId
-  - QueryContact
-  - DeleteContactTemplate
-  - SaveContactTemplate
-  - QueryContactTemplate
-  - OSuborderDomain
-  - QueryOrder
-  - GetWhoisInfo
+  - DeleteUnionCasService
+  - PublishUnionCasService
+  - UpdateServiceQPS
+  - DeleteServiceList
+  - UpdateOrderList
+  - UpdateServiceListStatus
+  - UpdateProjectListStatus
+  - ApproveOrderList
+  - DeleteProject
+  - DeleteService
+  - DeleteOrderList
+  - DeleteProjectList
+  - CreateCredentials
+  - CreateService
+  - UpdateService
+  - UpdateOrder
   - CreateOrder
-  - CheckDomain
-- name: Drds
-  version: 2015-04-13
-  location_service_code: ""
-  descriptions:
-    en: Distributed Relational Database Service *
-    zh: 分布式关系型数据库DRDS
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/51111.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/51111.html
-    zh: https://help.aliyun.com/document_detail/51111.html
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: ""
-  apis:
-  - QueryInstanceInfoByConn
-  - ProductInfoComplement
-  - DrdsApiValidateOrder
-  - CancleDDLTask
-  - DescribeRegions
-  - DescribeDrdsInstanceNetInfoForInner
-  - RemoveReadOnlyAccount
-  - ModifyReadOnlyAccountPassword
-  - DescribeReadOnlyAccount
-  - CreateReadOnlyAccount
-  - ModifyRdsReadWeight
-  - ModifyFullTableScan
-  - DescribeShardDBs
-  - DescribeShardDbConnectionInfo
-  - DescribeRdsList
-  - DeleteFailedDrdsDB
-  - DescribeDrdsDBIpWhiteList
-  - ModifyDrdsIpWhiteList
-  - RemoveDrdsInstance
-  - DescribeCreateDrdsInstanceStatus
-  - ModifyDrdsInstanceDescription
-  - ModifyDrdsDBPasswd
-  - ListUnCompleteTasks
-  - DropTables
-  - DropIndexes
-  - DescribeDrdsInstances
-  - DescribeDrdsInstance
-  - DescribeDrdsDBs
-  - DescribeDrdsDB
-  - DescribeDDLTask
-  - DeleteDrdsDB
-  - CreateTable
-  - CreateIndex
-  - CreateDrdsInstance
-  - CreateDrdsDB
-  - CancelDDLTask
-  - AlterTable
-- name: Domain-intl
+  - UpdateProject
+  - CreateProject
+  - DeleteCredentialsList
+  - FindProjectsNameList
+  - GetProject
+  - GetService
+  - CheckServiceExist
+  - GetOrder
+  - FindProjectList
+  - FindApprovalOrderList
+  - FindApproveServiceList
+  - FindCredentialsList
+  - RenewCredentials
+  - ReplaceCredential
+  - FindOrderableList
+  - FindOrderedList
+  - FindServiceList
+- code: Domain-intl
   version: 2017-12-18
   location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
+  name:
+    en: domain
+    zh: 域名
+  document_id: ""
+  site_url: https://wanwang.aliyun.com/domain/
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - domain-intl.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: RPC
+  api_style: rpc
   apis:
   - QueryTaskInfoHistory
   - QueryTaskDetailHistory
@@ -663,196 +604,371 @@ products:
   - SaveSingleTaskForUpdatingContactInfo
   - SaveBatchTaskForUpdatingContactInfo
   - SaveSingleTaskForCreatingOrderActivate
-- name: CSB
-  version: 2017-11-18
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns:
-  - csb.[RegionId].aliyuncs.com
-  endpoints: {}
-  known_endpoints:
-    cn-hangzhou: csb.cn-hangzhou.aliyuncs.com
-  api_style: RPC
-  apis:
-  - DeleteUnionCasService
-  - PublishUnionCasService
-  - UpdateServiceQPS
-  - DeleteServiceList
-  - UpdateOrderList
-  - UpdateServiceListStatus
-  - UpdateProjectListStatus
-  - ApproveOrderList
-  - DeleteProject
-  - DeleteService
-  - DeleteOrderList
-  - DeleteProjectList
-  - CreateCredentials
-  - CreateService
-  - UpdateService
-  - UpdateOrder
-  - CreateOrder
-  - UpdateProject
-  - CreateProject
-  - DeleteCredentialsList
-  - FindProjectsNameList
-  - GetProject
-  - GetService
-  - CheckServiceExist
-  - GetOrder
-  - FindProjectList
-  - FindApprovalOrderList
-  - FindApproveServiceList
-  - FindCredentialsList
-  - RenewCredentials
-  - ReplaceCredential
-  - FindOrderableList
-  - FindOrderedList
-  - FindServiceList
-- name: Dds
-  version: 2015-12-01
-  location_service_code: dds
-  descriptions:
-    en: ApsaraDB for MongoDB
-    zh: 云数据库MongoDB版
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/61715.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/61715.html
-    zh: https://help.aliyun.com/document_detail/61715.html
-  endpoint_patterns:
-  - mongodb.aliyuncs.com
-  - mongodb.[RegionId].aliyuncs.com
-  - mongodb-inner.aliyuncs.com
-  - mongodb-share.aliyuncs.com
-  - mongodb-share.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: mongodb.aliyuncs.com
-    cn-beijing: mongodb.aliyuncs.com
-    cn-beijing-inner: mongodb.aliyuncs.com
-    cn-hangzhou: mongodb.aliyuncs.com
-    cn-hangzhou-d: mongodb.aliyuncs.com
-    cn-hongkong: mongodb.aliyuncs.com
-    cn-qingdao: mongodb.aliyuncs.com
-    cn-qingdao-cm9: mongodb.aliyuncs.com
-    cn-shanghai: mongodb.aliyuncs.com
-    cn-shanghai-et2-b01: mongodb.aliyuncs.com
-    cn-shanghai-inner: mongodb.aliyuncs.com
-    cn-shenzhen: mongodb.aliyuncs.com
-    cn-shenzhen-inner: mongodb.aliyuncs.com
-    us-east-1: mongodb.aliyuncs.com
-    us-west-1: mongodb.aliyuncs.com
-  known_endpoints:
-    ap-southeast-1: mongodb.aliyuncs.com
-    ap-southeast-2: mongodb.ap-southeast-2.aliyuncs.com
-    ap-southeast-3: mongodb.ap-southeast-3.aliyuncs.com
-    cn-beijing: mongodb.aliyuncs.com
-    cn-hangzhou: mongodb.aliyuncs.com
-    cn-hongkong: mongodb.aliyuncs.com
-    cn-huhehaote: mongodb.cn-huhehaote.aliyuncs.com
-    cn-qingdao: mongodb.aliyuncs.com
-    cn-shanghai: mongodb.aliyuncs.com
-    cn-shenzhen: mongodb.aliyuncs.com
-    cn-zhangjiakou: mongodb.cn-zhangjiakou.aliyuncs.com
-    eu-central-1: mongodb.eu-central-1.aliyuncs.com
-    us-east-1: mongodb.aliyuncs.com
-    us-west-1: mongodb.aliyuncs.com
-  api_style: ""
-  apis:
-  - ModifyReplicaRelation
-  - ModifyReplicaMode
-  - ModifyGuardDomainMode
-  - ModifyParameters
-  - DescribeParameterTemplates
-  - DescribeParameters
-  - DescribeParameterModificationHistory
-  - UpgradeDBInstanceEngineVersion
-  - ReleasePublicNetworkAddress
-  - AllocatePublicNetworkAddress
-  - ModifyDBInstanceMaintainTime
-  - DescribeShardingNetworkAddress
-  - DescribeAuditRecords
-  - DescribeAuditFiles
-  - ModifyDBInstanceNetExpireTime
-  - DescribeReplicas
-  - ReleaseReplica
-  - ModifyReplicaDescription
-  - DescribeReplicaUsage
-  - DescribeReplicaPerformance
-  - DescribeReplicaInitializeProgress
-  - ModifyNodeSpec
-  - DeleteNode
-  - CreateShardingDBInstance
-  - CreateNode
-  - Sample
-  - ModifyDBInstanceNetworkType
-  - RenewDBInstance
-  - CreateBackup
-  - DescribeDBInstancePerformance
-  - DescribeDBInstanceAttribute
-  - DescribeBackups
-  - DescribeBackupPolicy
-  - DescribeAccounts
-  - DeleteDBInstance
-  - CreateDBInstance
-  - DescribeSecurityIps
-  - DescribeReplicaSetRole
-  - DescribeRegions
-  - DescribeDBInstances
-  - RestoreDBInstance
-  - RestartDBInstance
-  - ResetAccountPassword
-  - ModifySecurityIps
-  - ModifyDBInstanceSpec
-  - ModifyDBInstanceDescription
-  - ModifyBackupPolicy
-  - ModifyAccountDescription
-- name: OssAdmin
+- code: OssAdmin
   version: 2017-01-15
   location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
+  name:
+    en: Object Storage Service
+    zh: 对象存储 OSS
+  document_id: ""
+  site_url: //www.aliyun.com/product/oss
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - oss-admin.aliyuncs.com
+  - oss-admin-taiwan.aliyuncs.com
+  - oss-in-west-antgroup-1.aliyuncs.com
+  - oss-in-west-antgroup-2.aliyuncs.com
+  - oss-admin-share.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ""
+  api_style: rpc
   apis:
   - ProduceInstance
   - FillInstanceParam
-- name: Market
-  version: 2015-11-01
+- code: Drds
+  version: 2015-04-13
   location_service_code: ""
-  descriptions: {}
-  links: {}
+  name:
+    en: Distributed Relational Database Service
+    zh: 分布式关系型数据库服务 DRDS
+  document_id: "51111"
+  site_url: https://www.aliyun.com/product/drds
+  sites:
+  - zh
   endpoint_patterns:
-  - market.aliyuncs.com
-  - market.[RegionId].aliyuncs.com
+  - drds.aliyuncs.com
   endpoints: {}
-  known_endpoints:
-    ap-southeast-1: market.ap-southeast-1.aliyuncs.com
-  api_style: ""
+  known_endpoints: {}
+  api_style: rpc
   apis:
-  - SubscribeImage
-  - BindImagePackage
-  - DescribeProduct
-  - DescribePrice
-  - DescribeOrder
-  - DescribeInstance
-  - CreateOrder
-  - PushMeteringData
-  - DescribeLicense
-  - ActivateLicense
-  - QueryMarketImages
-  - QueryMarketCategories
-- name: Dm
+  - QueryInstanceInfoByConn
+  - ProductInfoComplement
+  - DrdsApiValidateOrder
+  - CancleDDLTask
+  - DescribeRegions
+  - DescribeDrdsInstanceNetInfoForInner
+  - RemoveReadOnlyAccount
+  - ModifyReadOnlyAccountPassword
+  - DescribeReadOnlyAccount
+  - CreateReadOnlyAccount
+  - ModifyRdsReadWeight
+  - ModifyFullTableScan
+  - DescribeShardDBs
+  - DescribeShardDbConnectionInfo
+  - DescribeRdsList
+  - DeleteFailedDrdsDB
+  - DescribeDrdsDBIpWhiteList
+  - ModifyDrdsIpWhiteList
+  - RemoveDrdsInstance
+  - DescribeCreateDrdsInstanceStatus
+  - ModifyDrdsInstanceDescription
+  - ModifyDrdsDBPasswd
+  - ListUnCompleteTasks
+  - DropTables
+  - DropIndexes
+  - DescribeDrdsInstances
+  - DescribeDrdsInstance
+  - DescribeDrdsDBs
+  - DescribeDrdsDB
+  - DescribeDDLTask
+  - DeleteDrdsDB
+  - CreateTable
+  - CreateIndex
+  - CreateDrdsInstance
+  - CreateDrdsDB
+  - CancelDDLTask
+  - AlterTable
+- code: Ocs
+  version: 2015-03-01
+  location_service_code: ""
+  name:
+    en: ApsaraDB for Memcache
+    zh: 云数据库 Memcache 版
+  document_id: "62833"
+  site_url: //www.aliyun.com/product/ocs
+  sites:
+  - zh
+  endpoint_patterns:
+  - pop-ocs.aliyuncs.com
+  - m-kvstore.aliyuncs.com
+  - m-kvstore.[RegionId].aliyuncs.com
+  - pop-ocs-inner.aliyuncs.com
+  - m-kvstore-in-west-antgroup-1.aliyuncs.com
+  - m-kvstore-in-west-antgroup-2.aliyuncs.com
+  endpoints:
+    ap-southeast-1: m-kvstore.aliyuncs.com
+    cn-beijing: m-kvstore.aliyuncs.com
+    cn-beijing-inner: m-kvstore.aliyuncs.com
+    cn-hangzhou: m-kvstore.aliyuncs.com
+    cn-hangzhou-d: m-kvstore.aliyuncs.com
+    cn-hongkong: m-kvstore.aliyuncs.com
+    cn-qingdao: m-kvstore.aliyuncs.com
+    cn-qingdao-cm9: m-kvstore.aliyuncs.com
+    cn-shanghai: m-kvstore.aliyuncs.com
+    cn-shanghai-et2-b01: m-kvstore.aliyuncs.com
+    cn-shanghai-inner: m-kvstore.aliyuncs.com
+    cn-shenzhen: m-kvstore.aliyuncs.com
+    cn-shenzhen-inner: m-kvstore.aliyuncs.com
+    us-east-1: m-kvstore.aliyuncs.com
+    us-west-1: m-kvstore.aliyuncs.com
+  known_endpoints:
+    ap-southeast-1: m-kvstore.aliyuncs.com
+    cn-beijing: m-kvstore.aliyuncs.com
+    cn-hangzhou: m-kvstore.aliyuncs.com
+    cn-hongkong: m-kvstore.aliyuncs.com
+    cn-qingdao: m-kvstore.aliyuncs.com
+    cn-shanghai: m-kvstore.aliyuncs.com
+    cn-shenzhen: m-kvstore.aliyuncs.com
+    us-east-1: m-kvstore.aliyuncs.com
+    us-west-1: m-kvstore.aliyuncs.com
+  api_style: rpc
+  apis:
+  - ModifyNetworkType
+  - ModifyHotKeySwitchMode
+  - DescribeZones
+  - ActivateInstance
+  - AddAuthenticIP
+  - CreateInstance
+  - DeactivateInstance
+  - DeleteInstance
+  - DescribeInstances
+  - DescribeHistoryMonitorValues
+  - DescribeAuthenticIP
+  - DescribeSecurityIps
+  - DescribeRegions
+  - DescribeMonitorValues
+  - DescribeMonitorItems
+  - ModifySecurityIps
+  - ModifyInstanceCapacity
+  - ModifyInstanceAttribute
+  - FlushInstance
+  - VerifyPassword
+  - ReplaceAuthenticIP
+  - RemoveAuthenticIP
+  - DataOperate
+- code: Ots
+  version: 2016-06-20
+  location_service_code: ""
+  name:
+    en: Table Store
+    zh: 表格存储
+  document_id: "27304"
+  site_url: //www.aliyun.com/product/ots
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - ots.[RegionId].aliyuncs.com
+  endpoints:
+    ap-southeast-1: ots-pop.aliyuncs.com
+    cn-beijing: ots-pop.aliyuncs.com
+    cn-beijing-inner: ots-pop.aliyuncs.com
+    cn-hangzhou: ots-pop.aliyuncs.com
+    cn-hangzhou-d: ots-pop.aliyuncs.com
+    cn-hongkong: ots-pop.aliyuncs.com
+    cn-qingdao: ots-pop.aliyuncs.com
+    cn-qingdao-cm9: ots-pop.aliyuncs.com
+    cn-shanghai: ots-pop.aliyuncs.com
+    cn-shanghai-et2-b01: ots-pop.aliyuncs.com
+    cn-shanghai-inner: ots-pop.aliyuncs.com
+    cn-shenzhen: ots-pop.aliyuncs.com
+    cn-shenzhen-inner: ots-pop.aliyuncs.com
+    us-east-1: ots-pop.aliyuncs.com
+    us-west-1: ots-pop.aliyuncs.com
+  known_endpoints:
+    ap-northeast-1: ots.ap-northeast-1.aliyuncs.com
+    ap-southeast-1: ots.ap-southeast-1.aliyuncs.com
+    ap-southeast-2: ots.ap-southeast-2.aliyuncs.com
+    ap-southeast-3: ots.ap-southeast-3.aliyuncs.com
+    cn-beijing: ots.cn-beijing.aliyuncs.com
+    cn-hangzhou: ots.cn-hangzhou.aliyuncs.com
+    cn-hongkong: ots.cn-hongkong.aliyuncs.com
+    cn-huhehaote: ots.cn-huhehaote.aliyuncs.com
+    cn-shanghai: ots.cn-shanghai.aliyuncs.com
+    cn-shenzhen: ots.cn-shenzhen.aliyuncs.com
+    cn-zhangjiakou: ots.cn-zhangjiakou.aliyuncs.com
+    eu-central-1: ots.eu-central-1.aliyuncs.com
+    me-east-1: ots.me-east-1.aliyuncs.com
+    us-west-1: ots.us-west-1.aliyuncs.com
+  api_style: rpc
+  apis:
+  - UpdateInstance
+  - UnbindInstance2Vpc
+  - ListVpcInfoByVpc
+  - ListVpcInfoByInstance
+  - ListTags
+  - ListInstance
+  - ListClusterType
+  - InsertTags
+  - InsertInstance
+  - GetInstance
+  - DeleteTags
+  - DeleteInstance
+  - BindInstance2Vpc
+- code: ITaaS
+  version: 2017-05-09
+  location_service_code: ""
+  name:
+    en: Cloud Display
+    zh: 云投屏
+  document_id: ""
+  site_url: https://www.aliyun.com/product/cd
+  sites:
+  - zh
+  endpoint_patterns:
+  - itaas.aliyuncs.com
+  - itaas.[RegionId].aliyuncs.com
+  endpoints: {}
+  known_endpoints: {}
+  api_style: rpc
+  apis:
+  - ShareGuestSendMessageUrl
+  - ShareGuestSenderRegister
+  - BoxLoginoutReport4Appkey
+  - SetWelcomePageURIToBoxByTP
+  - ShareScreenMeetingRob4Appkey
+  - ShareSendMessageUrl4Appkey
+  - ShareSenderRegister4Appkey
+  - ShareClientHeartBeat4Appkey
+  - BoxSendMessageUrl4Appkey
+  - BoxRegisterUpdate4Appkey
+  - BoxClientHeartBeat4Appkey
+  - BoxRegisterUpdate
+  - BoxLoginoutReport
+  - ShareScreenMeetingRob
+  - ShareSendMessageUrl
+  - ShareSenderRegister
+  - ShareGetReceiverInfo
+  - ShareClientHeartBeat
+  - ResumeInstance
+  - ReleaseInstance
+  - ProduceInstance
+  - CeaseInstance
+  - GetEnterpriseConfig
+  - CreateEnterprise
+  - UpdateRoomName
+  - UpdateIPSegment
+  - UpdateEnterpriseConfig
+  - SetWelcomePageURI
+  - RemoveRegisterBox
+  - RemoveIPSegment
+  - RemoveBoxCode
+  - GetWelcomePageURI
+  - GetRegisterHistoryList
+  - GetRegisterBoxNumber
+  - GetRegisterBoxList
+  - GetIPSegmentsList
+  - GetCompanyId4BoxActived
+  - GetBoxCodeList
+  - CreateBoxCode
+  - CheckBuyVideoConference
+  - CheckBuyShareScreen
+  - AddIPSegment
+  - BoxSendMessageUrl
+  - BoxRegister
+  - BoxClientHeartBeat
+- code: Iot
+  version: 2016-05-30
+  location_service_code: ""
+  name:
+    en: Alibaba Cloud IoT
+    zh: 物联网套件
+  document_id: "30557"
+  site_url: https://www.aliyun.com/product/iot
+  sites:
+  - zh
+  endpoint_patterns:
+  - iot.aliyuncs.com
+  - iot.[RegionId].aliyuncs.com
+  - iot-share.[RegionId].aliyuncs.com
+  endpoints:
+    ap-southeast-1: iot.ap-southeast-1.aliyuncs.com
+    cn-beijing: iot.aliyuncs.com
+    cn-beijing-inner: iot.aliyuncs.com
+    cn-hangzhou: iot.aliyuncs.com
+    cn-hangzhou-d: iot.aliyuncs.com
+    cn-hongkong: iot.aliyuncs.com
+    cn-qingdao: iot.aliyuncs.com
+    cn-qingdao-cm9: iot.aliyuncs.com
+    cn-shanghai: iot.cn-shanghai.aliyuncs.com
+    cn-shanghai-et2-b01: iot.aliyuncs.com
+    cn-shanghai-inner: iot.aliyuncs.com
+    cn-shenzhen: iot.aliyuncs.com
+    cn-shenzhen-inner: iot.aliyuncs.com
+    us-east-1: iot.aliyuncs.com
+    us-west-1: iot.us-west-1.aliyuncs.com
+  known_endpoints:
+    ap-southeast-1: iot.ap-southeast-1.aliyuncs.com
+    cn-beijing: iot.aliyuncs.com
+    cn-hangzhou: iot.aliyuncs.com
+    cn-hongkong: iot.aliyuncs.com
+    cn-qingdao: iot.aliyuncs.com
+    cn-shanghai: iot.cn-shanghai.aliyuncs.com
+    cn-shenzhen: iot.aliyuncs.com
+    us-east-1: iot.aliyuncs.com
+    us-west-1: iot.us-west-1.aliyuncs.com
+  api_style: rpc
+  apis:
+  - SaveServerCallback
+  - QueryServerCallback
+  - UpdateProductTopic
+  - QueryProductTopic
+  - QueryDeviceTopic
+  - DeleteProductTopic
+  - DebugRuleSql
+  - CreateProductTopic
+  - UpdateRuleAction
+  - UpdateRule
+  - UpdateProduct
+  - StopRule
+  - StartRule
+  - QueryTopic
+  - QueryProductByUserId
+  - QueryProduct
+  - QueryPageByApplyId
+  - QueryDeviceByName
+  - QueryDeviceById
+  - QueryDevice
+  - QueryApplyStatus
+  - ListRuleActions
+  - ListRule
+  - GetRuleAction
+  - GetRule
+  - GetCats
+  - DeleteRuleAction
+  - DeleteRule
+  - DeleteDevice
+  - CreateRuleAction
+  - CreateRule
+  - CreateProduct
+  - CheckTopicPermission
+  - BatchGetDeviceState
+  - ApplyDeviceWithNames
+  - ServerOnline
+  - UnSub
+  - SubTopicFilter
+  - Sub
+  - RevertRpc
+  - Pub
+  - ListDevicePermits
+  - DeviceRevokeByTopic
+  - DeviceRevokeById
+  - DevicePermitModify
+  - DeviceGrant
+  - RegistDevice
+- code: Dm
   version: 2015-11-23
   location_service_code: ""
-  descriptions:
+  name:
     en: Direct Mail
     zh: 邮件推送
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/29434.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/29434.html
-    zh: https://help.aliyun.com/document_detail/29434.html
+  document_id: "29434"
+  site_url: //www.aliyun.com/product/directmail
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - dm.aliyuncs.com
   - dm.[RegionId].aliyuncs.com
@@ -883,7 +999,7 @@ products:
     cn-shenzhen: dm.aliyuncs.com
     us-east-1: dm.aliyuncs.com
     us-west-1: dm.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
   - DescAccountSummary2
   - MigrateMarket
@@ -946,383 +1062,215 @@ products:
   - SingleSendMail
   - SendTestByTemplate
   - SenderStatisticsByTagNameAndBatchID
-- name: Oms
-  version: 2016-06-15
-  location_service_code: ""
-  descriptions: {}
-  links: {}
+- code: Dds
+  version: 2015-12-01
+  location_service_code: dds
+  name:
+    en: ApsaraDB for MongoDB
+    zh: 云数据库 MongoDB 版
+  document_id: "61715"
+  site_url: //www.aliyun.com/product/mongodb
+  sites:
+  - zh
+  - en
   endpoint_patterns:
-  - oms.aliyuncs.com
-  - oms-taiwan.aliyuncs.com
-  - oms-inner.aliyuncs.com
-  - oms-share.aliyuncs.com
-  - oms-inner.[RegionId].aliyuncs.com
-  - oms-share.[RegionId].aliyuncs.com
-  - oms.[RegionId].aliyuncs.com
+  - mongodb.aliyuncs.com
+  - mongodb.[RegionId].aliyuncs.com
+  - mongodb-inner.aliyuncs.com
+  - mongodb-share.aliyuncs.com
+  - mongodb-share.[RegionId].aliyuncs.com
   endpoints:
-    ap-southeast-1: oms.aliyuncs.com
-    cn-beijing: oms.aliyuncs.com
-    cn-beijing-inner: oms.aliyuncs.com
-    cn-hangzhou: oms.aliyuncs.com
-    cn-hangzhou-d: oms.aliyuncs.com
-    cn-hongkong: oms.aliyuncs.com
-    cn-qingdao: oms.aliyuncs.com
-    cn-qingdao-cm9: oms.aliyuncs.com
-    cn-shanghai: oms.aliyuncs.com
-    cn-shanghai-et2-b01: oms.aliyuncs.com
-    cn-shanghai-inner: oms.aliyuncs.com
-    cn-shenzhen: oms.aliyuncs.com
-    cn-shenzhen-inner: oms.aliyuncs.com
-    us-east-1: oms.aliyuncs.com
-    us-west-1: oms.aliyuncs.com
+    ap-southeast-1: mongodb.aliyuncs.com
+    cn-beijing: mongodb.aliyuncs.com
+    cn-beijing-inner: mongodb.aliyuncs.com
+    cn-hangzhou: mongodb.aliyuncs.com
+    cn-hangzhou-d: mongodb.aliyuncs.com
+    cn-hongkong: mongodb.aliyuncs.com
+    cn-qingdao: mongodb.aliyuncs.com
+    cn-qingdao-cm9: mongodb.aliyuncs.com
+    cn-shanghai: mongodb.aliyuncs.com
+    cn-shanghai-et2-b01: mongodb.aliyuncs.com
+    cn-shanghai-inner: mongodb.aliyuncs.com
+    cn-shenzhen: mongodb.aliyuncs.com
+    cn-shenzhen-inner: mongodb.aliyuncs.com
+    us-east-1: mongodb.aliyuncs.com
+    us-west-1: mongodb.aliyuncs.com
   known_endpoints:
-    ap-southeast-1: oms.aliyuncs.com
-    cn-beijing: oms.aliyuncs.com
-    cn-hangzhou: oms.aliyuncs.com
-    cn-hongkong: oms.aliyuncs.com
-    cn-qingdao: oms.aliyuncs.com
-    cn-shanghai: oms.aliyuncs.com
-    cn-shenzhen: oms.aliyuncs.com
-    us-east-1: oms.aliyuncs.com
-    us-west-1: oms.aliyuncs.com
-  api_style: RPC
+    ap-southeast-1: mongodb.aliyuncs.com
+    ap-southeast-2: mongodb.ap-southeast-2.aliyuncs.com
+    ap-southeast-3: mongodb.ap-southeast-3.aliyuncs.com
+    cn-beijing: mongodb.aliyuncs.com
+    cn-hangzhou: mongodb.aliyuncs.com
+    cn-hongkong: mongodb.aliyuncs.com
+    cn-huhehaote: mongodb.cn-huhehaote.aliyuncs.com
+    cn-qingdao: mongodb.aliyuncs.com
+    cn-shanghai: mongodb.aliyuncs.com
+    cn-shenzhen: mongodb.aliyuncs.com
+    cn-zhangjiakou: mongodb.cn-zhangjiakou.aliyuncs.com
+    eu-central-1: mongodb.eu-central-1.aliyuncs.com
+    us-east-1: mongodb.aliyuncs.com
+    us-west-1: mongodb.aliyuncs.com
+  api_style: rpc
   apis:
-  - PutReadyFlagByProxy
-  - PutMeasureDataByProxy
-  - PutDomainPartByProxy
-  - GetReadyFlagByProxy
-  - GetDomainPartByProxy
-  - DeleteDomainPartByProxy
-  - GetDomainConfig
-  - GetAccessPolicyConfig
-  - DeleteDomainPart
-  - CheckReadyFlag
-  - GetReadyFlag
-  - GetOpenApiConfig
-  - GetMeasureData
-  - GetDomainPartConfig
-  - GetDomainPart
-  - PutMeasureData
-  - PutDomainPart
-  - GetReadyFlagAlertConfig
-  - PutReadyFlag
-- name: Iot
-  version: 2016-05-30
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns:
-  - iot.aliyuncs.com
-  - iot.[RegionId].aliyuncs.com
-  - iot-share.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: iot.ap-southeast-1.aliyuncs.com
-    cn-beijing: iot.aliyuncs.com
-    cn-beijing-inner: iot.aliyuncs.com
-    cn-hangzhou: iot.aliyuncs.com
-    cn-hangzhou-d: iot.aliyuncs.com
-    cn-hongkong: iot.aliyuncs.com
-    cn-qingdao: iot.aliyuncs.com
-    cn-qingdao-cm9: iot.aliyuncs.com
-    cn-shanghai: iot.cn-shanghai.aliyuncs.com
-    cn-shanghai-et2-b01: iot.aliyuncs.com
-    cn-shanghai-inner: iot.aliyuncs.com
-    cn-shenzhen: iot.aliyuncs.com
-    cn-shenzhen-inner: iot.aliyuncs.com
-    us-east-1: iot.aliyuncs.com
-    us-west-1: iot.us-west-1.aliyuncs.com
-  known_endpoints:
-    ap-southeast-1: iot.ap-southeast-1.aliyuncs.com
-    cn-beijing: iot.aliyuncs.com
-    cn-hangzhou: iot.aliyuncs.com
-    cn-hongkong: iot.aliyuncs.com
-    cn-qingdao: iot.aliyuncs.com
-    cn-shanghai: iot.cn-shanghai.aliyuncs.com
-    cn-shenzhen: iot.aliyuncs.com
-    us-east-1: iot.aliyuncs.com
-    us-west-1: iot.us-west-1.aliyuncs.com
-  api_style: ""
-  apis:
-  - SaveServerCallback
-  - QueryServerCallback
-  - UpdateProductTopic
-  - QueryProductTopic
-  - QueryDeviceTopic
-  - DeleteProductTopic
-  - DebugRuleSql
-  - CreateProductTopic
-  - UpdateRuleAction
-  - UpdateRule
-  - UpdateProduct
-  - StopRule
-  - StartRule
-  - QueryTopic
-  - QueryProductByUserId
-  - QueryProduct
-  - QueryPageByApplyId
-  - QueryDeviceByName
-  - QueryDeviceById
-  - QueryDevice
-  - QueryApplyStatus
-  - ListRuleActions
-  - ListRule
-  - GetRuleAction
-  - GetRule
-  - GetCats
-  - DeleteRuleAction
-  - DeleteRule
-  - DeleteDevice
-  - CreateRuleAction
-  - CreateRule
-  - CreateProduct
-  - CheckTopicPermission
-  - BatchGetDeviceState
-  - ApplyDeviceWithNames
-  - ServerOnline
-  - UnSub
-  - SubTopicFilter
-  - Sub
-  - RevertRpc
-  - Pub
-  - ListDevicePermits
-  - DeviceRevokeByTopic
-  - DeviceRevokeById
-  - DevicePermitModify
-  - DeviceGrant
-  - RegistDevice
-- name: Ocs
-  version: 2015-03-01
-  location_service_code: ""
-  descriptions:
-    en: ApsaraDB for Memcache
-    zh: 云数据库Memcache版
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/62833.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/62833.html
-    zh: https://help.aliyun.com/document_detail/62833.html
-  endpoint_patterns:
-  - pop-ocs.aliyuncs.com
-  - m-kvstore.aliyuncs.com
-  - m-kvstore.[RegionId].aliyuncs.com
-  - pop-ocs-inner.aliyuncs.com
-  - m-kvstore-in-west-antgroup-1.aliyuncs.com
-  - m-kvstore-in-west-antgroup-2.aliyuncs.com
-  endpoints:
-    ap-southeast-1: m-kvstore.aliyuncs.com
-    cn-beijing: m-kvstore.aliyuncs.com
-    cn-beijing-inner: m-kvstore.aliyuncs.com
-    cn-hangzhou: m-kvstore.aliyuncs.com
-    cn-hangzhou-d: m-kvstore.aliyuncs.com
-    cn-hongkong: m-kvstore.aliyuncs.com
-    cn-qingdao: m-kvstore.aliyuncs.com
-    cn-qingdao-cm9: m-kvstore.aliyuncs.com
-    cn-shanghai: m-kvstore.aliyuncs.com
-    cn-shanghai-et2-b01: m-kvstore.aliyuncs.com
-    cn-shanghai-inner: m-kvstore.aliyuncs.com
-    cn-shenzhen: m-kvstore.aliyuncs.com
-    cn-shenzhen-inner: m-kvstore.aliyuncs.com
-    us-east-1: m-kvstore.aliyuncs.com
-    us-west-1: m-kvstore.aliyuncs.com
-  known_endpoints:
-    ap-southeast-1: m-kvstore.aliyuncs.com
-    cn-beijing: m-kvstore.aliyuncs.com
-    cn-hangzhou: m-kvstore.aliyuncs.com
-    cn-hongkong: m-kvstore.aliyuncs.com
-    cn-qingdao: m-kvstore.aliyuncs.com
-    cn-shanghai: m-kvstore.aliyuncs.com
-    cn-shenzhen: m-kvstore.aliyuncs.com
-    us-east-1: m-kvstore.aliyuncs.com
-    us-west-1: m-kvstore.aliyuncs.com
-  api_style: ""
-  apis:
-  - ModifyNetworkType
-  - ModifyHotKeySwitchMode
-  - DescribeZones
-  - ActivateInstance
-  - AddAuthenticIP
-  - CreateInstance
-  - DeactivateInstance
-  - DeleteInstance
-  - DescribeInstances
-  - DescribeHistoryMonitorValues
-  - DescribeAuthenticIP
+  - SwitchDBInstanceHA
+  - SwithcDBInstanceHA
+  - ModifyReplicaRelation
+  - ModifyReplicaMode
+  - ModifyGuardDomainMode
+  - ModifyParameters
+  - DescribeParameterTemplates
+  - DescribeParameters
+  - DescribeParameterModificationHistory
+  - UpgradeDBInstanceEngineVersion
+  - ReleasePublicNetworkAddress
+  - AllocatePublicNetworkAddress
+  - ModifyDBInstanceMaintainTime
+  - DescribeShardingNetworkAddress
+  - DescribeAuditRecords
+  - DescribeAuditFiles
+  - ModifyDBInstanceNetExpireTime
+  - DescribeReplicas
+  - ReleaseReplica
+  - ModifyReplicaDescription
+  - DescribeReplicaUsage
+  - DescribeReplicaPerformance
+  - DescribeReplicaInitializeProgress
+  - ModifyNodeSpec
+  - DeleteNode
+  - CreateShardingDBInstance
+  - CreateNode
+  - Sample
+  - ModifyDBInstanceNetworkType
+  - RenewDBInstance
+  - CreateBackup
+  - DescribeDBInstancePerformance
+  - DescribeDBInstanceAttribute
+  - DescribeBackups
+  - DescribeBackupPolicy
+  - DescribeAccounts
+  - DeleteDBInstance
+  - CreateDBInstance
   - DescribeSecurityIps
+  - DescribeReplicaSetRole
   - DescribeRegions
-  - DescribeMonitorValues
-  - DescribeMonitorItems
+  - DescribeDBInstances
+  - RestoreDBInstance
+  - RestartDBInstance
+  - ResetAccountPassword
   - ModifySecurityIps
-  - ModifyInstanceCapacity
-  - ModifyInstanceAttribute
-  - FlushInstance
-  - VerifyPassword
-  - ReplaceAuthenticIP
-  - RemoveAuthenticIP
-  - DataOperate
-- name: Ots
-  version: 2016-06-20
-  location_service_code: ""
-  descriptions:
-    en: Table Store
-    zh: 表格存储
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/27304.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/27304.html
-    zh: https://help.aliyun.com/document_detail/27304.html
-  endpoint_patterns:
-  - ots.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: ots-pop.aliyuncs.com
-    cn-beijing: ots-pop.aliyuncs.com
-    cn-beijing-inner: ots-pop.aliyuncs.com
-    cn-hangzhou: ots-pop.aliyuncs.com
-    cn-hangzhou-d: ots-pop.aliyuncs.com
-    cn-hongkong: ots-pop.aliyuncs.com
-    cn-qingdao: ots-pop.aliyuncs.com
-    cn-qingdao-cm9: ots-pop.aliyuncs.com
-    cn-shanghai: ots-pop.aliyuncs.com
-    cn-shanghai-et2-b01: ots-pop.aliyuncs.com
-    cn-shanghai-inner: ots-pop.aliyuncs.com
-    cn-shenzhen: ots-pop.aliyuncs.com
-    cn-shenzhen-inner: ots-pop.aliyuncs.com
-    us-east-1: ots-pop.aliyuncs.com
-    us-west-1: ots-pop.aliyuncs.com
-  known_endpoints:
-    ap-northeast-1: ots.ap-northeast-1.aliyuncs.com
-    ap-southeast-1: ots.ap-southeast-1.aliyuncs.com
-    ap-southeast-2: ots.ap-southeast-2.aliyuncs.com
-    ap-southeast-3: ots.ap-southeast-3.aliyuncs.com
-    cn-beijing: ots.cn-beijing.aliyuncs.com
-    cn-hangzhou: ots.cn-hangzhou.aliyuncs.com
-    cn-hongkong: ots.cn-hongkong.aliyuncs.com
-    cn-huhehaote: ots.cn-huhehaote.aliyuncs.com
-    cn-shanghai: ots.cn-shanghai.aliyuncs.com
-    cn-shenzhen: ots.cn-shenzhen.aliyuncs.com
-    cn-zhangjiakou: ots.cn-zhangjiakou.aliyuncs.com
-    eu-central-1: ots.eu-central-1.aliyuncs.com
-    me-east-1: ots.me-east-1.aliyuncs.com
-    us-west-1: ots.us-west-1.aliyuncs.com
-  api_style: ""
-  apis:
-  - UpdateInstance
-  - UnbindInstance2Vpc
-  - ListVpcInfoByVpc
-  - ListVpcInfoByInstance
-  - ListTags
-  - ListInstance
-  - ListClusterType
-  - InsertTags
-  - InsertInstance
-  - GetInstance
-  - DeleteTags
-  - DeleteInstance
-  - BindInstance2Vpc
-- name: Ess
-  version: 2014-08-28
-  location_service_code: ess
-  descriptions:
-    en: Auto Scaling
-    zh: 弹性伸缩
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/25925.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/25925.html
-    zh: https://help.aliyun.com/document_detail/25925.html
-  endpoint_patterns:
-  - ess.aliyuncs.com
-  - ess.[RegionId].aliyuncs.com
-  - ess-share.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: ess.aliyuncs.com
-    cn-beijing: ess.aliyuncs.com
-    cn-beijing-inner: ess.aliyuncs.com
-    cn-hangzhou: ess.aliyuncs.com
-    cn-hangzhou-d: ess.aliyuncs.com
-    cn-hongkong: ess.aliyuncs.com
-    cn-qingdao: ess.aliyuncs.com
-    cn-qingdao-cm9: ess.aliyuncs.com
-    cn-shanghai: ess.aliyuncs.com
-    cn-shanghai-et2-b01: ess.aliyuncs.com
-    cn-shanghai-inner: ess.aliyuncs.com
-    cn-shenzhen: ess.aliyuncs.com
-    cn-shenzhen-inner: ess.aliyuncs.com
-    us-east-1: ess.aliyuncs.com
-    us-west-1: ess.aliyuncs.com
-  known_endpoints:
-    ap-northeast-1: ess.ap-northeast-1.aliyuncs.com
-    ap-southeast-1: ess.aliyuncs.com
-    ap-southeast-2: ess.ap-southeast-2.aliyuncs.com
-    ap-southeast-3: ess.ap-southeast-3.aliyuncs.com
-    cn-beijing: ess.aliyuncs.com
-    cn-hangzhou: ess.aliyuncs.com
-    cn-hongkong: ess.aliyuncs.com
-    cn-huhehaote: ess-share.cn-huhehaote.aliyuncs.com
-    cn-qingdao: ess.aliyuncs.com
-    cn-shanghai: ess.aliyuncs.com
-    cn-shenzhen: ess.aliyuncs.com
-    cn-zhangjiakou: ess-share.cn-zhangjiakou.aliyuncs.com
-    eu-central-1: ess.eu-central-1.aliyuncs.com
-    me-east-1: ess.me-east-1.aliyuncs.com
-    us-east-1: ess.aliyuncs.com
-    us-west-1: ess.aliyuncs.com
-  api_style: ""
-  apis:
-  - DeactivateScalingConfiguration
-  - ModifyAlertConfig
-  - DescribeAlertConfig
-  - VerifyAuthentication
-  - VerifyUser
-  - DescribeRegions
-  - DescribeCapacityHistory
-  - DescribeLimitation
-  - DescribeScalingActivityDetail
-  - DescribeAccountAttributes
-  - RemoveInstances
-  - ModifyScheduledTask
-  - ModifyScalingRule
-  - ModifyScalingGroup
-  - ExecuteScalingRule
-  - EnableScalingGroup
-  - DisableScalingGroup
-  - DetachInstances
-  - DescribeScheduledTasks
-  - DescribeScalingRules
-  - DescribeScalingInstances
-  - DescribeScalingGroups
-  - DescribeScalingConfigurations
-  - DescribeScalingActivities
-  - DeleteScheduledTask
-  - DeleteScalingRule
-  - DeleteScalingGroup
-  - DeleteScalingConfiguration
-  - CreateScheduledTask
-  - CreateScalingRule
-  - CreateScalingGroup
-  - CreateScalingConfiguration
-  - AttachInstances
-- name: ROS
+  - ModifyDBInstanceSpec
+  - ModifyDBInstanceDescription
+  - ModifyBackupPolicy
+  - ModifyAccountDescription
+- code: ROS
   version: 2015-09-01
   location_service_code: ""
-  descriptions:
+  name:
     en: Resource Orchestration Service
     zh: 资源编排
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/28899.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/28899.html
-    zh: https://help.aliyun.com/document_detail/28899.html
-  endpoint_patterns: []
+  document_id: "28899"
+  site_url: //www.aliyun.com/product/ros
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - ros.aliyuncs.com
+  - ros-inner.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ROA
+  api_style: restful
   apis: []
-- name: Cms
+- code: CloudPhoto
+  version: 2017-07-11
+  location_service_code: cloudphoto
+  name:
+    en: Cloud Photos
+    zh: 智能云相册
+  document_id: "59902"
+  site_url: https://www.aliyun.com/product/cloudphoto
+  sites:
+  - zh
+  endpoint_patterns:
+  - cloudphoto.aliyuncs.com
+  - cloudphoto.[RegionId].aliyuncs.com
+  - cloudphoto-pre.[RegionId].aliyuncs.com
+  endpoints: {}
+  known_endpoints:
+    cn-hangzhou: cloudphoto-pre.cn-hangzhou.aliyuncs.com
+    cn-shanghai: cloudphoto.cn-shanghai.aliyuncs.com
+  api_style: rpc
+  apis:
+  - RegisterPhoto
+  - GetSimilarPhotos
+  - TagPhoto
+  - RegisterTag
+  - ListRegisteredTags
+  - GetLibrary
+  - EditPhotoStore
+  - ToggleFeatures
+  - ListTimeLines
+  - ListPhotoFaces
+  - ListTimeLinePhotos
+  - LikePhoto
+  - GetPublicAccessUrls
+  - GetPrivateAccessUrls
+  - GetPhotosByMd5s
+  - GetFramedPhotoUrls
+  - EditPhotos
+  - ActivatePhotos
+  - GetThumbnails
+  - GetDownloadUrls
+  - GetPhotos
+  - SetFaceCover
+  - SetQuota
+  - SetMe
+  - SetAlbumCover
+  - SearchPhotos
+  - RenameFace
+  - RenameAlbum
+  - RemoveFacePhotos
+  - RemoveAlbumPhotos
+  - ReactivatePhotos
+  - MoveFacePhotos
+  - MoveAlbumPhotos
+  - MergeFaces
+  - ListTags
+  - ListTagPhotos
+  - ListPhotoTags
+  - ListPhotoStores
+  - ListPhotos
+  - ListMoments
+  - ListMomentPhotos
+  - ListFaces
+  - ListFacePhotos
+  - ListAlbums
+  - ListAlbumPhotos
+  - InactivatePhotos
+  - GetVideoCover
+  - GetThumbnail
+  - GetQuota
+  - GetPhotoStore
+  - GetDownloadUrl
+  - DeletePhotoStore
+  - DeletePhotos
+  - DeleteFaces
+  - DeleteAlbums
+  - CreateTransaction
+  - CreatePhotoStore
+  - CreatePhoto
+  - CreateAlbum
+  - AddAlbumPhotos
+- code: Cms
   version: 2017-03-01
   location_service_code: cms
-  descriptions:
+  name:
     en: Cloud Monitor
     zh: 云监控
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/28615.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/28615.html
-    zh: https://help.aliyun.com/document_detail/28615.html
+  document_id: "28615"
+  site_url: https://www.aliyun.com/product/jiankong
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - metrics.aliyuncs.com
   - metrics.[RegionId].aliyuncs.com
@@ -1366,7 +1314,7 @@ products:
     me-east-1: metrics.cn-hangzhou.aliyuncs.com
     us-east-1: metrics.cn-hangzhou.aliyuncs.com
     us-west-1: metrics.cn-hangzhou.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
   - EnableActiveAlert
   - DisableActiveAlert
@@ -1424,68 +1372,100 @@ products:
   - DeleteAlarm
   - CreateAlarm
   - AccessKeyGet
-- name: ITaaS
-  version: 2017-05-09
-  location_service_code: ""
-  descriptions: {}
-  links: {}
+- code: Ess
+  version: 2014-08-28
+  location_service_code: ess
+  name:
+    en: Auto Scaling
+    zh: 弹性伸缩
+  document_id: "25925"
+  site_url: https://www.aliyun.com/product/ess
+  sites:
+  - zh
+  - en
   endpoint_patterns:
-  - itaas.aliyuncs.com
-  - itaas.[RegionId].aliyuncs.com
-  endpoints: {}
-  known_endpoints: {}
-  api_style: ""
+  - ess.aliyuncs.com
+  - ess.[RegionId].aliyuncs.com
+  - ess-share.[RegionId].aliyuncs.com
+  endpoints:
+    ap-southeast-1: ess.aliyuncs.com
+    cn-beijing: ess.aliyuncs.com
+    cn-beijing-inner: ess.aliyuncs.com
+    cn-hangzhou: ess.aliyuncs.com
+    cn-hangzhou-d: ess.aliyuncs.com
+    cn-hongkong: ess.aliyuncs.com
+    cn-qingdao: ess.aliyuncs.com
+    cn-qingdao-cm9: ess.aliyuncs.com
+    cn-shanghai: ess.aliyuncs.com
+    cn-shanghai-et2-b01: ess.aliyuncs.com
+    cn-shanghai-inner: ess.aliyuncs.com
+    cn-shenzhen: ess.aliyuncs.com
+    cn-shenzhen-inner: ess.aliyuncs.com
+    us-east-1: ess.aliyuncs.com
+    us-west-1: ess.aliyuncs.com
+  known_endpoints:
+    ap-northeast-1: ess.ap-northeast-1.aliyuncs.com
+    ap-southeast-1: ess.aliyuncs.com
+    ap-southeast-2: ess.ap-southeast-2.aliyuncs.com
+    ap-southeast-3: ess.ap-southeast-3.aliyuncs.com
+    cn-beijing: ess.aliyuncs.com
+    cn-hangzhou: ess.aliyuncs.com
+    cn-hongkong: ess.aliyuncs.com
+    cn-huhehaote: ess-share.cn-huhehaote.aliyuncs.com
+    cn-qingdao: ess.aliyuncs.com
+    cn-shanghai: ess.aliyuncs.com
+    cn-shenzhen: ess.aliyuncs.com
+    cn-zhangjiakou: ess-share.cn-zhangjiakou.aliyuncs.com
+    eu-central-1: ess.eu-central-1.aliyuncs.com
+    me-east-1: ess.me-east-1.aliyuncs.com
+    us-east-1: ess.aliyuncs.com
+    us-west-1: ess.aliyuncs.com
+  api_style: rpc
   apis:
-  - ShareGuestSendMessageUrl
-  - ShareGuestSenderRegister
-  - BoxLoginoutReport4Appkey
-  - SetWelcomePageURIToBoxByTP
-  - ShareScreenMeetingRob4Appkey
-  - ShareSendMessageUrl4Appkey
-  - ShareSenderRegister4Appkey
-  - ShareClientHeartBeat4Appkey
-  - BoxSendMessageUrl4Appkey
-  - BoxRegisterUpdate4Appkey
-  - BoxClientHeartBeat4Appkey
-  - BoxRegisterUpdate
-  - BoxLoginoutReport
-  - ShareScreenMeetingRob
-  - ShareSendMessageUrl
-  - ShareSenderRegister
-  - ShareGetReceiverInfo
-  - ShareClientHeartBeat
-  - ResumeInstance
-  - ReleaseInstance
-  - ProduceInstance
-  - CeaseInstance
-  - GetEnterpriseConfig
-  - CreateEnterprise
-  - UpdateRoomName
-  - UpdateIPSegment
-  - UpdateEnterpriseConfig
-  - SetWelcomePageURI
-  - RemoveRegisterBox
-  - RemoveIPSegment
-  - RemoveBoxCode
-  - GetWelcomePageURI
-  - GetRegisterHistoryList
-  - GetRegisterBoxNumber
-  - GetRegisterBoxList
-  - GetIPSegmentsList
-  - GetCompanyId4BoxActived
-  - GetBoxCodeList
-  - CreateBoxCode
-  - CheckBuyVideoConference
-  - CheckBuyShareScreen
-  - AddIPSegment
-  - BoxSendMessageUrl
-  - BoxRegister
-  - BoxClientHeartBeat
-- name: Sts
+  - DeactivateScalingConfiguration
+  - ModifyAlertConfig
+  - DescribeAlertConfig
+  - VerifyAuthentication
+  - VerifyUser
+  - DescribeRegions
+  - DescribeCapacityHistory
+  - DescribeLimitation
+  - DescribeScalingActivityDetail
+  - DescribeAccountAttributes
+  - RemoveInstances
+  - ModifyScheduledTask
+  - ModifyScalingRule
+  - ModifyScalingGroup
+  - ExecuteScalingRule
+  - EnableScalingGroup
+  - DisableScalingGroup
+  - DetachInstances
+  - DescribeScheduledTasks
+  - DescribeScalingRules
+  - DescribeScalingInstances
+  - DescribeScalingGroups
+  - DescribeScalingConfigurations
+  - DescribeScalingActivities
+  - DeleteScheduledTask
+  - DeleteScalingRule
+  - DeleteScalingGroup
+  - DeleteScalingConfiguration
+  - CreateScheduledTask
+  - CreateScalingRule
+  - CreateScalingGroup
+  - CreateScalingConfiguration
+  - AttachInstances
+- code: Sts
   version: 2015-04-01
   location_service_code: ""
-  descriptions: {}
-  links: {}
+  name:
+    en: Resource Access Management
+    zh: 访问控制
+  document_id: "28756"
+  site_url: //www.aliyun.com/product/ram
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - sts-openapi-daily.alibaba.net
   - sts.aliyuncs.com
@@ -1522,21 +1502,68 @@ products:
     cn-shenzhen: sts.aliyuncs.com
     us-east-1: sts.aliyuncs.com
     us-west-1: sts.aliyuncs.com
-  api_style: RPC
+  api_style: rpc
   apis:
   - GenerateSessionAccessKey
   - GetCallerIdentity
   - AssumeRole
-- name: Qualitycheck
+- code: Sas-api
+  version: 2017-07-05
+  location_service_code: sas
+  name:
+    en: Situation Awareness Service
+    zh: 态势感知
+  document_id: ""
+  site_url: https://www.aliyun.com/product/sas
+  sites:
+  - zh
+  endpoint_patterns:
+  - sas-api.aliyuncs.com
+  endpoints: {}
+  known_endpoints: {}
+  api_style: rpc
+  apis:
+  - GetAccountProfile
+  - GetInstanceCount
+  - GetPhoneProfile
+  - GetIpProfile
+- code: waf
+  version: 2016-07-18
+  location_service_code: waf
+  name:
+    en: Web Application Firewall
+    zh: Web应用防火墙
+  document_id: "62847"
+  site_url: https://www.aliyun.com/product/waf
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - yw.aliyuncs.com
+  - waf-share.aliyuncs.com
+  endpoints: {}
+  known_endpoints: {}
+  api_style: rpc
+  apis:
+  - WhetherBuy
+  - WebAttackCount
+  - UserIsBuyWaf
+  - UpdateDomain
+  - GetDomainList
+  - GetDomainInfo
+  - AddDomain
+  - SummaryStatistics
+  - IsBuyWaf
+- code: Qualitycheck
   version: 2016-08-01
   location_service_code: ""
-  descriptions:
-    en: Smart Conversation Analysis *
+  name:
+    en: Smart Conversation Analysis
     zh: 智能对话分析服务
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/50727.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/50727.html
-    zh: https://help.aliyun.com/product/50727.html
+  document_id: https://help.aliyun.com/product/50727
+  site_url: https://www.aliyun.com/product/sca
+  sites:
+  - zh
   endpoint_patterns:
   - qualitycheck.aliyuncs.com
   - qualitycheck.[RegionId].aliyuncs.com
@@ -1560,8 +1587,11 @@ products:
     cn-shanghai: qualitycheck.aliyuncs.com
     us-east-1: qualitycheck.aliyuncs.com
     us-west-1: qualitycheck.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
+  - DoPhysicalDeleteResource
+  - DoLogicalDeleteResource
+  - DoCheckResource
   - GetAsrVocab
   - DeleteAsrVocab
   - CreateAsrVocab
@@ -1588,30 +1618,17 @@ products:
   - UploadRule
   - UploadData
   - GetResult
-- name: Sas-api
-  version: 2017-07-05
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: ""
-  apis:
-  - GetAccountProfile
-  - GetInstanceCount
-  - GetPhoneProfile
-  - GetIpProfile
-- name: NAS
+- code: NAS
   version: 2016-02-29
   location_service_code: nas
-  descriptions:
-    en: Network Attached Storage *
-    zh: 文件存储NAS
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/62598.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/62598.html
-    zh: https://help.aliyun.com/document_detail/62598.html
+  name:
+    en: Network Attached Storage
+    zh: 文件存储
+  document_id: "62598"
+  site_url: //www.aliyun.com/product/nas
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - nasservice-inner.aliyuncs.com
   - nasservice.aliyuncs.com
@@ -1628,7 +1645,7 @@ products:
     cn-shanghai: nas.cn-shanghai.aliyuncs.com
     cn-shenzhen: nas.cn-hangzhou.aliyuncs.com
     cn-zhangjiakou: nas.cn-zhangjiakou.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
   - ListNasBeta
   - ApplyNasBeta
@@ -1693,290 +1710,16 @@ products:
   - CreateFileSystem
   - CreateAccessRule
   - CreateAccessGroup
-- name: Ubsms
-  version: 2015-06-23
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns:
-  - ubsms.aliyuncs.com
-  - ubsms.[RegionId].aliyuncs.com
-  - ubsms-center.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: ubsms.aliyuncs.com
-    cn-beijing: ubsms.aliyuncs.com
-    cn-beijing-inner: ubsms.aliyuncs.com
-    cn-hangzhou: ubsms.aliyuncs.com
-    cn-hangzhou-d: ubsms.aliyuncs.com
-    cn-hongkong: ubsms.aliyuncs.com
-    cn-qingdao: ubsms.cn-qingdao.aliyuncs.com
-    cn-qingdao-cm9: ubsms.aliyuncs.com
-    cn-shanghai: ubsms.aliyuncs.com
-    cn-shanghai-et2-b01: ubsms.aliyuncs.com
-    cn-shanghai-inner: ubsms.aliyuncs.com
-    cn-shenzhen: ubsms.aliyuncs.com
-    cn-shenzhen-inner: ubsms.aliyuncs.com
-    us-east-1: ubsms.aliyuncs.com
-    us-west-1: ubsms.aliyuncs.com
-  known_endpoints:
-    ap-southeast-1: ubsms.aliyuncs.com
-    cn-beijing: ubsms.aliyuncs.com
-    cn-hangzhou: ubsms.aliyuncs.com
-    cn-hongkong: ubsms.aliyuncs.com
-    cn-shanghai: ubsms.aliyuncs.com
-    cn-shenzhen: ubsms.aliyuncs.com
-    us-east-1: ubsms.aliyuncs.com
-    us-west-1: ubsms.aliyuncs.com
-  api_style: ""
-  apis:
-  - DescribeBusinessStatus
-  - NotifyUserBusinessCommand
-  - SetUserBusinessStatus
-- name: TeslaMaxCompute
-  version: 2017-11-30
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: RPC
-  apis:
-  - GetQuotaHistoryInfo
-  - GetInstancesStatusCount
-  - GetUserInstance
-  - GetQuotaInstance
-  - GetProjectInstance
-  - GetClusterInstance
-  - GetProjectInfo
-  - GetQuotaInfo
-  - GetUserInfo
-  - GetClusterInfo
-- name: Alidns
-  version: 2015-01-09
-  location_service_code: ""
-  descriptions:
-    en: Domain Name Service *
-    zh: 云解析DNS
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/29739.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/29739.html
-    zh: https://help.aliyun.com/document_detail/29739.html
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: RPC
-  apis:
-  - DescribeSupportLines
-  - DescribeDomainNs
-  - DescribeDnsProductInstance
-  - UpdateDomainRecord
-  - UpdateDomainGroup
-  - UpdateDNSSLBWeight
-  - UpdateBatchDomainRecords
-  - SetDomainRecordStatus
-  - SetDNSSLBStatus
-  - RetrievalDomainName
-  - ModifyHichinaDomainDNS
-  - GetMainDomainName
-  - DescribeSubDomainRecords
-  - DescribeRecordLogs
-  - DescribeDomainWhoisInfo
-  - DescribeDomains
-  - DescribeDomainRecords
-  - DescribeDomainRecordInfo
-  - DescribeDomainLogs
-  - DescribeDomainInfo
-  - DescribeDomainGroups
-  - DescribeDNSSLBSubDomains
-  - DescribeDnsProductInstances
-  - DescribeBatchResult
-  - DeleteSubDomainRecords
-  - DeleteDomainRecord
-  - DeleteDomainGroup
-  - DeleteDomain
-  - DeleteBatchDomains
-  - DeleteBatchDomainRecords
-  - CheckDomainRecord
-  - ChangeDomainOfDnsProduct
-  - ChangeDomainGroup
-  - ApplyForRetrievalDomainName
-  - AddDomainRecord
-  - AddDomainGroup
-  - AddDomain
-  - AddBatchDomainRecords
-- name: Ons
-  version: 2016-05-03
-  location_service_code: ""
-  descriptions:
-    en: Message Queue *
-    zh: 消息队列MQ
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/44416.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/44416.html
-    zh: https://help.aliyun.com/document_detail/44416.html
-  endpoint_patterns:
-  - ons.aliyuncs.com
-  - ons.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: ons.aliyuncs.com
-    cn-beijing: ons.aliyuncs.com
-    cn-beijing-inner: ons.aliyuncs.com
-    cn-hangzhou: ons.aliyuncs.com
-    cn-hangzhou-d: ons.aliyuncs.com
-    cn-hongkong: ons.aliyuncs.com
-    cn-qingdao: ons.aliyuncs.com
-    cn-qingdao-cm9: ons.aliyuncs.com
-    cn-shanghai: ons.aliyuncs.com
-    cn-shanghai-et2-b01: ons.aliyuncs.com
-    cn-shanghai-inner: ons.aliyuncs.com
-    cn-shenzhen: ons.aliyuncs.com
-    cn-shenzhen-inner: ons.aliyuncs.com
-    us-east-1: ons.aliyuncs.com
-    us-west-1: ons.aliyuncs.com
-  known_endpoints:
-    ap-southeast-1: ons.aliyuncs.com
-    cn-beijing: ons.aliyuncs.com
-    cn-hangzhou: ons.aliyuncs.com
-    cn-hongkong: ons.aliyuncs.com
-    cn-qingdao: ons.aliyuncs.com
-    cn-shanghai: ons.aliyuncs.com
-    cn-shenzhen: ons.aliyuncs.com
-    us-east-1: ons.aliyuncs.com
-    us-west-1: ons.aliyuncs.com
-  api_style: ""
-  apis:
-  - OnsClusterList
-  - OnsSubscriptionUpdate
-  - OnsTopicUpdate
-  - OnsWarnDelete
-  - OnsWarnCreate
-  - OnsMqttGroupIdList
-  - OnsMqttQueryMsgByPubInfo
-  - OnsMqttQueryClientByGroupId
-  - OnsMqttQueryMsgTransTrend
-  - OnsMqttQueryHistoryOnline
-  - OnsMqttQueryClientByTopic
-  - OnsMqttQueryClientByClientId
-  - OnsMqttQueryTraceByTraceId
-  - OnsTrendTopicInputTps
-  - OnsTrendGroupOutputTps
-  - OnsTopicStatus
-  - OnsTopicSearch
-  - OnsTopicList
-  - OnsTopicGet
-  - OnsTopicDelete
-  - OnsTopicCreate
-  - OnsSubscriptionSearch
-  - OnsSubscriptionList
-  - OnsSubscriptionGet
-  - OnsSubscriptionDelete
-  - OnsSubscriptionCreate
-  - OnsRegionList
-  - OnsPublishSearch
-  - OnsPublishList
-  - OnsPublishGet
-  - OnsPublishDelete
-  - OnsPublishCreate
-  - OnsMessageTrace
-  - OnsMessageSend
-  - OnsMessagePush
-  - OnsMessagePageQueryByTopic
-  - OnsMessageGetByMsgId
-  - OnsMessageGetByKey
-  - OnsEmpowerList
-  - OnsEmpowerDelete
-  - OnsEmpowerCreate
-  - OnsConsumerTimeSpan
-  - OnsConsumerStatus
-  - OnsConsumerResetOffset
-  - OnsConsumerGetConnection
-  - OnsConsumerAccumulate
-- name: CloudPhoto
-  version: 2017-07-11
-  location_service_code: cloudphoto
-  descriptions:
-    en: Cloud Photos *
-    zh: 智能云相册
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/59902.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/59902.html
-    zh: https://help.aliyun.com/document_detail/59902.html
-  endpoint_patterns:
-  - cloudphoto.aliyuncs.com
-  - cloudphoto.[RegionId].aliyuncs.com
-  - cloudphoto-pre.[RegionId].aliyuncs.com
-  endpoints: {}
-  known_endpoints:
-    cn-hangzhou: cloudphoto-pre.cn-hangzhou.aliyuncs.com
-    cn-shanghai: cloudphoto.cn-shanghai.aliyuncs.com
-  api_style: RPC
-  apis:
-  - RegisterPhoto
-  - GetSimilarPhotos
-  - TagPhoto
-  - RegisterTag
-  - ListRegisteredTags
-  - GetLibrary
-  - EditPhotoStore
-  - ToggleFeatures
-  - ListTimeLines
-  - ListPhotoFaces
-  - ListTimeLinePhotos
-  - LikePhoto
-  - GetPublicAccessUrls
-  - GetPrivateAccessUrls
-  - GetPhotosByMd5s
-  - GetFramedPhotoUrls
-  - EditPhotos
-  - ActivatePhotos
-  - GetThumbnails
-  - GetDownloadUrls
-  - GetPhotos
-  - SetFaceCover
-  - SetQuota
-  - SetMe
-  - SetAlbumCover
-  - SearchPhotos
-  - RenameFace
-  - RenameAlbum
-  - RemoveFacePhotos
-  - RemoveAlbumPhotos
-  - ReactivatePhotos
-  - MoveFacePhotos
-  - MoveAlbumPhotos
-  - MergeFaces
-  - ListTags
-  - ListTagPhotos
-  - ListPhotoTags
-  - ListPhotoStores
-  - ListPhotos
-  - ListMoments
-  - ListMomentPhotos
-  - ListFaces
-  - ListFacePhotos
-  - ListAlbums
-  - ListAlbumPhotos
-  - InactivatePhotos
-  - GetVideoCover
-  - GetThumbnail
-  - GetQuota
-  - GetPhotoStore
-  - GetDownloadUrl
-  - DeletePhotoStore
-  - DeletePhotos
-  - DeleteFaces
-  - DeleteAlbums
-  - CreateTransaction
-  - CreatePhotoStore
-  - CreatePhoto
-  - CreateAlbum
-  - AddAlbumPhotos
-- name: polardb
+- code: polardb
   version: 2017-08-01
   location_service_code: polardb
-  descriptions: {}
-  links: {}
+  name:
+    en: ApsaraDB for POLARDB
+    zh: 云数据库 PolarDB 版
+  document_id: "58764"
+  site_url: https://www.aliyun.com/product/polardb
+  sites:
+  - zh
   endpoint_patterns:
   - polardb.aliyuncs.com
   - polardb-inner.aliyuncs.com
@@ -1988,7 +1731,7 @@ products:
   known_endpoints:
     cn-qingdao: polardb.aliyuncs.com
     cn-shanghai: polardb.aliyuncs.com
-  api_style: RPC
+  api_style: rpc
   apis:
   - DescribeSlowLogs
   - DescribeSlowLogRecords
@@ -2032,25 +1775,28 @@ products:
   - ModifyDBInstanceConnectionString
   - DescribeClusterNetInfo
   - AllocateClusterPublicConnection
-- name: Push
+- code: Push
   version: 2016-08-01
   location_service_code: ""
-  descriptions:
-    en: Alibaba Cloud Mobile Push *
+  name:
+    en: Alibaba Cloud Mobile Push
     zh: 移动推送
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/30074.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/30074.html
-    zh: https://help.aliyun.com/document_detail/30074.html
-  endpoint_patterns: []
+  document_id: "30074"
+  site_url: https://www.aliyun.com/product/cps
+  sites:
+  - zh
+  endpoint_patterns:
+  - cloudpush.aliyuncs.com
+  - cloudpush-share.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ""
+  api_style: rpc
   apis:
   - UnbindPhone
   - BindPhone
   - RemoveTag
   - CheckDevices
+  - QueryPushList
   - CheckDevice
   - QueryPushDetail
   - UnbindTag
@@ -2073,39 +1819,23 @@ products:
   - BindTag
   - BindAlias
   - CancelPush
-- name: waf
-  version: 2016-07-18
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: RPC
-  apis:
-  - WhetherBuy
-  - WebAttackCount
-  - UserIsBuyWaf
-  - UpdateDomain
-  - GetDomainList
-  - GetDomainInfo
-  - AddDomain
-  - SummaryStatistics
-  - IsBuyWaf
-- name: CloudAPI
+- code: CloudAPI
   version: 2016-07-14
   location_service_code: apigateway
-  descriptions:
+  name:
     en: API Gateway
-    zh: API网关
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/43590.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/43590.html
-    zh: https://help.aliyun.com/document_detail/43590.html
+    zh: API 网关
+  document_id: "43590"
+  site_url: //www.aliyun.com/product/apigateway
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - apigateway.aliyuncs.com
   - apigateway-inner.aliyuncs.com
   - apigateway.[RegionId].aliyuncs.com
+  - apigateway-share.[RegionId].aliyuncs.com
+  - apigateway-share.aliyuncs.com
   endpoints:
     ap-southeast-1: apigateway.ap-southeast-1.aliyuncs.com
     cn-beijing: apigateway.cn-beijing.aliyuncs.com
@@ -2125,7 +1855,7 @@ products:
     cn-shenzhen: apigateway.cn-shenzhen.aliyuncs.com
     eu-central-1: apigateway.eu-central-1.aliyuncs.com
     us-west-1: apigateway.us-west-1.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
   - SetIpControlApis
   - RemoveIpControlPolicyItem
@@ -2233,163 +1963,82 @@ products:
   - CreateApi
   - AddTrafficSpecialControl
   - AbolishApi
-- name: Yundun
-  version: 2015-04-16
-  location_service_code: ""
-  descriptions: {}
-  links: {}
-  endpoint_patterns: []
+- code: Alidns
+  version: 2015-01-09
+  location_service_code: alidns
+  name:
+    en: Alibaba Cloud DNS
+    zh: 云解析DNS
+  document_id: "29739"
+  site_url: https://wanwang.aliyun.com/domain/dns
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - alidns.aliyuncs.com
+  - alidns-share.aliyuncs.com
+  - dns.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ""
+  api_style: rpc
   apis:
-  - VulScanLog
-  - WafInfo
-  - Summary
-  - SetDdosQps
-  - SetDdosAuto
-  - ServiceStatus
-  - QueryDdosConfig
-  - OpenVulScan
-  - OpenPortScan
-  - OpenCCProtect
-  - GetDdosConfigOptions
-  - DetectVulByIp
-  - DetectVulById
-  - DeleteCNameWaf
-  - DdosFlowGraph
-  - ConfirmLogin
-  - ConfigDdos
-  - CloseVulScan
-  - ClosePortScan
-  - CloseCCProtect
-  - AddCNameWaf
-  - WebshellLog
-  - WafLog
-  - SecureCheck
-  - LogineventLog
-  - ListInstanceInfos
-  - DeleteBackDoorFile
-  - DdosLog
-  - BruteforceLog
-- name: R-kvstore
-  version: 2015-01-01
-  location_service_code: kvstore
-  descriptions:
-    en: ApsaraDB for Redis
-    zh: 云数据库Redis版
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/60831.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/60831.html
-    zh: https://help.aliyun.com/document_detail/60831.html
-  endpoint_patterns:
-  - r-kvstore-cn-hangzhou.aliyuncs.com
-  - r-kvstore.aliyuncs.com
-  - r-kvstore.[RegionId].aliyuncs.com
-  - r-kvstore-cn-hangzhou-inner.aliyuncs.com
-  - r-kvstore-in-west-antgroup-1.aliyuncs.com
-  - r-kvstore-share.aliyuncs.com
-  - r-kvstore-share.[RegionId].aliyuncs.com
-  endpoints:
-    ap-southeast-1: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-beijing: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-beijing-inner: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-hangzhou: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-hangzhou-d: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-hongkong: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-qingdao: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-qingdao-cm9: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-shanghai: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-shanghai-et2-b01: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-shanghai-inner: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-shenzhen: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-shenzhen-inner: r-kvstore-cn-hangzhou.aliyuncs.com
-    us-east-1: r-kvstore-cn-hangzhou.aliyuncs.com
-    us-west-1: r-kvstore-cn-hangzhou.aliyuncs.com
-  known_endpoints:
-    ap-northeast-1: r-kvstore.ap-northeast-1.aliyuncs.com
-    ap-southeast-1: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-beijing: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-hangzhou: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-hongkong: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-qingdao: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-shanghai: r-kvstore-cn-hangzhou.aliyuncs.com
-    cn-shenzhen: r-kvstore-cn-hangzhou.aliyuncs.com
-    us-east-1: r-kvstore-cn-hangzhou.aliyuncs.com
-    us-west-1: r-kvstore-cn-hangzhou.aliyuncs.com
-  api_style: ""
-  apis:
-  - ModifyReplicaRelation
-  - ModifyReplicaMode
-  - ModifyGuardDomainMode
-  - ModifyInstanceSSL
-  - DescribeInstanceSSL
-  - DescribeLogicInstanceTopology
-  - ModifyInstanceSpec
-  - ModifyInstanceSpecPreCheck
-  - ModifyInstanceNetExpireTime
-  - ReleaseReplica
-  - ModifyReplicaDescription
-  - DescribeReplicaUsage
-  - DescribeReplicas
-  - DescribeReplicaPerformance
-  - DescribeReplicaInitializeProgress
-  - ModifyInstanceMinorVersion
-  - ModifyCertification
-  - DescribeCertification
-  - DescribeDBInstanceNetInfo
-  - DescribeMonthlyServiceStatusDetail
-  - DescribeMonthlyServiceStatus
-  - ModifySecurityIps
-  - DescribeSecurityIps
-  - ModifyInstanceMaintainTime
-  - DescribeInstanceAttribute
-  - RestoreInstance
-  - ModifyBackupPolicy
-  - DescribeBackups
-  - DescribeBackupPolicy
-  - CreateBackup
-  - SwitchNetwork
-  - DeleteSnapshot
-  - CreateTempInstance
-  - CreateSnapshot
-  - DeleteTempInstance
-  - DeleteSnapshotSettings
-  - GetSnapshotSettings
-  - DescribeTempInstance
-  - DescribeSnapshots
-  - RestoreSnapshot
-  - QueryTask
-  - SwitchTempInstance
-  - SetSnapshotSettings
-  - RenewMultiInstance
-  - TransformToPrePaid
-  - RenewInstance
-  - VerifyPassword
-  - ModifyInstanceConfig
-  - ModifyInstanceAttribute
-  - FlushInstance
-  - DescribeRegions
-  - DescribeMonitorItems
-  - DescribeInstances
-  - DescribeInstanceConfig
-  - DescribeHistoryMonitorValues
-  - DeleteInstance
-  - CreateInstance
-- name: Ram
+  - DescribeSupportLines
+  - DescribeDomainNs
+  - DescribeDnsProductInstance
+  - UpdateDomainRecord
+  - UpdateDomainGroup
+  - UpdateDNSSLBWeight
+  - UpdateBatchDomainRecords
+  - SetDomainRecordStatus
+  - SetDNSSLBStatus
+  - RetrievalDomainName
+  - ModifyHichinaDomainDNS
+  - GetMainDomainName
+  - DescribeSubDomainRecords
+  - DescribeRecordLogs
+  - DescribeDomainWhoisInfo
+  - DescribeDomains
+  - DescribeDomainRecords
+  - DescribeDomainRecordInfo
+  - DescribeDomainLogs
+  - DescribeDomainInfo
+  - DescribeDomainGroups
+  - DescribeDNSSLBSubDomains
+  - DescribeDnsProductInstances
+  - DescribeBatchResult
+  - DeleteSubDomainRecords
+  - DeleteDomainRecord
+  - DeleteDomainGroup
+  - DeleteDomain
+  - DeleteBatchDomains
+  - DeleteBatchDomainRecords
+  - CheckDomainRecord
+  - ChangeDomainOfDnsProduct
+  - ChangeDomainGroup
+  - ApplyForRetrievalDomainName
+  - AddDomainRecord
+  - AddDomainGroup
+  - AddDomain
+  - AddBatchDomainRecords
+- code: Ram
   version: 2015-05-01
   location_service_code: ""
-  descriptions:
+  name:
     en: Resource Access Management
     zh: 访问控制
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/28672.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/28672.html
-    zh: https://help.aliyun.com/document_detail/28672.html
-  endpoint_patterns: []
+  document_id: "28672"
+  site_url: //www.aliyun.com/product/ram
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - ram.aliyuncs.com
+  - ram-inner.aliyuncs.com
+  - ram-in-west-antgroup-1.aliyuncs.com
+  - ram-share.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ""
+  api_style: rpc
   apis:
   - UploadPublicKey
   - UpdatePublicKey
@@ -2456,16 +2105,209 @@ products:
   - GetGroup
   - DeleteGroup
   - CreateGroup
-- name: live
+- code: R-kvstore
+  version: 2015-01-01
+  location_service_code: redisa
+  name:
+    en: ApsaraDB for Redis
+    zh: 云数据库 Redis 版
+  document_id: "60831"
+  site_url: //www.aliyun.com/product/kvstore
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - r-kvstore-cn-hangzhou.aliyuncs.com
+  - r-kvstore.aliyuncs.com
+  - r-kvstore.[RegionId].aliyuncs.com
+  - r-kvstore-cn-hangzhou-inner.aliyuncs.com
+  - r-kvstore-in-west-antgroup-1.aliyuncs.com
+  - r-kvstore-share.aliyuncs.com
+  - r-kvstore-share.[RegionId].aliyuncs.com
+  endpoints:
+    ap-southeast-1: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-beijing: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-beijing-inner: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-hangzhou: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-hangzhou-d: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-hongkong: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-qingdao: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-qingdao-cm9: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-shanghai: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-shanghai-et2-b01: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-shanghai-inner: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-shenzhen: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-shenzhen-inner: r-kvstore-cn-hangzhou.aliyuncs.com
+    us-east-1: r-kvstore-cn-hangzhou.aliyuncs.com
+    us-west-1: r-kvstore-cn-hangzhou.aliyuncs.com
+  known_endpoints:
+    ap-northeast-1: r-kvstore.ap-northeast-1.aliyuncs.com
+    ap-southeast-1: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-beijing: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-hangzhou: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-hongkong: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-qingdao: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-shanghai: r-kvstore-cn-hangzhou.aliyuncs.com
+    cn-shenzhen: r-kvstore-cn-hangzhou.aliyuncs.com
+    us-east-1: r-kvstore-cn-hangzhou.aliyuncs.com
+    us-west-1: r-kvstore-cn-hangzhou.aliyuncs.com
+  api_style: rpc
+  apis:
+  - DescribeInstancesByExpireTime
+  - ModifyReplicaRelation
+  - ModifyReplicaMode
+  - ModifyGuardDomainMode
+  - ModifyInstanceSSL
+  - DescribeInstanceSSL
+  - DescribeLogicInstanceTopology
+  - ModifyInstanceSpec
+  - ModifyInstanceSpecPreCheck
+  - ModifyInstanceNetExpireTime
+  - ReleaseReplica
+  - ModifyReplicaDescription
+  - DescribeReplicaUsage
+  - DescribeReplicas
+  - DescribeReplicaPerformance
+  - DescribeReplicaInitializeProgress
+  - ModifyInstanceMinorVersion
+  - ModifyCertification
+  - DescribeCertification
+  - DescribeDBInstanceNetInfo
+  - DescribeMonthlyServiceStatusDetail
+  - DescribeMonthlyServiceStatus
+  - ModifySecurityIps
+  - DescribeSecurityIps
+  - ModifyInstanceMaintainTime
+  - DescribeInstanceAttribute
+  - RestoreInstance
+  - ModifyBackupPolicy
+  - DescribeBackups
+  - DescribeBackupPolicy
+  - CreateBackup
+  - SwitchNetwork
+  - DeleteSnapshot
+  - CreateTempInstance
+  - CreateSnapshot
+  - DeleteTempInstance
+  - DeleteSnapshotSettings
+  - GetSnapshotSettings
+  - DescribeTempInstance
+  - DescribeSnapshots
+  - RestoreSnapshot
+  - QueryTask
+  - SwitchTempInstance
+  - SetSnapshotSettings
+  - RenewMultiInstance
+  - TransformToPrePaid
+  - RenewInstance
+  - VerifyPassword
+  - ModifyInstanceConfig
+  - ModifyInstanceAttribute
+  - FlushInstance
+  - DescribeRegions
+  - DescribeMonitorItems
+  - DescribeInstances
+  - DescribeInstanceConfig
+  - DescribeHistoryMonitorValues
+  - DeleteInstance
+  - CreateInstance
+- code: vod
+  version: 2017-03-21
+  location_service_code: vod
+  name:
+    en: ApsaraVideo for VOD
+    zh: 视频点播
+  document_id: "60574"
+  site_url: https://www.aliyun.com/product/vod
+  sites:
+  - zh
+  endpoint_patterns:
+  - vod.aliyuncs.com
+  - vod.[RegionId].aliyuncs.com
+  endpoints:
+    cn-beijing: vod.cn-beijing.aliyuncs.com
+    cn-shanghai: vod.cn-shanghai.aliyuncs.com
+  known_endpoints:
+    cn-beijing: vod.cn-shanghai.aliyuncs.com
+    cn-hangzhou: vod.cn-shanghai.aliyuncs.com
+    cn-shanghai: vod.cn-shanghai.aliyuncs.com
+    cn-shenzhen: vod.cn-shanghai.aliyuncs.com
+  api_style: rpc
+  apis:
+  - DescribePlayVideoStatis
+  - DescribePlayUserTotal
+  - DescribePlayUserAvg
+  - DescribePlayTopVideos
+  - ListSnapshots
+  - EditVideoIndexFile
+  - SubmitTranscodeJobs
+  - ListLiveRecordVideo
+  - CreateAudit
+  - GetAuditResult
+  - GetAuditHistory
+  - DescribeVideoStatisByDay
+  - ListAIJob
+  - SubmitAIJob
+  - GetImageInfo
+  - OpenVodService
+  - SubmitAIVideoCategoryJob
+  - ListAIVideoCategoryJob
+  - SubmitAIVideoTerrorismRecogJob
+  - SubmitAIVideoCensorJob
+  - ListAIVideoTerrorismRecogJob
+  - ListAIVideoCensorJob
+  - DeleteStream
+  - SubmitSnapshotJob
+  - UpdateEditingProject
+  - SetEditingProjectMaterials
+  - SearchEditingProject
+  - ProduceEditingProjectVideo
+  - GetEditingProjectMaterials
+  - GetEditingProject
+  - DeleteEditingProject
+  - AddEditingProject
+  - DescribeDomainFlowData
+  - DescribeDomainBpsData
+  - DescribeCdnDomainLogs
+  - SubmitAIVideoSummaryJob
+  - ListAIVideoSummaryJob
+  - SubmitAIASRJob
+  - ListAIASRJob
+  - GetMezzanineInfo
+  - SubmitAIVideoPornRecogJob
+  - ListAIVideoPornRecogJob
+  - SubmitAIVideoCoverJob
+  - ListAIVideoCoverJob
+  - UpdateCategory
+  - GetCategories
+  - DeleteCategory
+  - AddCategory
+  - GetPlayInfo
+  - GetVideoConfig
+  - CreateUploadImage
+  - GetCDNStatisSum
+  - GetOSSStatis
+  - SetMessageCallback
+  - GetMessageCallback
+  - UpdateVideoInfo
+  - GetVideoPlayAuth
+  - GetVideoList
+  - GetVideoInfo
+  - DeleteVideo
+  - GetVideoPlayInfo
+  - RefreshUploadVideo
+  - CreateUploadVideo
+- code: live
   version: 2016-11-01
   location_service_code: live
-  descriptions:
-    en: ApsaraVideo Live
+  name:
+    en: ApsaraVideo for Live
     zh: 视频直播
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/48207.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/48207.html
-    zh: https://help.aliyun.com/document_detail/48207.html
+  document_id: "48207"
+  site_url: https://www.aliyun.com/product/live
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - live.aliyuncs.com
   - live.[RegionId].aliyuncs.com
@@ -2495,8 +2337,10 @@ products:
     cn-shenzhen: live.aliyuncs.com
     us-east-1: live.aliyuncs.com
     us-west-1: live.aliyuncs.com
-  api_style: RPC
+  api_style: rpc
   apis:
+  - DescribeLiveDomainTrafficData
+  - DescribeLiveDomainBpsData
   - AddTrancodeSEI
   - DeleteCasterSceneConfig
   - AddCustomLiveStreamTranscode
@@ -2588,227 +2432,104 @@ products:
   - StartMultipleStreamMixService
   - RemoveMultipleStreamMixService
   - ImagePornDetection
-- name: vod
-  version: 2017-03-21
-  location_service_code: vod
-  descriptions:
-    en: ApsaraVideo for VoD *
-    zh: 视频点播
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/60574.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/60574.html
-    zh: https://help.aliyun.com/document_detail/60574.html
+- code: Ons
+  version: 2016-05-03
+  location_service_code: ""
+  name:
+    en: Message Queue
+    zh: 消息队列 MQ
+  document_id: "44416"
+  site_url: https://www.aliyun.com/product/ons
+  sites:
+  - zh
   endpoint_patterns:
-  - vod.aliyuncs.com
-  - vod.[RegionId].aliyuncs.com
+  - ons.aliyuncs.com
+  - ons.[RegionId].aliyuncs.com
   endpoints:
-    cn-beijing: vod.cn-beijing.aliyuncs.com
-    cn-shanghai: vod.cn-shanghai.aliyuncs.com
+    ap-southeast-1: ons.aliyuncs.com
+    cn-beijing: ons.aliyuncs.com
+    cn-beijing-inner: ons.aliyuncs.com
+    cn-hangzhou: ons.aliyuncs.com
+    cn-hangzhou-d: ons.aliyuncs.com
+    cn-hongkong: ons.aliyuncs.com
+    cn-qingdao: ons.aliyuncs.com
+    cn-qingdao-cm9: ons.aliyuncs.com
+    cn-shanghai: ons.aliyuncs.com
+    cn-shanghai-et2-b01: ons.aliyuncs.com
+    cn-shanghai-inner: ons.aliyuncs.com
+    cn-shenzhen: ons.aliyuncs.com
+    cn-shenzhen-inner: ons.aliyuncs.com
+    us-east-1: ons.aliyuncs.com
+    us-west-1: ons.aliyuncs.com
   known_endpoints:
-    cn-beijing: vod.cn-shanghai.aliyuncs.com
-    cn-hangzhou: vod.cn-shanghai.aliyuncs.com
-    cn-shanghai: vod.cn-shanghai.aliyuncs.com
-    cn-shenzhen: vod.cn-shanghai.aliyuncs.com
-  api_style: ""
+    ap-southeast-1: ons.aliyuncs.com
+    cn-beijing: ons.aliyuncs.com
+    cn-hangzhou: ons.aliyuncs.com
+    cn-hongkong: ons.aliyuncs.com
+    cn-qingdao: ons.aliyuncs.com
+    cn-shanghai: ons.aliyuncs.com
+    cn-shenzhen: ons.aliyuncs.com
+    us-east-1: ons.aliyuncs.com
+    us-west-1: ons.aliyuncs.com
+  api_style: rpc
   apis:
-  - EditVideoIndexFile
-  - SubmitTranscodeJobs
-  - ListLiveRecordVideo
-  - CreateAudit
-  - GetAuditResult
-  - GetAuditHistory
-  - DescribeVideoStatisByDay
-  - ListAIJob
-  - SubmitAIJob
-  - GetImageInfo
-  - OpenVodService
-  - SubmitAIVideoCategoryJob
-  - ListAIVideoCategoryJob
-  - SubmitAIVideoTerrorismRecogJob
-  - SubmitAIVideoCensorJob
-  - ListAIVideoTerrorismRecogJob
-  - ListAIVideoCensorJob
-  - DeleteStream
-  - SubmitSnapshotJob
-  - UpdateEditingProject
-  - SetEditingProjectMaterials
-  - SearchEditingProject
-  - ProduceEditingProjectVideo
-  - GetEditingProjectMaterials
-  - GetEditingProject
-  - DeleteEditingProject
-  - AddEditingProject
-  - DescribeDomainFlowData
-  - DescribeDomainBpsData
-  - DescribeCdnDomainLogs
-  - SubmitAIVideoSummaryJob
-  - ListAIVideoSummaryJob
-  - SubmitAIASRJob
-  - ListAIASRJob
-  - GetMezzanineInfo
-  - SubmitAIVideoPornRecogJob
-  - ListAIVideoPornRecogJob
-  - SubmitAIVideoCoverJob
-  - ListAIVideoCoverJob
-  - UpdateCategory
-  - GetCategories
-  - DeleteCategory
-  - AddCategory
-  - GetPlayInfo
-  - GetVideoConfig
-  - CreateUploadImage
-  - GetCDNStatisSum
-  - GetOSSStatis
-  - SetMessageCallback
-  - GetMessageCallback
-  - UpdateVideoInfo
-  - GetVideoPlayAuth
-  - GetVideoList
-  - GetVideoInfo
-  - DeleteVideo
-  - GetVideoPlayInfo
-  - RefreshUploadVideo
-  - CreateUploadVideo
-- name: Slb
-  version: 2014-05-15
-  location_service_code: slb
-  descriptions:
-    en: Server Load Balancer
-    zh: 负载均衡
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/27565.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/27565.html
-    zh: https://help.aliyun.com/document_detail/27565.html
-  endpoint_patterns:
-  - slb.aliyuncs.com
-  - slb-pop.aliyuncs.com
-  - slb-taiwan.aliyuncs.com
-  - slb-pop-inner.aliyuncs.com
-  - slb-in-west-antgroup-1.aliyuncs.com
-  - slb-in-west-antgroup-2.aliyuncs.com
-  - slb.[RegionId].aliyuncs.com
-  - slb-openapi-share.[RegionId].aliyuncs.com
-  - slb-openapi-share.aliyuncs.com
-  endpoints:
-    ap-northeast-1: slb.ap-northeast-1.aliyuncs.com
-    ap-southeast-1: slb.aliyuncs.com
-    ap-southeast-2: slb.ap-southeast-2.aliyuncs.com
-    cn-beijing: slb.aliyuncs.com
-    cn-beijing-inner: slb.aliyuncs.com
-    cn-hangzhou: slb.aliyuncs.com
-    cn-hangzhou-d: slb.aliyuncs.com
-    cn-hongkong: slb.aliyuncs.com
-    cn-qingdao: slb.aliyuncs.com
-    cn-qingdao-cm9: slb.aliyuncs.com
-    cn-shanghai: slb.aliyuncs.com
-    cn-shanghai-et2-b01: slb.aliyuncs.com
-    cn-shanghai-inner: slb.aliyuncs.com
-    cn-shenzhen: slb.aliyuncs.com
-    cn-shenzhen-inner: slb.aliyuncs.com
-    cn-zhangjiakou: slb.cn-zhangjiakou.aliyuncs.com
-    eu-central-1: slb.eu-central-1.aliyuncs.com
-    me-east-1: slb.me-east-1.aliyuncs.com
-    us-east-1: slb.aliyuncs.com
-    us-west-1: slb.aliyuncs.com
-  known_endpoints:
-    ap-northeast-1: slb.ap-northeast-1.aliyuncs.com
-    ap-southeast-1: slb-pop.aliyuncs.com
-    ap-southeast-2: slb.ap-southeast-2.aliyuncs.com
-    ap-southeast-3: slb.ap-southeast-3.aliyuncs.com
-    cn-beijing: slb-pop.aliyuncs.com
-    cn-hangzhou: slb-pop.aliyuncs.com
-    cn-hongkong: slb-pop.aliyuncs.com
-    cn-huhehaote: slb.cn-huhehaote.aliyuncs.com
-    cn-qingdao: slb-pop.aliyuncs.com
-    cn-shanghai: slb-pop.aliyuncs.com
-    cn-shenzhen: slb-pop.aliyuncs.com
-    cn-zhangjiakou: slb.cn-zhangjiakou.aliyuncs.com
-    eu-central-1: slb.eu-central-1.aliyuncs.com
-    me-east-1: slb.me-east-1.aliyuncs.com
-    us-east-1: slb-pop.aliyuncs.com
-    us-west-1: slb-pop.aliyuncs.com
-  api_style: RPC
-  apis:
-  - DescribeLoadBalancersRelatedEcs
-  - ModifyLoadBalancerPayType
-  - MoveResourceGroup
-  - ModifyLoadBalancerInstanceSpec
-  - DescribeMasterSlaveServerGroups
-  - DescribeMasterSlaveServerGroupAttribute
-  - DeleteMasterSlaveServerGroup
-  - CreateMasterSlaveServerGroup
-  - DescribeMasterSlaveVServerGroups
-  - DescribeMasterSlaveVServerGroupAttribute
-  - DeleteMasterSlaveVServerGroup
-  - CreateMasterSlaveVServerGroup
-  - SetLoadBalancerAutoReleaseTime
-  - DescribeLoadBalancerAutoReleaseTime
-  - UploadCACertificate
-  - SetCACertificateName
-  - DescribeCACertificates
-  - DeleteCACertificate
-  - RemoveTags
-  - DescribeTags
-  - AddTags
-  - SetVServerGroupAttribute
-  - SetRule
-  - RemoveVServerGroupBackendServers
-  - ModifyVServerGroupBackendServers
-  - DescribeVServerGroups
-  - DescribeVServerGroupAttribute
-  - DescribeRules
-  - DescribeRuleAttribute
-  - DeleteVServerGroup
-  - DeleteRules
-  - CreateVServerGroup
-  - CreateRules
-  - AddVServerGroupBackendServers
-  - DescribeZones
-  - SetLoadBalancerUDPListenerAttribute
-  - DescribeLoadBalancerUDPListenerAttribute
-  - CreateLoadBalancerUDPListener
-  - UploadServerCertificate
-  - StopLoadBalancerListener
-  - StartLoadBalancerListener
-  - SetServerCertificateName
-  - SetLoadBalancerTCPListenerAttribute
-  - SetLoadBalancerStatus
-  - SetLoadBalancerName
-  - SetLoadBalancerHTTPSListenerAttribute
-  - SetLoadBalancerHTTPListenerAttribute
-  - SetListenerAccessControlStatus
-  - SetBackendServers
-  - RemoveListenerWhiteListItem
-  - RemoveBackendServers
-  - ModifyLoadBalancerInternetSpec
-  - DescribeServerCertificates
-  - DescribeRegions
-  - DescribeLoadBalancerTCPListenerAttribute
-  - DescribeLoadBalancers
-  - DescribeLoadBalancerHTTPSListenerAttribute
-  - DescribeLoadBalancerHTTPListenerAttribute
-  - DescribeLoadBalancerAttribute
-  - DescribeListenerAccessControlAttribute
-  - DescribeHealthStatus
-  - DeleteServerCertificate
-  - DeleteLoadBalancerListener
-  - DeleteLoadBalancer
-  - CreateLoadBalancerTCPListener
-  - CreateLoadBalancerHTTPSListener
-  - CreateLoadBalancerHTTPListener
-  - CreateLoadBalancer
-  - AddListenerWhiteListItem
-  - AddBackendServers
-- name: Emr
+  - OnsClusterList
+  - OnsSubscriptionUpdate
+  - OnsTopicUpdate
+  - OnsWarnDelete
+  - OnsWarnCreate
+  - OnsMqttGroupIdList
+  - OnsMqttQueryMsgByPubInfo
+  - OnsMqttQueryClientByGroupId
+  - OnsMqttQueryMsgTransTrend
+  - OnsMqttQueryHistoryOnline
+  - OnsMqttQueryClientByTopic
+  - OnsMqttQueryClientByClientId
+  - OnsMqttQueryTraceByTraceId
+  - OnsTrendTopicInputTps
+  - OnsTrendGroupOutputTps
+  - OnsTopicStatus
+  - OnsTopicSearch
+  - OnsTopicList
+  - OnsTopicGet
+  - OnsTopicDelete
+  - OnsTopicCreate
+  - OnsSubscriptionSearch
+  - OnsSubscriptionList
+  - OnsSubscriptionGet
+  - OnsSubscriptionDelete
+  - OnsSubscriptionCreate
+  - OnsRegionList
+  - OnsPublishSearch
+  - OnsPublishList
+  - OnsPublishGet
+  - OnsPublishDelete
+  - OnsPublishCreate
+  - OnsMessageTrace
+  - OnsMessageSend
+  - OnsMessagePush
+  - OnsMessagePageQueryByTopic
+  - OnsMessageGetByMsgId
+  - OnsMessageGetByKey
+  - OnsEmpowerList
+  - OnsEmpowerDelete
+  - OnsEmpowerCreate
+  - OnsConsumerTimeSpan
+  - OnsConsumerStatus
+  - OnsConsumerResetOffset
+  - OnsConsumerGetConnection
+  - OnsConsumerAccumulate
+- code: Emr
   version: 2016-04-08
   location_service_code: emr
-  descriptions:
+  name:
     en: E-MapReduce
     zh: E-MapReduce
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/28140.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/28140.html
-    zh: https://help.aliyun.com/document_detail/28140.html
+  document_id: "28140"
+  site_url: https://www.aliyun.com/product/emapreduce
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - emr.aliyuncs.com
   - emr.[RegionId].aliyuncs.com
@@ -2847,8 +2568,15 @@ products:
     me-east-1: emr.me-east-1.aliyuncs.com
     us-east-1: emr.aliyuncs.com
     us-west-1: emr.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
+  - RunOpsCommand
+  - ListOpsOperationTask
+  - ListOpsOperation
+  - GetSupportedOpsCommand
+  - GetOpsCommandResultOnce
+  - GetOpsCommandResult
+  - GetOpsCommandDetail
   - SearchLog
   - ListSlsLogstoreInfo
   - ListServiceLog
@@ -2981,16 +2709,151 @@ products:
   - CreateJob
   - CreateExecutionPlan
   - CreateCluster
-- name: Mts
+- code: Slb
+  version: 2014-05-15
+  location_service_code: slb
+  name:
+    en: Server Load Balancer
+    zh: 负载均衡
+  document_id: "27565"
+  site_url: //www.aliyun.com/product/slb
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - slb.aliyuncs.com
+  - slb-pop.aliyuncs.com
+  - slb-taiwan.aliyuncs.com
+  - slb-pop-inner.aliyuncs.com
+  - slb-in-west-antgroup-1.aliyuncs.com
+  - slb-in-west-antgroup-2.aliyuncs.com
+  - slb.[RegionId].aliyuncs.com
+  - slb-openapi-share.[RegionId].aliyuncs.com
+  - slb-openapi-share.aliyuncs.com
+  endpoints:
+    ap-northeast-1: slb.ap-northeast-1.aliyuncs.com
+    ap-southeast-1: slb.aliyuncs.com
+    ap-southeast-2: slb.ap-southeast-2.aliyuncs.com
+    cn-beijing: slb.aliyuncs.com
+    cn-beijing-inner: slb.aliyuncs.com
+    cn-hangzhou: slb.aliyuncs.com
+    cn-hangzhou-d: slb.aliyuncs.com
+    cn-hongkong: slb.aliyuncs.com
+    cn-qingdao: slb.aliyuncs.com
+    cn-qingdao-cm9: slb.aliyuncs.com
+    cn-shanghai: slb.aliyuncs.com
+    cn-shanghai-et2-b01: slb.aliyuncs.com
+    cn-shanghai-inner: slb.aliyuncs.com
+    cn-shenzhen: slb.aliyuncs.com
+    cn-shenzhen-inner: slb.aliyuncs.com
+    cn-zhangjiakou: slb.cn-zhangjiakou.aliyuncs.com
+    eu-central-1: slb.eu-central-1.aliyuncs.com
+    me-east-1: slb.me-east-1.aliyuncs.com
+    us-east-1: slb.aliyuncs.com
+    us-west-1: slb.aliyuncs.com
+  known_endpoints:
+    ap-northeast-1: slb.ap-northeast-1.aliyuncs.com
+    ap-southeast-1: slb-pop.aliyuncs.com
+    ap-southeast-2: slb.ap-southeast-2.aliyuncs.com
+    ap-southeast-3: slb.ap-southeast-3.aliyuncs.com
+    cn-beijing: slb-pop.aliyuncs.com
+    cn-hangzhou: slb-pop.aliyuncs.com
+    cn-hongkong: slb-pop.aliyuncs.com
+    cn-huhehaote: slb.cn-huhehaote.aliyuncs.com
+    cn-qingdao: slb-pop.aliyuncs.com
+    cn-shanghai: slb-pop.aliyuncs.com
+    cn-shenzhen: slb-pop.aliyuncs.com
+    cn-zhangjiakou: slb.cn-zhangjiakou.aliyuncs.com
+    eu-central-1: slb.eu-central-1.aliyuncs.com
+    me-east-1: slb.me-east-1.aliyuncs.com
+    us-east-1: slb-pop.aliyuncs.com
+    us-west-1: slb-pop.aliyuncs.com
+  api_style: rpc
+  apis:
+  - SetAccessLogsDownloadAttribute
+  - DescribeAccessLogsDownloadAttribute
+  - DeleteAccessLogsDownloadAttribute
+  - DescribeLoadBalancersRelatedEcs
+  - ModifyLoadBalancerPayType
+  - MoveResourceGroup
+  - ModifyLoadBalancerInstanceSpec
+  - DescribeMasterSlaveServerGroups
+  - DescribeMasterSlaveServerGroupAttribute
+  - DeleteMasterSlaveServerGroup
+  - CreateMasterSlaveServerGroup
+  - DescribeMasterSlaveVServerGroups
+  - DescribeMasterSlaveVServerGroupAttribute
+  - DeleteMasterSlaveVServerGroup
+  - CreateMasterSlaveVServerGroup
+  - SetLoadBalancerAutoReleaseTime
+  - DescribeLoadBalancerAutoReleaseTime
+  - UploadCACertificate
+  - SetCACertificateName
+  - DescribeCACertificates
+  - DeleteCACertificate
+  - RemoveTags
+  - DescribeTags
+  - AddTags
+  - SetVServerGroupAttribute
+  - SetRule
+  - RemoveVServerGroupBackendServers
+  - ModifyVServerGroupBackendServers
+  - DescribeVServerGroups
+  - DescribeVServerGroupAttribute
+  - DescribeRules
+  - DescribeRuleAttribute
+  - DeleteVServerGroup
+  - DeleteRules
+  - CreateVServerGroup
+  - CreateRules
+  - AddVServerGroupBackendServers
+  - DescribeZones
+  - SetLoadBalancerUDPListenerAttribute
+  - DescribeLoadBalancerUDPListenerAttribute
+  - CreateLoadBalancerUDPListener
+  - UploadServerCertificate
+  - StopLoadBalancerListener
+  - StartLoadBalancerListener
+  - SetServerCertificateName
+  - SetLoadBalancerTCPListenerAttribute
+  - SetLoadBalancerStatus
+  - SetLoadBalancerName
+  - SetLoadBalancerHTTPSListenerAttribute
+  - SetLoadBalancerHTTPListenerAttribute
+  - SetListenerAccessControlStatus
+  - SetBackendServers
+  - RemoveListenerWhiteListItem
+  - RemoveBackendServers
+  - ModifyLoadBalancerInternetSpec
+  - DescribeServerCertificates
+  - DescribeRegions
+  - DescribeLoadBalancerTCPListenerAttribute
+  - DescribeLoadBalancers
+  - DescribeLoadBalancerHTTPSListenerAttribute
+  - DescribeLoadBalancerHTTPListenerAttribute
+  - DescribeLoadBalancerAttribute
+  - DescribeListenerAccessControlAttribute
+  - DescribeHealthStatus
+  - DeleteServerCertificate
+  - DeleteLoadBalancerListener
+  - DeleteLoadBalancer
+  - CreateLoadBalancerTCPListener
+  - CreateLoadBalancerHTTPSListener
+  - CreateLoadBalancerHTTPListener
+  - CreateLoadBalancer
+  - AddListenerWhiteListItem
+  - AddBackendServers
+- code: Mts
   version: 2014-06-18
   location_service_code: mts
-  descriptions:
-    en: Media Transcoding
-    zh: 媒体转码
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/29212.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/29212.html
-    zh: https://help.aliyun.com/document_detail/29212.html
+  name:
+    en: ApsaraVideo for Media Processing
+    zh: 媒体处理
+  document_id: "29212"
+  site_url: https://www.aliyun.com/product/mts
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - mts.aliyuncs.com
   - mts.[RegionId].aliyuncs.com
@@ -3020,8 +2883,10 @@ products:
     cn-shenzhen: mts.cn-shenzhen.aliyuncs.com
     eu-central-1: mts.eu-central-1.aliyuncs.com
     us-west-1: mts.us-west-1.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
+  - SubmitVideoGifJob
+  - QueryVideoGifJobList
   - UpdateMediaWorkflowTriggerMode
   - CreateSession
   - GetLicense
@@ -3060,12 +2925,8 @@ products:
   - ReportTagJobResult
   - QueryTagJobList
   - SubmitTagJob
-  - UpdateVideoSummaryPipeline
   - SubmitVideoSummaryJob
-  - QueryVideoSummaryPipelineList
   - QueryVideoSummaryJobList
-  - ListVideoSummaryPipeline
-  - AddVideoSummaryPipeline
   - QueryEditingJobList
   - SubmitEditingJobs
   - UpdateCoverPipeline
@@ -3150,400 +3011,21 @@ products:
   - SubmitSnapshotJob
   - SubmitMediaInfoJob
   - SubmitJobs
-- name: Cdn
-  version: 2014-11-11
-  location_service_code: ""
-  descriptions:
-    en: Alibaba Cloud CDN
-    zh: CDN
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/27148.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/27148.html
-    zh: https://help.aliyun.com/document_detail/27148.html
-  endpoint_patterns: []
-  endpoints: {}
-  known_endpoints: {}
-  api_style: ""
-  apis:
-  - DescribeDomainCname
-  - DescribeUserCustomLogConfig
-  - SetWaitingRoomConfig
-  - DescribeDomainRealTimeReqHitRateData
-  - DescribeDomainRealTimeQpsData
-  - DescribeDomainRealTimeByteHitRateData
-  - DescribeDomainRealTimeBpsData
-  - DescribeDomainSlowRatio
-  - ModifyUserCustomLogConfig
-  - ModifyDomainCustomLogConfig
-  - ListDomainsByLogConfigId
-  - DescribeDomainCustomLogConfig
-  - DescribeCustomLogConfig
-  - SetPathForceTtlCodeConfig
-  - SetFileTypeForceTtlCodeConfig
-  - SetIpAllowListConfig
-  - BatchDescribeDomainBpsData
-  - SetHttpsOptionConfig
-  - DescribeDomainQoSRt
-  - DescribeDomainMonthBillingBpsData
-  - DescribeLiveStreamRelayPushBitRate
-  - DescribeLiveStreamOnlineUserNumByDomain
-  - DescribeLiveStreamHlsOnlineUserNumByDomain
-  - DescribeLiveStreamFrameAndBitRateByDomain
-  - SetL2OssKeyConfig
-  - DescribeLiveStreamBitRateData
-  - DescribeLiveStreamRoomUserNumber
-  - DescribeLiveStreamRoomBitRate
-  - DescribeDomainAverageResponseTime
-  - SetIpBlackListConfig
-  - DescribeDomainPathData
-  - SetRemoveQueryStringConfig
-  - SetRemoteReqAuthConfig
-  - DescribeUserCustomerLabels
-  - SetDynamicConfig
-  - SetReqHeaderConfig
-  - DescribeExtensiveDomainData
-  - DescribeLiveStreamFrameInfo
-  - DescribeLivePullStreamConfig
-  - DescribeLiveStreamTranscodeStreamNum
-  - DescribeDomainsBySource
-  - DescribeLiveSpecificDomainMapping
-  - DeleteLiveDomainMapping
-  - AddLiveDomainMapping
-  - DescribeLiveStreamRelayPushErrors
-  - DescribeLiveStreamRelayPushData
-  - DescribeLiveStreamPushErrors
-  - DescribeLiveStreamPushData
-  - DescribeL2VipsByDomain
-  - SetHttpErrorPageConfig
-  - SetUserAgentAcessRestriction
-  - SetLocationAccessRestriction
-  - DescribeDomainDownstreamBpsOfEdge
-  - DescribeLiveStreamBpsData
-  - DescribeDomainOnlineUserNumber
-  - DescribeDomainHttpsData
-  - DescribeDomainUpstreamOfCenter
-  - DescribeDomainUpstreamBpsOfEdge
-  - DescribeRangeDataByLocateAndIspService
-  - UpdateLiveAppSnapshotConfig
-  - DescribeLiveStreamSnapshotInfo
-  - DescribeLiveSnapshotConfig
-  - DeleteLiveAppSnapshotConfig
-  - AddLiveAppSnapshotConfig
-  - DescribeLiveStreamNumberList
-  - StopMixStreamsService
-  - StartMixStreamsService
-  - DescribeLiveStreamOnlineBps
-  - DescribeLiveStreamFrameLossRatio
-  - DescribeDomainRealTimeData
-  - DescribeDomainBpsDataByTimeStamp
-  - DeleteLivePullStreamInfo
-  - AddLivePullStreamInfo
-  - DescribeDomainMax95BpsData
-  - DescribeLiveStreamsFrameRateAndBitRateData
-  - DescribeLiveStreamRecordIndexFiles
-  - DescribeLiveStreamRecordIndexFile
-  - DescribeLiveStreamRecordContent
-  - DescribeLiveRecordConfig
-  - DescribeLiveAppRecordConfig
-  - DeleteLiveAppRecordConfig
-  - CreateLiveStreamRecordIndexFiles
-  - AddLiveAppRecordConfig
-  - SetForwardSchemeConfig
-  - SetOssLogConfig
-  - DescribeUserConfigs
-  - DescribeDomainReqHitRateData
-  - DescribeUserVipsByDomain
-  - DescribeCdnRegionAndIsp
-  - DescribeLiveStreamTranscodeInfo
-  - DescribeLiveStreamLimitInfo
-  - DescribeLiveStreamDomainAppInfo
-  - DeleteLiveStreamTranscode
-  - AddLiveStreamTranscode
-  - DescribeLiveStreamStreamStatus
-  - SetForceRedirectConfig
-  - SetUserDomainBlackList
-  - SetUserBlackList
-  - GetUserDomainBlackList
-  - ClearUserDomainBlackList
-  - ClearUserBlackList
-  - MigrateDomainToHttpsDelivery
-  - DescribeTopDomainsByFlow
-  - DescribeDomainsUsageByDay
-  - DescribeCdnTypes
-  - SetDomainServerCertificate
-  - ModifyCdnDomain
-  - SetWafConfig
-  - SetVideoSeekConfig
-  - SetSourceHostConfig
-  - SetReqAuthConfig
-  - SetRefererConfig
-  - SetRangeConfig
-  - SetPathCacheExpiredConfig
-  - SetPageCompressConfig
-  - SetOptimizeConfig
-  - SetIgnoreQueryStringConfig
-  - SetHttpHeaderConfig
-  - SetFileCacheExpiredConfig
-  - SetErrorPageConfig
-  - SetCcConfig
-  - ModifyHttpHeaderConfig
-  - ModifyFileCacheExpiredConfig
-  - DescribeRefreshQuota
-  - DescribeIpInfo
-  - DescribeDomainUvData
-  - DescribeDomainTopUrlVisit
-  - DescribeDomainTopReferVisit
-  - DescribeDomainSrcFlowData
-  - DescribeDomainSrcBpsData
-  - DescribeDomainRegionData
-  - DescribeDomainQpsData
-  - DescribeDomainPvData
-  - DescribeDomainISPData
-  - DescribeDomainHttpCodeData
-  - DescribeDomainHitRateData
-  - DescribeDomainFlowData
-  - DescribeDomainFileSizeProportionData
-  - DescribeDomainConfigs
-  - DescribeDomainCCData
-  - DescribeDomainCCAttackInfo
-  - DescribeDomainBpsData
-  - DeleteHttpHeaderConfig
-  - SetLiveStreamsNotifyUrlConfig
-  - DescribeLiveStreamOnlineUserNum
-  - ResumeLiveStream
-  - ForbidLiveStream
-  - DescribeLiveStreamsPublishList
-  - DescribeLiveStreamsOnlineList
-  - DescribeLiveStreamsControlHistory
-  - DescribeLiveStreamsBlockList
-  - DescribeCdnDomainLogs
-  - DescribeCdnDomainDetail
-  - DescribeCdnDomainBaseDetail
-  - DeleteCdnDomain
-  - AddCdnDomain
-  - PushObjectCache
-  - OpenCdnService
-  - ModifyCdnService
-  - DescribeUserDomains
-  - DescribeRefreshTasks
-  - DescribeOneMinuteData
-  - DescribeCdnService
-  - DescribeCdnMonitorData
-  - StopCdnDomain
-  - StartCdnDomain
-  - RefreshObjectCaches
-- name: Vpc
-  version: 2016-04-28
-  location_service_code: vpc
-  descriptions:
-    en: Virtual Private Cloud
-    zh: 专有网络VPC
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/34962.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/34962.html
-    zh: https://help.aliyun.com/document_detail/34962.html
-  endpoint_patterns:
-  - vpc.aliyuncs.com
-  - vpc.[RegionId].aliyuncs.com
-  - vpc-openapi-share.[RegionId].aliyuncs.com
-  - vpc-openapi-share.aliyuncs.com
-  endpoints:
-    ap-northeast-1: vpc.ap-northeast-1.aliyuncs.com
-    ap-southeast-1: vpc.aliyuncs.com
-    ap-southeast-2: vpc.ap-southeast-2.aliyuncs.com
-    cn-anhui-gov: vpc.aliyuncs.com
-    cn-beijing: vpc.aliyuncs.com
-    cn-beijing-am13-c01: vpc.aliyuncs.com
-    cn-gansu-am6: vpc.aliyuncs.com
-    cn-guizhou: vpc.aliyuncs.com
-    cn-guizhou-gov: vpc.aliyuncs.com
-    cn-haidian-cm12-c01: vpc.aliyuncs.com
-    cn-hangzhou: vpc.aliyuncs.com
-    cn-henan-am12001: vpc.aliyuncs.com
-    cn-hongkong: vpc.aliyuncs.com
-    cn-ningxia-am7-c01: vpc.aliyuncs.com
-    cn-ningxiazhongwei: vpc.aliyuncs.com
-    cn-shanghai: vpc.aliyuncs.com
-    cn-shanghai-finance-1: vpc.aliyuncs.com
-    cn-shenzhen: vpc.aliyuncs.com
-    cn-shenzhen-finance-1: vpc.aliyuncs.com
-    cn-zhangjiakou: vpc.cn-zhangjiakou.aliyuncs.com
-    eu-central-1: vpc.eu-central-1.aliyuncs.com
-    me-east-1: vpc.me-east-1.aliyuncs.com
-    us-east-1: vpc.aliyuncs.com
-    us-west-1: vpc.aliyuncs.com
-  known_endpoints:
-    ap-northeast-1: vpc.ap-northeast-1.aliyuncs.com
-    ap-southeast-1: vpc.aliyuncs.com
-    ap-southeast-2: vpc.ap-southeast-2.aliyuncs.com
-    ap-southeast-3: vpc.ap-southeast-3.aliyuncs.com
-    cn-beijing: vpc.aliyuncs.com
-    cn-hangzhou: vpc.aliyuncs.com
-    cn-hongkong: vpc.aliyuncs.com
-    cn-huhehaote: vpc.cn-huhehaote.aliyuncs.com
-    cn-qingdao: vpc.aliyuncs.com
-    cn-shanghai: vpc.aliyuncs.com
-    cn-shenzhen: vpc.aliyuncs.com
-    cn-zhangjiakou: vpc.cn-zhangjiakou.aliyuncs.com
-    eu-central-1: vpc.eu-central-1.aliyuncs.com
-    me-east-1: vpc.me-east-1.aliyuncs.com
-    us-east-1: vpc.aliyuncs.com
-    us-west-1: vpc.aliyuncs.com
-  api_style: RPC
-  apis:
-  - ModifySslVpnServer
-  - ModifySslVpnClientCert
-  - DescribeSslVpnServers
-  - DescribeSslVpnClientCerts
-  - DescribeSslVpnClientCert
-  - DeleteSslVpnServer
-  - DeleteSslVpnClientCert
-  - CreateSslVpnServer
-  - CreateSslVpnClientCert
-  - RemoveGlobalAccelerationInstanceIp
-  - AddGlobalAccelerationInstanceIp
-  - DescribeRouteTableList
-  - ModifyRouteTableAttributes
-  - DescribeRouterInterfacesForGlobal
-  - ModifyCommonBandwidthPackagePayType
-  - UnassociateGlobalAccelerationInstance
-  - ModifyGlobalAccelerationInstanceSpec
-  - ModifyGlobalAccelerationInstanceAttributes
-  - DescribeServerRelatedGlobalAccelerationInstances
-  - DescribeGlobalAccelerationInstances
-  - DeleteGlobalAccelerationInstance
-  - CreateGlobalAccelerationInstance
-  - AssociateGlobalAccelerationInstance
-  - DescribeVSwitchAttributes
-  - RemoveCommonBandwidthPackageIp
-  - ModifyCommonBandwidthPackageSpec
-  - ModifyCommonBandwidthPackageAttribute
-  - DescribeCommonBandwidthPackages
-  - DeleteCommonBandwidthPackage
-  - CreateCommonBandwidthPackage
-  - AddCommonBandwidthPackageIp
-  - ModifyVpnGatewayAttribute
-  - ModifyVpnConnectionAttribute
-  - ModifyCustomerGatewayAttribute
-  - DownloadVpnConnectionConfig
-  - DescribeVpnGateways
-  - DescribeVpnGateway
-  - DescribeVpnConnections
-  - DescribeVpnConnection
-  - DescribeCustomerGateways
-  - DescribeCustomerGateway
-  - DeleteVpnGateway
-  - DeleteVpnConnection
-  - DeleteCustomerGateway
-  - CreateVpnConnection
-  - CreateCustomerGateway
-  - ModifyNqa
-  - ModifyBgpGroupAttribute
-  - DescribeNqas
-  - DescribeBgpPeers
-  - DescribeBgpGroups
-  - DeleteNqa
-  - DeleteBgpPeer
-  - DeleteBgpNetwork
-  - DeleteBgpGroup
-  - CreateNqa
-  - CreateBgpPeer
-  - CreateBgpGroup
-  - AddBgpNetwork
-  - EnableVpcClassicLink
-  - DisableVpcClassicLink
-  - DescribeVpcAttribute
-  - UnassociatePhysicalConnectionFromVirtualBorderRouter
-  - CreatePhysicalConnectionNew
-  - AssociatePhysicalConnectionToVirtualBorderRouter
-  - ModifySnatEntry
-  - ModifyNatGatewaySpec
-  - ModifyNatGatewayAttribute
-  - ModifyBandwidthPackageAttribute
-  - DescribeSnatTableEntries
-  - DescribeBandwidthPackagePublicIpMonitorData
-  - DeleteSnatEntry
-  - CreateSnatEntry
-  - CreateBandwidthPackage
-  - UnassociateHaVip
-  - UnassociateEipAddress
-  - TerminateVirtualBorderRouter
-  - TerminatePhysicalConnection
-  - RemoveBandwidthPackageIps
-  - ReleaseEipAddress
-  - RecoverVirtualBorderRouter
-  - ModifyVSwitchAttribute
-  - ModifyVRouterAttribute
-  - ModifyVpcAttribute
-  - ModifyVirtualBorderRouterAttribute
-  - ModifyRouterInterfaceSpec
-  - ModifyRouterInterfaceAttribute
-  - ModifyPhysicalConnectionAttribute
-  - ModifyHaVipAttribute
-  - ModifyForwardEntry
-  - ModifyEipAddressAttribute
-  - ModifyBandwidthPackageSpec
-  - EnablePhysicalConnection
-  - DescribeZones
-  - DescribeVSwitches
-  - DescribeVRouters
-  - DescribeVpcs
-  - DescribeVirtualBorderRoutersForPhysicalConnection
-  - DescribeVirtualBorderRouters
-  - DescribeRouteTables
-  - DescribeRouterInterfaces
-  - DescribeRegions
-  - DescribePhysicalConnections
-  - DescribeNewProjectEipMonitorData
-  - DescribeNatGateways
-  - DescribeHaVips
-  - DescribeForwardTableEntries
-  - DescribeForwardTables
-  - DescribeEipMonitorData
-  - DescribeEipAddresses
-  - DescribeBandwidthPackages
-  - DescribeAccessPoints
-  - DeleteVSwitch
-  - DeleteVpc
-  - DeleteVirtualBorderRouter
-  - DeleteRouterInterface
-  - DeleteRouteEntry
-  - DeletePhysicalConnection
-  - DeleteNatGateway
-  - DeleteHaVip
-  - DeleteForwardEntry
-  - DeleteBandwidthPackage
-  - DeactivateRouterInterface
-  - CreateVSwitch
-  - CreateVpc
-  - CreateVirtualBorderRouter
-  - CreateRouterInterface
-  - CreateRouteEntry
-  - CreatePhysicalConnection
-  - CreateNatGateway
-  - CreateHaVip
-  - CreateForwardEntry
-  - ConnectRouterInterface
-  - CancelPhysicalConnection
-  - AssociateHaVip
-  - AssociateEipAddress
-  - AllocateEipAddress
-  - AddBandwidthPackageIps
-  - ActivateRouterInterface
-- name: cloudwf
+- code: cloudwf
   version: 2017-03-28
   location_service_code: ""
-  descriptions:
-    en: Cloud AP **
+  name:
+    en: CloudAP
     zh: 云AP
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/58111.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/58111.html
-    zh: https://help.aliyun.com/document_detail/58111.html
-  endpoint_patterns: []
+  document_id: "58111"
+  site_url: https://www.aliyun.com/product/cloudap
+  sites:
+  - zh
+  endpoint_patterns:
+  - cloudwf.aliyuncs.com
   endpoints: {}
   known_endpoints: {}
-  api_style: ""
+  api_style: rpc
   apis:
   - ModifySubAccountPermission
   - ListSubAccountPermission
@@ -3760,16 +3242,403 @@ products:
   - InnerRefund
   - InnerProduceCloudWF
   - InnerCheckOrder
-- name: Rds
+- code: Cdn
+  version: 2014-11-11
+  location_service_code: ""
+  name:
+    en: Alibaba Cloud CDN
+    zh: CDN
+  document_id: "27148"
+  site_url: //www.aliyun.com/product/cdn
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - cdn-pop.aliyuncs.com
+  - cdn.aliyuncs.com
+  - cdn-inner.aliyuncs.com
+  - cdn-share.aliyuncs.com
+  endpoints: {}
+  known_endpoints: {}
+  api_style: rpc
+  apis:
+  - DescribeDomainCname
+  - DescribeUserCustomLogConfig
+  - SetWaitingRoomConfig
+  - DescribeDomainRealTimeReqHitRateData
+  - DescribeDomainRealTimeQpsData
+  - DescribeDomainRealTimeByteHitRateData
+  - DescribeDomainRealTimeBpsData
+  - DescribeDomainSlowRatio
+  - ModifyUserCustomLogConfig
+  - ModifyDomainCustomLogConfig
+  - ListDomainsByLogConfigId
+  - DescribeDomainCustomLogConfig
+  - DescribeCustomLogConfig
+  - SetPathForceTtlCodeConfig
+  - SetFileTypeForceTtlCodeConfig
+  - SetIpAllowListConfig
+  - BatchDescribeDomainBpsData
+  - SetHttpsOptionConfig
+  - DescribeDomainQoSRt
+  - DescribeDomainMonthBillingBpsData
+  - DescribeLiveStreamRelayPushBitRate
+  - DescribeLiveStreamOnlineUserNumByDomain
+  - DescribeLiveStreamHlsOnlineUserNumByDomain
+  - DescribeLiveStreamFrameAndBitRateByDomain
+  - SetL2OssKeyConfig
+  - DescribeLiveStreamBitRateData
+  - DescribeLiveStreamRoomUserNumber
+  - DescribeLiveStreamRoomBitRate
+  - DescribeDomainAverageResponseTime
+  - SetIpBlackListConfig
+  - DescribeDomainPathData
+  - SetRemoveQueryStringConfig
+  - SetRemoteReqAuthConfig
+  - DescribeUserCustomerLabels
+  - SetDynamicConfig
+  - SetReqHeaderConfig
+  - DescribeExtensiveDomainData
+  - DescribeLiveStreamFrameInfo
+  - DescribeLivePullStreamConfig
+  - DescribeLiveStreamTranscodeStreamNum
+  - DescribeDomainsBySource
+  - DescribeLiveSpecificDomainMapping
+  - DeleteLiveDomainMapping
+  - AddLiveDomainMapping
+  - DescribeLiveStreamRelayPushErrors
+  - DescribeLiveStreamRelayPushData
+  - DescribeLiveStreamPushErrors
+  - DescribeLiveStreamPushData
+  - DescribeL2VipsByDomain
+  - SetHttpErrorPageConfig
+  - SetUserAgentAcessRestriction
+  - SetLocationAccessRestriction
+  - DescribeDomainDownstreamBpsOfEdge
+  - DescribeLiveStreamBpsData
+  - DescribeDomainOnlineUserNumber
+  - DescribeDomainHttpsData
+  - DescribeDomainUpstreamOfCenter
+  - DescribeDomainUpstreamBpsOfEdge
+  - DescribeRangeDataByLocateAndIspService
+  - UpdateLiveAppSnapshotConfig
+  - DescribeLiveStreamSnapshotInfo
+  - DescribeLiveSnapshotConfig
+  - DeleteLiveAppSnapshotConfig
+  - AddLiveAppSnapshotConfig
+  - DescribeLiveStreamNumberList
+  - StopMixStreamsService
+  - StartMixStreamsService
+  - DescribeLiveStreamOnlineBps
+  - DescribeLiveStreamFrameLossRatio
+  - DescribeDomainRealTimeData
+  - DescribeDomainBpsDataByTimeStamp
+  - DeleteLivePullStreamInfo
+  - AddLivePullStreamInfo
+  - DescribeDomainMax95BpsData
+  - DescribeLiveStreamsFrameRateAndBitRateData
+  - DescribeLiveStreamRecordIndexFiles
+  - DescribeLiveStreamRecordIndexFile
+  - DescribeLiveStreamRecordContent
+  - DescribeLiveRecordConfig
+  - DescribeLiveAppRecordConfig
+  - DeleteLiveAppRecordConfig
+  - CreateLiveStreamRecordIndexFiles
+  - AddLiveAppRecordConfig
+  - SetForwardSchemeConfig
+  - SetOssLogConfig
+  - DescribeUserConfigs
+  - DescribeDomainReqHitRateData
+  - DescribeUserVipsByDomain
+  - DescribeCdnRegionAndIsp
+  - DescribeLiveStreamTranscodeInfo
+  - DescribeLiveStreamLimitInfo
+  - DescribeLiveStreamDomainAppInfo
+  - DeleteLiveStreamTranscode
+  - AddLiveStreamTranscode
+  - DescribeLiveStreamStreamStatus
+  - SetForceRedirectConfig
+  - SetUserDomainBlackList
+  - SetUserBlackList
+  - GetUserDomainBlackList
+  - ClearUserDomainBlackList
+  - ClearUserBlackList
+  - MigrateDomainToHttpsDelivery
+  - DescribeTopDomainsByFlow
+  - DescribeDomainsUsageByDay
+  - DescribeCdnTypes
+  - SetDomainServerCertificate
+  - ModifyCdnDomain
+  - SetWafConfig
+  - SetVideoSeekConfig
+  - SetSourceHostConfig
+  - SetReqAuthConfig
+  - SetRefererConfig
+  - SetRangeConfig
+  - SetPathCacheExpiredConfig
+  - SetPageCompressConfig
+  - SetOptimizeConfig
+  - SetIgnoreQueryStringConfig
+  - SetHttpHeaderConfig
+  - SetFileCacheExpiredConfig
+  - SetErrorPageConfig
+  - SetCcConfig
+  - ModifyHttpHeaderConfig
+  - ModifyFileCacheExpiredConfig
+  - DescribeRefreshQuota
+  - DescribeIpInfo
+  - DescribeDomainUvData
+  - DescribeDomainTopUrlVisit
+  - DescribeDomainTopReferVisit
+  - DescribeDomainSrcFlowData
+  - DescribeDomainSrcBpsData
+  - DescribeDomainRegionData
+  - DescribeDomainQpsData
+  - DescribeDomainPvData
+  - DescribeDomainISPData
+  - DescribeDomainHttpCodeData
+  - DescribeDomainHitRateData
+  - DescribeDomainFlowData
+  - DescribeDomainFileSizeProportionData
+  - DescribeDomainConfigs
+  - DescribeDomainCCData
+  - DescribeDomainCCAttackInfo
+  - DescribeDomainBpsData
+  - DeleteHttpHeaderConfig
+  - DeleteCacheExpiredConfig
+  - SetLiveStreamsNotifyUrlConfig
+  - DescribeLiveStreamOnlineUserNum
+  - ResumeLiveStream
+  - ForbidLiveStream
+  - DescribeLiveStreamsPublishList
+  - DescribeLiveStreamsOnlineList
+  - DescribeLiveStreamsControlHistory
+  - DescribeLiveStreamsBlockList
+  - DescribeCdnDomainLogs
+  - DescribeCdnDomainDetail
+  - DescribeCdnDomainBaseDetail
+  - DeleteCdnDomain
+  - AddCdnDomain
+  - PushObjectCache
+  - OpenCdnService
+  - ModifyCdnService
+  - DescribeUserDomains
+  - DescribeRefreshTasks
+  - DescribeOneMinuteData
+  - DescribeCdnService
+  - DescribeCdnMonitorData
+  - StopCdnDomain
+  - StartCdnDomain
+  - RefreshObjectCaches
+- code: Vpc
+  version: 2016-04-28
+  location_service_code: vpc
+  name:
+    en: Virtual Private Cloud
+    zh: 专有网络VPC
+  document_id: "34962"
+  site_url: //www.aliyun.com/product/vpc
+  sites:
+  - zh
+  - en
+  endpoint_patterns:
+  - vpc.aliyuncs.com
+  - vpc.[RegionId].aliyuncs.com
+  - vpc-openapi-share.[RegionId].aliyuncs.com
+  - vpc-openapi-share.aliyuncs.com
+  endpoints:
+    ap-northeast-1: vpc.ap-northeast-1.aliyuncs.com
+    ap-southeast-1: vpc.aliyuncs.com
+    ap-southeast-2: vpc.ap-southeast-2.aliyuncs.com
+    cn-anhui-gov: vpc.aliyuncs.com
+    cn-beijing: vpc.aliyuncs.com
+    cn-beijing-am13-c01: vpc.aliyuncs.com
+    cn-gansu-am6: vpc.aliyuncs.com
+    cn-guizhou: vpc.aliyuncs.com
+    cn-guizhou-gov: vpc.aliyuncs.com
+    cn-haidian-cm12-c01: vpc.aliyuncs.com
+    cn-hangzhou: vpc.aliyuncs.com
+    cn-henan-am12001: vpc.aliyuncs.com
+    cn-hongkong: vpc.aliyuncs.com
+    cn-ningxia-am7-c01: vpc.aliyuncs.com
+    cn-ningxiazhongwei: vpc.aliyuncs.com
+    cn-shanghai: vpc.aliyuncs.com
+    cn-shanghai-finance-1: vpc.aliyuncs.com
+    cn-shenzhen: vpc.aliyuncs.com
+    cn-shenzhen-finance-1: vpc.aliyuncs.com
+    cn-zhangjiakou: vpc.cn-zhangjiakou.aliyuncs.com
+    eu-central-1: vpc.eu-central-1.aliyuncs.com
+    me-east-1: vpc.me-east-1.aliyuncs.com
+    us-east-1: vpc.aliyuncs.com
+    us-west-1: vpc.aliyuncs.com
+  known_endpoints:
+    ap-northeast-1: vpc.ap-northeast-1.aliyuncs.com
+    ap-southeast-1: vpc.aliyuncs.com
+    ap-southeast-2: vpc.ap-southeast-2.aliyuncs.com
+    ap-southeast-3: vpc.ap-southeast-3.aliyuncs.com
+    cn-beijing: vpc.aliyuncs.com
+    cn-hangzhou: vpc.aliyuncs.com
+    cn-hongkong: vpc.aliyuncs.com
+    cn-huhehaote: vpc.cn-huhehaote.aliyuncs.com
+    cn-qingdao: vpc.aliyuncs.com
+    cn-shanghai: vpc.aliyuncs.com
+    cn-shenzhen: vpc.aliyuncs.com
+    cn-zhangjiakou: vpc.cn-zhangjiakou.aliyuncs.com
+    eu-central-1: vpc.eu-central-1.aliyuncs.com
+    me-east-1: vpc.me-east-1.aliyuncs.com
+    us-east-1: vpc.aliyuncs.com
+    us-west-1: vpc.aliyuncs.com
+  api_style: rpc
+  apis:
+  - MoveResourceGroup
+  - ModifySslVpnServer
+  - ModifySslVpnClientCert
+  - DescribeSslVpnServers
+  - DescribeSslVpnClientCerts
+  - DescribeSslVpnClientCert
+  - DeleteSslVpnServer
+  - DeleteSslVpnClientCert
+  - CreateSslVpnServer
+  - CreateSslVpnClientCert
+  - RemoveGlobalAccelerationInstanceIp
+  - AddGlobalAccelerationInstanceIp
+  - DescribeRouteTableList
+  - ModifyRouteTableAttributes
+  - DescribeRouterInterfacesForGlobal
+  - ModifyCommonBandwidthPackagePayType
+  - UnassociateGlobalAccelerationInstance
+  - ModifyGlobalAccelerationInstanceSpec
+  - ModifyGlobalAccelerationInstanceAttributes
+  - DescribeServerRelatedGlobalAccelerationInstances
+  - DescribeGlobalAccelerationInstances
+  - DeleteGlobalAccelerationInstance
+  - CreateGlobalAccelerationInstance
+  - AssociateGlobalAccelerationInstance
+  - DescribeVSwitchAttributes
+  - RemoveCommonBandwidthPackageIp
+  - ModifyCommonBandwidthPackageSpec
+  - ModifyCommonBandwidthPackageAttribute
+  - DescribeCommonBandwidthPackages
+  - DeleteCommonBandwidthPackage
+  - CreateCommonBandwidthPackage
+  - AddCommonBandwidthPackageIp
+  - ModifyVpnGatewayAttribute
+  - ModifyVpnConnectionAttribute
+  - ModifyCustomerGatewayAttribute
+  - DownloadVpnConnectionConfig
+  - DescribeVpnGateways
+  - DescribeVpnGateway
+  - DescribeVpnConnections
+  - DescribeVpnConnection
+  - DescribeCustomerGateways
+  - DescribeCustomerGateway
+  - DeleteVpnGateway
+  - DeleteVpnConnection
+  - DeleteCustomerGateway
+  - CreateVpnConnection
+  - CreateCustomerGateway
+  - ModifyNqa
+  - ModifyBgpGroupAttribute
+  - DescribeNqas
+  - DescribeBgpPeers
+  - DescribeBgpGroups
+  - DeleteNqa
+  - DeleteBgpPeer
+  - DeleteBgpNetwork
+  - DeleteBgpGroup
+  - CreateNqa
+  - CreateBgpPeer
+  - CreateBgpGroup
+  - AddBgpNetwork
+  - EnableVpcClassicLink
+  - DisableVpcClassicLink
+  - DescribeVpcAttribute
+  - UnassociatePhysicalConnectionFromVirtualBorderRouter
+  - CreatePhysicalConnectionNew
+  - AssociatePhysicalConnectionToVirtualBorderRouter
+  - ModifySnatEntry
+  - ModifyNatGatewaySpec
+  - ModifyNatGatewayAttribute
+  - ModifyBandwidthPackageAttribute
+  - DescribeSnatTableEntries
+  - DescribeBandwidthPackagePublicIpMonitorData
+  - DeleteSnatEntry
+  - CreateSnatEntry
+  - CreateBandwidthPackage
+  - UnassociateHaVip
+  - UnassociateEipAddress
+  - TerminateVirtualBorderRouter
+  - TerminatePhysicalConnection
+  - RemoveBandwidthPackageIps
+  - ReleaseEipAddress
+  - RecoverVirtualBorderRouter
+  - ModifyVSwitchAttribute
+  - ModifyVRouterAttribute
+  - ModifyVpcAttribute
+  - ModifyVirtualBorderRouterAttribute
+  - ModifyRouterInterfaceSpec
+  - ModifyRouterInterfaceAttribute
+  - ModifyPhysicalConnectionAttribute
+  - ModifyHaVipAttribute
+  - ModifyForwardEntry
+  - ModifyEipAddressAttribute
+  - ModifyBandwidthPackageSpec
+  - EnablePhysicalConnection
+  - DescribeZones
+  - DescribeVSwitches
+  - DescribeVRouters
+  - DescribeVpcs
+  - DescribeVirtualBorderRoutersForPhysicalConnection
+  - DescribeVirtualBorderRouters
+  - DescribeRouteTables
+  - DescribeRouterInterfaces
+  - DescribeRegions
+  - DescribePhysicalConnections
+  - DescribeNewProjectEipMonitorData
+  - DescribeNatGateways
+  - DescribeHaVips
+  - DescribeForwardTableEntries
+  - DescribeForwardTables
+  - DescribeEipMonitorData
+  - DescribeEipAddresses
+  - DescribeBandwidthPackages
+  - DescribeAccessPoints
+  - DeleteVSwitch
+  - DeleteVpc
+  - DeleteVirtualBorderRouter
+  - DeleteRouterInterface
+  - DeleteRouteEntry
+  - DeletePhysicalConnection
+  - DeleteNatGateway
+  - DeleteHaVip
+  - DeleteForwardEntry
+  - DeleteBandwidthPackage
+  - DeactivateRouterInterface
+  - CreateVSwitch
+  - CreateVpc
+  - CreateVirtualBorderRouter
+  - CreateRouterInterface
+  - CreateRouteEntry
+  - CreatePhysicalConnection
+  - CreateNatGateway
+  - CreateHaVip
+  - CreateForwardEntry
+  - ConnectRouterInterface
+  - CancelPhysicalConnection
+  - AssociateHaVip
+  - AssociateEipAddress
+  - AllocateEipAddress
+  - AddBandwidthPackageIps
+  - ActivateRouterInterface
+- code: Rds
   version: 2014-08-15
   location_service_code: rds
-  descriptions:
+  name:
     en: ApsaraDB for RDS
     zh: 云数据库RDS版
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/26223.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/26223.html
-    zh: https://help.aliyun.com/document_detail/26223.html
+  document_id: "26223"
+  site_url: ""
+  sites: []
   endpoint_patterns:
   - rds.[RegionId].aliyuncs.com
   - rds-cn-hangzhou.aliyuncs.com
@@ -3824,8 +3693,10 @@ products:
     me-east-1: rds.me-east-1.aliyuncs.com
     us-east-1: rds.aliyuncs.com
     us-west-1: rds.aliyuncs.com
-  api_style: ""
+  api_style: rpc
   apis:
+  - DescribeSecurityGroupConfiguration
+  - ModifySecurityGroupConfiguration
   - DescribeDampPolicyByComment
   - RenewDBInstance
   - QueryPriceForBuy
@@ -3833,8 +3704,6 @@ products:
   - DescribeBackupsForSecurity
   - DescribeLogicDBInstanceTopology
   - DescribeDBInstanceExtendAttribute
-  - DescribeDBInstanceECSSGRelation
-  - ModifyDBInstanceECSSGRelation
   - DescribeOssDownloadsForSQLServer
   - DescribeMigrateTasksForSQLServer
   - CreateMigrateTaskForSQLServer
@@ -3854,7 +3723,6 @@ products:
   - ModifyDBInstanceNetworkExpireTime
   - DescribeBackupSetsForSecurity
   - UpgradeDBInstanceNetWorkInfo
-  - AddBuDBInstanceRelation
   - ModifyResourceGroup
   - ReleaseReplica
   - ModifyReplicaDescription
@@ -3884,8 +3752,6 @@ products:
   - CheckResource
   - DescribeCharacterSetName
   - DeleteBackup
-  - DescribeDBInstanceNetworkDetail
-  - DescribeDBInstanceNetwork
   - DescribeSQLDiagnosisList
   - DescribeSQLDiagnosis
   - DescribeResourceDiagnosis
@@ -3997,21 +3863,22 @@ products:
   - DescribeDBInstanceAttribute
   - DescribeAbnormalDBInstances
   - StartDBInstanceDiagnose
-- name: Ecs
+- code: Ecs
   version: 2014-05-26
   location_service_code: ecs
-  descriptions:
+  name:
     en: Elastic Compute Service
-    zh: 云服务器ECS
-  links:
-    en: https://www.alibabacloud.com/help/doc-detail/25484.html
-    jp: https://jp.alibabacloud.com/help/doc-detail/25484.html
-    zh: https://help.aliyun.com/document_detail/25484.html
+    zh: 云服务器 ECS
+  document_id: "25484"
+  site_url: https://www.aliyun.com/product/ecs
+  sites:
+  - zh
+  - en
   endpoint_patterns:
   - ecs-cn-hangzhou.aliyuncs.com
-  - ecs.[RegionId].aliyuncs.com
-  - ecs-openapi-inner.[RegionId].aliyuncs.com
-  - ecs-openapi-share.[RegionId].aliyuncs.com
+  - ecs.[SourceRegionId].aliyuncs.com
+  - ecs-openapi-inner.[SourceRegionId].aliyuncs.com
+  - ecs-openapi-share.[SourceRegionId].aliyuncs.com
   - ecs-taiwan.aliyuncs.com
   - ecs-cn-hangzhou-inner.aliyuncs.com
   - ecs-in-west-antgroup-1.aliyuncs.com
@@ -4081,8 +3948,11 @@ products:
     me-east-1: ecs.me-east-1.aliyuncs.com
     us-east-1: ecs-cn-hangzhou.aliyuncs.com
     us-west-1: ecs-cn-hangzhou.aliyuncs.com
-  api_style: RPC
+  api_style: rpc
   apis:
+  - DescribeResourcesModification
+  - DescribeBandwidthLimitation
+  - DescribeAvailableResource
   - ReActivateInstances
   - DescribeInstancesFullStatus
   - DescribeInstanceHistoryEvents

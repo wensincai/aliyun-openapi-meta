@@ -3,32 +3,40 @@ parameters:
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: Keyword
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Type
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SelectContactGroups
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: InstanceId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: BindUrls
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: GroupName
   type: String
   required: false
+  hidden: false
   subparameters: []

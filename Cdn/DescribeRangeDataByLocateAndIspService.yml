@@ -3,36 +3,45 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: SecurityToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainNames
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: LocationNames
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: IspNames
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: startTime
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EndTime
   type: String
   required: true
+  hidden: false
   subparameters: []

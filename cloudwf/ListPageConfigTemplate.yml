@@ -3,16 +3,20 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SearchTempName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageIndex
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Length
   type: Integer
   required: true
+  hidden: false
   subparameters: []

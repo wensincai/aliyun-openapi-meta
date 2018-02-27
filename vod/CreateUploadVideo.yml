@@ -3,60 +3,75 @@ parameters:
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerAccount
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: ResourceOwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: CoverURL
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Description
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: FileName
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: FileSize
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: IP
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Title
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: CateId
-  type: Integer
+  type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: Tags
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TranscodeMode
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserData
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TemplateGroupId
   type: String
   required: false
+  hidden: false
   subparameters: []

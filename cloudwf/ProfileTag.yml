@@ -3,32 +3,40 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Agsid
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Idtype
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Tag
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: BeginDate
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: EndDate
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: AreaNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: AppType
   type: Integer
   required: false
+  hidden: false
   subparameters: []

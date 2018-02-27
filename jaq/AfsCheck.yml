@@ -3,24 +3,30 @@ parameters:
 - name: CallerName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Session
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Token
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Sig
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: Platform
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Scene
   type: String
   required: false
+  hidden: false
   subparameters: []

@@ -3,40 +3,50 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: ClusterId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: RegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: NewMasterInstances
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: NewCoreInstances
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: NewTaskInstances
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: ChargeType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Period
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: AutoRenew
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: CoreInstanceType
   type: String
   required: false
+  hidden: false
   subparameters: []

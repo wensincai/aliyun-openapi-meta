@@ -3,32 +3,40 @@ parameters:
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OrderActivateParam
   type: RepeatList
   required: true
+  hidden: false
   subparameters:
   - name: DomainName
     type: String
     required: false
+    hidden: false
     subparameters: []
   - name: SubscriptionDuration
     type: Integer
     required: false
+    hidden: false
     subparameters: []
   - name: RegistrantProfileId
     type: Long
     required: false
+    hidden: false
     subparameters: []
   - name: EnableDomainProxy
     type: Boolean
     required: false
+    hidden: false
     subparameters: []
   - name: PermitPremiumActivation
     type: Boolean
     required: false
+    hidden: false
     subparameters: []

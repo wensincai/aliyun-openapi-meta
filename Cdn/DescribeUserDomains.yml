@@ -3,60 +3,75 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Action
   type: String
   required: false
+  hidden: true
   subparameters: []
 - name: OwnerId
   type: Long
   required: false
+  hidden: true
   subparameters: []
 - name: SecurityToken
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: PageNumber
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: DomainName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainStatus
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: DomainSearchType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Sources
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CdnType
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CheckDomainShow
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: ResourceGroupId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: FuncId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: FuncFilter
   type: String
   required: false
+  hidden: false
   subparameters: []

@@ -3,36 +3,45 @@ parameters:
 - name: AccessKeyId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SearchMac
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SearchName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: SearchScan
   type: Integer
   required: false
+  hidden: false
   subparameters: []
 - name: SearchModel
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PageIndex
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: Length
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: OrderCol
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: OrderDir
   type: String
   required: false
+  hidden: false
   subparameters: []

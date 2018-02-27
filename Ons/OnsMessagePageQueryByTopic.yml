@@ -3,36 +3,45 @@ parameters:
 - name: OnsRegionId
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: OnsPlatform
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PreventCache
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: Topic
   type: String
   required: true
+  hidden: false
   subparameters: []
 - name: BeginTime
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: EndTime
   type: Long
   required: true
+  hidden: false
   subparameters: []
 - name: TaskId
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: CurrentPage
   type: Integer
   required: true
+  hidden: false
   subparameters: []
 - name: PageSize
   type: Integer
   required: false
+  hidden: false
   subparameters: []

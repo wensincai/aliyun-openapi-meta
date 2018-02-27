@@ -3,60 +3,75 @@ parameters:
 - name: Country
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: UserClientIp
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Lang
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegistrantProfileId
   type: Long
   required: false
+  hidden: false
   subparameters: []
 - name: DefaultRegistrantProfile
   type: Boolean
   required: false
+  hidden: false
   subparameters: []
 - name: City
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegistrantOrganization
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: RegistrantName
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Province
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Address
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Email
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: PostalCode
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TelArea
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: Telephone
   type: String
   required: false
+  hidden: false
   subparameters: []
 - name: TelExt
   type: String
   required: false
+  hidden: false
   subparameters: []
