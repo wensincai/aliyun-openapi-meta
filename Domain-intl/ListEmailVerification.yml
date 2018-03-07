@@ -1,37 +1,41 @@
 name: ListEmailVerification
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BeginCreateTime
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: EndCreateTime
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Email
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VerificationStatus
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageNum
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

@@ -1,52 +1,56 @@
 name: CreateScalingRule
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ScalingGroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ScalingRuleName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Cooldown
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AdjustmentType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AdjustmentValue
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []

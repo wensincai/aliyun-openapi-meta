@@ -1,47 +1,51 @@
 name: ListApPositionMap
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TotalItem
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageIndex
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Length
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: OrderCol
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: OrderDir
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SearchName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SearchApgroupName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MapType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

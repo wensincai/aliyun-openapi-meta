@@ -1,17 +1,21 @@
 name: ToggleFeatures
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: EnabledFeatures
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []
 - name: DisabledFeatures
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []

@@ -1,137 +1,141 @@
 name: ModifyImageSharePermission
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ImageId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AddAccount.1
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.2
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.3
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.4
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.5
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.6
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.7
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.8
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.9
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AddAccount.10
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.1
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.2
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.3
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.4
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.5
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.6
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.7
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.8
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.9
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemoveAccount.10
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []

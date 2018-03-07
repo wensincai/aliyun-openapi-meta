@@ -1,17 +1,21 @@
 name: DeleteApRadioSsidConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: InstantlyEffective
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

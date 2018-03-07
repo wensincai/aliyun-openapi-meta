@@ -1,47 +1,51 @@
 name: DeletePhysicalConnection
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: PhysicalConnectionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: UserCidr
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

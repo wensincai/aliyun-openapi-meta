@@ -1,92 +1,96 @@
 name: DescribeResourceByTags
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Tag.1.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.1.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

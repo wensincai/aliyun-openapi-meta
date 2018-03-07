@@ -1,17 +1,21 @@
 name: CreateGroup
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: GroupName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Comments
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

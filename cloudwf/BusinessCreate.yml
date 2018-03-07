@@ -1,67 +1,71 @@
 name: BusinessCreate
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BusinessAddress
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessCity
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessManager
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessProvince
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessSubtype
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessTel
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessTopType
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: BusinessType
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Combo
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Warn
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: WarnEmail
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,47 +1,51 @@
 name: BoxRegisterUpdate4Appkey
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MAC
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DrIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DrStatus
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AppUUID
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegisterVersion
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ClientAppid
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthTypeDefault
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

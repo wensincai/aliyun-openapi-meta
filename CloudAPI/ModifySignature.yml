@@ -1,27 +1,31 @@
 name: ModifySignature
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: SignatureId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SignatureName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SignatureKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SignatureSecret
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

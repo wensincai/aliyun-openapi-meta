@@ -1,47 +1,71 @@
 name: UpdateCasterSceneConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |+
+    将指定布局输出至指定场景，若指定场景为预监，即可进行预览
+
+
+document_id: "60275"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：UpdateCasterSceneConfig
   required: false
   hidden: true
-  subparameters: []
 - name: Version
+  position: Query
   type: String
+  description:
+    zh: API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: CasterId
+  position: Query
   type: String
+  description:
+    zh: 导播台ID
   required: true
   hidden: false
-  subparameters: []
 - name: SceneId
+  position: Query
   type: String
+  description:
+    zh: 场景ID
   required: true
   hidden: false
-  subparameters: []
 - name: LayoutId
+  position: Query
   type: String
+  description:
+    zh: 布局ID
   required: true
   hidden: false
-  subparameters: []
 - name: ComponentId
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []

@@ -1,12 +1,16 @@
 name: DescribeLogConfig
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Host
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: LogType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

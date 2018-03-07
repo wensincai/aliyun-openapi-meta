@@ -1,67 +1,71 @@
 name: ShopSetredress
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Sid
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: State
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Filterstate
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Maxstoptime
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Minstoptime
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Clerk
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Filterclose
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Crowdfixed
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Holiday
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Hnum
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Workday
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Wnum
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

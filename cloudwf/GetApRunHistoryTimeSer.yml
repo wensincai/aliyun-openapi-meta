@@ -1,22 +1,26 @@
 name: GetApRunHistoryTimeSer
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Start
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: End
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []

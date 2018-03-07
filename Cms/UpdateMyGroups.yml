@@ -1,32 +1,36 @@
 name: UpdateMyGroups
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: GroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: GroupName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ServiceId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: BindUrls
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Type
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ContactGroups
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

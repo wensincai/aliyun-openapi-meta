@@ -1,72 +1,119 @@
 name: AllocateReadWriteSplittingConnection
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    对拥有只读实例的主实例，在高安全访问模式下，可以申请一个读写分离访问地址。申请该地址后，不影响原主实例、只读实例的既有访问地址，以及正常的内外网申请。
+
+    实例状态必须满足如下所有条件，否则将操作失败：
+
+    - 运行中。
+
+    - 没有迁移任务。
+
+    - 没有被锁定。
+
+    - 只支持在有只读实例的主实例上申请。
+
+    - 实例链路必须是高安全模式。
+
+document_id: "51231"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 阿里云颁发给用户的访问服务所用的密钥ID
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：AllocateReadWriteSplittingConnection。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: 用户主账号。
   required: false
   hidden: true
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
+  description:
+    zh: 现有主实例名。
   required: true
   hidden: false
-  subparameters: []
 - name: ConnectionStringPrefix
+  position: Query
   type: String
+  description:
+    zh: 读写分离连接串前缀名，全局唯一。由小写字母和中划线组成，需以字母开通，长度不超过30个字符。默认以“实例名+rw”字符串组成前缀。
   required: false
   hidden: false
-  subparameters: []
 - name: Port
+  position: Query
   type: String
+  description:
+    zh: 端口，范围为3001-3999，默认为3306。
   required: false
   hidden: false
-  subparameters: []
 - name: MaxDelayTime
+  position: Query
   type: String
+  description:
+    zh: 延迟阈值，单位为秒，范围是0-7200，不传则默认为30。当只读实例延迟超过该阈值时，读取流量不发往该实例。
   required: false
   hidden: false
-  subparameters: []
 - name: IPType
+  position: Query
   type: String
+  description:
+    zh: 经典网络类型的实例可出现“Inner”和“Public”，VPC实例可出现“Private”和“Public”。
   required: false
   hidden: false
-  subparameters: []
 - name: DistributionType
+  position: Query
   type: String
+  description:
+    zh: 读权重分配模式。Standard指按规格权重自动分配，Custom指自定义分配权重。
   required: false
   hidden: false
-  subparameters: []
 - name: Weight
+  position: Query
   type: String
+  description:
+    zh: <ul><li>读流量权重分配，即传入主实例和只读实例对应的读请求分配权重</li><li>以100步进，最大值为10000。</li><li>按如下格式传入：<br>{“Instanceid“:”Weight”,”Instanceid”:”Weight”}<br></li><li>当DistributionType为Custom时，必须传入该参数。</li><li>当DisrtibutionType为Standard时，传入该参数无效。</li></ul>
   required: false
   hidden: false
-  subparameters: []

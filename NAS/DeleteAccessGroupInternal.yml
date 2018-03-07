@@ -1,17 +1,21 @@
 name: DeleteAccessGroupInternal
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwner
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AccessGroupName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

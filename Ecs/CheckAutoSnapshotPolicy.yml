@@ -1,67 +1,71 @@
 name: CheckAutoSnapshotPolicy
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: SystemDiskPolicyEnabled
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDiskPolicyTimePeriod
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDiskPolicyRetentionDays
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDiskPolicyRetentionLastWeek
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: DataDiskPolicyEnabled
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: DataDiskPolicyTimePeriod
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataDiskPolicyRetentionDays
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataDiskPolicyRetentionLastWeek
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []

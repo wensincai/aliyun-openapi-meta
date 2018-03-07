@@ -1,17 +1,21 @@
 name: GetResolveCountSummary
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Granularity
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TimeSpan
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []

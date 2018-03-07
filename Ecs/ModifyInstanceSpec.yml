@@ -1,82 +1,86 @@
 name: ModifyInstanceSpec
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: InstanceType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InternetMaxBandwidthOut
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: InternetMaxBandwidthIn
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: Temporary.StartTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Temporary.EndTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Temporary.InternetMaxBandwidthOut
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Async
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: AllowMigrateAcrossZone
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDisk.Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

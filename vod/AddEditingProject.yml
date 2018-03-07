@@ -1,52 +1,56 @@
 name: AddEditingProject
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: Title
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Timeline
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CoverURL
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

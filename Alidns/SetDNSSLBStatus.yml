@@ -1,27 +1,31 @@
 name: SetDNSSLBStatus
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SubDomain
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Open
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []

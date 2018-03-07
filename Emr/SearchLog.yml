@@ -1,62 +1,66 @@
 name: SearchLog
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: HostInnerIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: LogstoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: FromTimestamp
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: ToTimestamp
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: SlsQueryString
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Offset
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Line
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Reverse
+  position: Query
   type: Boolean
   required: true
   hidden: false
-  subparameters: []

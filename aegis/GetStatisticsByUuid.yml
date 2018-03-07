@@ -1,7 +1,11 @@
 name: GetStatisticsByUuid
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Uuid
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

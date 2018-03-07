@@ -1,57 +1,61 @@
 name: OnsMqttQueryMsgTransTrend
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: OnsRegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: OnsPlatform
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PreventCache
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: TpsType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TransType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ParentTopic
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SubTopic
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MsgType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Qos
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: BeginTime
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []

@@ -1,32 +1,36 @@
 name: GetEntityList
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: GroupId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Remark
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EventType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionNo
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CurrentPage
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

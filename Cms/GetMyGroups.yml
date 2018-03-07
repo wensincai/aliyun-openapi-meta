@@ -1,32 +1,36 @@
 name: GetMyGroups
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: GroupId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Type
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SelectContactGroups
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BindUrl
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: GroupName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

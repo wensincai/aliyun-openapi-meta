@@ -1,27 +1,31 @@
 name: CreateLoginProfile
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: UserName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Password
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PasswordResetRequired
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: MFABindRequired
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []

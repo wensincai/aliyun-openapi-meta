@@ -1,22 +1,26 @@
 name: GetPhotosByMd5s
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Md5
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters: []
 - name: State
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

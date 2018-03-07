@@ -1,22 +1,26 @@
 name: SetWelcomePageURIToBoxByTP
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AuthType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: WelcomeUri
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScreenCode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Cid
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

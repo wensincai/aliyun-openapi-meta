@@ -1,137 +1,141 @@
 name: OtherPrevention
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: CallerName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Ip
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ProtocolVersion
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Source
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: PhoneNumber
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Email
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: IdType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: CurrentUrl
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Agent
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Cookie
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SessionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MacAddress
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Referer
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CompanyName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Address
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: IDNumber
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BankCardNumber
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegisterIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegisterDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: LoginIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: LoginDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: ExtendData
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PasswordHash
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: JsToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SDKToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

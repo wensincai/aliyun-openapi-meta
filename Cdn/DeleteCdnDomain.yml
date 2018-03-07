@@ -1,32 +1,58 @@
 name: DeleteCdnDomain
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    删除已添加的加速域名，
+
+    注意
+
+    * 请慎重操作（建议在进行域名删除前到域名解析服务商处恢复域名A记录），以免导致删除操作后此域名不可访问。
+    *  DeleteCdnDomain调用成功后将删除本条加速域名的全部相关记录，对于仅需要暂停使用该加速域名，推荐StopCdnDomain接口
+
+document_id: "27167"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 操作接口名，系统规定参数 <br>取值：DeleteCdnDomain
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 要删除的CDN的域名
   required: true
   hidden: false
-  subparameters: []
 - name: ResourceGroupId
+  position: Query
   type: String
+  description:
+    zh: 资源组id
   required: false
   hidden: false
-  subparameters: []

@@ -1,82 +1,123 @@
 name: AllocateEipAddress
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: "请确保在使用该接口前，已充分了解该产品的收费方式和 <a href='https://help.aliyun.com/document_detail/27767.html'
+    target='_blank' >价格</a> \n\n申请 EIP，新申请的 EIP 状态为 Available。\n\n* EIP 目前只能绑定到相同地域的
+    VPC 类型的 ECS 实例，NAT网关，负载均衡SLB。\n* 每次申请会在指定的 Region 内随机分配一个 EIP。\n* EIP 目前只支持 ICMP，TCP，UDP
+    3 种协议，不支持 IGMP，SCTP 等传输层协议。\n"
+document_id: "36016"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：AllocateEipAddress
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 申请的弹性公网 IP 所在的地域
   required: true
   hidden: false
-  subparameters: []
 - name: Bandwidth
+  position: Query
   type: String
+  description:
+    zh: 弹性公网 IP 的限速，如果不指定，默认为 5Mbps。
   required: false
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: Integer
+  description:
+    zh: ' <b>当InstanceChargeType为PrePaid时是必选参数</b>。<br> 当PricingCycle为Month时，取值范围\[1,9]，当PricingCycle为Year时，取值范围\[1,3]。'
   required: false
   hidden: false
-  subparameters: []
 - name: ISP
+  position: Query
   type: String
+  description:
+    zh: 线路类型，默认值为BGP
   required: false
   hidden: false
-  subparameters: []
 - name: Netmode
+  position: Query
   type: String
+  description:
+    zh: 网络类型，默认值为Public
   required: false
   hidden: false
-  subparameters: []
 - name: AutoPay
+  position: Query
   type: Boolean
+  description:
+    zh: ' <b>当InstanceChargeType为PrePaid时有作用</b>，AutoPay为true时会自动支付订单，为false时只生成一个待支付订单，需要到<a
+      href="https://expense.console.aliyun.com/?#/order/list/">订单中心</a>手动支付，默认为false。<br><b>当InstanceChargeType为PostPaid时不需要设置</b>。<br>'
   required: false
   hidden: false
-  subparameters: []
 - name: PricingCycle
+  position: Query
   type: String
+  description:
+    zh: Month和Year，默认是Month。<br>注意：参数区分大小写。
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceChargeType
+  position: Query
   type: String
+  description:
+    zh: PrePaid和PostPaid，默认是PostPaid 。PrePaid代表预付费，PostPaid 代表后付费。<br>参数选择PrePaid后会生成一个订单号，需要到订单中心手工支付。<br>预计9月中旬推出订单自动支付功能。<br>注意：参数区分大小写。
   required: false
   hidden: false
-  subparameters: []
 - name: InternetChargeType
+  position: Query
   type: String
+  description:
+    zh: PayByBandwidth 和 PayByTraffic，默认是 PayByBandwidth
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceGroupId
+  position: Query
   type: String
+  description:
+    zh: 企业资源组ID。
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: '用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大值不超过 64 个 ASCII 字符。 <br>                具体参见附录            '
   required: false
   hidden: false
-  subparameters: []

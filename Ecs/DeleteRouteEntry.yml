@@ -1,57 +1,62 @@
 name: DeleteRouteEntry
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: NextHopList
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: NextHopType
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: NextHopId
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RouteTableId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: DestinationCidrBlock
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: NextHopId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []

@@ -1,37 +1,42 @@
 name: CreateOrder
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SubOrderParam
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: SaleID
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: RelatedName
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Action
+    position: ""
     type: String
     required: false
-    hidden: false
-    subparameters: []
+    hidden: true
   - name: Period
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: DomainTemplateID
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []

@@ -1,42 +1,46 @@
 name: ListMyGroups
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
-- name: PageNumber
-  type: Integer
-  required: false
-  hidden: false
-  subparameters: []
-- name: PageSize
-  type: Integer
-  required: false
-  hidden: false
-  subparameters: []
-- name: Keyword
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
 - name: Type
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SelectContactGroups
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
+- name: PageNumber
+  position: Query
+  type: Integer
+  required: false
+  hidden: false
+- name: PageSize
+  position: Query
+  type: Integer
+  required: false
+  hidden: false
+- name: Keyword
+  position: Query
+  type: String
+  required: false
+  hidden: false
 - name: InstanceId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BindUrls
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: GroupName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

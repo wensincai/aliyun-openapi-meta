@@ -1,17 +1,21 @@
 name: EmailVerified
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Email
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

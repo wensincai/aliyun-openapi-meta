@@ -1,22 +1,26 @@
 name: ModifyMountTargetAccessGroup
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: FileSystemName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: MountTargetId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AccessGroupName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

@@ -1,12 +1,16 @@
 name: AfsAppCheck
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: CallerName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Session
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

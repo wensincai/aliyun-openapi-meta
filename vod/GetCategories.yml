@@ -1,37 +1,60 @@
 name: GetCategories
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    获取指定的分类信息，及其子分类（即下一级分类）的列表。
+
+document_id: "56406"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值： GetCategories
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: CateId
+  position: Query
   type: Long
+  description:
+    zh: 分类ID，默认为根节点分类ID即-1
   required: false
   hidden: false
-  subparameters: []
 - name: PageNo
+  position: Query
   type: Long
+  description:
+    zh: 子分类列表页号，默认1
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Long
+  description:
+    zh: 子分类列表页长，默认10，最大不超过100
   required: false
   hidden: false
-  subparameters: []

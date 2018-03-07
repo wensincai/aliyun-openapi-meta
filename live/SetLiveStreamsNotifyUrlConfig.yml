@@ -1,32 +1,52 @@
 name: SetLiveStreamsNotifyUrlConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |+
+    设置推流回调配置。
+
+
+document_id: "35415"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：SetLiveStreamsNotifyUrlConfig
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 您的加速域名
   required: true
   hidden: false
-  subparameters: []
 - name: NotifyUrl
+  position: Query
   type: String
+  description:
+    zh: 设置直播流信息推送到的 URL 地址，必须以 http:// 开头
   required: true
   hidden: false
-  subparameters: []

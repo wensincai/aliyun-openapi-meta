@@ -1,82 +1,86 @@
 name: CreateScalingGroup
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ScalingGroupName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: MinSize
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: MaxSize
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: DefaultCooldown
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: LoadBalancerIds
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DBInstanceIds
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemovalPolicy.1
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RemovalPolicy.2
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: VSwitchId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VSwitchIds
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []

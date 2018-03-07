@@ -1,27 +1,31 @@
 name: StopJumpserver
+protocol: HTTP|HTTPS
+method: POST
+description: {}
+document_id: ""
 parameters:
 - name: TOKEN
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: true
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Force
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

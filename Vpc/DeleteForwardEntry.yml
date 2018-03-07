@@ -1,42 +1,67 @@
 name: DeleteForwardEntry
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2
+
+    删除指定的DNAT条目。
+
+    >注意：当DNAT表中有DNAT条目的状态为Pending或Modifying时，无法删除DNAT条目。
+document_id: "36050"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：<code>DeleteForwardEntry</code>。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: NAT网关的所属地域。
   required: true
   hidden: false
-  subparameters: []
 - name: ForwardTableId
+  position: Query
   type: String
+  description:
+    zh: DNAT表的ID。
   required: true
   hidden: false
-  subparameters: []
 - name: ForwardEntryId
+  position: Query
   type: String
+  description:
+    zh: 要删除的DNAT条目的ID。
   required: true
   hidden: false
-  subparameters: []

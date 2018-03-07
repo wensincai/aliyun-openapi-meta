@@ -1,17 +1,21 @@
 name: DescribeVpcAccesses
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

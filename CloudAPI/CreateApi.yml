@@ -1,107 +1,111 @@
 name: CreateApi
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: GroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ApiName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Visibility
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RequestConfig
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ServiceConfig
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RequestParameters
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SystemParameters
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ConstantParameters
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ServiceParameters
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ServiceParametersMap
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResultType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ResultSample
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: FailResultSample
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ErrorCodeSamples
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResultDescriptions
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OpenIdConnectConfig
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AllowSignatureMethod
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: WebSocketApiType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

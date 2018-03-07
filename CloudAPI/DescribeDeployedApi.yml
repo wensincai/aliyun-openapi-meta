@@ -1,22 +1,26 @@
 name: DescribeDeployedApi
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: GroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ApiId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StageName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

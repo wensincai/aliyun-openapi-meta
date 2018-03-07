@@ -1,47 +1,51 @@
 name: ListAlarm
+protocol: HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: callby_cms_owner
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Namespace
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Dimension
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: State
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: IsEnable
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

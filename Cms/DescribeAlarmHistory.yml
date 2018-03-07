@@ -1,72 +1,76 @@
 name: DescribeAlarmHistory
+protocol: HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AlertName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RuleName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Namespace
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MetricName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: GroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Status
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: State
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Ascending
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: OnlyCount
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Page
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

@@ -1,42 +1,46 @@
 name: SetSecurityPreference
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: EnableSaveMFATicket
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: AllowUserToChangePassword
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: AllowUserToManageAccessKeys
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: AllowUserToManagePublicKeys
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: AllowUserToManageMFADevices
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: LoginSessionDuration
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: LoginNetworkMasks
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

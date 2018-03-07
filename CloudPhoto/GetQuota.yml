@@ -1,12 +1,16 @@
 name: GetQuota
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,62 +1,115 @@
 name: ModifyInstanceAutoRenewalAttribute
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2-
+
+
+    设置或者取消实例的自动续费行为。对于国内站用户而言，当实例到期前7天，触发自动续费行为。
+
+    限制条件如下：
+
+    - 仅支持包年包月实例。
+
+    ### 请求参数
+
+    |名称   |类型   |是否必须   |描述   |
+    | ------------ | ------------ | ------------ | ------------ |
+    |Action   |String   |是   |系统规定参数，取值：ModifyInstanceAutoRenewalAttribute。|
+    |DBInstanceId   |String   |是   |实例名。   |
+    |Duration   |String   |否   |自动续费周期，当AutoRenew="True"时，该值有效且必填。取值为1-12。表示实例到期时，自动续费1-12个月。   |
+    |AutoRenew   |String   |是   |取值为：</br>AutoRenew="True"设置自动续费;</br>AutoRenew="False" 取消自动续费。|
+
+    ### 返回参数
+
+    |名称   |类型   |描述   |
+    | ------------ | ------------ | ------------ |
+    |<公共返回参数>   |   |详见[公共参数](~~26224~~)。  |
+
+    ## 查询自动续费的实例
+
+    #
+document_id: "52728"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: ' 阿里云颁发给用户的访问服务所用的密钥ID。'
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：ModifyInstanceAutoRenewalAttribute。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 集群名称，如“cn-hangzhou”。
   required: true
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: 用于保证幂等性。
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: 用户主账号。
   required: false
   hidden: true
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
+  description:
+    zh: 实例名。
   required: true
   hidden: false
-  subparameters: []
 - name: Duration
+  position: Query
   type: String
+  description:
+    zh: 自动续费周期，当AutoRenew=”True”时，该值有效且必填。取值为1-12。表示实例到期时，自动续费1-12个月。
   required: false
   hidden: false
-  subparameters: []
 - name: AutoRenew
+  position: Query
   type: String
+  description:
+    zh: 取值为：<br>AutoRenew=”True”设置自动续费;<br>AutoRenew=”False” 取消自动续费。
   required: false
   hidden: false
-  subparameters: []

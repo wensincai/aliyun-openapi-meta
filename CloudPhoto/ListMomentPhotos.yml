@@ -1,37 +1,41 @@
 name: ListMomentPhotos
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: MomentId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Direction
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Cursor
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: State
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

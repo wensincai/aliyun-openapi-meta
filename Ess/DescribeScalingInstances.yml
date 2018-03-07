@@ -1,172 +1,176 @@
 name: DescribeScalingInstances
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ScalingGroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingConfigurationId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: HealthStatus
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: LifecycleState
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CreationType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.1
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.2
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.3
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.4
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.5
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.6
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.7
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.8
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.9
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.10
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.11
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.12
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.13
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.14
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.15
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.16
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.17
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.18
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.19
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId.20
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []

@@ -1,12 +1,16 @@
 name: ListContactFlows
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

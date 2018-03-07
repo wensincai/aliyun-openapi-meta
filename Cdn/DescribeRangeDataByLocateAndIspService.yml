@@ -1,47 +1,81 @@
 name: DescribeRangeDataByLocateAndIspService
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    获取加速域名的在某个时刻不同Locate和Isp上的带宽数据，单位 bit/second
+
+
+    * 不支持批量域名查询
+    * 时间精确到5分钟粒度
+
+document_id: "44723"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 操作接口名，系统规定参数取值：DescribeRangeDataByLocateAndIspService
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainNames
+  position: Query
   type: String
+  description:
+    zh: 要查询的域名，不能为空；
   required: false
   hidden: false
-  subparameters: []
 - name: LocationNames
+  position: Query
   type: String
+  description:
+    zh: 需要查询目标区域列表，用“,”隔开，不能为空； Location名通过DescribeCdnRegionAndIsp接口获得。
   required: false
   hidden: false
-  subparameters: []
 - name: IspNames
+  position: Query
   type: String
+  description:
+    zh: 需要查询目标Isp列表，用“,”隔开，不能为空； ISP名通过DescribeCdnRegionAndIsp接口获得。
   required: false
   hidden: false
-  subparameters: []
 - name: startTime
+  position: Query
   type: String
+  description:
+    zh: |-
+      开始时间，日期格式按照ISO8601表示法，并使用UTC时间。
+      格式为：YYYY-MM-DDThh:mmZ
+      最小数据粒度为5分钟
   required: true
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
+  description:
+    zh: 结束时间，日期格式按照ISO8601表示法，并使用UTC时间。<br>格式为：YYYY-MM-DDThh:mmZ<br>
   required: true
   hidden: false
-  subparameters: []

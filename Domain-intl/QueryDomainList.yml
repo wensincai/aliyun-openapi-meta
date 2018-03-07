@@ -1,67 +1,71 @@
 name: QueryDomainList
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: StartExpirationDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: QueryType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EndExpirationDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: StartRegistrationDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: EndRegistrationDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OrderByType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OrderKeyType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ProductDomainType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageNum
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []

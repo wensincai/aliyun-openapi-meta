@@ -1,42 +1,46 @@
 name: ListClusterOperation
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ServiceName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Status
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

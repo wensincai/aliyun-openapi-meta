@@ -1,32 +1,36 @@
 name: EditPhotoStore
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AutoCleanEnabled
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AutoCleanDays
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DefaultQuota
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: DefaultTrashQuota
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Remark
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

@@ -1,22 +1,26 @@
 name: AddIpControlPolicyItem
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: IpControlId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AppId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CidrIp
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

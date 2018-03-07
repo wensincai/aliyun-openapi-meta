@@ -1,37 +1,61 @@
 name: DeleteCacheExpiredConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    删除自定义缓存策略.
+
+
+document_id: "27183"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 操作接口名，系统规定参数，取值：DeleteCacheExpiredConfig
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 您的加速域名
   required: true
   hidden: false
-  subparameters: []
 - name: CacheType
+  position: Query
   type: String
+  description:
+    zh: 缓存内容类型，取值：suffix：文件名后缀；path：路径，支持目录和完整路径
   required: true
   hidden: false
-  subparameters: []
 - name: ConfigID
+  position: Query
   type: String
+  description:
+    zh: 配置ID,新增时不需要指定, 修改需要指定
   required: true
   hidden: false
-  subparameters: []

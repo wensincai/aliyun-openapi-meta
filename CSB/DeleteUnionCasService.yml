@@ -1,27 +1,31 @@
 name: DeleteUnionCasService
+protocol: HTTPS
+method: POST
+description: {}
+document_id: ""
 parameters:
 - name: SrcUserId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: CasServiceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: CasCsbName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Host
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LeafOnly
+  position: Query
   type: Boolean
   required: true
   hidden: false
-  subparameters: []

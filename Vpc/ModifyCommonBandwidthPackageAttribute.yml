@@ -1,47 +1,71 @@
 name: ModifyCommonBandwidthPackageAttribute
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |
+    修改共享带宽名称和描述
+document_id: "55962"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：ModifyCommonBandwidthPackageAttribute
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: region no
   required: true
   hidden: false
-  subparameters: []
 - name: BandwidthPackageId
+  position: Query
   type: String
+  description:
+    zh: 共享带宽Id
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
+  description:
+    zh: 名称
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
+  description:
+    zh: 描述
   required: false
   hidden: false
-  subparameters: []

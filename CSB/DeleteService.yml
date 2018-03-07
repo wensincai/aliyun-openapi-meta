@@ -1,17 +1,21 @@
 name: DeleteService
+protocol: HTTPS
+method: POST
+description: {}
+document_id: ""
 parameters:
 - name: ServiceId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: ServiceName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Host
   type: String
   required: true
   hidden: false
-  subparameters: []

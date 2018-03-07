@@ -1,27 +1,31 @@
 name: ModifyPhoneNumber
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: PhoneNumberId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Usage
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ContactFlowId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

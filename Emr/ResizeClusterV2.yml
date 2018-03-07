@@ -1,107 +1,112 @@
 name: ResizeClusterV2
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: HostGroup
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: ClusterId
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: HostGroupId
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: HostGroupName
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: HostGroupType
+    position: ""
     type: String
     required: true
     hidden: false
-    subparameters: []
   - name: Comment
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: CreateType
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: InstanceType
+    position: ""
     type: String
     required: true
     hidden: false
-    subparameters: []
   - name: NodeCount
+    position: ""
     type: Integer
     required: true
     hidden: false
-    subparameters: []
   - name: DiskType
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: DiskCapacity
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: DiskCount
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: SysDiskCapacity
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: ChargeType
+    position: Query
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Period
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: AutoRenew
+    position: ""
     type: Boolean
     required: false
     hidden: false
-    subparameters: []
   - name: VswitchId
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: SystemDiskType
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []

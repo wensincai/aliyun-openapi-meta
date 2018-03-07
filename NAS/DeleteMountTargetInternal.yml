@@ -1,22 +1,26 @@
 name: DeleteMountTargetInternal
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwner
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: FileSystemName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

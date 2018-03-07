@@ -1,47 +1,73 @@
 name: DescribeVRouters
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2
+
+
+    查询指定地域的路由器列表。此接口支持分页查询，每页的数量默认为 10 条。
+document_id: "35742"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DescribeVRouters
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: VRouterId
+  position: Query
   type: String
+  description:
+    zh: 需要查询的 VRouter 的 Id
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 查询指定地域的 ID
   required: true
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
+  description:
+    zh: 实例状态列表的页码，起始值为 1，默认值为 1
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
+  description:
+    zh: 分页查询时设置的每页行数，最大值 50 行，默认为 10
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []

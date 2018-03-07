@@ -1,7 +1,11 @@
 name: DeleteMyGroups
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: GroupId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []

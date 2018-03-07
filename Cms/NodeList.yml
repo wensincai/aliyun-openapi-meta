@@ -1,42 +1,46 @@
 name: NodeList
+protocol: HTTP|HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: UserId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: HostName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: KeyWord
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceIds
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SerialNumbers
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Status
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

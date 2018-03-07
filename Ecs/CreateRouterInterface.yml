@@ -1,122 +1,126 @@
 name: CreateRouterInterface
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Role
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: OppositeRegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Spec
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RouterType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RouterId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: OppositeInterfaceId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OppositeRouterId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OppositeRouterType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OppositeInterfaceOwnerId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: HealthCheckSourceIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: HealthCheckTargetIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessPointId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OppositeAccessPointId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: UserCidr
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

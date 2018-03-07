@@ -1,32 +1,36 @@
 name: CreateTransaction
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Size
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Ext
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Force
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Md5
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

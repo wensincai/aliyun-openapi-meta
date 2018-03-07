@@ -1,42 +1,46 @@
 name: ModifySkillGroup
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SkillGroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OutboundPhoneNumberId
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []
 - name: UserId
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []
 - name: SkillLevel
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []

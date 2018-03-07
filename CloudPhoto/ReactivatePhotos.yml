@@ -1,17 +1,21 @@
 name: ReactivatePhotos
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: PhotoId
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

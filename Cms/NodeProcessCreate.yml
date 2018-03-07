@@ -1,27 +1,31 @@
 name: NodeProcessCreate
+protocol: HTTP|HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ProcessName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ProcessUser
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Command
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

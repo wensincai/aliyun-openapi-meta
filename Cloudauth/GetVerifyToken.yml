@@ -1,27 +1,31 @@
 name: GetVerifyToken
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: Biz
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TicketId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Binding
+  position: Query
   type: Map
   required: false
   hidden: false
-  subparameters: []
 - name: UserData
+  position: Query
   type: Map
   required: false
   hidden: false
-  subparameters: []

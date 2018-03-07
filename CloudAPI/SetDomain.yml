@@ -1,32 +1,36 @@
 name: SetDomain
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: GroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: CertificateName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CertificateBody
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CertificatePrivateKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

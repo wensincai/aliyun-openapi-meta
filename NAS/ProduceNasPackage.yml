@@ -1,32 +1,36 @@
 name: ProduceNasPackage
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: data
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: product
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: version
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: action
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: regionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: domain
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

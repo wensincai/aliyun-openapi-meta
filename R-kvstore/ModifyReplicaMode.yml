@@ -1,67 +1,71 @@
 name: ModifyReplicaMode
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Domain
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ReplicaId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ReplicaMode
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: PrimaryInstanceId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DomainMode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

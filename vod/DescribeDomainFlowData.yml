@@ -1,67 +1,71 @@
 name: DescribeDomainFlowData
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TimeMerge
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Interval
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: LocationNameEn
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: IspNameEn
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

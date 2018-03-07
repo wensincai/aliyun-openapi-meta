@@ -1,22 +1,26 @@
 name: AssumeRole
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: DurationSeconds
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Policy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RoleArn
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RoleSessionName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

@@ -1,72 +1,76 @@
 name: DescribeDeploymentSets
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: DeploymentSetIds
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: NetworkType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Strategy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DeploymentSetName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Granularity
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Domain
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

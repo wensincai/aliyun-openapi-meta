@@ -1,52 +1,83 @@
 name: DescribeCdnDomainLogs
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    获取指定域名的原始访问日志的下载地址。
+
+    注：日志内容最长保留一年。
+
+document_id: "27224"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 操作接口名，系统规定参数，取值：DescribeCdnDomainLogs
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 域名（只支持单个查询）
   required: true
   hidden: false
-  subparameters: []
 - name: LogDay
+  position: Query
   type: String
+  description:
+    zh: 要获取日志日的天，格式yyyy-MM-dd，默认是当天。LogDay与StartTime、EndTime指定其一即可
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Long
+  description:
+    zh: 分页大小，默认300，最大1000，取值：1~1000之前的任意整数
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Long
+  description:
+    zh: 取得第几页，取值范围为：&gt;1的任意整数
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
+  description:
+    zh: 获取日志起始时间点，日期格式按照ISO8601表示法，并使用UTC时间。<br>例如：2016-10-20T04:00:00Z
   required: false
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
+  description:
+    zh: 结束时间需大于起始时间；起止时间和结束时间，间隔不超过一年；<br>获取日期格式按照ISO8601表示法，并使用UTC时间。<br>例如：2016-10-20T04:00:00Z
   required: false
   hidden: false
-  subparameters: []

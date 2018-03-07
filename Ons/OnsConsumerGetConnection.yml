@@ -1,22 +1,26 @@
 name: OnsConsumerGetConnection
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: OnsRegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: OnsPlatform
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PreventCache
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: ConsumerId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

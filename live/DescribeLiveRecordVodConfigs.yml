@@ -1,47 +1,76 @@
 name: DescribeLiveRecordVodConfigs
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |
+    查询直转点配置列表
+document_id: "0"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 阿里云颁发给用户的访问服务所用的密钥ID
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: |
+      系统规定参数，取值：DescribeLiveRecordVodConfigs
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: |
+      您的加速域名
   required: true
   hidden: false
-  subparameters: []
 - name: AppName
+  position: Query
   type: String
+  description:
+    zh: |
+      直播流所属应用名称
   required: false
   hidden: false
-  subparameters: []
 - name: StreamName
+  position: Query
   type: String
+  description:
+    zh: 直播流名称
   required: false
   hidden: false
-  subparameters: []
 - name: PageNum
+  position: Query
   type: Long
+  description:
+    zh: |
+      分页的页码，默认值：1
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Long
+  description:
+    zh: |
+      每页大小，默认值：10，范围【5, 100】
   required: false
   hidden: false
-  subparameters: []

@@ -1,92 +1,97 @@
 name: ImportImage
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: DiskDeviceMapping
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Format
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: OSSBucket
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: OSSObject
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: DiskImSize
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: DiskImageSize
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: Device
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ImageName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Architecture
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OSType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Platform
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RoleName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

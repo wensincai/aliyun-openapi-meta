@@ -1,92 +1,96 @@
 name: QueryDomainList
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: GroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: QueryType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StartDate
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EndDate
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DeadStartDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: DeadEndDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: RegStartDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: RegEndDate
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OrderByType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OrderKeyType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DomainType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ProductDomainType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageNum
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []

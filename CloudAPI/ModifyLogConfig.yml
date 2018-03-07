@@ -1,22 +1,26 @@
 name: ModifyLogConfig
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Host
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SlsProject
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SlsLogStore
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LogType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,47 +1,51 @@
 name: SaveProbeDataSubscriber
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: ApiUrl
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ParamGenScript
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Type
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: HttpMethod
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceIds
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []

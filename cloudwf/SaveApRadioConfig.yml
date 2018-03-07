@@ -1,107 +1,111 @@
 name: SaveApRadioConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Hwmode
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Htmode
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Channel
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Txpower
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: BeaconInt
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Rts
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Frag
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Shortgi
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Probereq
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Noscan
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Minrate
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: BcastRate
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: McastRate
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Uapsd
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Disabled
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: RadioIndex
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: RequireMode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Mac
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstantlyEffective
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

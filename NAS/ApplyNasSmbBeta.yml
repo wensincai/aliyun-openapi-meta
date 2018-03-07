@@ -1,22 +1,26 @@
 name: ApplyNasSmbBeta
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Email
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Phone
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Company
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Desc
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

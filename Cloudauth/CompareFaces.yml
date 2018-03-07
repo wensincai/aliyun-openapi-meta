@@ -1,27 +1,31 @@
 name: CompareFaces
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: TargetImageType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SourceImageType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SourceImageValue
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TargetImageValue
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,37 +1,41 @@
 name: RevokeSecurityGroup
+protocol: HTTP|HTTPS
+method: POST
+description: {}
+document_id: ""
 parameters:
 - name: TOKEN
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: true
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SourceIp
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Policy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Priority
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: NicType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

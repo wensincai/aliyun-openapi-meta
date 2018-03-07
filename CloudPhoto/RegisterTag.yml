@@ -1,22 +1,26 @@
 name: RegisterTag
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TagKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Text
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

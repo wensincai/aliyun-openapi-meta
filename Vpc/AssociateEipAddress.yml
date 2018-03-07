@@ -1,52 +1,95 @@
 name: AssociateEipAddress
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2
+
+
+    将EIP绑定到相同地域的云服务实例ECS, NAT,负载均衡或HaVip实例上
+
+    * 目前EIP只支持绑定到，NAT，负载均衡ECS实例和HaVip实例上
+    * 只有Available状态的EIP才能够进行绑定操作
+    * EIP绑定成功后立刻生效，不需要重启云服务器实例
+    * EIP目前只能被绑定到相同地域的专有网络类型云服务器实例上
+    * 每个云服务器实例ECS,负载均衡或HaVip实例只能同时绑定一个EIP
+    * 每个NAT网关可以同时绑定多个EIP
+    * 每个EIP同一时间只能绑定一个云产品实例
+    * 只有处于运行中和已停止状态的云服务器实例可以绑定弹性公网IP
+    * 只有处于Available或者InUse状态的HaVip可以绑定弹性公网IP
+    * 因为安全原因被锁定的EIP无法进行绑定和解绑操作
+document_id: "36017"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：AssociateEipAddress
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 查询指定地域的 ID
   required: false
   hidden: false
-  subparameters: []
 - name: AllocationId
+  position: Query
   type: String
+  description:
+    zh: 需要进行绑定操作的EIP的申请Id，申请Id是EIP的唯一标识
   required: true
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
+  description:
+    zh: '需要进行绑定操作的实例id。<br>若InstanceType为EcsInstance，则此处填写ECS实例Id。<br>            若InstanceType为SlbInstance，则此处填写<font
+      color="#ff5f25">VPC类型的私网</font>SLB 的实例ID。<br>            若InstanceType为Nat，则此处填写NAT
+      的实例ID。<font color="#ff5f25">如果已购NAT带宽包则无法将EIP绑定NAT</font>，需要<a href="https://workorder.console.aliyun.com/console.htm#/ticket/add?productCode=vpc&amp;commonQuestionId=309&amp;isSmart=true">提交工单</a>
+      。<br>            若InstanceType为HaVip，则此处填写HaVipId。 '
   required: true
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: InstanceType
+  position: Query
   type: String
+  description:
+    zh: 绑定的对象类型。<br>            <font color="#ff5f25">取值范围：EcsInstance |  SlbInstance  |  Nat  |  HaVip   。
+      <br>默认值：EcsInstance </font><br><b>注意：区分大小写</b>
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceRegionId
+  position: Query
   type: String
+  description:
+    zh: 绑定的实例区域
   required: false
   hidden: false
-  subparameters: []

@@ -1,27 +1,31 @@
 name: UpdateProductTopic
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Desc
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Operation
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TopicShortName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TopicId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,127 +1,131 @@
 name: CreateDisk
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ZoneId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SnapshotId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DiskName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DiskCategory
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Encrypted
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: Tag.1.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.1.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceGroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

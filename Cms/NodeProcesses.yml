@@ -1,7 +1,11 @@
 name: NodeProcesses
+protocol: HTTP|HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

@@ -1,52 +1,56 @@
 name: ModifyExecutionPlanScheduleInfo
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Strategy
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TimeInterval
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: TimeUnit
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DayOfWeek
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DayOfMonth
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

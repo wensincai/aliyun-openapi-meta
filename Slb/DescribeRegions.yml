@@ -1,42 +1,65 @@
 name: DescribeRegions
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2
+
+    查询可用地域。
+document_id: "27584"
 parameters:
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 地域ID。
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：`DescribeRegions`
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: access_key_id
+  position: Query
   type: String
+  description:
+    zh: 阿里云颁发给用户的访问服务所用的密钥ID。
   required: false
   hidden: false
-  subparameters: []
 - name: Tags
+  position: Query
   type: String
+  description:
+    zh: 用户标签。
   required: false
   hidden: false
-  subparameters: []

@@ -1,37 +1,62 @@
 name: GetMezzanineInfo
+protocol: HTTPS|HTTP
+method: POST|GET
+description:
+  zh: |2+
+
+
+    获取视频源文件地址。
+
+    注：当一路流转码完成后才可以获取到完整的源文件信息
+
+document_id: "59624"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值： GetMezzanineInfo
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: VideoId
+  position: Query
   type: String
+  description:
+    zh: 视频ID
   required: true
   hidden: false
-  subparameters: []
 - name: AuthTimeout
+  position: Query
   type: Long
+  description:
+    zh: FileURL签名过期时间，默认为1800s，支持设置最小值为1s
   required: false
   hidden: false
-  subparameters: []
 - name: PreviewSegment
+  position: Query
   type: Boolean
+  description:
+    zh: 分片预览。预览m3u8的分片，会为每个分片文件生成带时效的地址，耗时较大，请谨慎使用。
   required: false
   hidden: false
-  subparameters: []

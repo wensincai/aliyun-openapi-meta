@@ -1,57 +1,56 @@
 name: DoLogicalDeleteResource
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Interrupt
+  position: Query
   type: Boolean
-  required: true
+  required: false
   hidden: false
-  subparameters: []
-- name: Invoker
-  type: Long
-  required: true
-  hidden: false
-  subparameters: []
 - name: Pk
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Bid
+  position: Query
   type: String
-  required: true
+  required: false
   hidden: false
-  subparameters: []
 - name: Hid
+  position: Query
   type: Long
-  required: true
+  required: false
   hidden: false
-  subparameters: []
 - name: Country
+  position: Query
   type: String
-  required: true
+  required: false
   hidden: false
-  subparameters: []
 - name: TaskIdentifier
+  position: Query
   type: String
-  required: true
+  required: false
   hidden: false
-  subparameters: []
 - name: TaskExtraData
+  position: Query
   type: String
-  required: true
+  required: false
   hidden: false
-  subparameters: []
 - name: GmtWakeup
+  position: Query
   type: String
-  required: true
+  required: false
   hidden: false
-  subparameters: []
 - name: Success
+  position: Query
   type: Boolean
-  required: true
+  required: false
   hidden: false
-  subparameters: []
 - name: Message
+  position: Query
   type: String
-  required: true
+  required: false
   hidden: false
-  subparameters: []

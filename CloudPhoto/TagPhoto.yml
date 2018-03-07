@@ -1,27 +1,31 @@
 name: TagPhoto
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TagKey
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters: []
 - name: Confidence
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []
 - name: PhotoId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []

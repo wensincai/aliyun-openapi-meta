@@ -1,12 +1,16 @@
 name: DrdsApiValidateOrder
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: data
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

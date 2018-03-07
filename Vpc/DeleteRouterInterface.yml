@@ -1,42 +1,70 @@
 name: DeleteRouterInterface
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    删除一个路由器接口。
+
+    * 仅当RouterInterface的状态为以下状态时才允许该操作： Idle、Inactive。
+    * 删除路由器接口时，要求指向它的自定义路由均已经被删除；
+
+document_id: "36034"
 parameters:
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 所在地域（管理实例的Region ID）
   required: true
   hidden: false
-  subparameters: []
 - name: RouterInterfaceId
+  position: Query
   type: String
+  description:
+    zh: 路由器接口的Id
   required: true
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DeleteRouterInterface
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: 用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大不值过64个ASCII字符。
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []

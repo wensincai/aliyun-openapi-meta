@@ -1,32 +1,36 @@
 name: WhoisProtection
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DataSource
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: DataContent
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: WhoisProtect
+  position: Query
   type: Boolean
   required: true
   hidden: false
-  subparameters: []

@@ -1,42 +1,67 @@
 name: DeleteVpnConnection
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    此接口用于删除VPN连接
+
+document_id: "53051"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DeleteVpnConnection
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 指定VPNConnection所在的地域
   required: true
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: 用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大值不超过 64 个 ASCII 字符。 <br> 具体参见附录
   required: false
   hidden: false
-  subparameters: []
 - name: VpnConnectionId
+  position: Query
   type: String
+  description:
+    zh: 要删除的VPNConnectionID。注意，一旦删除，则VPN连接中断
   required: true
   hidden: false
-  subparameters: []

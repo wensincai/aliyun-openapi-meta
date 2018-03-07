@@ -1,37 +1,41 @@
 name: FindApproveServiceList
+protocol: HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: showDelService
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: serviceName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: alias
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: projectName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: csbId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: approveLevel
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Host
   type: String
   required: true
   hidden: false
-  subparameters: []

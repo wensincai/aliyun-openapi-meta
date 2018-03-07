@@ -1,17 +1,21 @@
 name: NodeProcessDelete
+protocol: HTTP|HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

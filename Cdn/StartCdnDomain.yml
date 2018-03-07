@@ -1,27 +1,50 @@
 name: StartCdnDomain
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    启用状态为“停用”的加速域名，将DomainStatus变更为online
+
+    注意：
+
+    * 域名对应账户如果由于欠费，或域名处于非法状态，无法正常调用该接口启用加速域名
+
+document_id: "27165"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 操作接口名，系统规定参数 <br>取值：StartCdnDomain
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 需要接入CDN的域名
   required: true
   hidden: false
-  subparameters: []

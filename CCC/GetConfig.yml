@@ -1,27 +1,31 @@
 name: GetConfig
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ObjectId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ObjectType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

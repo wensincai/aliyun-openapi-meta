@@ -1,132 +1,136 @@
 name: DescribePrice
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ResourceType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ImageId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: IoOptimized
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceNetworkType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InternetChargeType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InternetMaxBandwidthOut
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDisk.Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDisk.Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.1.Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.1.Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.2.Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.2.Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.3.Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.3.Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.4.Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk.4.Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PriceUnit
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Amount
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

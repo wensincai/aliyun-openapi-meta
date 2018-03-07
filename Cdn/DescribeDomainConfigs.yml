@@ -1,32 +1,53 @@
 name: DescribeDomainConfigs
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |+
+    获取指定加速域名的配置
+
+document_id: "27169"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: "操作接口名，系统规定参数 \n取值：DescribeDomainConfigs"
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: |
+      需要接入CDN的域名
   required: true
   hidden: false
-  subparameters: []
 - name: ConfigList
+  position: Query
   type: String
+  description:
+    zh: 需要查询的配置，多个配置用逗号（半角）分隔，当前支持cache_expired、cc、error_page、http_header、optimize、page_compress、ignore_query_string、range、referer、req_auth、src_host、video_seek、waf,
+      notify_url, redirect_type 配置；不填代表查询所有
   required: false
   hidden: false
-  subparameters: []

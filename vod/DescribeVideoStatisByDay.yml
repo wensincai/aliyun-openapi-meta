@@ -1,42 +1,46 @@
 name: DescribeVideoStatisByDay
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: Version
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VideoType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BizDate
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: VideoId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

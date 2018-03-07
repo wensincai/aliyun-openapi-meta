@@ -1,42 +1,46 @@
 name: ProfileTag
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Agsid
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Idtype
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Tag
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BeginDate
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: EndDate
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AreaNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AppType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

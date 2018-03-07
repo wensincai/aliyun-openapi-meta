@@ -1,37 +1,60 @@
 name: GetVideoPlayAuth
+protocol: HTTPS|HTTP
+method: POST|GET
+description:
+  zh: |2+
+
+
+    获取视频播放时所需的播放凭证。
+
+document_id: "52833"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值： GetVideoPlayAuth
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: VideoId
+  position: Query
   type: String
+  description:
+    zh: 视频ID
   required: true
   hidden: false
-  subparameters: []
 - name: AuthInfoTimeout
+  position: Query
   type: Long
+  description:
+    zh: 播放凭证过期时间，默认为100秒，取值范围\[100,3600]
   required: false
   hidden: false
-  subparameters: []
 - name: ReAuthInfo
+  position: Query
   type: String
+  description:
+    zh: 二次鉴权信息
   required: false
   hidden: false
-  subparameters: []

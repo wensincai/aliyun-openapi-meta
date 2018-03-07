@@ -1,37 +1,41 @@
 name: CreateApiStageVariable
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: GroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StageId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: VariableName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SupportRoute
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: VariableValue
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StageRouteModel
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

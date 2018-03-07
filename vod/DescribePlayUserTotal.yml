@@ -1,17 +1,38 @@
 name: DescribePlayUserTotal
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |-
+    ## 描述
+
+    获取用户在指定时间范围内的每日播放总量统计数据
+document_id: "0"
 parameters:
-- name: OwnerId
-  type: Long
+- name: Action
+  position: Query
+  type: String
+  description:
+    zh: 操作接口名，系统规定参数，取值：DescribePlayUserTotal
   required: false
   hidden: true
-  subparameters: []
+- name: OwnerId
+  position: Query
+  type: Long
+  description:
+    zh: ""
+  required: false
+  hidden: true
 - name: StartTime
+  position: Query
   type: String
+  description:
+    zh: 起始时间，UTC格式
   required: true
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
+  description:
+    zh: 结束时间，UTC格式
   required: true
   hidden: false
-  subparameters: []

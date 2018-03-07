@@ -1,37 +1,41 @@
 name: SavePortalTemplate
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: TempName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: OssFileId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: TextAlign
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TextColor
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TextContent
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

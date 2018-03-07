@@ -1,37 +1,41 @@
 name: UpdateEnterpriseConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SysFrom
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Operator
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ConfigKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ConfigValue
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Memo
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

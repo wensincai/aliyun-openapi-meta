@@ -1,47 +1,70 @@
 name: DeleteVServerGroup
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: 删除服务器组。
+document_id: "35221"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：`DeleteVServerGroup`
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 负载均衡实例的地域ID。
   required: true
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: access_key_id
+  position: Query
   type: String
+  description:
+    zh: 阿里云颁发给用户的访问服务所用的密钥ID。
   required: false
   hidden: false
-  subparameters: []
 - name: Tags
+  position: Query
   type: String
+  description:
+    zh: 用户标签。
   required: false
   hidden: false
-  subparameters: []
 - name: VServerGroupId
+  position: Query
   type: String
+  description:
+    zh: <p>服务器组ID。<p>**注意**：如服务器组被引用了，无法删除。
   required: true
   hidden: false
-  subparameters: []

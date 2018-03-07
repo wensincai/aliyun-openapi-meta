@@ -1,17 +1,21 @@
 name: DeleteFiNasPoolUser
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StorageId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: UserName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

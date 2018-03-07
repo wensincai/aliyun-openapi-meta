@@ -1,22 +1,26 @@
 name: CreateSQLDiagnosis
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

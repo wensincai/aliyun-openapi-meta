@@ -1,67 +1,71 @@
 name: QueryMetricList
+protocol: HTTP
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: callby_cms_owner
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Project
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Metric
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Dimensions
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Page
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Cursor
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Length
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Express
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

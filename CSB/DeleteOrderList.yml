@@ -1,12 +1,16 @@
 name: DeleteOrderList
+protocol: HTTPS
+method: POST
+description: {}
+document_id: ""
 parameters:
 - name: Data
+  position: Body
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Host
   type: String
   required: true
   hidden: false
-  subparameters: []

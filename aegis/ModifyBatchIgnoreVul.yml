@@ -1,22 +1,26 @@
 name: ModifyBatchIgnoreVul
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: SourceIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: Reason
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Info
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,67 +1,71 @@
 name: SetRemoteReqAuthConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AuthType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TimeOut
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AuthAddr
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AuthCrash
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AuthEnable
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AuthProvider
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AuthPath
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthFileType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

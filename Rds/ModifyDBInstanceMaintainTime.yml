@@ -1,52 +1,76 @@
 name: ModifyDBInstanceMaintainTime
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: "\n\n修改实例可例行维护的时间，您可以设置一个业务的一个低峰的时间段。阿里云如果进行例行维护时间，会在您设置的可维护时间段内进行，对您的业务影响降到最低。
+    \ \n  \n"
+document_id: "26249"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 阿里云颁发给用户的访问服务所用的密钥ID。
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：ModifyDBInstanceMaintainTime。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: 用于保证幂等性。
   required: false
   hidden: false
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
+  description:
+    zh: 实例名。
   required: true
   hidden: false
-  subparameters: []
 - name: MaintainTime
+  position: Query
   type: String
+  description:
+    zh: 实例的维护时间，取值范围如下：<ul><li>22:00Z-02:00Z :22点至凌晨2点</li><li>02:00Z-06:00Z:凌晨2点至6点</li><li>06:00-10:00：6点至10点</li><li>10:00Z14:00Z：10点至14点</li><li>14:00Z-18:00Z：14点至18点</li><li>18:00Z-22:00Z：18点至22点</li></ul>
   required: true
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: 用户主账号。
   required: false
   hidden: true
-  subparameters: []

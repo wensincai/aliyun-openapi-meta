@@ -1,67 +1,61 @@
 name: DescribeParameterTemplates
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: true
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Domain
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: DBInstanceId
-  type: String
-  required: true
-  hidden: false
-  subparameters: []
-- name: NodeId
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
 - name: Engine
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: EngineVersion
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

@@ -1,32 +1,36 @@
 name: AfsCheck
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: CallerName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Session
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Token
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Sig
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Platform
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Scene
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

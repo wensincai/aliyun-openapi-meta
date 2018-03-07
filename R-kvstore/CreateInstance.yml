@@ -1,142 +1,146 @@
 name: CreateInstance
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Domain
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Token
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Password
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Capacity
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceClass
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ZoneId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Config
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ChargeType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: NodeType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: NetworkType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VpcId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VSwitchId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BusinessInfo
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CouponNo
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SrcDBInstanceId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BackupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EngineVersion
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

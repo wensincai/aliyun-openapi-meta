@@ -1,32 +1,36 @@
 name: BoxLoginoutReport4Appkey
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserCode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AppUUID
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShareVersion
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AuthUri
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthTypeDefault
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

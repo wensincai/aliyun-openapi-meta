@@ -1,22 +1,26 @@
 name: GetPhoneProfile
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Phone
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SensType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: BusinessType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DataVersion
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

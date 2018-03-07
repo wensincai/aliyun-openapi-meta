@@ -1,37 +1,41 @@
 name: GetOnlineApTimeSer
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ApgroupId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: CompanyId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Start
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: End
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: ZoomStart
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: ZoomEnd
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []

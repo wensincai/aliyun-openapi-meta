@@ -1,97 +1,101 @@
 name: DescribeEipAddresses
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Status
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EipAddress
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AllocationId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: Filter.1.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Filter.2.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Filter.1.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Filter.2.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: LockReason
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AssociatedInstanceType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AssociatedInstanceId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ChargeType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

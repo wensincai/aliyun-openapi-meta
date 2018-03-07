@@ -1,117 +1,124 @@
 name: ARMSQueryDataSet
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: DatasetId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: IntervalInSec
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: DateStr
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: MinTime
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: MaxTime
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Dimensions
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Key
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Value
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Type
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
 - name: Measures
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []
 - name: IsDrillDown
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: OrderByKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Limit
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ReduceTail
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: HungryMode
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: RequiredDims
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Key
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Value
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Type
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
 - name: OptionalDims
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Key
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Value
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Type
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []

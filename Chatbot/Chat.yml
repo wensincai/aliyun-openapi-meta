@@ -1,47 +1,51 @@
 name: Chat
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Utterance
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SessionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: KnowledgeId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SenderId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SenderNick
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

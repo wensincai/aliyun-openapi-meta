@@ -1,72 +1,76 @@
 name: UpdateAlarm
+protocol: HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: callby_cms_owner
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Statistics
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ComparisonOperator
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Threshold
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ContactGroups
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SilenceTime
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: EvaluationCount
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: NotifyType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Webhook
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

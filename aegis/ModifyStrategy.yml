@@ -1,37 +1,41 @@
 name: ModifyStrategy
+protocol: HTTP|HTTPS
+method: POST
+description: {}
+document_id: ""
 parameters:
 - name: SourceIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: CycleDays
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CycleStartTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RiskSubTypeName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

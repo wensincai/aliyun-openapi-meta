@@ -1,102 +1,106 @@
 name: ShopUpdate
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Sid
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: ShopName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopTopType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ShopType
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ShopSubtype
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ShopArea
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ShopManager
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopTel
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopProvince
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopCity
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopAddress
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopBusinessHours
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopCoordinate
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopBrand
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopRemarks
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Warn
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: WarnEmail
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: WarnpHone
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShopCloseWarn
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

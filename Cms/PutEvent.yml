@@ -1,7 +1,11 @@
 name: PutEvent
+protocol: HTTP|HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: EventInfo
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

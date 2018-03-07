@@ -1,232 +1,231 @@
 name: Push
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AppKey
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
-- name: Target
-  type: String
-  required: true
-  hidden: false
-  subparameters: []
-- name: TargetValue
-  type: String
-  required: true
-  hidden: false
-  subparameters: []
 - name: PushType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: DeviceType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
+- name: Target
+  position: Query
+  type: String
+  required: true
+  hidden: false
+- name: TargetValue
+  position: Query
+  type: String
+  required: true
+  hidden: false
 - name: Title
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Body
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
-- name: SendSpeed
-  type: Integer
-  required: false
-  hidden: false
-  subparameters: []
 - name: JobKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: PushTime
-  type: String
+- name: SendSpeed
+  position: Query
+  type: Integer
   required: false
   hidden: false
-  subparameters: []
-- name: ExpireTime
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
 - name: StoreOffline
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
-- name: BatchNumber
+- name: PushTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: AndroidNotifyType
+- name: ExpireTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: AndroidOpenType
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidActivity
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidOpenUrl
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidXiaoMiActivity
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidXiaoMiNotifyTitle
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidXiaoMiNotifyBody
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidPopupActivity
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidPopupTitle
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidPopupBody
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidMusic
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidNotificationBarType
-  type: Integer
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidNotificationBarPriority
-  type: Integer
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidNotificationChannel
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidExtParameters
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AndroidRemind
-  type: Boolean
-  required: false
-  hidden: false
-  subparameters: []
 - name: iOSApnsEnv
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: iOSRemind
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: iOSRemindBody
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: iOSMusic
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
 - name: iOSBadge
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: iOSBadgeAutoIncrement
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: iOSSilentNotification
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
+- name: iOSMusic
+  position: Query
+  type: String
+  required: false
+  hidden: false
 - name: iOSSubtitle
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: iOSNotificationCategory
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: iOSMutableContent
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: iOSExtParameters
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
+- name: AndroidNotifyType
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidOpenType
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidActivity
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidMusic
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidOpenUrl
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidXiaoMiActivity
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidXiaoMiNotifyTitle
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidXiaoMiNotifyBody
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidPopupActivity
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidPopupTitle
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidPopupBody
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidNotificationBarType
+  position: Query
+  type: Integer
+  required: false
+  hidden: false
+- name: AndroidNotificationBarPriority
+  position: Query
+  type: Integer
+  required: false
+  hidden: false
+- name: AndroidExtParameters
+  position: Query
+  type: String
+  required: false
+  hidden: false
+- name: AndroidRemind
+  position: Query
+  type: Boolean
+  required: false
+  hidden: false
+- name: AndroidNotificationChannel
+  position: Query
+  type: String
+  required: false
+  hidden: false
 - name: SmsTemplateName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SmsSignName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SmsParams
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SmsDelaySecs
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SmsSendPolicy
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

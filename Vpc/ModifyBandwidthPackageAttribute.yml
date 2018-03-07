@@ -1,47 +1,76 @@
 name: ModifyBandwidthPackageAttribute
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+    修改NAT带宽包的名称和描述。
+
+
+    <font  color=#ff5f25>本接口仅支持在2017年11月3日23:59之前账户下存在NAT带宽包的用户调用。2017年11月3日23:59之前账户下不存在NAT带宽包的用户请参考[绑定弹性公网IP](~~36017~~)，在NAT网关上绑定弹性公网IP。</font><br>
+
+document_id: "42671"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：<code>ModifyBandwidthPackageAttribute</code>。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: NAT带宽包所属的地域。
   required: true
   hidden: false
-  subparameters: []
 - name: BandwidthPackageId
+  position: Query
   type: String
+  description:
+    zh: 要修的NAT带宽包的ID。
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
+  description:
+    zh: NAT带宽包名称。名称在\[2,128]个字符之间，必须以英文字母或中文开头，不能以 http:// 和 https:// 开头，可包含数字，“.”，“_”或“-”。</p><p>如果没有指定该参数，默认使用网关ID。</p>
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
+  description:
+    zh: NAT带宽包描述。描述在\[2,256]个字符之间，不能以 http:// 和 https:// 开头。</p>
   required: false
   hidden: false
-  subparameters: []

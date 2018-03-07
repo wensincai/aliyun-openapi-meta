@@ -1,22 +1,26 @@
 name: DeleteCustomMetric
+protocol: HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: GroupId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: MetricName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Md5
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UUID
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

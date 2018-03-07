@@ -1,107 +1,56 @@
 name: DescribeVulList
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: SourceIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: ResourceOwnerId
-  type: Long
-  required: false
-  hidden: true
-  subparameters: []
 - name: Type
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Uuids
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: PatchId
-  type: Long
-  required: false
-  hidden: false
-  subparameters: []
 - name: Level
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: Product
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: LastTsStart
-  type: Long
-  required: false
-  hidden: false
-  subparameters: []
-- name: LastTsEnd
-  type: Long
-  required: false
-  hidden: false
-  subparameters: []
 - name: StatusList
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: OrderBy
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: Direction
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: AliasName
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: BatchName
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
-- name: Resource
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
 - name: Necessity
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Dealed
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
-- name: Lang
-  type: String
-  required: false
-  hidden: false
-  subparameters: []
 - name: CurrentPage
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

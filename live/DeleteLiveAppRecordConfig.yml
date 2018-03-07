@@ -1,32 +1,54 @@
 name: DeleteLiveAppRecordConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    解除录制配置。
+
+
+document_id: "35418"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DeleteLiveAppRecordConfig
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 您的加速域名
   required: true
   hidden: false
-  subparameters: []
 - name: AppName
+  position: Query
   type: String
+  description:
+    zh: 直播流所属应用名称
   required: true
   hidden: false
-  subparameters: []

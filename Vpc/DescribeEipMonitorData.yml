@@ -1,47 +1,78 @@
 name: DescribeEipMonitorData
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2
+
+
+    查看弹性公网IP的监控信息
+
+    - 一次最大只容许返回200条监控数据，如果指定的（EndTime – StartTime）/ Peroid > 200，则返回错误。
+    - 如果 EndTime - StartTime < period，则只返回 StartTime 一个点的数据。
+document_id: "36060"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DescribeEipMonitorData
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: AllocationId
+  position: Query
   type: String
+  description:
+    zh: Eip 的申请 Id。
   required: true
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
+  description:
+    zh: 获取数据的起始时间点：按照 <a href="~~36567~~">ISO8601</a> 标准表示，并需要使用 UTC 时间。格式为：YYYY-MM-DDThh:mm:ssZ。<br>                如果秒不是
+      00，则自动取为下一分钟开始时
   required: true
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
+  description:
+    zh: 获取数据的结束时间点：按照 <a href="~~36567~~">ISO8601</a> 标准表示，并需要使用 UTC 时间。格式为：YYYY-MM-DDThh:mm:ssZ。<br>                如果秒不是
+      00，则自动取为下一分钟开始时
   required: true
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: Integer
+  description:
+    zh: 获取监控数据的精度，默认 60 秒，可取值范围 60 | 300 | 900 | 3600。
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []

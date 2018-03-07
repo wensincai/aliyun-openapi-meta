@@ -1,22 +1,26 @@
 name: CreateRole
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: RoleName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AssumeRolePolicyDocument
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,7 +1,11 @@
 name: GenerateSessionAccessKey
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: DurationSeconds
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []

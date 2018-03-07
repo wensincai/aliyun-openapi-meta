@@ -1,42 +1,66 @@
 name: AddCommonBandwidthPackageIp
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |+
+    将IP加入到共享带宽
+
+document_id: "55989"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：AddCommonBandwidthPackageIp
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 地域名称，如cn-hangzhou
   required: true
   hidden: false
-  subparameters: []
 - name: BandwidthPackageId
+  position: Query
   type: String
+  description:
+    zh: 共享带宽实例Id
   required: true
   hidden: false
-  subparameters: []
 - name: IpInstanceId
+  position: Query
   type: String
+  description:
+    zh: EIP的InstanceId。<font size="" color="red">仅支持后付费的EIP实例加入到共享带宽包，且带宽包和EIP必须在同一个region</font>
+      请到<a href="https://ip.console.aliyun.com/">EIP控制台</a>查询EIP实例ID，或通过<a href="https://help.aliyun.com/document_detail/36018.html">EIP查询接口</a>通过API查询。
   required: true
   hidden: false
-  subparameters: []

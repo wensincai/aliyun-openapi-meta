@@ -1,47 +1,51 @@
 name: RunOpsCommand
+protocol: HTTP|HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: HostIdList
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []
 - name: Dimension
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OpsCommandName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Comment
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CustomParams
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,147 +1,152 @@
 name: CreateImage
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: DiskDeviceMapping
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Size
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: SnapshotId
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Device
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: DiskType
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SnapshotId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ImageName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ImageVersion
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Platform
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Architecture
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: Tag.1.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.1.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

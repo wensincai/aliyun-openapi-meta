@@ -1,17 +1,21 @@
 name: DeleteFileSystemOptionalUser
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: FileSystemName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: FileSystemUser
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

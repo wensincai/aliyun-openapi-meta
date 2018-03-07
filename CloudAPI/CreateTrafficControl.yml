@@ -1,37 +1,41 @@
 name: CreateTrafficControl
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: TrafficControlName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TrafficControlUnit
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ApiDefault
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: UserDefault
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AppDefault
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

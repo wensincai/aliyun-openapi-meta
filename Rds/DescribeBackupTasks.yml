@@ -1,67 +1,71 @@
 name: DescribeBackupTasks
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Flag
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: BackupJobId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BackupMode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: BackupJobStatus
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

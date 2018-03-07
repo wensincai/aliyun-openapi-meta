@@ -1,32 +1,56 @@
 name: SetRangeConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    设置range回源功能
+
+    注意：
+    需要源站支持range请求,即对于http请求头中包含 Range 字段,源站能够响应正确的206文件分片
+
+document_id: "27173"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 操作接口名，系统规定参数，取值：SetRangeConfig
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 要开启该功能的加速域名
   required: true
   hidden: false
-  subparameters: []
 - name: Enable
+  position: Query
   type: String
+  description:
+    zh: 配置range回源功能的开启或关闭 取值：On、Off
   required: true
   hidden: false
-  subparameters: []

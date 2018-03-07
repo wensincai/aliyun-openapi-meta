@@ -1,27 +1,32 @@
 name: SubmitMaterials
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: VerifyToken
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Material
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: MaterialType
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Value
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []

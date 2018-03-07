@@ -1,27 +1,31 @@
 name: ListMyGroupInstances
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
-- name: PageNumber
-  type: Integer
-  required: false
-  hidden: false
-  subparameters: []
-- name: PageSize
-  type: Integer
-  required: false
-  hidden: false
-  subparameters: []
 - name: Total
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
+- name: PageSize
+  position: Query
+  type: Integer
+  required: false
+  hidden: false
+- name: PageNumber
+  position: Query
+  type: Integer
+  required: false
+  hidden: false
 - name: GroupId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

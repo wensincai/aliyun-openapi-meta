@@ -1,32 +1,36 @@
 name: SaveBatchTaskForUpdatingContactInfo
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegistrantProfileId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: ContactType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AddTransferLock
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters: []

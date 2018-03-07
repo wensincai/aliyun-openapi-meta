@@ -1,82 +1,86 @@
 name: CreateDampPolicy
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Domain
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: PolicyName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Priority
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Handlers
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SourceRules
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TimeRules
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ActionRules
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,22 +1,26 @@
 name: LoginDBInstancefromCloudDBA
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ServiceRequestType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ServiceRequestParam
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

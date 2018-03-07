@@ -1,77 +1,81 @@
 name: SaveRegistrantProfile
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Country
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegistrantProfileId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: DefaultRegistrantProfile
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: City
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegistrantOrganization
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegistrantName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Province
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Address
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Email
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PostalCode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TelArea
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Telephone
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TelExt
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

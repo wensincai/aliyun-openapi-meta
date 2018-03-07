@@ -1,67 +1,101 @@
 name: AddCasterComponent
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |+
+    添加组件
+
+document_id: "63160"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：AddCasterComponent
   required: false
   hidden: true
-  subparameters: []
 - name: Version
+  position: Query
   type: String
+  description:
+    zh: API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: CasterId
+  position: Query
   type: String
+  description:
+    zh: 导播间Id
   required: true
   hidden: false
-  subparameters: []
 - name: ComponentName
+  position: Query
   type: String
+  description:
+    zh: 组件名称，默认为组件ID
   required: false
   hidden: false
-  subparameters: []
 - name: LocationId
+  position: Query
   type: String
+  description:
+    zh: 用于指定组件位置，每个位置至多设置一个组件，格式需符合“RC01…RC12”
   required: true
   hidden: false
-  subparameters: []
 - name: ComponentType
+  position: Query
   type: String
+  description:
+    zh: '组件类型，只能是预设值的一种: “text”/“image”等。'
   required: true
   hidden: false
-  subparameters: []
 - name: Effect
+  position: Query
   type: String
+  description:
+    zh: 组件显示的特效，默认为none none-无 animateH-水平滚动 animateV-垂直滚动 FadeIn-渐入 FadeOut-渐出 FlyIn-飞入
+      FlyOut-飞出
   required: false
   hidden: false
-  subparameters: []
 - name: ComponentLayer
+  position: Query
   type: String
+  description:
+    zh: 设置该组件Layer的尺寸，布局等信息，JSON格式字符串，参数名采用首字母大写、驼峰格式
   required: true
   hidden: false
-  subparameters: []
 - name: TextLayerContent
+  position: Query
   type: String
+  description:
+    zh: 如果是text，设置该Layer元素属性，JSON格式字符串，参数名采用首字母大写，驼峰格式
   required: false
   hidden: false
-  subparameters: []
 - name: ImageLayerContent
+  position: Query
   type: String
+  description:
+    zh: 如果是image，设置该Layer元素属性，JSON格式字符串，参数名采用首字母大写，驼峰格式
   required: false
   hidden: false
-  subparameters: []

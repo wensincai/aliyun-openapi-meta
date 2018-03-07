@@ -1,17 +1,21 @@
 name: SetNasBetaStatus
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Uid
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Feature
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Status
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

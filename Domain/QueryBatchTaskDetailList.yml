@@ -1,47 +1,51 @@
 name: QueryBatchTaskDetailList
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TaskNo
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SaleId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TaskStatus
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageNum
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []

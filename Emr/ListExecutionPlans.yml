@@ -1,62 +1,66 @@
 name: ListExecutionPlans
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: JobId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Strategy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StatusList
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters: []
 - name: IsDesc
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: QueryType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: QueryString
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

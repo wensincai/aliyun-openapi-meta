@@ -1,22 +1,26 @@
 name: CreateCatalog
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: CatalogName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ParentId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

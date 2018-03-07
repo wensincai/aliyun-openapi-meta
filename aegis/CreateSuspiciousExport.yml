@@ -1,57 +1,61 @@
 name: CreateSuspiciousExport
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: SourceIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: EventNameRemark
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StatusList
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Level
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Dealed
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EventType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Uuids
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: GroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Remark
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

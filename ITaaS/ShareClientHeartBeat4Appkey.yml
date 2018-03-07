@@ -1,42 +1,46 @@
 name: ShareClientHeartBeat4Appkey
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SysFrom
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Operator
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MSG
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TS
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClientAppid
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

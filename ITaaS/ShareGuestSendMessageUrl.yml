@@ -1,42 +1,46 @@
 name: ShareGuestSendMessageUrl
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: GuestUserId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MSG
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ShareVersion
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AppKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OsType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AppVersion
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SignatureType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

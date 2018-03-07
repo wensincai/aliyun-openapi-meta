@@ -1,47 +1,71 @@
 name: CreateBgpPeer
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |
+    向指定的BGP组中添加BGP邻居。
+document_id: "63265"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：`CreateBgpPeer`。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: BGP组所属的Region ID。Region ID的列表详见<a href="~~40654~~">地域和可用区</a>。
   required: true
   hidden: false
-  subparameters: []
 - name: BgpGroupId
+  position: Query
   type: String
+  description:
+    zh: 指定BGP组的ID。
   required: true
   hidden: false
-  subparameters: []
 - name: PeerIpAddress
+  position: Query
   type: String
+  description:
+    zh: 指定BGP邻居的IP地址。默认值：VBR子接口的对端网关的IP地址
   required: false
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: 用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大值不超过 64 个 ASCII 字符。 <br> 具体参见附录
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []

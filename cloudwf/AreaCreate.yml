@@ -1,22 +1,26 @@
 name: AreaCreate
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Sid
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Dids
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []

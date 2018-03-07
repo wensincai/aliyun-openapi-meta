@@ -1,32 +1,36 @@
 name: ShopDataAlarm
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Sid
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Warn
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: WarnEmail
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: WarnPhone
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CloseWarn
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

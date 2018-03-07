@@ -1,27 +1,31 @@
 name: GetNotifyPolicy
+protocol: HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AlertName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PolicyType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Dimensions
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

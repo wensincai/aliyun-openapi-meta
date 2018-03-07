@@ -1,57 +1,62 @@
 name: MetastoreCreateTable
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: DbName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: TableName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LocationUri
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: FieldDelimiter
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Column
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Name
+    position: ""
     type: String
     required: true
     hidden: false
-    subparameters: []
   - name: Type
+    position: ""
     type: String
     required: true
     hidden: false
-    subparameters: []
   - name: Comment
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []

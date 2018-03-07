@@ -1,37 +1,41 @@
 name: QueryRegistrantProfiles
+protocol: HTTPS|HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegistrantOrganization
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegistrantProfileId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: DefaultRegistrantProfile
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: PageNum
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

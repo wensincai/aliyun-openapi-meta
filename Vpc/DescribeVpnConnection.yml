@@ -1,37 +1,60 @@
 name: DescribeVpnConnection
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    本接口用于查询VPN连接网关详情
+
+document_id: "53046"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DescribeVpnConnection
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 指定查询VPNConnection的地域
   required: true
   hidden: false
-  subparameters: []
 - name: VpnConnectionId
+  position: Query
   type: String
+  description:
+    zh: 查询指定VPN 连接ID
   required: true
   hidden: false
-  subparameters: []

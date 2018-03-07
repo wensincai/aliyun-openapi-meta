@@ -1,17 +1,21 @@
 name: DeleteProject
+protocol: HTTPS
+method: POST
+description: {}
+document_id: ""
 parameters:
 - name: CsbId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: ProjectId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Host
   type: String
   required: true
   hidden: false
-  subparameters: []

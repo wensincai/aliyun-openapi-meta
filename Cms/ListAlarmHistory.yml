@@ -1,37 +1,41 @@
 name: ListAlarmHistory
+protocol: HTTP
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: callby_cms_owner
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Cursor
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

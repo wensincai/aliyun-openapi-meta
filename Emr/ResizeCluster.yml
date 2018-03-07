@@ -1,52 +1,56 @@
 name: ResizeCluster
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: NewMasterInstances
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: NewCoreInstances
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: NewTaskInstances
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: ChargeType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AutoRenew
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: CoreInstanceType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

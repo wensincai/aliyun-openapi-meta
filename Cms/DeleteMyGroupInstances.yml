@@ -1,12 +1,16 @@
 name: DeleteMyGroupInstances
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: GroupId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: InstanceIds
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

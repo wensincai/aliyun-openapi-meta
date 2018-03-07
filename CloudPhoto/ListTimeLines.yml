@@ -1,47 +1,51 @@
 name: ListTimeLines
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Direction
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PhotoSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Cursor
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: TimeLineCount
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: TimeLineUnit
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: FilterBy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Order
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

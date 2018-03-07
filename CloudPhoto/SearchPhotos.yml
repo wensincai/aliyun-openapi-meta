@@ -1,27 +1,31 @@
 name: SearchPhotos
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Page
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Size
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Keyword
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

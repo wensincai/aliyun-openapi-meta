@@ -1,42 +1,70 @@
 name: AddTrancodeSEI
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: 添加转码SEI信息
+document_id: "0"
 parameters:
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: |
+      您的加速域名
   required: true
   hidden: false
-  subparameters: []
 - name: AppName
+  position: Query
   type: String
+  description:
+    zh: |
+      直播流所属应用名称
   required: true
   hidden: false
-  subparameters: []
 - name: StreamName
+  position: Query
   type: String
+  description:
+    zh: |
+      流名
   required: true
   hidden: false
-  subparameters: []
 - name: Text
+  position: Query
   type: String
+  description:
+    zh: |
+      SEI文本, 长度限制： 4000 字节
   required: true
   hidden: false
-  subparameters: []
 - name: Pattern
+  position: Query
   type: String
+  description:
+    zh: |
+      追加到每一个关键帧 / 每一帧，取值：keyframe / frame
   required: true
   hidden: false
-  subparameters: []
 - name: Repeat
+  position: Query
   type: Integer
+  description:
+    zh: |
+      重复次数, -1 代表无限
   required: true
   hidden: false
-  subparameters: []
 - name: Delay
+  position: Query
   type: Integer
+  description:
+    zh: |
+      接收到命令后的 delay 时间, 单位： 毫秒
   required: true
   hidden: false
-  subparameters: []

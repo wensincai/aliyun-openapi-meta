@@ -1,17 +1,21 @@
 name: ProductInfoComplement
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: name
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: gender
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,52 +1,80 @@
 name: AddBgpNetwork
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+    在边界路由器（VBR）中宣告BGP网络。
+
+document_id: "63270"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：`AddBgpNetwork`。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 边界路由器的所属地域ID，Region ID列表详见<a href="~~40654~~">地域和可用区</a>。
   required: true
   hidden: false
-  subparameters: []
 - name: DstCidrBlock
+  position: Query
   type: String
+  description:
+    zh: 需要和IDC互联的VPC或交换机的网段。
   required: true
   hidden: false
-  subparameters: []
 - name: VpcId
+  position: Query
   type: String
+  description:
+    zh: 系统分配的专有网络 ID
   required: false
   hidden: false
-  subparameters: []
 - name: RouterId
+  position: Query
   type: String
+  description:
+    zh: 边界路由器ID。
   required: true
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: 用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大值不超过 64 个 ASCII 字符。 <br> 具体参见附录
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []

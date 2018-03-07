@@ -1,17 +1,21 @@
 name: GetService
+protocol: HTTPS
+method: GET
+description: {}
+document_id: ""
 parameters:
 - name: CsbId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: ServiceId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Host
   type: String
   required: true
   hidden: false
-  subparameters: []

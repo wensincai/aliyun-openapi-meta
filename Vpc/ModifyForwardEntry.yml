@@ -1,67 +1,103 @@
 name: ModifyForwardEntry
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+    修改指定的DNAT条目。
+
+    >注意：当DNAT表中有DNAT条目的状态为Pending或Modifying时，无法修改DNAT条目。
+
+document_id: "36056"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：<code>ModifyForwardEntry</code>。
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ForwardTableId
+  position: Query
   type: String
+  description:
+    zh: DNAT表的ID。
   required: true
   hidden: false
-  subparameters: []
 - name: ForwardEntryId
+  position: Query
   type: String
+  description:
+    zh: 要修改的DNAT条目的ID。
   required: true
   hidden: false
-  subparameters: []
 - name: ExternalIp
+  position: Query
   type: String
+  description:
+    zh: 用来转发和接收请求的公网IP。
   required: false
   hidden: false
-  subparameters: []
 - name: ExternalPort
+  position: Query
   type: String
+  description:
+    zh: 公网端口。取值：\[1,65535]
   required: false
   hidden: false
-  subparameters: []
 - name: InternalIp
+  position: Query
   type: String
+  description:
+    zh: 私网IP。
   required: false
   hidden: false
-  subparameters: []
 - name: InternalPort
+  position: Query
   type: String
+  description:
+    zh: 私网端口。取值：\[1,65535]
   required: false
   hidden: false
-  subparameters: []
 - name: IpProtocol
+  position: Query
   type: String
+  description:
+    zh: <p>协议类型。</p><p>可选值：TCP、UDP、Any。</p>
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: NAT网关的所属地域。
   required: true
   hidden: false
-  subparameters: []

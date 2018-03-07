@@ -1,2 +1,6 @@
 name: GetCallerIdentity
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters: []

@@ -1,82 +1,87 @@
 name: ModifyResourceQueue
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Name
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: QualifiedName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ParentQueueId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Leaf
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: ResourcePoolId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: Config
+  position: Query
   type: RepeatList
   required: true
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Id
+    position: Query
     type: Long
     required: false
     hidden: false
-    subparameters: []
   - name: ConfigKey
+    position: ""
     type: String
     required: true
     hidden: false
-    subparameters: []
   - name: ConfigValue
+    position: ""
     type: String
     required: true
     hidden: false
-    subparameters: []
   - name: Category
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Note
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []

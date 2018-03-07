@@ -1,157 +1,161 @@
 name: DescribeScalingActivities
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingGroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: StatusCode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.1
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.2
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.3
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.4
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.5
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.6
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.7
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.8
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.9
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.10
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.11
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.12
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.13
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.14
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.15
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.16
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.17
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.18
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.19
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ScalingActivityId.20
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []

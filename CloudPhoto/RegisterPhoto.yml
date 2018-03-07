@@ -1,67 +1,71 @@
 name: RegisterPhoto
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: TakenAt
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Location
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: StoreName
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: LibraryId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Latitude
+  position: Query
   type: Float
   required: false
   hidden: false
-  subparameters: []
 - name: Longitude
+  position: Query
   type: Float
   required: false
   hidden: false
-  subparameters: []
 - name: Width
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Height
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: IsVideo
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Md5
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Size
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: PhotoTitle
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Remark
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

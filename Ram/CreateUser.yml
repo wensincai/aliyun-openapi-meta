@@ -1,32 +1,36 @@
 name: CreateUser
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: UserName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DisplayName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MobilePhone
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Email
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Comments
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

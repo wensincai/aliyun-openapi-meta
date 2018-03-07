@@ -1,47 +1,75 @@
 name: DescribeLiveStreamBitRateData
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+
+    查询rtmp协议的直播流的设置时间范围内的一组帧率和码率，适用于获取历史数据。
+
+
+document_id: "35424"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DescribeLiveStreamBitRateData
   required: false
   hidden: true
-  subparameters: []
 - name: SecurityToken
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: DomainName
+  position: Query
   type: String
+  description:
+    zh: 您的域名
   required: true
   hidden: false
-  subparameters: []
 - name: AppName
+  position: Query
   type: String
+  description:
+    zh: 直播流所属应用名称
   required: false
   hidden: false
-  subparameters: []
 - name: StreamName
+  position: Query
   type: String
+  description:
+    zh: 直播流名称
   required: false
   hidden: false
-  subparameters: []
 - name: StartTime
+  position: Query
   type: String
+  description:
+    zh: 起始时间，UTC格式，例如：2016-06-29T19:00:00Z
   required: false
   hidden: false
-  subparameters: []
 - name: EndTime
+  position: Query
   type: String
+  description:
+    zh: 结束时间，UTC格式，例如：2016-06-30T19:00:00Z
   required: false
   hidden: false
-  subparameters: []

@@ -1,37 +1,61 @@
 name: DeleteGlobalAccelerationInstance
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+    删除全球加速实例。
+    仅支持删除后付费的全球加速实例；
+    删除全球加速实例前需要与后端服务器解绑；
+
+document_id: "56828"
 parameters:
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：DeleteGlobalAccelerationInstance
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 所在地域
   required: true
   hidden: false
-  subparameters: []
 - name: GlobalAccelerationInstanceId
+  position: Query
   type: String
+  description:
+    zh: 实例ID
   required: true
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []

@@ -1,17 +1,21 @@
 name: ListGroups
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: Marker
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MaxItems
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []

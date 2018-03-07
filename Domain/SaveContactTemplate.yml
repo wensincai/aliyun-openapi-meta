@@ -1,112 +1,116 @@
 name: SaveContactTemplate
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserClientIp
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Lang
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ContactTemplateId
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: DefaultTemplate
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: CCity
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CCompany
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CCountry
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CProvince
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CVenu
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ECity
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ECompany
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EProvince
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: EVenu
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Email
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PostalCode
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TelArea
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TelMain
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: TelExt
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: RegType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

@@ -1,22 +1,26 @@
 name: BoxSendMessageUrl4Appkey
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: RegionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: MSG
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClientAppid
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthTypeDefault
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

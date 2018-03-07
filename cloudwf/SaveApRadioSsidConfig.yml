@@ -1,222 +1,226 @@
 name: SaveApRadioSsidConfig
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Id
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: Ssid
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ApAssetId
+  position: Query
   type: Long
   required: true
   hidden: false
-  subparameters: []
 - name: EncKey
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SsidLb
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: DisassocWeakRssi
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: IgnoreWeakProbe
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Encryption
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: Disabled
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Maxassoc
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Hidden
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: ShortPreamble
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: DisassocLowAck
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Isolate
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Wmm
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: AuthCache
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: MaxInactivity
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Ieee80211w
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: DynamicVlan
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: VlanDhcp
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: MulticastForward
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Cir
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: Network
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: Mac
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: RadioIndex
+  position: Query
   type: Integer
   required: true
   hidden: false
-  subparameters: []
 - name: InstantlyEffective
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AuthServer
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AuthPort
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AuthSecret
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AcctServer
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AcctPort
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: AcctSecret
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SecondaryAuthServer
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SecondaryAuthPort
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SecondaryAuthSecret
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SecondaryAcctServer
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SecondaryAcctPort
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SecondaryAcctSecret
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Nasid
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Ownip
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DaeClient
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DaePort
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: DaeSecret
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

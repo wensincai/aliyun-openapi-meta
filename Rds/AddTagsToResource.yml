@@ -1,112 +1,172 @@
 name: AddTagsToResource
+protocol: HTTP|HTTPS
+method: POST|GET
+description:
+  zh: |2+
+
+    为实例绑定已有的或新创建的标签，限制如下：
+
+    * 每个标签（Tag）由标签键（TagKey）和标签值（TagValue）组成，TagKey不能为空，TagValue可以为空。
+
+    * TagKey和TagValue的值不允许以aliyun开头。
+
+    * TagKey和TagValue不区分大小写。
+
+    * TagKey最长为64个字符，TagValue最长为128个字符。
+
+    * 每个实例最多绑定10个Tag，每个实例绑定的TagKey不能重复。若绑定带有重复TagKey的Tag，则最后绑定的Tag将覆盖已绑定的Tag。
+
+document_id: "34998"
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
+  description:
+    zh: 阿里云颁发给用户的访问服务所用的密钥ID。
   required: false
   hidden: false
-  subparameters: []
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
+  description:
+    zh: 系统规定参数，取值：AddTagsToResource。
   required: true
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
+  description:
+    zh: ""
   required: false
   hidden: true
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
+  description:
+    zh: 用于保证幂等性。
   required: false
   hidden: false
-  subparameters: []
 - name: proxyId
+  position: Query
   type: String
+  description:
+    zh: 无
   required: false
   hidden: false
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
+  description:
+    zh: 地域。
   required: true
   hidden: false
-  subparameters: []
 - name: DBInstanceId
+  position: Query
   type: String
+  description:
+    zh: 实例ID，支持传入多个实例Id进行批量操作，最多传入30个<br>格式示例：instance1,instance2,instance3。
   required: true
   hidden: false
-  subparameters: []
 - name: Tags
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。<br>格式示例：{“key1”:”value1”,“key2”:””}。
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.1.key
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第一组key
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.key
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第二组key
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.key
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第三组key
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.key
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第四组key
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.key
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第五组key
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.1.value
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第一组value
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.value
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第二组value
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.value
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第三组value
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.value
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第四组value
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.value
+  position: Query
   type: String
+  description:
+    zh: 需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第五组value
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
+  description:
+    zh: 用户主账号。
   required: false
   hidden: true
-  subparameters: []

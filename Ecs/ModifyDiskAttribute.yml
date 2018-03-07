@@ -1,57 +1,61 @@
 name: ModifyDiskAttribute
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: DiskId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: DiskName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DeleteWithInstance
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: DeleteAutoSnapshot
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: EnableAutoSnapshot
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []

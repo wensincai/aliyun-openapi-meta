@@ -1,82 +1,86 @@
 name: SearchMedia
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: AccessKeyId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: From
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: To
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: KeyWord
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Title
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: CateId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SortBy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PageSize
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: PageNumber
+  position: Query
   type: Long
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []

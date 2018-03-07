@@ -1,17 +1,21 @@
 name: DeletePolicyVersion
+protocol: HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: PolicyName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VersionId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []

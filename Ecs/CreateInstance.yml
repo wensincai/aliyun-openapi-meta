@@ -1,322 +1,327 @@
 name: CreateInstance
+protocol: HTTP|HTTPS
+method: POST|GET
+description: {}
+document_id: ""
 parameters:
 - name: Action
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: OwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: ResourceOwnerId
+  position: Query
   type: Long
   required: false
   hidden: true
-  subparameters: []
 - name: RegionId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: ImageId
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: InstanceType
+  position: Query
   type: String
   required: true
   hidden: false
-  subparameters: []
 - name: SecurityGroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InternetChargeType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: AutoRenew
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: AutoRenewPeriod
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: InternetMaxBandwidthIn
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: InternetMaxBandwidthOut
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: HostName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Password
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DeploymentSetId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ZoneId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClusterId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ClientToken
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VlanId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: InnerIpAddress
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDisk.Size
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDisk.Category
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDisk.DiskName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SystemDisk.Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DataDisk
+  position: Query
   type: RepeatList
   required: false
   hidden: false
-  subparameters:
+  sub_parameters:
   - name: Size
+    position: ""
     type: Integer
     required: false
     hidden: false
-    subparameters: []
   - name: SnapshotId
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Category
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: DiskName
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Description
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: Device
+    position: ""
     type: String
     required: false
     hidden: false
-    subparameters: []
   - name: DeleteWithInstance
+    position: ""
     type: Boolean
     required: false
     hidden: false
-    subparameters: []
   - name: Encrypted
+    position: ""
     type: Boolean
     required: false
     hidden: false
-    subparameters: []
 - name: NodeControllerId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Description
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: VSwitchId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: PrivateIpAddress
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: IoOptimized
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: OwnerAccount
+  position: Query
   type: String
   required: false
   hidden: true
-  subparameters: []
 - name: UseAdditionalService
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
 - name: InstanceChargeType
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Period
+  position: Query
   type: Integer
   required: false
   hidden: false
-  subparameters: []
 - name: PeriodUnit
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.1.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Key
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.1.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.2.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.3.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.4.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: Tag.5.Value
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: UserData
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SpotStrategy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: KeyPairName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SpotPriceLimit
+  position: Query
   type: Float
   required: false
   hidden: false
-  subparameters: []
 - name: RamRoleName
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: SecurityEnhancementStrategy
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: ResourceGroupId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: HpcClusterId
+  position: Query
   type: String
   required: false
   hidden: false
-  subparameters: []
 - name: DryRun
+  position: Query
   type: Boolean
   required: false
   hidden: false
-  subparameters: []
