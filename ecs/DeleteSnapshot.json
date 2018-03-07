@@ -35,6 +35,9 @@
       "name": "SnapshotId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "快照 ID"
+      },
       "required": true,
       "hidden": false
     },

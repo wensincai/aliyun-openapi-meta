@@ -35,6 +35,9 @@
       "name": "SecurityGroupId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "安全组代码"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "指定的实例 ID"
+      },
       "required": true,
       "hidden": false
     },

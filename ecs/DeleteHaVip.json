@@ -49,6 +49,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "HaVip 实例所在的地域"
+      },
       "required": true,
       "hidden": false
     },
@@ -56,6 +59,9 @@
       "name": "HaVipId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "要删除的 HaVip 的 ID"
+      },
       "required": true,
       "hidden": false
     }

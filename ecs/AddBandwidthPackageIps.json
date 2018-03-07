@@ -42,6 +42,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "共享带宽包所在的地域"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +52,9 @@
       "name": "BandwidthPackageId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "要修改的BandwidthPackage的Id"
+      },
       "required": true,
       "hidden": false
     },
@@ -56,6 +62,9 @@
       "name": "IpCount",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "修改后的IP个数"
+      },
       "required": true,
       "hidden": false
     },
@@ -63,6 +72,9 @@
       "name": "ClientToken",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大不值过 64 个 ASCII 字符。具体参见附录."
+      },
       "required": false,
       "hidden": false
     }

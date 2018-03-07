@@ -35,6 +35,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "ECS 实例"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "ECS 实例所在的 Region"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +55,9 @@
       "name": "VncPassword",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "ECS 实例的 VNC 口令"
+      },
       "required": true,
       "hidden": false
     },

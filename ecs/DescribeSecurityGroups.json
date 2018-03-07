@@ -35,6 +35,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "地域"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "VpcId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "安全组所在的专有网络"
+      },
       "required": false,
       "hidden": false
     },

@@ -35,6 +35,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "实例 ID"
+      },
       "required": true,
       "hidden": false
     },

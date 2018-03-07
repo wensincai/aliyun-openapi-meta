@@ -35,6 +35,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "资源所属地域。RegionId 的列表详见 \u003ca target='_blank' href=\"https://help.aliyun.com/document_detail/40654.html\"\u003e地域列表\u003c/a\u003e。"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "ResourceType",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "资源类型：\u003cul\u003e\u003cli\u003eimage\u003c/li\u003e\u003cli\u003einstance\u003c/li\u003e\u003cli\u003esnapshot\u003c/li\u003e\u003cli\u003edisk\u003c/li\u003e\u003cli\u003esecuritygroup\u003c/li\u003e\u003c/ul\u003e所有值均为小写。"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +55,9 @@
       "name": "ResourceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "要解绑 Tag 的资源 ID。"
+      },
       "required": true,
       "hidden": false
     },

@@ -35,6 +35,9 @@
       "name": "AllocationId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "要执行释放操作的 EIP 对应的申请 Id"
+      },
       "required": true,
       "hidden": false
     },

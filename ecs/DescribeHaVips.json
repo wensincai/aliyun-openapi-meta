@@ -42,6 +42,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "HaVip 实例所在的地域"
+      },
       "required": true,
       "hidden": false
     },

@@ -49,6 +49,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "实例所在的地域"
+      },
       "required": true,
       "hidden": false
     },
@@ -56,6 +59,9 @@
       "name": "VSwitchId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "要将 HaVip 放在哪个交换机下"
+      },
       "required": true,
       "hidden": false
     },
@@ -63,6 +69,9 @@
       "name": "IpAddress",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "HaVip 的 IP 地址。不填写该字段则随机选择交换机下的一个空闲地址给 HaVip。"
+      },
       "required": false,
       "hidden": false
     },
@@ -70,6 +79,9 @@
       "name": "Description",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "自定义描述信息。[2, 256]个英文或中文字符，不能以 http:// 和 https:// 开头。不填则为空。"
+      },
       "required": false,
       "hidden": false
     }

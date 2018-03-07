@@ -35,6 +35,9 @@
       "name": "DiskId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "指定的磁盘设备 ID"
+      },
       "required": true,
       "hidden": false
     },

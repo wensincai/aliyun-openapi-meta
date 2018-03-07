@@ -35,6 +35,9 @@
       "name": "AllocationId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "申请 Id"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "Bandwidth",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "修改后的弹性 IP 地址带宽，带宽以 Mbps 计算。"
+      },
       "required": true,
       "hidden": false
     },

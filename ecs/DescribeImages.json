@@ -35,6 +35,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "实例所属于的 Region ID"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "Status",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "镜像状态，\u003cbr\u003e取值：\u003cul\u003e\u003cli\u003eUnAvailable | Available | Creating | CreateFailed\u003c/li\u003e\u003c/ul\u003e默认值：Available \u003cbr\u003e取值说明：\u003cul\u003e\u003cli\u003eCreating 创建中\u003c/li\u003e\u003cli\u003eAvailable 可用\u003c/li\u003e\u003cli\u003eUnAvailable 不可用\u003c/li\u003e\u003cli\u003eCreateFailed 创建失败\u003c/li\u003e\u003c/ul\u003e"
+      },
       "required": false,
       "hidden": false
     },
@@ -49,6 +55,9 @@
       "name": "ImageId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "镜像 ID，最多 100 个Id，用半角逗号字符隔开。"
+      },
       "required": false,
       "hidden": false
     },
@@ -63,6 +72,9 @@
       "name": "SnapshotId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "创建镜像的快照 ID"
+      },
       "required": false,
       "hidden": false
     },
@@ -70,6 +82,9 @@
       "name": "ImageName",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "镜像的名称"
+      },
       "required": false,
       "hidden": false
     },
@@ -77,6 +92,9 @@
       "name": "ImageOwnerAlias",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "镜像所有者别名。\u003cbr\u003e取值：\u003cul\u003e\u003cli\u003esystem | self | others | marketplace\u003c/li\u003e\u003c/ul\u003e默认值：无，表示返回 system + self + others \u003cbr\u003e不设置该参数说明不使用该参数进行过滤条件 \u003cbr\u003e取值说明：\u003cul\u003e\u003cli\u003esystem 阿里云官方提供镜像\u003c/li\u003e\u003cli\u003eself 用户自定义镜像\u003c/li\u003e\u003cli\u003eothers 非自己的可用镜像\u003c/li\u003e\u003cli\u003emarketplace 镜像市场提供的镜像\u003c/li\u003e\u003c/ul\u003e"
+      },
       "required": false,
       "hidden": false
     },
@@ -140,6 +158,9 @@
       "name": "Usage",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "有引用关系的资源类型，instance | none"
+      },
       "required": false,
       "hidden": false
     },

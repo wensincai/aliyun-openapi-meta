@@ -42,6 +42,9 @@
       "name": "InstanceTypeFamily",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "实例规格族"
+      },
       "required": false,
       "hidden": false
     }

@@ -42,6 +42,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "地域 ID"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +52,9 @@
       "name": "Generation",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "实例系列。 \u003cbr\u003e可选值：\u003cul\u003e\u003cli\u003eecs-1: 系列 I\u003c/li\u003e\u003cli\u003eecs-2: 系列 II\u003c/li\u003e\u003cli\u003eecs-3: 系列 III\u003c/li\u003e\u003c/ul\u003e"
+      },
       "required": false,
       "hidden": false
     }

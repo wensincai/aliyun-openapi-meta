@@ -42,6 +42,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "指定启动的实例 ID"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +52,9 @@
       "name": "AutoReleaseTime",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "自动释放时间。按照 ISO8601 标准表示，并需要使用 UTC 时间。 格式为：yyyy-MM-ddTHH:mm:ssZ。 如果秒不是 00，则自动取为当前分钟开始时。最少在当前时间之后半小时；最多不能超过当前时间起三年。"
+      },
       "required": false,
       "hidden": false
     },

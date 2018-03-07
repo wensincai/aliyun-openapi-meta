@@ -35,6 +35,9 @@
       "name": "AllocationId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "需要进行绑定操作的EIP的申请Id，申请Id是EIP的唯一标识"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "需要进行绑定操作的实例id。\u003cbr\u003e若InstanceType为EcsInstance，则此处填写ECS实例Id；若InstanceType为HaVip，则此处填写HaVipId；"
+      },
       "required": true,
       "hidden": false
     },
@@ -56,6 +62,9 @@
       "name": "InstanceType",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "绑定的对象类型。\u003cbr\u003e取值范围：EcsInstance | HaVip\u003cbr\u003e默认值：EcsInstance"
+      },
       "required": false,
       "hidden": false
     }

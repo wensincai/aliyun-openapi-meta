@@ -35,6 +35,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "指定的实例 ID"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "VSwitchId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "新的交换机 ID，不能跨可用区修改实例的交换机"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +55,9 @@
       "name": "PrivateIpAddress",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "新的私网 IP 地址，不能单独指定"
+      },
       "required": false,
       "hidden": false
     },

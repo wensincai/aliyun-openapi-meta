@@ -35,6 +35,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "需要分配 IP 地址的实例 ID"
+      },
       "required": true,
       "hidden": false
     },

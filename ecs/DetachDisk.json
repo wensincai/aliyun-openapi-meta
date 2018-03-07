@@ -35,6 +35,9 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "目标云服务器 ID"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "DiskId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "磁盘 ID"
+      },
       "required": true,
       "hidden": false
     },

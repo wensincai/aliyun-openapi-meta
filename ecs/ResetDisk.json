@@ -35,6 +35,9 @@
       "name": "DiskId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "指定的磁盘设备 ID"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "SnapshotId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "恢复磁盘的快照 ID"
+      },
       "required": true,
       "hidden": false
     },

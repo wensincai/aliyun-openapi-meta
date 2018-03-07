@@ -35,6 +35,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "实例所在的地域"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +45,9 @@
       "name": "RouterInterfaceId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "路由器接口ID"
+      },
       "required": true,
       "hidden": false
     }
