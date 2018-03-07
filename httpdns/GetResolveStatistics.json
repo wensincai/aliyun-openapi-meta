@@ -1,0 +1,59 @@
+{
+  "Name": "GetResolveStatistics",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Granularity",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TimeSpan",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ProtocolName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

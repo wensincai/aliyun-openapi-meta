@@ -1,0 +1,99 @@
+{
+  "Name": "ListGroupApBriefConfig",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageIndex",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Length",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OrderCol",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OrderDir",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ApgroupId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ColCnt",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SearchMac",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SearchName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

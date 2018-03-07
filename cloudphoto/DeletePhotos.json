@@ -1,0 +1,39 @@
+{
+  "Name": "DeletePhotos",
+  "Protocol": "HTTPS",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "StoreName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LibraryId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PhotoId",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": []
+    }
+  ],
+  "Product": null
+}

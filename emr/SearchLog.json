@@ -1,0 +1,129 @@
+{
+  "Name": "SearchLog",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {},
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClusterId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "HostInnerIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LogstoreName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "FromTimestamp",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ToTimestamp",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SlsQueryString",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Offset",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Line",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Reverse",
+      "Position": "Query",
+      "Type": "Boolean",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

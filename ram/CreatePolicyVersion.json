@@ -1,0 +1,49 @@
+{
+  "Name": "CreatePolicyVersion",
+  "Protocol": "HTTPS",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PolicyName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PolicyDocument",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SetAsDefault",
+      "Position": "Query",
+      "Type": "Boolean",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

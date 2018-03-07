@@ -1,0 +1,119 @@
+{
+  "Name": "DeletePhysicalConnection",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n删除物理专线\n* 只允许删除当前处在Rejected，Canceled，AllocationFailed，Terminated状态的物理专线\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "所在地域（管理实例的Region ID）"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PhysicalConnectionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "物理专线ID"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：`DeletePhysicalConnection`。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大不值过64个ASCII字符。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "UserCidr",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户侧网络的网段，如需定义多个网段请使用用半角逗号字符隔开，最多支持3个网段"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

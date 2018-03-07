@@ -1,0 +1,95 @@
+{
+  "Name": "DescribeDomainTopUrlVisit",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "获取加速域名某天内的热门URL列表\n\n不指定StartTime，默认读取前一天的数据。\n\n* 只支持一个域名，或当前用户下所有域名\n* 最多可获取最近90天的数据\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "操作接口名，系统规定参数\u003cbr\u003e取值：DescribeDomainTopUrlVisit  "
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": " 只支持一个域名，若参数为空，默认返回所有加速域名合并后数据 "
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StartTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "获取数据起始时间点，北京时间。\u003cbr\u003e格式为：YYYY-MM-DD\u003cbr\u003e不写默认读取过去24小时数据。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SortBy",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "排序方式，支持traf和pv，默认pv"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

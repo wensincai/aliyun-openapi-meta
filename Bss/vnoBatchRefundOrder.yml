@@ -1,6 +1,0 @@
-name: vnoBatchRefundOrder
-parameters:
-- name: paramStr
-  type: String
-  required: true
-  subparameters: []

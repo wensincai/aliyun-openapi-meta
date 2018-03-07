@@ -1,0 +1,177 @@
+{
+  "Name": "DescribeSlowLogRecords",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n用户可以查询某日期范围内、某个用户实例下、某个数据库的慢查询明细，仅支持MySQL数据库。  \n  \n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：DescribeSlowLogRecords。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例名。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SQLId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "无"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StartTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "查询开始日期，格式：YYYY-MM-DD’T’HH:mmZ，如2011-06-11T15:00Z。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "EndTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "查询结束日期，不能小于查询开始日期，格式：YYYY-MM-DD’T’HH:mmZ，如2011-06-11 T16:00Z。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据库名称。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageSize",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "每页记录数，取值：30/50/100；默认值：30。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageNumber",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "页码，大于0且不超过Integer的最大值；默认值：1。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户主账号。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

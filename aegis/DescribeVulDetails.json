@@ -1,0 +1,59 @@
+{
+  "Name": "DescribeVulDetails",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "获取漏洞的详情，需要传入漏洞的名称及类型。"
+  },
+  "Parameters": [
+    {
+      "Name": "SourceIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "访问者源IP"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "资源拥有者Uid，StSToken时该字段必须传"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Type",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "漏洞类型"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Name",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "漏洞名称"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

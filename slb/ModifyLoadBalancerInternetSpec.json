@@ -1,0 +1,155 @@
+{
+  "Name": "ModifyLoadBalancerInternetSpec",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "**请确保在使用该接口前，已充分了解负载均衡产品的收费方式和[价格](https://help.aliyun.com/document_detail/27692.html?spm=5176.doc27696.6.547.FJIqQM)。**\n\n修改公网负载均衡实例的计费方式，包括：\n\n- 调整按带宽计费实例的带宽峰值，修改完成后，立即生效。\n\n- 从按流量计费转换为按带宽计费。计费类型的变更从第二天凌晨开始生效。\n\n- 从按带宽计费转换为按流量计费。计费类型的变更从第二天凌晨开始生效。\n"
+  },
+  "Parameters": [
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "\u003cp\u003e负载均衡实例的地域。\n\u003cp\u003e您可以从[地域和可用区](~~40654~~)列表或通过调用[DescribeRegions](~~25609~~)接口查询地域ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，\n取值：`ModifyLoadBalancerInternetSpec`"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LoadBalancerId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "负载均衡实例的ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InternetChargeType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "\u003cp\u003e公网类型实例的付费方式。取值：\n\t  \u003cul\u003e\n\t  \u003cli\u003e\u003cp\u003e`paybybandwidth`：按带宽计费 \u003c/p\u003e\u003c/li\u003e\n\t  \u003cli\u003e\u003cp\u003e`paybytraffic`：按流量计费 \u003c/p\u003e\u003c/li\u003e\u003c/ul\u003e\n\t  \u003cp\u003e**注意**：如果不指定该参数，则表示保持原有的计费方式。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Bandwidth",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "\u003cp\u003e按固定带宽计费方式的公网类型实例的带宽峰值。\n\t  \u003cp\u003e实例中的监听共享该带宽，详情参见[共享实例带宽](~~57846~~)。\n\t  \u003cp\u003e取值：`1-5000 Mbps`（各地域的带宽峰值会有不同）\n\t  \u003cp\u003e**注意**：按流量计费的实例不需要指定该参数（即`InternetChargeType`为`paybytraffic`）。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "access_key_id",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tags",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户标签。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AutoPay",
+      "Position": "Query",
+      "Type": "Boolean",
+      "Description": {
+        "zh": "\u003cp\u003e是否自动付费。\u003c/p\u003e\u003cp\u003e取值为\u003ccode\u003etrue\u003c/code\u003e则自动支付订单；取值为\u003ccode\u003efalse\u003c/code\u003e则需要在订单中心中进行支付。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

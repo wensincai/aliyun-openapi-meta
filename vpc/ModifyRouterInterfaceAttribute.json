@@ -1,0 +1,191 @@
+{
+  "Name": "ModifyRouterInterfaceAttribute",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n修改路由器接口的Name/Description/连接对端信息。\n\n*\t只有当RouterInterface的状态为Idle时，才允许修改连接对端信息（OppositeInterfaceId/OppositeRouterId/OppositeInterfaceOwnerId）；\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：ModifyRouterInterfaceAttribute"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "所在地域（管理实例的Region ID）"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RouterInterfaceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "路由器接口的ID"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Name",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "自定义名称。\\[2, 128] 个英文或中文字符，必须以大小字母或中文开头，可包含数字，“.”，“_”或“-”。不能以 http:// 和 https:// 开头。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Description",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "自定义描述。\\[2, 256] 个字符，实例描述会显示在控制台。不能以 http:// 和 https:// 开头"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OppositeInterfaceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "连接对端的InterfaceId。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OppositeRouterId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "连接对端的Interface所属的路由器Id。在OppositeRouterType是VBR时OppositeRouterId所指定的VBR必须在OppositeAccessPointId所指定的接入点内。在创建/修改RouterInterface时不会做对端OppositeRouterId，OppositeAccessPointId等的校验，在进行连接操作时会出错。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OppositeRouterType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "要连接的对端路由器接口所属的路由器类型。可选值：VRouter，VBR；缺省为VRouter类型。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OppositeInterfaceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "连接对端路由器接口的持有者账号ID。您可以登录阿里云官网以后，在 控制台-用户中心-账号管理 中看到您的账号ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "HealthCheckSourceIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "专线容灾和ECMP场景下用来做专线HealthCheck的Packet的Source IP。只对本端是VRouter而且对端是VBR的Router Interface有效。必须是本端VRouter所在的VPC内的一个未被使用的IP。HealthCheckSourceIp与HealthCheckTargetIp必须同时指定或同时不指定。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "HealthCheckTargetIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "专线容灾和ECMP场景下用来做专线HealthCheck的Packet的Target IP。只对本端是VRouter而且对端是VBR的Router Interface有效。通常可以用专线用户端CPE的IP（也就是对端RI所在的VBR上的PeerGatewayIp），用户也可以指定专线用户端的其他可以用来做HealthCheck Target的IP。HealthCheckSourceIp与HealthCheckTargetIp必须同时指定或同时不指定。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DeleteHealthCheckIp",
+      "Position": "Query",
+      "Type": "Boolean",
+      "Description": {
+        "zh": "删除健康检查 IP"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

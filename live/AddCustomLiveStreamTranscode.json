@@ -1,0 +1,167 @@
+{
+  "Name": "AddCustomLiveStreamTranscode",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "添加自定义转码配置信息；"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名\n"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "操作接口名，系统规定参数，取值：AddCustomLiveStreamTranscode\n"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Version",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "版本号"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Domain",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "您的加速域名\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "App",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "直播流所属应用名称, 取值要求：数字, 大小写字母, 下划线(\"_\")或短横线(\"-\")\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Template",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "转码模板自定义名称, 取值要求：数字, 大小写字母或短横线(\"-\")。注意不能与标准的转码模板命名重复\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TemplateType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "自定义转码模版类型, 目前支持 h264 (自定义H264标准模版), h264-nbhd (自定义H264窄带高清模版)\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Height",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "转码视频宽度, 取值要求: Width \u003e= 100 ; max(Height, Width) \u003c= 1920 ; min(Height, Width) \u003c= 1080\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Width",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "转码视频宽度, 取值要求: Width \u003e= 100 ; max(Height, Width) \u003c= 1920 ; min(Height, Width) \u003c= 1080\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "FPS",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "转码视频帧率, 单位：fps, 取值要求: 1 \u003c= FPS \u003c= 30\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VideoBitrate",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "转码视频比特率, 单位: kbps, 取值要求： 1 \u003c= VideoBitrate \u003c= 6000 (注: 转码视频会尽量接近您所设定的比特率, 但转码视频的实际比特率不能保证和您所设定的完全一致, 尤其是当您设定的比特率过大或过小的时候)\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

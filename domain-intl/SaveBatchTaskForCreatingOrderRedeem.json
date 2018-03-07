@@ -1,0 +1,60 @@
+{
+  "Name": "SaveBatchTaskForCreatingOrderRedeem",
+  "Protocol": "HTTPS|HTTP",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "UserClientIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Lang",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OrderRedeemParam",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "DomainName",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "CurrentExpirationDate",
+          "Position": "",
+          "Type": "Long",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        }
+      ]
+    }
+  ],
+  "Product": null
+}

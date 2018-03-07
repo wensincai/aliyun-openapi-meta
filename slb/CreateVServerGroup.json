@@ -1,0 +1,143 @@
+{
+  "Name": "CreateVServerGroup",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "向指定的后端服务器组中添加后端服务器。"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：`AddVServerGroupBackendServers`"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "负载均衡地域ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "access_key_id",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tags",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户标签。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LoadBalancerId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "负载均衡实例ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VServerGroupName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "虚拟服务器组名称。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "BackendServers",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要添加的后端服务器列表。\u003cp\u003e取值：是一个Json string，其结构是一个JsonList。一次请求中，List中的元素个数最多20个。列表中的元素结构详见下表。\u003c/p\u003e\u003cp\u003e ServerId：String类型，必选，后端服务器名称Id，为ECS实例Id。\u003c/p\u003e\u003cp\u003e Port：Integer类型，必选，后端服务器使用的端口，取值范围\\[1,65535]。\u003c/p\u003e\u003cp\u003e Weight：Integer类型，必选，后端服务器的权重，取值范围\\[0,100]，默认值100。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

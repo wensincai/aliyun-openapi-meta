@@ -1,0 +1,90 @@
+{
+  "Name": "SaveBatchTaskForCreatingOrderActivate",
+  "Protocol": "HTTPS|HTTP",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "UserClientIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Lang",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OrderActivateParam",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "DomainName",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "SubscriptionDuration",
+          "Position": "",
+          "Type": "Integer",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "RegistrantProfileId",
+          "Position": "",
+          "Type": "Long",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "EnableDomainProxy",
+          "Position": "",
+          "Type": "Boolean",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "PermitPremiumActivation",
+          "Position": "",
+          "Type": "Boolean",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        }
+      ]
+    }
+  ],
+  "Product": null
+}

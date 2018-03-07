@@ -1,0 +1,119 @@
+{
+  "Name": "DescribeRangeDataByLocateAndIspService",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n获取加速域名的在某个时刻不同Locate和Isp上的带宽数据，单位 bit/second\n\n\n* 不支持批量域名查询\n* 时间精确到5分钟粒度\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "操作接口名，系统规定参数取值：DescribeRangeDataByLocateAndIspService"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainNames",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "要查询的域名，不能为空；"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LocationNames",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要查询目标区域列表，用“,”隔开，不能为空； Location名通过DescribeCdnRegionAndIsp接口获得。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "IspNames",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要查询目标Isp列表，用“,”隔开，不能为空； ISP名通过DescribeCdnRegionAndIsp接口获得。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "startTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "开始时间，日期格式按照ISO8601表示法，并使用UTC时间。\n格式为：YYYY-MM-DDThh:mmZ\n最小数据粒度为5分钟"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "EndTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "结束时间，日期格式按照ISO8601表示法，并使用UTC时间。\u003cbr\u003e格式为：YYYY-MM-DDThh:mmZ\u003cbr\u003e"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

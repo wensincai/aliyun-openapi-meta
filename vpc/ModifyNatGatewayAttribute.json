@@ -1,0 +1,119 @@
+{
+  "Name": "ModifyNatGatewayAttribute",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n修改NAT网关的名称和描述。\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：\u003ccode\u003eModifyNatGatewayAttribute\u003c/code\u003e。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "NAT网关的所属地域。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "NatGatewayId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "要修改的NAT网关的ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Name",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "网关名称。 名称在\\[2,128]个字符之间，必须以英文字母或中文开头，不能以 http:// 和 https:// 开头，可包含数字，“.”，“_”或“-”。\u003c/p\u003e\u003cp\u003e如果没有指定该参数，默认使用网关ID。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Description",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "网关描述.\n\n描述在\\[2,256]个字符之间，不能以 http:// 和 https:// 开头。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

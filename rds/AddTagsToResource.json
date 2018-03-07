@@ -1,0 +1,273 @@
+{
+  "Name": "AddTagsToResource",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n为实例绑定已有的或新创建的标签，限制如下：\n\n* 每个标签（Tag）由标签键（TagKey）和标签值（TagValue）组成，TagKey不能为空，TagValue可以为空。\n\n* TagKey和TagValue的值不允许以aliyun开头。\n\n* TagKey和TagValue不区分大小写。\n\n* TagKey最长为64个字符，TagValue最长为128个字符。\n\n* 每个实例最多绑定10个Tag，每个实例绑定的TagKey不能重复。若绑定带有重复TagKey的Tag，则最后绑定的Tag将覆盖已绑定的Tag。\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：AddTagsToResource。"
+      },
+      "Required": true,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于保证幂等性。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "proxyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "无"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "地域。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例ID，支持传入多个实例Id进行批量操作，最多传入30个\u003cbr\u003e格式示例：instance1,instance2,instance3。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tags",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。\u003cbr\u003e格式示例：{“key1”:”value1”,“key2”:””}。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.1.key",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第一组key"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.2.key",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第二组key"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.3.key",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第三组key"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.4.key",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第四组key"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.5.key",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第五组key"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.1.value",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第一组value"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.2.value",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第二组value"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.3.value",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第三组value"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.4.value",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第四组value"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag.5.value",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要绑定的Tag列表，包括TagKey和TagValue，单次最多支持传入5组值。TagKey不能为空，TagValue可以为空。当前第五组value"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户主账号。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

@@ -1,0 +1,70 @@
+{
+  "Name": "SaveBatchTaskForCreatingOrderRenew",
+  "Protocol": "HTTPS|HTTP",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "UserClientIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Lang",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OrderRenewParam",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "DomainName",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "CurrentExpirationDate",
+          "Position": "",
+          "Type": "Long",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "SubscriptionDuration",
+          "Position": "",
+          "Type": "Integer",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        }
+      ]
+    }
+  ],
+  "Product": null
+}

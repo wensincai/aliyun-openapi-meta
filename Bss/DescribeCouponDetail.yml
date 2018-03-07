@@ -1,6 +1,0 @@
-name: DescribeCouponDetail
-parameters:
-- name: CouponNumber
-  type: String
-  required: false
-  subparameters: []

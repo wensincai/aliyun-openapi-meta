@@ -1,0 +1,261 @@
+{
+  "Name": "DescribePrice",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n在购买实例前，查询实例的价格。\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：DescribePrice。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于保证幂等性。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户主账号。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CommodityCode",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "商品规格，取值如下，默认是rds：\u003cul\u003e\u003cli\u003e包月：rds\u003c/li\u003e\u003cli\u003e按量：bards\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据中心，长度不超过50个字符。通过函数DescribeRegions查看可用的数据中心。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Engine",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据库类型，取值范围为：MySQL/SQLServer/PostgreSQL/PPAS。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "EngineVersion",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据库版本号，取值如下： \u003cul\u003e\u003cli\u003eMySQL：5.5/5.6/5.7\u003c/li\u003e\u003cli\u003eSQLServer：2008r2/2012\u003c/li\u003e\u003cli\u003ePostgreSQL：9.4\u003c/li\u003e\u003cli\u003ePPAS：9.3\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceClass",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例规格代码。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceStorage",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "自定义存储空间，单位为GB每，5GB进行递增。取值范围如下，详情请参见\u003ca href=\"~~26312~~\"\u003e实例规格表\u003c/a\u003e： \u003cul\u003e\u003cli\u003eMySQL/PostgreSQL/PPAS双机高可用版为[5,2000]。\u003c/li\u003e\u003cli\u003eMySQL 5.7单机基础版为[20,1000]。\u003c/li\u003e\u003cli\u003eSQL Server 2008 R2为[10,2000]。\u003c/li\u003e\u003cli\u003eSQL Server 2012 单机基础版为 [20,2000]。\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PayType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "付费类型，取值如下：\u003cul\u003e\u003cli\u003e后付费实例：Postpaid\u003c/li\u003e\u003cli\u003e预付费实例：Prepaid\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ZoneId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "可用区id，通过函数DescribeRegions查看可用的可用区"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "UsedTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "购买时长，取值：Year [1,3]，Month [1,10]。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TimeType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "时间类型，取值如下：\u003cul\u003e\u003cli\u003e包月：Year，Month，Day\u003c/li\u003e\u003cli\u003e按量：Hour\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Quantity",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "订购实例数量，取值范围是[0,30]。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InstanceUsedType",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "无"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OrderType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "无"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

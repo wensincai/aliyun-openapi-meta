@@ -1,0 +1,128 @@
+{
+  "Name": "DescribeVirtualBorderRouters",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n* 查询VBR owner是调用方自己的VBR列表；\n* 可通过各种Filter对结果进行过滤，目前支持的Filter字段包括：VbrId、PhysicalConnectionId、Status、Name、AccessPointId；\n* 一个Filter的多个值之间是“or”关系，只要与其中一个值吻合则视为符合该Filter的过滤条件；\n* 各个Filter之间为“and”关系，符合所有Filter的过滤条件，才会进入最终查询结果中。\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：DescribeVirtualBorderRouters。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "所在地域。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageNumber",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "查询结果的页码；不指定时，默认为1；取值范围：正整数；\u003cbr\u003e若PageNumber大于实际结果的最大页码，则返回最后一页的内容。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageSize",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "查询结果的分页大小。取值范围为[1,50]，默认为10。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Filter",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "Key",
+          "Position": "",
+          "Type": "String",
+          "Description": {
+            "zh": "第n个过滤器的类型。N取值\\[1，5)"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "Value",
+          "Position": "",
+          "Type": "RepeatList",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": []
+        }
+      ]
+    }
+  ],
+  "Product": null
+}

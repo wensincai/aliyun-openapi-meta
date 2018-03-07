@@ -1,0 +1,150 @@
+{
+  "Name": "ModifyResourcePool",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {},
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Id",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Active",
+      "Position": "Query",
+      "Type": "Boolean",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Name",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClusterId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Yarnsiteconfig",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Config",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "Id",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "ConfigKey",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "ConfigValue",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "Category",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "Note",
+          "Position": "",
+          "Type": "String",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        }
+      ]
+    }
+  ],
+  "Product": null
+}

@@ -1,0 +1,201 @@
+{
+  "Name": "DescribeBackups",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n查询实例的备份集。备份集的状态必须是完成备份，才能用于恢复。\n\nRDS提供备份文件文件下载：\n\n* 当DownloadLink为NULL时，表示RDS没有提供下载链接URL。\n\n* 当DownloadLink不为NULL时，用户可以根据此URL，通过wget（请加双引号）、浏览器、编写程序下载备份文件，此URL已设置过期时间LinkExpiredTime，请在过期时间之前使用。若过期，用户在下载时，将会出现如下错误码：\n\n\t```xml\n\u003c?xml version=\"1.0\" encoding=\"UTF-8\" ?\u003e\n\u003cError\u003e\n\u003cCode\u003eAccessDenied\u003c/Code\u003e\n\u003cMessage\u003eRequest has expired.\u003c/Message\u003e\n\u003cExpires\u003e2012-12-25T09:47:52.000Z\u003c/Expires\u003e\n\u003cServerTime\u003e2012-12-25T09:49:00.000Z\u003c/ServerTime\u003e\n\u003cRequestId\u003e50D9768CA801C2F102005C70\u003c/RequestId\u003e\n\u003cHostId\u003eoss-test.aliyun-inc.com\u003c/HostId\u003e\n\u003c/Error\u003e\n```\n  \n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：DescribeBackups。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例名。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "BackupId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "备份集ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "BackupLocation",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "无"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "BackupStatus",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "备份集状态。取值范围：\u003cul\u003e\u003cli\u003eSuccess：完成备份。\u003c/li\u003e\u003cli\u003eFailed：备份失败。\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "BackupMode",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "备份类型。取值范围：\u003cul\u003e\u003cli\u003eAutomated：常规任务。\u003c/li\u003e\u003cli\u003eManual：临时任务。\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StartTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "查询开始时间，格式如：2011-06-11T15:00Z。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "EndTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "查询结束时间，格式如：2011-06-11T16:00Z，且大于查询开始时间。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageSize",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "每页记录数，取值：30/50/100；默认值：30。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageNumber",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "页码，大于0且不超过Integer的最大值。默认值：1。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户主账号。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

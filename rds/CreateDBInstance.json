@@ -1,0 +1,345 @@
+{
+  "Name": "CreateDBInstance",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n创建一个RDS实例。实例规格，详见[实例规格表](~~26312~~)。\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。\n"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：CreateDBInstance。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据中心，长度不超过50个字符；通过函数DescribeRegions查看可用的数据中心。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Engine",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据库类型，取值范围为MySQL/SQLServer/PostgreSQL/PPAS。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "EngineVersion",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据库版本号，取值如下：\u003cbr\u003eMySQL：5.5/5.6/5.7；\u003cbr\u003eSQLServer：2008r2/2012/2012_web/2016_web；\u003cbr\u003ePostgreSQL：9.4；\u003cbr\u003ePPAS：9.3。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceClass",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例规格，详见\u003ca href=\"~~26312~~\"\u003e实例规格表\u003c/a\u003e。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceStorage",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "自定义存储空间，取值范围：\u003cbr\u003eMySQL/PostgreSQL/PPAS 双机高可用版为 [5,2000]；\u003cbr\u003eMySQL 5.7 单机基础版为 [20,1000]；\u003cbr\u003e SQL Server 2008R2 为 [10,2000]；\u003cbr\u003e SQL Server 2012/2016 单机基础版为 [20,2000]; \u003cbr\u003e每5G进行递增。单位：GB。详见\u003ca href=\"~~26312~~\"\u003e实例规格表\u003c/a\u003e。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SystemDBCharset",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": " 系统字符集"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceNetType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例的网络连接类型：Internet代表公网，Intranet代表私网。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceDescription",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例的描述或备注信息，不超过256个字节；注：不能以http:// , https:// 开头。以中文、英文字母开头。可以包含中文、英文字符、”_”，” -”，数字字符长度2~256。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityIPList",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "允许访问该实例下所有数据库的IP名单，以逗号隔开，不可重复，最多1000个；支持格式：%，0.0.0.0/0，10.23.12.24（IP），或者10.23.12.24/24（CIDR模式，无类域间路由，/24表示了地址中前缀的长度，范围[1,32]）其中，0.0.0.0/0，表示不限制。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于保证幂等性。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PayType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "付费类型。Postpaid：后付费实例；Prepaid：预付费实例。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ZoneId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "可用区ID，通过函数DescribeRegions查看可用的可用区。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InstanceNetworkType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "VPC：创建VPC实例；Classic：创建Classic实例；不填，默认创建Classic实例。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ConnectionMode",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "Performance为标准访问模式；Safty为高安全访问模式；默认为RDS系统分配。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VPCId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "VPC ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VSwitchId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "VSwitch ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PrivateIpAddress",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户可以指定VSwitchId下的vpcIp，如果不输入，系统自动分配。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户主账号。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "UsedTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "若付费类型为Prepaid则该入参必须传入。指定购买时长，可按需传入1，2，3等数值。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Period",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "若付费类型为Prepaid则该入参必须传入。指定预付费实例为包年或者包月类型，Year：包年；Month：包月。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceGroupId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "资源组id"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TunnelId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "该云服务实例的tunnelid。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

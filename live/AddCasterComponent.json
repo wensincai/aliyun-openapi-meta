@@ -1,0 +1,167 @@
+{
+  "Name": "AddCasterComponent",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "添加组件\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：AddCasterComponent"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Version",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CasterId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "导播间Id"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ComponentName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "组件名称，默认为组件ID"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LocationId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于指定组件位置，每个位置至多设置一个组件，格式需符合“RC01…RC12”"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ComponentType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "组件类型，只能是预设值的一种: “text”/“image”等。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Effect",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "组件显示的特效，默认为none none-无 animateH-水平滚动 animateV-垂直滚动 FadeIn-渐入 FadeOut-渐出 FlyIn-飞入 FlyOut-飞出"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ComponentLayer",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "设置该组件Layer的尺寸，布局等信息，JSON格式字符串，参数名采用首字母大写、驼峰格式"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TextLayerContent",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "如果是text，设置该Layer元素属性，JSON格式字符串，参数名采用首字母大写，驼峰格式"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ImageLayerContent",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "如果是image，设置该Layer元素属性，JSON格式字符串，参数名采用首字母大写，驼峰格式"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

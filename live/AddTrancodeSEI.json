@@ -1,0 +1,107 @@
+{
+  "Name": "AddTrancodeSEI",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "添加转码SEI信息"
+  },
+  "Parameters": [
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "您的加速域名\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AppName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "直播流所属应用名称\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StreamName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "流名\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Text",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "SEI文本, 长度限制： 4000 字节\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Pattern",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "追加到每一个关键帧 / 每一帧，取值：keyframe / frame\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Repeat",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "重复次数, -1 代表无限\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Delay",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "接收到命令后的 delay 时间, 单位： 毫秒\n"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

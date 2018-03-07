@@ -1,0 +1,165 @@
+{
+  "Name": "ModifyReadWriteSplittingConnection",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n可修改读写分离链路的最大延迟时间或各个实例权重。\n\n实例状态必须满足如下所有条件，否则将操作失败：\n\n- 运行中。\n\n- 没有迁移任务。\n\n- 没有被锁定。\n\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：ModifyReadWriteSplittingConnection。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户主账号。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "现有主实例名。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ConnectionStringPrefix",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "新的用户连接，用户连接DB的地（前辍），需惟一性检查，由小写字母数字，中划线组成，字母开头，长度不超过30个字符。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Port",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "端口号"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "MaxDelayTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "延迟阈值，单位为秒。当只读实例延迟时间超过该阈值时，读取流量不发往该实例。不传则保持原值。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DistributionType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "读权重分配模式。Standard指按规格权重自动分配，Custom指自定义分配权重。至少传入MaxDelayTime或DistributionType中的一个。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Weight",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "\u003cul\u003e\u003cli\u003e读流量权重分配，即传入主实例和只读实例对应的读请求分配权重\u003c/li\u003e\u003cli\u003e以100步进，最大值为10000。\u003c/li\u003e\u003cli\u003e按如下格式传入：\u003cbr\u003e{“Instanceid“:”Weight”,”Instanceid”:”Weight”}\u003cbr\u003e\u003c/li\u003e\u003cli\u003e当DistributionType为Custom时，必须传入该参数。\u003c/li\u003e\u003cli\u003e当DisrtibutionType为Standard时，传入该参数无效。\u003c/li\u003e\u003c/ul\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

@@ -1,0 +1,213 @@
+{
+  "Name": "ModifyPhysicalConnectionAttribute",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n修改物理专线属性\n\n* 处于Rejected状态修改信息后进入Initial状态\n* Spec，RedundantPhysicalConnectionId只允许 Initial/Rejected状态修改\n* 在Canceled，Allocating，AllocationFailed，Terminated状态不允许修改任何属性\n"
+  },
+  "Parameters": [
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "所在地域"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PhysicalConnectionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要修改属性的物理专线Id"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LineOperator",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "提供接入物理线路的运营商,可选值：\u003cbr\u003e                \u003cul\u003e                    \u003cli\u003eCT - 中国电信\u003c/li\u003e                    \u003cli\u003eCU - 中国联通\u003c/li\u003e                    \u003cli\u003eCM - 中国移动\u003c/li\u003e                    \u003cli\u003eCO - 中国其他\u003c/li\u003e                    \u003cli\u003eEquinix - Equinix\u003c/li\u003e                    \u003cli\u003eOther - 境外其他\u003c/li\u003e                \u003c/ul\u003e            "
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "bandwidth",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "物理专线接入接口带宽，单位Mbps，可选值：\\[2-10240]"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PeerLocation",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "专线对端所在物理位置（地址）"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PortType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "物理专线接入端口类型,可选值：\u003cbr\u003e                 \u003cul\u003e                    \u003cli\u003eE1 - 2M同步电口\u003c/li\u003e                    \u003cli\u003e100Base-T - 百兆电口\u003c/li\u003e                    \u003cli\u003e1000Base-T - 千兆电口\u003c/li\u003e                    \u003cli\u003e1000Base-LX - 千兆单模光口（10千米）\u003c/li\u003e                    \u003cli\u003e10GBase-T - 万兆电口\u003c/li\u003e                    \u003cli\u003e10GBase-LR - 万兆单模光口（10千米）\u003c/li\u003e                    \u003cli\u003eOther - 未列明\u003c/li\u003e                \u003c/ul\u003e            "
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RedundantPhysicalConnectionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "互为冗余的物理专线Id"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Description",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "物理专线描述信息"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Name",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "物理专线名字"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大不值过64个ASCII字符。\u003cbr\u003e                具体参见附录：\u003ca href=\"~~36569~~\"\u003e如何保证幂等性\u003c/a\u003e。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：`ModifyPhysicalConnectionAttribute`。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CircuitCode",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "专线侧接口对应运营商的电路编码"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

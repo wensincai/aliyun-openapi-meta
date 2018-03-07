@@ -1,0 +1,143 @@
+{
+  "Name": "DescribeDomainHitRateData",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n获取加速域名的字节命中率（命中字节百分比）\n\n不指定StartTime和EndTime时，默认读取过去24小时的数据，同时支持按指定的起止时间查询，两者需要同时指定。\n\n* 支持批量域名查询，多个域名可用逗号（半角）分隔\n* 最多可获取最近90天的数据\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "操作接口名，系统规定参数\u003cbr\u003e取值：DescribeDomainHitRateData"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要查询的加速域名，只支持一个域名，不写代表所有"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StartTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "获取数据起始时间点，日期格式按照ISO8601表示法，并使用UTC时间。\u003cbr\u003e格式为：YYYY-MM-DDThh:mmZ\u003cbr\u003e 最小数据粒度为5分钟\u003cbr\u003e 不写默认读取过去24小时数据"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "EndTime",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "结束时间需大于起始时间；获日期格式按照ISO8601表示法，并使用UTC时间。\u003cbr\u003e格式为：YYYY-MM-DDThh:mmZ"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TimeMerge",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "取值范围 on：默认值，每条记录的时间间隔会根据时间跨度做合并；off：返回5分钟粒度数据，最大时间跨度为31天"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LocationNameEn",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "区域英文名，通过DescribeCdnRegionAndIsp接口获得，不传为所有区域"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "IspNameEn",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "运营商英文名，通过DescribeCdnRegionAndIsp接口获得，不传为所有运营商"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Interval",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "查询数据的时间粒度，支持300, 3600, 14400, 28800和86400秒。不传和传的值不支持时，使用默认值300秒"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

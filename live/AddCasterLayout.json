@@ -1,0 +1,195 @@
+{
+  "Name": "AddCasterLayout",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "添加布局，定义布局中的画面来源、数量、位置、坐标、宽高等\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：AddCasterLayout"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Version",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CasterId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "导播台Id"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VideoLayer",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "HeightNormalized",
+          "Position": "",
+          "Type": "Float",
+          "Description": {
+            "zh": "Videolayer配置列表，元素为视频画面的配置信息-高度。设置该layer元素的高度归一化比例值，其中元素的宽度会按照该高度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "WidthNormalized",
+          "Position": "",
+          "Type": "Float",
+          "Description": {
+            "zh": "Videolayer配置列表，元素为视频画面的配置信息-宽度。设置该layer元素的宽度归一化比例值，其中元素的高度会按照该宽度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "PositionRefer",
+          "Position": "",
+          "Type": "String",
+          "Description": {
+            "zh": "Videolayer配置列表，元素为视频画面的配置信息-参考坐标，设置元素的position 参考坐标值，取值范围\"topLeft\"/\"topRight\"/\"bottomLeft\"/\"bottomRight\"以及\"center/topCenter/bottomCenter/leftCenter/rightCenter\", 默认\"topLeft\""
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "PositionNormalized",
+          "Position": "",
+          "Type": "RepeatList",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": []
+        }
+      ]
+    },
+    {
+      "Name": "AudioLayer",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "VolumeRate",
+          "Position": "",
+          "Type": "Float",
+          "Description": {
+            "zh": "Audiolayer配置列表，元素为音频配置信息-音量。调节音频流的音量大小倍数，1.0表示保持原有音量，小于1表示降低音量的倍数，\u003e1表示放大的倍数，取值范围\\[0,10.0]，默认 1.0"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "ValidChannel",
+          "Position": "",
+          "Type": "String",
+          "Description": {
+            "zh": "Audiolayer配置列表，元素为音频配置信息-输入声道，确定哪些声道可以作为音量输入，取值范围\"leftChannel/rightChannel/all\"默认是\"all\"。"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        }
+      ]
+    },
+    {
+      "Name": "BlendList",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": []
+    },
+    {
+      "Name": "MixList",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": []
+    }
+  ],
+  "Product": null
+}

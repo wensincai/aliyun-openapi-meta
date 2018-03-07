@@ -1,0 +1,179 @@
+{
+  "Name": "SetCasterConfig",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "对导播台进行全局配置，配置内容包括导播台名称、域名、录制、转码、延播、备播等"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：SetCasterConfig"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Version",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CasterId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "导播台ID"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CasterName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "导播台名称"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "域名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TranscodeConfig",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "转码配置"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RecordConfig",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "录制配置, 为空时表示不启用录制功能"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Delay",
+      "Position": "Query",
+      "Type": "Float",
+      "Description": {
+        "zh": "延时播放 0-禁用延时,大于0为启用延时,时间单位:秒"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "UrgentMaterialId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "备播视频，媒资库素材Id"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SideOutputUrl",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户自定义导播台旁路输出地址。若为空，则默认使用阿里云自动生成的输出地址"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CallbackUrl",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户回调地址"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

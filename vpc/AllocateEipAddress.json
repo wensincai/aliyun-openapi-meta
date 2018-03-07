@@ -1,0 +1,203 @@
+{
+  "Name": "AllocateEipAddress",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "请确保在使用该接口前，已充分了解该产品的收费方式和 \u003ca href='https://help.aliyun.com/document_detail/27767.html' target='_blank' \u003e价格\u003c/a\u003e \n\n申请 EIP，新申请的 EIP 状态为 Available。\n\n* EIP 目前只能绑定到相同地域的 VPC 类型的 ECS 实例，NAT网关，负载均衡SLB。\n* 每次申请会在指定的 Region 内随机分配一个 EIP。\n* EIP 目前只支持 ICMP，TCP，UDP 3 种协议，不支持 IGMP，SCTP 等传输层协议。\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：AllocateEipAddress"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "申请的弹性公网 IP 所在的地域"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Bandwidth",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "弹性公网 IP 的限速，如果不指定，默认为 5Mbps。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Period",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": " \u003cb\u003e当InstanceChargeType为PrePaid时是必选参数\u003c/b\u003e。\u003cbr\u003e 当PricingCycle为Month时，取值范围\\[1,9]，当PricingCycle为Year时，取值范围\\[1,3]。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ISP",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "线路类型，默认值为BGP"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Netmode",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "网络类型，默认值为Public"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AutoPay",
+      "Position": "Query",
+      "Type": "Boolean",
+      "Description": {
+        "zh": " \u003cb\u003e当InstanceChargeType为PrePaid时有作用\u003c/b\u003e，AutoPay为true时会自动支付订单，为false时只生成一个待支付订单，需要到\u003ca href=\"https://expense.console.aliyun.com/?#/order/list/\"\u003e订单中心\u003c/a\u003e手动支付，默认为false。\u003cbr\u003e\u003cb\u003e当InstanceChargeType为PostPaid时不需要设置\u003c/b\u003e。\u003cbr\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PricingCycle",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "Month和Year，默认是Month。\u003cbr\u003e注意：参数区分大小写。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InstanceChargeType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "PrePaid和PostPaid，默认是PostPaid 。PrePaid代表预付费，PostPaid 代表后付费。\u003cbr\u003e参数选择PrePaid后会生成一个订单号，需要到订单中心手工支付。\u003cbr\u003e预计9月中旬推出订单自动支付功能。\u003cbr\u003e注意：参数区分大小写。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InternetChargeType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "PayByBandwidth 和 PayByTraffic，默认是 PayByBandwidth"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceGroupId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "企业资源组ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大值不超过 64 个 ASCII 字符。 \u003cbr\u003e                具体参见附录            "
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

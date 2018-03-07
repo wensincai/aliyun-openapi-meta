@@ -1,0 +1,179 @@
+{
+  "Name": "GetPlayInfo",
+  "Protocol": "HTTPS|HTTP",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n通过视频ID直接获取媒体文件（支持视频和音频）的播放地址。\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值： GetPlayInfo"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VideoId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "视频ID"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Formats",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "视频流格式，多个用逗号分隔，支持格式mp4,m3u8,mp3，默认获取所有格式的流"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AuthTimeout",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "播放鉴权过期时间，默认为1800秒，支持设置最小值为1800秒"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Rand",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "客户端通过公钥生成的加密随机数"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AuthInfo",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "GetVideoPlayAuth接口返回的AuthInfo"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Channel",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "渠道号，取值 Android，iOS，Flash，HTML5，播放器需传入，用于服务端日志统计"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PlayerVersion",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "播放器版本号"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StreamType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "视频流类型，多个用逗号分隔，支持类型video,audio，默认获取所有类型的流"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ReAuthInfo",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "二次鉴权信息"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Definition",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "视频流清晰度，多个用逗号分隔，取值FD(流畅)，LD(标清)，SD(高清)，HD(超清)，OD(原画)，2K(2K)，4K(4K)，默认获取所有清晰度的流"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

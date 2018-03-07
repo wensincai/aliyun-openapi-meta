@@ -1,0 +1,261 @@
+{
+  "Name": "CreateReadOnlyDBInstance",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "说明：为某个实例创建一个只读实例  实例状态要求：必须满足以下条件，否则将创建失败  * 主实例状态：使用中，且未处于容灾切换状态  * 只读实例与主实例必须处于相同的region  * 只读实例数据库版本必须大于等于主实例版本，主实例版本最低是MySQL 5.6  * 只读实例最低版本为MySQL 5.6  * 一个RDS实例，最多只能有5个只读实例    "
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": " 阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {},
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：CreateReadOnlyDBInstance"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ClientToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用于保证幂等性"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据中心，长度不超过50个字符；通过函数DescribeRegions查看可用的数据中心"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ZoneId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "可用区id，通过函数DescribeRegions查看可用的可用区"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "主实例Id"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceClass",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例规格，详见附录"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceStorage",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "自定义存储空间，取值范围：[5,1000]。每5G进行递增。单位：GB"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "EngineVersion",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "数据库版本号,仅支持输入值：5.6"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PayType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "Postpaid"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DBInstanceDescription",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "实例的描述或备注信息，不超过256个字节；注：不能以http:// , https:// 开头。以中文、英文字母开头。可以包含中文、英文字符、”_”，” -”，数字字符长度2~256"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InstanceNetworkType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "VPC：创建VPC实例;Classic：创建Classic实例;不填，默认创建Classic实例"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VPCId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "VPC ID"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VSwitchId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "VSwitch ID"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PrivateIpAddress",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户可以指定VSwitchId下的vpcIp，如果不输入，系统通过vpcId,和VSwitchId 自动分配"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户主账号。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceGroupId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "资源组id"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

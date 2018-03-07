@@ -1,0 +1,143 @@
+{
+  "Name": "SetVServerGroupAttribute",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n设置虚拟服务器组，修改已存在的虚拟服务器组的名称或更改已添加的后端服务器的权重。\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：SetVServerGroupAttribute。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "负载均衡地域ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "access_key_id",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tags",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户标签。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VServerGroupId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "服务器组ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VServerGroupName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "虚拟服务器组名称，这里可以重命名。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "BackendServers",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要修改权重的该VServerGroup内的后端服务器列表。如不传为不设置或者不改变原设置。\u003cp\u003e取值：是一个Json string，其结构是一个JsonList。一次请求中，最多包含20个后端服务器实例。列表中的元素结构详见下表。\u003c/p\u003e\u003cp\u003e ServerId：String类型，必选，后端服务器名称Id，为ECS实例Id。\u003c/p\u003e\u003cp\u003e Port：Integer类型，必选，后端服务器使用的端口，取值范围：\\[1,65535]。\u003c/p\u003e\u003cp\u003e Weight：Integer类型，必选，后端服务器的权重，取值范围 \\[0,100]，默认值100。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

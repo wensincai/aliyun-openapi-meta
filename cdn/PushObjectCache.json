@@ -1,0 +1,71 @@
+{
+  "Name": "PushObjectCache",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n- 将源站的内容主动预热到L2 Cache节点上，用户首次访问可直接命中缓存，缓解源站压力。\n- 支持post请求，参数用form表单。\n\n限制：\n\n* 同一个 ID 每天最多提交刷新预热类请求数量：URL：2000条；注意目前不支持目录级别的预热\n* 刷新预热类接口包含 `RefreshObjectCaches` 刷新接口和 `PushObjectCache` 预热接口\n\n\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "操作接口名，系统规定参数，取值：PushObjectCache"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ObjectPath",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "输入示例：abc.com/image/1.png，多个URL之间需要用换行符（\\n或\\r\\n）分隔"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

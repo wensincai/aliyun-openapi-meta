@@ -1,0 +1,155 @@
+{
+  "Name": "DescribeWarning",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "获取基线检查的风险结果数据，包括问题描述， 修复方法建议等。"
+  },
+  "Parameters": [
+    {
+      "Name": "SourceIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "接口访问者源IP"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "资源拥有者Uid，StSToken时该字段必须传"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TypeNames",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "主分类名称，为空就查找所有主分类和子分类"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SubTypeNames",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "子分类名称 ，不为空的话则主分类必须不为空"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RiskLevels",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "风险等级。\n- serious: 严重\n- high: 高危\n- medium: 中危\n- low: 低危\n"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StatusList",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "状态列表\n- 1: 表示未处理\n- 2: 表示已处理\n- 不传: 表示全部查询"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RiskName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "风险名称，支持模糊匹配"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StrategyId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "策略ID"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "PageSize",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "分页查询时设置的每页行数。默认值: 20。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CurrentPage",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "实例状态列表的页码。起始值：1\n默认值：1"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Uuids",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "机器的唯一标识，筛选单台机器的时候需要"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Dealed",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "事件状态\n- n: 待处理\n- y: 已处理"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

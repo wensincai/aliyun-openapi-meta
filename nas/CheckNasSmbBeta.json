@@ -1,0 +1,8 @@
+{
+  "Name": "CheckNasSmbBeta",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {},
+  "Parameters": [],
+  "Product": null
+}

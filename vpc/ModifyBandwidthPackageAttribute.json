@@ -1,0 +1,119 @@
+{
+  "Name": "ModifyBandwidthPackageAttribute",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n修改NAT带宽包的名称和描述。\n\n\n\u003cfont  color=#ff5f25\u003e本接口仅支持在2017年11月3日23:59之前账户下存在NAT带宽包的用户调用。2017年11月3日23:59之前账户下不存在NAT带宽包的用户请参考[绑定弹性公网IP](~~36017~~)，在NAT网关上绑定弹性公网IP。\u003c/font\u003e\u003cbr\u003e\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：\u003ccode\u003eModifyBandwidthPackageAttribute\u003c/code\u003e。"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "NAT带宽包所属的地域。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "BandwidthPackageId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "要修的NAT带宽包的ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Name",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "NAT带宽包名称。名称在\\[2,128]个字符之间，必须以英文字母或中文开头，不能以 http:// 和 https:// 开头，可包含数字，“.”，“_”或“-”。\u003c/p\u003e\u003cp\u003e如果没有指定该参数，默认使用网关ID。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Description",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "NAT带宽包描述。描述在\\[2,256]个字符之间，不能以 http:// 和 https:// 开头。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

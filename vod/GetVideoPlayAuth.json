@@ -1,0 +1,95 @@
+{
+  "Name": "GetVideoPlayAuth",
+  "Protocol": "HTTPS|HTTP",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n获取视频播放时所需的播放凭证。\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值： GetVideoPlayAuth"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VideoId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "视频ID"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AuthInfoTimeout",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "播放凭证过期时间，默认为100秒，取值范围\\[100,3600]"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ReAuthInfo",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "二次鉴权信息"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

@@ -1,0 +1,207 @@
+{
+  "Name": "ModifyCasterLayout",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "修改布局配置，传递修改项，非修改内容无需传递\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：ModifyCasterLayout"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Version",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "CasterId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "导播台Id"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LayoutId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "布局Id"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "VideoLayer",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "HeightNormalized",
+          "Position": "",
+          "Type": "Float",
+          "Description": {
+            "zh": "设置该layer元素的高度归一化比例值，其中元素的宽度会按照该高度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "WidthNormalized",
+          "Position": "",
+          "Type": "Float",
+          "Description": {
+            "zh": "设置该layer元素的宽度归一化比例值，其中元素的高度会按照该宽度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。该字段和heightNormalized有冲突，一旦heightNormalized和widthNormalized都设置了，则只有heightNormalized有效。如果heightNormalized和widthNormalized设置只能同时设置一个，后面设置的值会影响前面设置的。"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "PositionRefer",
+          "Position": "",
+          "Type": "String",
+          "Description": {
+            "zh": "设置元素的position 参考坐标值，取值范围\"topLeft\"/\"topRight\"/\"bottomLeft\"/\"bottomRight\"以及\"center/topCenter/bottomCenter/leftCenter/rightCenter\", 默认\"topLeft\"."
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "PositionNormalized",
+          "Position": "",
+          "Type": "RepeatList",
+          "Description": {},
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": []
+        }
+      ]
+    },
+    {
+      "Name": "AudioLayer",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": [
+        {
+          "Name": "VolumeRate",
+          "Position": "",
+          "Type": "Float",
+          "Description": {
+            "zh": "设置该layer元素的高度归一化比例值，其中元素的宽度会按照该高度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        },
+        {
+          "Name": "ValidChannel",
+          "Position": "",
+          "Type": "String",
+          "Description": {
+            "zh": "确定哪些声道可以作为音量输入，取值范围\"leftChannel/rightChannel/all\"默认是\"all\"。"
+          },
+          "Required": false,
+          "Hidden": false,
+          "Example": "",
+          "SubParameters": null
+        }
+      ]
+    },
+    {
+      "Name": "BlendList",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": []
+    },
+    {
+      "Name": "MixList",
+      "Position": "Query",
+      "Type": "RepeatList",
+      "Description": {},
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": []
+    }
+  ],
+  "Product": null
+}

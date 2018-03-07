@@ -1,0 +1,143 @@
+{
+  "Name": "ModifyLoadBalancerInstanceSpec",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "**请确保在使用该接口前，已充分了解负载均衡产品的收费方式和[价格](https://help.aliyun.com/document_detail/27692.html?spm=5176.doc27696.6.547.FJIqQM)。**\n\n修改负载均衡的实例规格。"
+  },
+  "Parameters": [
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "\u003cp\u003e负载均衡实例的地域。\n\u003cp\u003e您可以从[地域和可用区](~~40654~~)列表或通过调用[DescribeRegions](~~25609~~)接口查询地域ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：`ModifyLoadBalancerInstanceSpec `"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LoadBalancerId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "负载均衡实例ID。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "access_key_id",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tags",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "用户标签。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "LoadBalancerSpec",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "\u003cp\u003e负载均衡实例的规格。取值：\u003cul\u003e\n  \t\u003cli\u003e\u003cp\u003eslb.s1.small\u003c/li\u003e\n\t  \u003cli\u003e\u003cp\u003eslb.s2.small\u003c/li\u003e\n\t  \u003cli\u003e\u003cp\u003eslb.s2.medium\u003c/li\u003e\n\t  \u003cli\u003e\u003cp\u003eslb.s3.small\u003c/li\u003e\n\t  \u003cli\u003e\u003cp\u003eslb.s3.medium\u003c/li\u003e\n\t  \u003cli\u003e\u003cp\u003eslb.s3.large\u003c/li\u003e\n\t  \u003c/ul\u003e\n\t  \u003cp\u003e每个地域支持的规格不同。目前支持性能保障型实例的地域有：华北 1（青岛）、华北 2（北京）、华东 1（杭州）、华东 2（上海）、华南 1（深圳）、华北 3（张家口）、华北 5 （呼和浩特）、亚太东南 1（新加坡）和美国东部 1（弗吉尼亚）。关于每种规格的说明，参见[性能保障型实例](~~27657~~)。\n\t  \u003cp\u003e**注意**： 将共享型实例变更为保障型实例，SLB将有小概率可能性出现短暂的业务中断（10秒-30秒），建议您在业务低谷期进行变配，或者使用GSLB将业务调度至其他的SLB实例后，再进行变配操作。"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AutoPay",
+      "Position": "Query",
+      "Type": "Boolean",
+      "Description": {
+        "zh": "\u003cp\u003e是否自动付费。\u003c/p\u003e\u003cp\u003e取值为\u003ccode\u003etrue\u003c/code\u003e则自动支付订单；取值为\u003ccode\u003efalse\u003c/code\u003e则需要在订单中心中进行支付。\u003c/p\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

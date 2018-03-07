@@ -1,6 +1,0 @@
-name: DescribeInstance
-parameters:
-- name: InstanceId
-  type: String
-  required: true
-  subparameters: []

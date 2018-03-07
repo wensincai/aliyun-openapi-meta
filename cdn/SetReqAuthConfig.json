@@ -1,0 +1,131 @@
+{
+  "Name": "SetReqAuthConfig",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n设置加速域名的访问鉴权配置\n\n* [鉴权功能说明](~~27135~~)\n* [python版本的鉴权代码示例](~~27277~~)\n\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "操作接口名，系统规定参数，取值：SetReqAuthConfig"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "您的加速域名"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AuthType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "鉴权类型，取值: “no_auth”:关闭,”type_a”:A方式，”type_b”:B方式, “type_c”:C方式, \u003cbr\u003e“type_d”:D方式,”type_e”:E方式"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Key1",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "主鉴权key,输入大小写字母，数字，长度1到64位"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Key2",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "副鉴权Key，输入大小写字母，数字，长度1到64位"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "TimeOut",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "有效时间，输入数字"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AuthRemoteDesc",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "模式字符串"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

@@ -1,0 +1,83 @@
+{
+  "Name": "DescribeWebshell",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "获取后门文件记录，包括发现时间、后门文件路径等。"
+  },
+  "Parameters": [
+    {
+      "Name": "SourceIp",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "访问者源IP"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": "资源拥有者Uid，StSToken时该字段必须传"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "GroupId",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "分组id"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Remark",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "服务器ip或者主机名称"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Tag",
+      "Position": "Query",
+      "Type": "Integer",
+      "Description": {
+        "zh": "标签id"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Dealed",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "事件状态\n- n: 待处理\n- y: 已处理"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

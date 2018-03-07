@@ -1,0 +1,119 @@
+{
+  "Name": "UnassociateEipAddress",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n解除一个EIP的绑定状态。\n\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "系统规定参数，取值：UnassociateEipAddress"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "ResourceOwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "RegionId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "区域 ID"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "AllocationId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "EIP实例Id"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InstanceId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "需要进行绑定操作的实例id。\u003cbr\u003e            若InstanceType为EcsInstance，则此处填写ECS实例Id。\u003cbr\u003e            若InstanceType为SlbInstance，则此处填写\u003cfont color=\"#ff5f25\"\u003eVPC类型的私网\u003c/font\u003eSLB 的实例ID。\u003cbr\u003e            若InstanceType为Nat，则此处填写NAT 的实例ID。\u003cbr\u003e            若InstanceType为HaVip，则此处填写HaVipId。 "
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerAccount",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "InstanceType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "绑定的对象类型。\u003cbr\u003e            \u003cfont color=\"#ff5f25\"\u003e取值范围：EcsInstance |  SlbInstance  |  Nat  |  HaVip   。 \u003cbr\u003e            默认值：EcsInstance \u003c/font\u003e\u003cbr\u003e            \u003cb\u003e注意：区分大小写\u003c/b\u003e"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}

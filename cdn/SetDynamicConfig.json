@@ -1,0 +1,131 @@
+{
+  "Name": "SetDynamicConfig",
+  "Protocol": "HTTP|HTTPS",
+  "Method": "POST|GET",
+  "Description": {
+    "zh": "\n\n全站加速,缓存规则的配置。\n\n\n"
+  },
+  "Parameters": [
+    {
+      "Name": "AccessKeyId",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "Action",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "操作接口名，系统规定参数，取值：SetDynamicConfig"
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "OwnerId",
+      "Position": "Query",
+      "Type": "Long",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": true,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "SecurityToken",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": ""
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DomainName",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "您的加速域名"
+      },
+      "Required": true,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DynamicOrigin",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "回源路由scheme，支持http、https和follow。不填时，默认值为http。"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StaticType",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "静态加速文件后缀。样例: .*.(jpg¦htmp¦txt)$"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StaticUri",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "静态加速URI。多个空格隔开。样例:#uri:/yyy/gggsssssssss/cxxxxxcc/a.txt"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "StaticPath",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "静态加速PATH。多个空格隔开。样例:#path:/path/to/no_dynamic_route/.*.one"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    },
+    {
+      "Name": "DynamicCacheControl",
+      "Position": "Query",
+      "Type": "String",
+      "Description": {
+        "zh": "特殊header头设置。根据Header中的Cache-Control字段，选择是否动态加速。多个空格隔开。样例: no-cache no-store private"
+      },
+      "Required": false,
+      "Hidden": false,
+      "Example": "",
+      "SubParameters": null
+    }
+  ],
+  "Product": null
+}
