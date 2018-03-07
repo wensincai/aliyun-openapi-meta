@@ -1,99 +1,70 @@
 {
-  "Name": "DescribeNewProjectEipMonitorData",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "DescribeNewProjectEipMonitorData",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "AllocationId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AllocationId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "StartTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "EndTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Period",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     }
-  ],
-  "Product": null
+  ]
 }

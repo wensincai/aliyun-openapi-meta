@@ -1,59 +1,42 @@
 {
-  "Name": "ShopMarketingList",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "ShopMarketingList",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Sid",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Sid",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Name",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Page",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Page",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Per",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Per",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

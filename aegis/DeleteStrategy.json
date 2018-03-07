@@ -1,39 +1,28 @@
 {
-  "Name": "DeleteStrategy",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST",
-  "Description": {},
-  "Parameters": [
+  "name": "DeleteStrategy",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "parameters": [
     {
-      "Name": "SourceIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SourceIp",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "Id",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Id",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

@@ -1,59 +1,42 @@
 {
-  "Name": "CompareFaces",
-  "Protocol": "HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "CompareFaces",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "TargetImageType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "TargetImageType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SourceImageType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SourceImageType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SourceImageValue",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SourceImageValue",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "TargetImageValue",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "TargetImageValue",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

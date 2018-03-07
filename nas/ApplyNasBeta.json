@@ -1,59 +1,42 @@
 {
-  "Name": "ApplyNasBeta",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "ApplyNasBeta",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "Feature",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Feature",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Email",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Email",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Phone",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Phone",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Company",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Company",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Desc",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Desc",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

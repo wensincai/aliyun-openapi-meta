@@ -1,99 +1,70 @@
 {
-  "Name": "CreatePhoto",
-  "Protocol": "HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "CreatePhoto",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "FileId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "FileId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "SessionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "UploadType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "UploadType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PhotoTitle",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "PhotoTitle",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "StoreName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "StoreName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Remark",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Remark",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "LibraryId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "LibraryId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Staging",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Staging",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ShareExpireTime",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ShareExpireTime",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

@@ -1,49 +1,35 @@
 {
-  "Name": "RemoveVpcAccess",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "RemoveVpcAccess",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "VpcId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "VpcId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "InstanceId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InstanceId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Port",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Port",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

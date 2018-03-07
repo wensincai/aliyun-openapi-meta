@@ -1,119 +1,84 @@
 {
-  "Name": "CreateDrdsInstance",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "CreateDrdsInstance",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": true
     },
     {
-      "Name": "Description",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ZoneId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ZoneId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Type",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Type",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Quantity",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Quantity",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Specification",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Specification",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "PayType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "PayType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "VpcId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "VpcId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "VswitchId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "VswitchId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

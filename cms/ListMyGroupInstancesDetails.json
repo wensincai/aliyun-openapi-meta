@@ -1,59 +1,42 @@
 {
-  "Name": "ListMyGroupInstancesDetails",
-  "Protocol": "HTTPS|HTTP",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "ListMyGroupInstancesDetails",
+  "protocol": "HTTPS|HTTP",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageNumber",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Total",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Total",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "GroupId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "GroupId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Category",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Category",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

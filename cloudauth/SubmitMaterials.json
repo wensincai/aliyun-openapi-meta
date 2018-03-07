@@ -1,60 +1,44 @@
 {
-  "Name": "SubmitMaterials",
-  "Protocol": "HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "SubmitMaterials",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "VerifyToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "VerifyToken",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Material",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "Material",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": true,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "MaterialType",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "MaterialType",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Value",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Value",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         }
       ]
     }
-  ],
-  "Product": null
+  ]
 }

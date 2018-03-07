@@ -1,95 +1,80 @@
 {
-  "Name": "DescribeVpnConnection",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeVpnConnection",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n本接口用于查询VPN连接网关详情\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：DescribeVpnConnection"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "指定查询VPNConnection的地域"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "VpnConnectionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "VpnConnectionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询指定VPN 连接ID"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

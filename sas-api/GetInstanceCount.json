@@ -1,19 +1,14 @@
 {
-  "Name": "GetInstanceCount",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "GetInstanceCount",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     }
-  ],
-  "Product": null
+  ]
 }

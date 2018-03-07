@@ -1,165 +1,137 @@
 {
-  "Name": "ModifyBackupPolicy",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "ModifyBackupPolicy",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n修改备份策略，RDS系统将根据用户设置的系统配置，定期做实例备份。\n  \n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：ModifyBackupPolicy。"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "DBInstanceId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DBInstanceId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "实例名。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "PreferredBackupTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PreferredBackupTime",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "备份时间，格式：HH:mmZ- HH:mm Z。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "PreferredBackupPeriod",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PreferredBackupPeriod",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "备份周期。Monday：周一；Tuesday：周二；Wednesday：周三；Thursday：周四；Friday：周五；Saturday：周六；Sunday：周日。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "BackupRetentionPeriod",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "BackupRetentionPeriod",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "数据备份保留天数（7天到730天），默认为7。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "BackupLog",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "BackupLog",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "默认为Enable，可改为Disabled。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "LogBackupRetentionPeriod",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "LogBackupRetentionPeriod",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "日志备份保留天数（7天到730天，且不大于数据备份保留天数）。当开启日志备份时，可设置日志备份文件的保留天数，目前仅支持MySQL/ PostgreSQL/ PPAS引擎设置该值。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用户主账号。"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     }
-  ],
-  "Product": null
+  ]
 }

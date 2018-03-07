@@ -1,19 +1,14 @@
 {
-  "Name": "CheckNasBeta",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "CheckNasBeta",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "Feature",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Feature",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

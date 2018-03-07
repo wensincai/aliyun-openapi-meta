@@ -1,95 +1,80 @@
 {
-  "Name": "GetCategories",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "GetCategories",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n获取指定的分类信息，及其子分类（即下一级分类）的列表。\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值： GetCategories"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "CateId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "CateId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": "分类ID，默认为根节点分类ID即-1"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageNo",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "PageNo",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": "子分类列表页号，默认1"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": "子分类列表页长，默认10，最大不超过100"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

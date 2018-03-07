@@ -1,90 +1,65 @@
 {
-  "Name": "SaveBatchTaskForCreatingOrderActivate",
-  "Protocol": "HTTPS|HTTP",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "SaveBatchTaskForCreatingOrderActivate",
+  "protocol": "HTTPS|HTTP",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "UserClientIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "UserClientIp",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Lang",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Lang",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OrderActivateParam",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "OrderActivateParam",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": true,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "DomainName",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DomainName",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "SubscriptionDuration",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "SubscriptionDuration",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "RegistrantProfileId",
-          "Position": "",
-          "Type": "Long",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "RegistrantProfileId",
+          "position": "",
+          "type": "Long",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "EnableDomainProxy",
-          "Position": "",
-          "Type": "Boolean",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "EnableDomainProxy",
+          "position": "",
+          "type": "Boolean",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "PermitPremiumActivation",
-          "Position": "",
-          "Type": "Boolean",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "PermitPremiumActivation",
+          "position": "",
+          "type": "Boolean",
+          "required": false,
+          "hidden": false
         }
       ]
     }
-  ],
-  "Product": null
+  ]
 }

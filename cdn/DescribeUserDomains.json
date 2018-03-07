@@ -1,191 +1,160 @@
 {
-  "Name": "DescribeUserDomains",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeUserDomains",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n查询用户名下所有的域名与状态。\n支持域名模糊匹配过滤和域名状态过滤\n域名状态包括：\n\n* 运行中（表示域名服务状态正常，可以）\n* 已停止\n* 配置中\n* 配置失败\n* 审核中\n* 审核失败\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "操作接口名，系统规定参数，取值：DescribeUserDomains"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "SecurityToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SecurityToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "分页大小，默认20，最大50，取值：1~50之前的任意整数"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageNumber",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "取得第几页，取值范围为：1~100000"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "域名模糊匹配过滤"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainStatus",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainStatus",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "域名状态过滤"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainSearchType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainSearchType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "域名查询类型：fuzzy_match 模糊匹配,pre_match 前匹配,suf_match 后匹配,full_match 完全匹配，默认fuzzy_match"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Sources",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Sources",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "根据回源地址查询"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "CdnType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "CdnType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "cdn业务类型，多个用逗号隔开"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "CheckDomainShow",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {
+      "name": "CheckDomainShow",
+      "position": "Query",
+      "type": "Boolean",
+      "description": {
         "zh": "是否显示审核状态域名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ResourceGroupId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "资源组id资源组id"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "FuncId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "FuncId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "funcid,如图片鉴黄功能98"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "FuncFilter",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "FuncFilter",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "过滤，支持config和unconfig。config是开通了funcid的，unconfig是没有开通funcid的。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

@@ -1,119 +1,100 @@
 {
-  "Name": "DescribeLiveStreamsOnlineList",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeLiveStreamsOnlineList",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n查看指定域名下（或者指定域名下某个应用）的所有正在推的流的信息。\n\n\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：DescribeLiveStreamsOnlineList"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "SecurityToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SecurityToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "您的加速域名"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "AppName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AppName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "应用名称"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "每页大小，最大3000，取值：1~3000之前的任意整数，默认2000"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageNum",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageNum",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "取得第几页，默认1 "
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "StreamType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "StreamType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "流类型，取值范围：all、raw、trans，对应查询所有流、原始流、转码流，默认all返回所有流信息 "
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

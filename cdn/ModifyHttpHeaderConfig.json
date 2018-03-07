@@ -1,107 +1,90 @@
 {
-  "Name": "ModifyHttpHeaderConfig",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "ModifyHttpHeaderConfig",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n修改自定义http头\n\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "操作接口名，系统规定参数，取值：ModifyHttpHeaderConfig"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "SecurityToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SecurityToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "您的加速域名"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "HeaderKey",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "HeaderKey",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "要设置HTTP头参数：取值：content-type、cache-control、content-disposition、content-language、expires、access-control-allow-origin、access-control-allow-methods、access-control-max-age"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "HeaderValue",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "HeaderValue",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "要设置的HTTP头参数的取值"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ConfigID",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ConfigID",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "要修改的配置ID"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

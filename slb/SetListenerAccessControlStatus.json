@@ -1,143 +1,120 @@
 {
-  "Name": "SetListenerAccessControlStatus",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "SetListenerAccessControlStatus",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "是否开启指定监听的访问控制。"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e负载均衡实例的地域。\n\u003cp\u003e您可以从[地域和可用区](~~40654~~)列表或通过调用[DescribeRegions](~~25609~~)接口查询地域ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：`SetListenerAccessControlStatus`"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "LoadBalancerId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "LoadBalancerId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "负载均衡实例的ID。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ListenerPort",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "ListenerPort",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "负载均衡实例前端使用的端口。取值\\[1,65535]"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "AccessControlStatus",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessControlStatus",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e是否开启访问控制。取值：open_white_list \n\t  \u003cp\u003e**注意**：如果开启访问控制后，没有设置白名单就无法访问负载均衡服务。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "access_key_id",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "access_key_id",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tags",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tags",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用户标签。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

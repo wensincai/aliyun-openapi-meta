@@ -1,79 +1,56 @@
 {
-  "Name": "SaveSingleTaskForUpdatingContactInfo",
-  "Protocol": "HTTPS|HTTP",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "SaveSingleTaskForUpdatingContactInfo",
+  "protocol": "HTTPS|HTTP",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "UserClientIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "UserClientIp",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Lang",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Lang",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "InstanceId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InstanceId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RegistrantProfileId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegistrantProfileId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ContactType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ContactType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "AddTransferLock",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AddTransferLock",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

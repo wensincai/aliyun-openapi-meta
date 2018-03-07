@@ -1,273 +1,227 @@
 {
-  "Name": "CloneDBInstance",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "CloneDBInstance",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n基于现有实例的备份文件或指定时间点克隆出一个带有当时数据的新实例。实例内的白名单设置、SQL审计设置、阈值报警设置、备份设置、参数设置将和当前实例状态保持一致。实例内的数据信息与备份文件当时信息一致。\n   \n克隆是暂仅支持MySQL引擎。实例内数据库账号信息克隆将遵循如下方式：\n\n* 若在克隆时，主实例为高权限账号状态，则克隆出的实例带有该主实例的高权限账号信息。\n\n* 若克隆时，主实例为普通权限账号状态，则克隆出的实例带有所使用备份文件或时间点当时的账号信息。\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：CloneDBInstance。"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ClientToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用于保证幂等性。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "DBInstanceClass",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DBInstanceClass",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "实例规格，详见\u003ca href=\"~~26312~~\"\u003e规格列表附录\u003c/a\u003e。可选参数，若不传入，则默认规格和主实例一致。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DBInstanceStorage",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "DBInstanceStorage",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "磁盘空间，默认与主实例一致，单位GB。RDS独占物理机规格可传入范围为[3000，3000]；其它规格可传入范围为[5,2000]。每5GB递增。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DBInstanceDescription",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DBInstanceDescription",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "无"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PayType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PayType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "付费类型。Postpaid：后付费实例；Prepaid：预付费实例。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "InstanceNetworkType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "InstanceNetworkType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "网络类型。VPC：创建VPC实例；Classic：创建经典网络类型的实例。默认与主实例网络类型一致。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DBInstanceId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DBInstanceId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "实例名。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "BackupId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "BackupId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "备份集ID，可通过查询备份列表接口\u003ca href=\"~~26273~~\"\u003eDescribeBackups\u003c/a\u003e获取。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RestoreTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "RestoreTime",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用户指定备份保留周期内的任意时间点，如2011-06-11T16:00:00Z。BackupId和RestoreTime两者至少传入一个。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "VPCId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "VPCId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "VPC ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "VSwitchId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "VSwitchId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "VSwitch ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PrivateIpAddress",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PrivateIpAddress",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "您可以指定VSwitchId下的VPCId，如果不输入，系统自动分配。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用户主账号。"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "UsedTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "UsedTime",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "包年包月类型。若付费类型为Prepaid则该入参必须传入。指定购买时长，可按需传入1、2、3等数值。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Period",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Period",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "若付费类型为Prepaid则该入参必须传入。指定预付费实例为包年或者包月类型，Year：包年；Month：包月。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ResourceGroupId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "资源组id"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

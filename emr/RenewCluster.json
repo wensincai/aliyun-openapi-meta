@@ -1,90 +1,65 @@
 {
-  "Name": "RenewCluster",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "RenewCluster",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ClusterId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ClusterId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "RenewEcsDo",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "RenewEcsDo",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": true,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "EcsId",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": true,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "EcsId",
+          "position": "",
+          "type": "String",
+          "required": true,
+          "hidden": false
         },
         {
-          "Name": "EcsPeriod",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": true,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "EcsPeriod",
+          "position": "",
+          "type": "String",
+          "required": true,
+          "hidden": false
         },
         {
-          "Name": "EmrPeriod",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "EmrPeriod",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         }
       ]
     }
-  ],
-  "Product": null
+  ]
 }

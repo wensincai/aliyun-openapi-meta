@@ -1,49 +1,35 @@
 {
-  "Name": "SubTopicFilter",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "SubTopicFilter",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ProductKey",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ProductKey",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "SubCallback",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SubCallback",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Topic",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": []
+      "name": "Topic",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

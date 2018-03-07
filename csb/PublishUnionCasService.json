@@ -1,39 +1,28 @@
 {
-  "Name": "PublishUnionCasService",
-  "Protocol": "HTTPS",
-  "Method": "POST",
-  "Description": {},
-  "Parameters": [
+  "name": "PublishUnionCasService",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "parameters": [
     {
-      "Name": "CasCsbName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "CasCsbName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Host",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Data",
-      "Position": "Body",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Data",
+      "position": "Body",
+      "type": "String",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

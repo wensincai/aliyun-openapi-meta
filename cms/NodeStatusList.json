@@ -1,19 +1,14 @@
 {
-  "Name": "NodeStatusList",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "GET",
-  "Description": {},
-  "Parameters": [
+  "name": "NodeStatusList",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "parameters": [
     {
-      "Name": "InstanceIds",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InstanceIds",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

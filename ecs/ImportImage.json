@@ -1,190 +1,135 @@
 {
-  "Name": "ImportImage",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "ImportImage",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "DiskDeviceMapping",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "DiskDeviceMapping",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "Format",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Format",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "OSSBucket",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "OSSBucket",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "OSSObject",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "OSSObject",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "DiskImSize",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DiskImSize",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "DiskImageSize",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DiskImageSize",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Device",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Device",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         }
       ]
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ImageName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ImageName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Description",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Architecture",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Architecture",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OSType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "OSType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Platform",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Platform",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RoleName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RoleName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

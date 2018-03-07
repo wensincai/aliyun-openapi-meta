@@ -1,167 +1,140 @@
 {
-  "Name": "ModifyCasterComponent",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "ModifyCasterComponent",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "编辑组件属性\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：ModifyCasterComponent"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "Version",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Version",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "SecurityToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SecurityToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "CasterId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "CasterId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "导播间Id"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ComponentId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ComponentId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "组件ID"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ComponentName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ComponentName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "组件名称，默认为组件ID"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ComponentType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ComponentType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "组件的类型，只能是预设值的一种: “text”/“image”等。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Effect",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Effect",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "组件显示的特效，默认为none none-无 animateH-水平滚动 animateV-垂直滚动 FadeIn-渐入 FadeOut-渐出 FlyIn-飞入 FlyOut-飞出"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ComponentLayer",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ComponentLayer",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "设置该组件Layer的尺寸，布局等信息，JSON格式字符串，参数名采用首字母大写、驼峰格式"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "TextLayerContent",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "TextLayerContent",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "如果是text，设置该Layer元素属性，JSON格式字符串，参数名采用首字母大写，驼峰格式"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ImageLayerContent",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ImageLayerContent",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "如果是image，设置该Layer元素属性，JSON格式字符串，参数名采用首字母大写，驼峰格式"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

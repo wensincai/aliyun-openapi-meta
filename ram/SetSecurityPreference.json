@@ -1,89 +1,63 @@
 {
-  "Name": "SetSecurityPreference",
-  "Protocol": "HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "SetSecurityPreference",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "EnableSaveMFATicket",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "EnableSaveMFATicket",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AllowUserToChangePassword",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AllowUserToChangePassword",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AllowUserToManageAccessKeys",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AllowUserToManageAccessKeys",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AllowUserToManagePublicKeys",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AllowUserToManagePublicKeys",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AllowUserToManageMFADevices",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AllowUserToManageMFADevices",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "LoginSessionDuration",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "LoginSessionDuration",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "LoginNetworkMasks",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "LoginNetworkMasks",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

@@ -1,19 +1,14 @@
 {
-  "Name": "AccessKeyGet",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "GET",
-  "Description": {},
-  "Parameters": [
+  "name": "AccessKeyGet",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "parameters": [
     {
-      "Name": "UserId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "UserId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

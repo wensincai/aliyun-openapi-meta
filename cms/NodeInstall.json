@@ -1,39 +1,28 @@
 {
-  "Name": "NodeInstall",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "GET",
-  "Description": {},
-  "Parameters": [
+  "name": "NodeInstall",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "parameters": [
     {
-      "Name": "UserId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "UserId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "InstanceId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InstanceId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Force",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Force",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

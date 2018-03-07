@@ -1,19 +1,14 @@
 {
-  "Name": "DeleteMyGroups",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "DeleteMyGroups",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "GroupId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "GroupId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

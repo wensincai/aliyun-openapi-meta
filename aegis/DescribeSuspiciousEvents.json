@@ -1,119 +1,100 @@
 {
-  "Name": "DescribeSuspiciousEvents",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeSuspiciousEvents",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "获取主机异常数据，企业版可以看到异常事件的详情及修复建议。"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "SourceIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SourceIp",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "访问者源IP"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": "资源拥有者Uid，StSToken时该字段必须传"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "分页查询时设置的每页行数。默认值: 20。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "CurrentPage",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "CurrentPage",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "实例状态列表的页码。起始值：1 默认值：1"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Uuid",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Uuid",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "机器的唯一标识，获取单台机器数据的时候需要"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Dealed",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Dealed",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "事件状态\n- n: 待处理\n- y: 已处理"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Remark",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Remark",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "服务器ip或者名称"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Level",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Level",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "风险等级。\n- serious: 严重\n- high: 高危\n- medium: 中危\n- low: 低危"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "EventType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "EventType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "事件类型"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

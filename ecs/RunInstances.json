@@ -1,512 +1,363 @@
 {
-  "Name": "RunInstances",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "RunInstances",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ImageId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "InstanceType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InstanceType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "SecurityGroupId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SecurityGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "VSwitchId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "VSwitchId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "InstanceName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InstanceName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Description",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "InternetMaxBandwidthIn",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InternetMaxBandwidthIn",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "InternetMaxBandwidthOut",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InternetMaxBandwidthOut",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "HostName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "HostName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Password",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Password",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ZoneId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ZoneId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "InternetChargeType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "InternetChargeType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SystemDisk.Size",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SystemDisk.Size",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SystemDisk.Category",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SystemDisk.Category",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SystemDisk.DiskName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SystemDisk.DiskName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SystemDisk.Description",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SystemDisk.Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DataDisk",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "DataDisk",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "Size",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Size",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "SnapshotId",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "SnapshotId",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Category",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Category",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Encrypted",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Encrypted",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "DiskName",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DiskName",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Description",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Description",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "DeleteWithInstance",
-          "Position": "",
-          "Type": "Boolean",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DeleteWithInstance",
+          "position": "",
+          "type": "Boolean",
+          "required": false,
+          "hidden": false
         }
       ]
     },
     {
-      "Name": "IoOptimized",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "IoOptimized",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "NetworkInterface",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "NetworkInterface",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "PrimaryIpAddress",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "PrimaryIpAddress",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "VSwitchId",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "VSwitchId",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "SecurityGroupId",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "SecurityGroupId",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "NetworkInterfaceName",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "NetworkInterfaceName",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Description",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Description",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         }
       ]
     },
     {
-      "Name": "UserData",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "UserData",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "KeyPairName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "KeyPairName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RamRoleName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RamRoleName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Amount",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Amount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AutoReleaseTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AutoReleaseTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SpotStrategy",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SpotStrategy",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SpotPriceLimit",
-      "Position": "Query",
-      "Type": "Float",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SpotPriceLimit",
+      "position": "Query",
+      "type": "Float",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SecurityEnhancementStrategy",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SecurityEnhancementStrategy",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ClientToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "Tag",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "Key",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Key",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Value",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Value",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         }
       ]
     },
     {
-      "Name": "DryRun",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "DryRun",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

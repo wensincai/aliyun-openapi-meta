@@ -1,107 +1,90 @@
 {
-  "Name": "DescribeDomainBpsDataByTimeStamp",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeDomainBpsDataByTimeStamp",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n获取加速域名的在某个时刻不同Locate和Isp上的带宽数据，单位 bit/second\n\n\n* 不支持批量域名查询\n* 时间精确到5分钟粒度\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "操作接口名，系统规定参数\u003cbr\u003e取值：DescribeDomainBpsDataByTimeStamp"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "SecurityToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SecurityToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "要查询的域名，不能为空；"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "LocationNames",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "LocationNames",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "需要查询目标区域列表，用“,”隔开，不能为空； Location名通过DescribeCdnRegionAndIsp接口获得;"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "IspNames",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "IspNames",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "需要查询目标Isp列表，用“,”隔开，不能为空； ISP名通过DescribeCdnRegionAndIsp接口获得;"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "TimePoint",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "TimePoint",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询目标时间点，日期格式按照ISO8601表示法，并使用UTC时间。\u003cbr\u003e格式为：YYYY-MM-DDThh:mmZ\u003cbr\u003e 最小数据粒度为5分钟\u003cbr\u003e"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

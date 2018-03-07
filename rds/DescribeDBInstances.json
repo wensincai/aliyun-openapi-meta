@@ -1,393 +1,327 @@
 {
-  "Name": "DescribeDBInstances",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeDBInstances",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n查看实例列表或被RAM授权的实例列表。\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：DescribeDBInstances。"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ClientToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用于保证幂等性。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "proxyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "proxyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "无"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Engine",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Engine",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "数据库类型，取值范围MySQL/SQLServer/PostgreSQL/PPAS，不填则返回所有。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DBInstanceStatus",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DBInstanceStatus",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "详见附录"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SearchKey",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SearchKey",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "无"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DBInstanceId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DBInstanceId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\t实例名。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DBInstanceType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DBInstanceType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "实例类型，取值范围如下：\u003cul\u003e\u003cli\u003ePrimary:主实例；\u003c/li\u003e\u003cli\u003eReadonly：只读实例；\u003c/li\u003e\u003cli\u003eGuard：灾备实例；\u003c/li\u003e\u003cli\u003eTemp：临时实例；\u003c/li\u003e\u003cli\u003e不填，默认返回所有。\u003c/li\u003e\u003c/ul\u003e"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "实例的region，通过函数DescribeRegions查看。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "每页记录数，取值：30/50/100，默认值：30。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageNumber",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "页码，大于0且不超过Integer的最大值，默认值：1。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "InstanceNetworkType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "InstanceNetworkType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "取值范围如下：\u003cul\u003e\u003cli\u003eVPC：返回VPC实例；\u003c/li\u003e\u003cli\u003eClassic：返回Classic实例；\u003c/li\u003e\u003cli\u003e不填，默认返回所有。\u003c/li\u003e\u003c/ul\u003e"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "VpcId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "VpcId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "VPC ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "VSwitchId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "VSwitchId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "VSwitch ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ConnectionMode",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ConnectionMode",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cul\u003e\u003cli\u003ePerformance为标准访问模式；\u003c/li\u003e\u003cli\u003eSafty为高安全访问模式；\u003c/li\u003e\u003cli\u003e不填，默认返回所有。\u003c/li\u003e\u003c/ul\u003e"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.1.key",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.1.key",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第1组key。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.2.key",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.2.key",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第2组key。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.3.key",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.3.key",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第3组key。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.4.key",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.4.key",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第4组key。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.5.key",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.5.key",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第5组key。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.1.value",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.1.value",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第1组value。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.2.value",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.2.value",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入2组，当前第5组value。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.3.value",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.3.value",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第3组value。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.4.value",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.4.value",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第4组value。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag.5.value",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag.5.value",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第5组value。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tags",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tags",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。\u003cbr\u003e格式示例：{“key1”:”value1”}。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用户主账号。"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     }
-  ],
-  "Product": null
+  ]
 }

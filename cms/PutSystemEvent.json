@@ -1,19 +1,14 @@
 {
-  "Name": "PutSystemEvent",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "GET",
-  "Description": {},
-  "Parameters": [
+  "name": "PutSystemEvent",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "parameters": [
     {
-      "Name": "EventInfo",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "EventInfo",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

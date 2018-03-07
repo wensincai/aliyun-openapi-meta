@@ -1,39 +1,28 @@
 {
-  "Name": "ToggleFeatures",
-  "Protocol": "HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "ToggleFeatures",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "StoreName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "StoreName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "EnabledFeatures",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": []
+      "name": "EnabledFeatures",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DisabledFeatures",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": []
+      "name": "DisabledFeatures",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

@@ -1,155 +1,130 @@
 {
-  "Name": "DescribeCasters",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeCasters",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "查询导播台列表，支持高级查询、分页查询"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：DescribeCasters"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "Version",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Version",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "SecurityToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SecurityToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "CasterId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "CasterId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "导播台Id"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "CasterName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "CasterName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "导播台名称"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "StartTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "起始时间，UTC 格式，例如：2016-06-29T19:00:00Z"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "EndTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "结束时间"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageNum",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageNum",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "页码"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "每页条数"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Status",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "Status",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "状态 0-空闲 1-导播中"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

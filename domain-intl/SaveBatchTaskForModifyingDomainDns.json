@@ -1,59 +1,42 @@
 {
-  "Name": "SaveBatchTaskForModifyingDomainDns",
-  "Protocol": "HTTPS|HTTP",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "SaveBatchTaskForModifyingDomainDns",
+  "protocol": "HTTPS|HTTP",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "UserClientIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "UserClientIp",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Lang",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Lang",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": []
+      "name": "DomainName",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "AliyunDns",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AliyunDns",
+      "position": "Query",
+      "type": "Boolean",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "DomainNameServer",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": []
+      "name": "DomainNameServer",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

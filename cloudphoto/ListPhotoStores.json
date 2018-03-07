@@ -1,8 +1,6 @@
 {
-  "Name": "ListPhotoStores",
-  "Protocol": "HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [],
-  "Product": null
+  "name": "ListPhotoStores",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "parameters": []
 }

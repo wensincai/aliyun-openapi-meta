@@ -1,8 +1,6 @@
 {
-  "Name": "IsBuyWaf",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [],
-  "Product": null
+  "name": "IsBuyWaf",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": []
 }

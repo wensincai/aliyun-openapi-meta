@@ -1,167 +1,140 @@
 {
-  "Name": "ModifyLoadBalancerPayType",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "ModifyLoadBalancerPayType",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "**请确保在使用该接口前，已充分了解负载均衡产品的收费方式和[价格](https://help.aliyun.com/document_detail/27692.html?spm=5176.doc27696.6.547.FJIqQM)。**\n\n将后付费实例转换为预付费实例。\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：`ModifyLoadBalancerPayType`"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e负载均衡实例的地域。\n\u003cp\u003e您可以从[地域和可用区](~~40654~~)列表或通过调用[DescribeRegions](~~25609~~)接口查询地域ID。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "access_key_id",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "access_key_id",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tags",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tags",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用户标签。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "LoadBalancerId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "LoadBalancerId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "负载均衡实例的ID。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "PayType",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PayType",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e负载均衡实例的计费方式。\u003cp\u003e取值： PrePay"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PricingCycle",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PricingCycle",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e计费周期。\u003cp\u003e取值：year | month \u003cp\u003e"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Duration",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "Duration",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "\u003cp\u003e计费时长。\u003cp\u003e如果PricingCycle为`month`，取值`1-9`\u003cp\u003e如果PricingCycle为`year`，取值`1-3`"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AutoPay",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {
+      "name": "AutoPay",
+      "position": "Query",
+      "type": "Boolean",
+      "description": {
         "zh": "\u003cp\u003e是否自动付费。\u003cp\u003e取值：true | false\n\t  \u003cul\u003e\n\t  \u003cli\u003e`true`：自动续费。\u003c/li\u003e\n\t  \u003cli\u003e`false`（默认值）： 不自动续费。\u003c/li\u003e\n\t  \u003c/ul\u003e"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

@@ -1,80 +1,58 @@
 {
-  "Name": "CreateOrder",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "CreateOrder",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "SubOrderParam",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "SubOrderParam",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": true,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "SaleID",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "SaleID",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "RelatedName",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "RelatedName",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Action",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": true,
-          "Example": "",
-          "SubParameters": null
+          "name": "Action",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": true
         },
         {
-          "Name": "Period",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Period",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "DomainTemplateID",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DomainTemplateID",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         }
       ]
     }
-  ],
-  "Product": null
+  ]
 }

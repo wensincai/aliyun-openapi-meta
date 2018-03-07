@@ -1,39 +1,28 @@
 {
-  "Name": "FindProjectsNameList",
-  "Protocol": "HTTPS",
-  "Method": "GET",
-  "Description": {},
-  "Parameters": [
+  "name": "FindProjectsNameList",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "parameters": [
     {
-      "Name": "CsbId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "CsbId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "OperationFlag",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "OperationFlag",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Host",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

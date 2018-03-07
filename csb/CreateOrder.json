@@ -1,39 +1,28 @@
 {
-  "Name": "CreateOrder",
-  "Protocol": "HTTPS",
-  "Method": "POST",
-  "Description": {},
-  "Parameters": [
+  "name": "CreateOrder",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "parameters": [
     {
-      "Name": "CsbId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "CsbId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Data",
-      "Position": "Body",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "Data",
+      "position": "Body",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Host",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

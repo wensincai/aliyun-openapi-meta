@@ -1,8 +1,6 @@
 {
-  "Name": "GetCallerIdentity",
-  "Protocol": "HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [],
-  "Product": null
+  "name": "GetCallerIdentity",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "parameters": []
 }

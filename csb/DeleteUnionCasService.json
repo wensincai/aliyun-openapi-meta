@@ -1,59 +1,42 @@
 {
-  "Name": "DeleteUnionCasService",
-  "Protocol": "HTTPS",
-  "Method": "POST",
-  "Description": {},
-  "Parameters": [
+  "name": "DeleteUnionCasService",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "parameters": [
     {
-      "Name": "SrcUserId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "SrcUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "CasServiceId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "CasServiceId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "CasCsbName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "CasCsbName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Host",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "LeafOnly",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "LeafOnly",
+      "position": "Query",
+      "type": "Boolean",
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

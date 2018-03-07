@@ -1,220 +1,156 @@
 {
-  "Name": "ResizeClusterV2",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {},
-  "Parameters": [
+  "name": "ResizeClusterV2",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ClusterId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ClusterId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "HostGroup",
-      "Position": "Query",
-      "Type": "RepeatList",
-      "Description": {},
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": [
+      "name": "HostGroup",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": true,
+      "hidden": false,
+      "sub_parameters": [
         {
-          "Name": "ClusterId",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "ClusterId",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "HostGroupId",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "HostGroupId",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "HostGroupName",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "HostGroupName",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "HostGroupType",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": true,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "HostGroupType",
+          "position": "",
+          "type": "String",
+          "required": true,
+          "hidden": false
         },
         {
-          "Name": "Comment",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Comment",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "CreateType",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "CreateType",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "InstanceType",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": true,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "InstanceType",
+          "position": "",
+          "type": "String",
+          "required": true,
+          "hidden": false
         },
         {
-          "Name": "NodeCount",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": true,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "NodeCount",
+          "position": "",
+          "type": "Integer",
+          "required": true,
+          "hidden": false
         },
         {
-          "Name": "DiskType",
-          "Position": "",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DiskType",
+          "position": "",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "DiskCapacity",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DiskCapacity",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "DiskCount",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "DiskCount",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "SysDiskCapacity",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "SysDiskCapacity",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "ChargeType",
-          "Position": "Query",
-          "Type": "String",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "ChargeType",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "Period",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "Period",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "AutoRenew",
-          "Position": "",
-          "Type": "Boolean",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "AutoRenew",
+          "position": "",
+          "type": "Boolean",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "VswitchId",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "VswitchId",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         },
         {
-          "Name": "SystemDiskType",
-          "Position": "",
-          "Type": "Integer",
-          "Description": {},
-          "Required": false,
-          "Hidden": false,
-          "Example": "",
-          "SubParameters": null
+          "name": "SystemDiskType",
+          "position": "",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         }
       ]
     }
-  ],
-  "Product": null
+  ]
 }

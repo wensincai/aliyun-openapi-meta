@@ -1,119 +1,100 @@
 {
-  "Name": "DescribeEipMonitorData",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeEipMonitorData",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n查看弹性公网IP的监控信息\n\n- 一次最大只容许返回200条监控数据，如果指定的（EndTime – StartTime）/ Peroid \u003e 200，则返回错误。\n- 如果 EndTime - StartTime \u003c period，则只返回 StartTime 一个点的数据。\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：DescribeEipMonitorData"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "AllocationId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AllocationId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "Eip 的申请 Id。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "StartTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "获取数据的起始时间点：按照 \u003ca href=\"~~36567~~\"\u003eISO8601\u003c/a\u003e 标准表示，并需要使用 UTC 时间。格式为：YYYY-MM-DDThh:mm:ssZ。\u003cbr\u003e                如果秒不是 00，则自动取为下一分钟开始时"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "EndTime",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "获取数据的结束时间点：按照 \u003ca href=\"~~36567~~\"\u003eISO8601\u003c/a\u003e 标准表示，并需要使用 UTC 时间。格式为：YYYY-MM-DDThh:mm:ssZ。\u003cbr\u003e                如果秒不是 00，则自动取为下一分钟开始时"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Period",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "获取监控数据的精度，默认 60 秒，可取值范围 60 | 300 | 900 | 3600。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     }
-  ],
-  "Product": null
+  ]
 }

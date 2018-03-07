@@ -1,95 +1,80 @@
 {
-  "Name": "GetMezzanineInfo",
-  "Protocol": "HTTPS|HTTP",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "GetMezzanineInfo",
+  "protocol": "HTTPS|HTTP",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n\n获取视频源文件地址。\n\n注：当一路流转码完成后才可以获取到完整的源文件信息\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值： GetMezzanineInfo"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "VideoId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "VideoId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "视频ID"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "AuthTimeout",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "AuthTimeout",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": "FileURL签名过期时间，默认为1800s，支持设置最小值为1s"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PreviewSegment",
-      "Position": "Query",
-      "Type": "Boolean",
-      "Description": {
+      "name": "PreviewSegment",
+      "position": "Query",
+      "type": "Boolean",
+      "description": {
         "zh": "分片预览。预览m3u8的分片，会为每个分片文件生成带时效的地址，耗时较大，请谨慎使用。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

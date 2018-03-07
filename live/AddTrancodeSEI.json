@@ -1,107 +1,90 @@
 {
-  "Name": "AddTrancodeSEI",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "AddTrancodeSEI",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "添加转码SEI信息"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "您的加速域名\n"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "AppName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AppName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "直播流所属应用名称\n"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "StreamName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "StreamName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "流名\n"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Text",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Text",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "SEI文本, 长度限制： 4000 字节\n"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Pattern",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Pattern",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "追加到每一个关键帧 / 每一帧，取值：keyframe / frame\n"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Repeat",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "Repeat",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "重复次数, -1 代表无限\n"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Delay",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "Delay",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "接收到命令后的 delay 时间, 单位： 毫秒\n"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

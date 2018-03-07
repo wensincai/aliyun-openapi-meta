@@ -1,83 +1,70 @@
 {
-  "Name": "DescribeWebshell",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeWebshell",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "获取后门文件记录，包括发现时间、后门文件路径等。"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "SourceIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SourceIp",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "访问者源IP"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": "资源拥有者Uid，StSToken时该字段必须传"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "GroupId",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "分组id"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Remark",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Remark",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "服务器ip或者主机名称"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "Tag",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "标签id"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Dealed",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Dealed",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "事件状态\n- n: 待处理\n- y: 已处理"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

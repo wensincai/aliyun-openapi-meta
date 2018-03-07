@@ -1,95 +1,80 @@
 {
-  "Name": "DescribeLoginLogs",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "DescribeLoginLogs",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "获取异常登录日志,包括异地登录、暴力破解成功登录、非常用ip登录、非常用用户名登录、非常用时间登录的日志"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "SourceIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SourceIp",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "接口请求来源ip"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PageSize",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "分页大小"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "CurrentPage",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "CurrentPage",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "当前页"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Statuses",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Statuses",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "状态列表 0-未处理 1-已处理"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Types",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Types",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "事件类型列表（login_common_location - 异地登录,crack_success -  暴力破解成功,login_common_ip - 非常用ip登录,login_common_account - 非常用用户名登录,login_common_time - 非常用时间登录）"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tag",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tag",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "标签的id"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Remark",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Remark",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "服务器ip或者主机名称"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

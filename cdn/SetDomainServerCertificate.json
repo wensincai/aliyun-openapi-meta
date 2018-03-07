@@ -1,131 +1,110 @@
 {
-  "Name": "SetDomainServerCertificate",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "SetDomainServerCertificate",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "该接口用于设置某域名下证书功能是否启用及 修改证书信息"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "AccessKeyId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AccessKeyId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "操作接口名，系统规定参数。取值：SetDomainServerCertificate"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "SecurityToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "SecurityToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "DomainName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "指定证书所属加速域名 需属于https加速类型"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "CertName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "CertName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "证书名称"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ServerCertificateStatus",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ServerCertificateStatus",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "HTTPS证书是否启用，取值on：启用；off：不启用，默认取值：off：不启用"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "ServerCertificate",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ServerCertificate",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "安全证书内容，不启用证书则无需输入，配置证书请输入证书内容。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PrivateKey",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PrivateKey",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "私钥内容，不启用证书则无需输入，配置证书请输入私钥内容。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Region",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Region",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "地区"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

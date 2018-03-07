@@ -1,213 +1,177 @@
 {
-  "Name": "CreateVirtualBorderRouter",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "CreateVirtualBorderRouter",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "\n新建虚拟边界路由器（VBR）\n* 只能由物理专线所有者给自己或他人创建VBR\n* 每个物理专线默认能够创建2个VBR\n  * 为自己创建的VBR直接进入Enabled状态\n  * 支持为其他用户创建VBR，创建后进入Unconfirmed状态\n* VlanId只允许物理专线owner指定/修改\n  * 同一物理专线下的同一VlanId不允许两个VBR同时再用。\n  * 进入Terminated状态的VBR会在7天内自动保留其VlanId，不允许其他VBR使用。7天后可以被其他VBR使用。\n*\t为其他用户创建的VBR，不能配置LocalGatewayIp、PeerGatewayIp和PeeringSubnetMask\n*\tLocalGatewayIp、PeerGatewayIp、PeeringSubnetMask要做校验：PeeringSubnetMask支持[24-30]位，PeeringSubnetMask支持点分十进制表示法[255.255.255.0-255.255.255.252]，LocalGatewayIp和PeerGatewayIp必须在与PeeringSubnetMask定义的同一子网内。\n例如：\n  -\tLocalGatewayIp: 192.168.50.17\n  -\tPeerGatewayIp: 192.168.50.18\n  -\tPeeringSubnetMask: 255.255.255.248\n\n"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "所在地域"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "PhysicalConnectionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PhysicalConnectionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "物理专线Id"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "VbrOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "VbrOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": "VBR owner的User ID，缺省为当前客户（物理专线owner）"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "VlanId",
-      "Position": "Query",
-      "Type": "Integer",
-      "Description": {
+      "name": "VlanId",
+      "position": "Query",
+      "type": "Integer",
+      "description": {
         "zh": "虚拟边界路由器（VBR）专线侧接口的802.1Q VLAN号设定范围 [1-2999]，该属性只允许物理专线owner指定/修改。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "CircuitCode",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "CircuitCode",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "VBR专线侧接口对应运营商的电路编码。该属性只允许物理专线owner指定/修改。      "
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "LocalGatewayIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "LocalGatewayIp",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "虚拟边界路由器（VBR）专线侧接口的IP地址。该属性只允许VBR owner指定/修改。为专线所有者创建VBR时必填，为其他账号创建VBR时不可填。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PeerGatewayIp",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PeerGatewayIp",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "VBR专线侧接口对端的IP地址。该属性只允许VBR owner指定/修改。为专线所有者创建VBR时必填，为其他账号创建VBR时不可填。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PeeringSubnetMask",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PeeringSubnetMask",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "VBR专线侧接口本端与对端互联的子网掩码。该属性只允许VBR owner指定/修改。为专线所有者创建VBR时必填，为其他账号创建VBR时不可填。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Description",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "虚拟边界路由器（VBR）的描述信息,[2,256]个字符，不能以\u003ccode\u003ehttp://\u003c/code\u003e和\u003ccode\u003ehttps://\u003c/code\u003e开头。该属性只允许VBR owner指定/修改。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Name",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "虚拟边界路由器（VBR）的名称,[2,128]个字符。不能以\u003ccode\u003ehttp://\u003c/code\u003e和\u003ccode\u003ehttps://\u003c/code\u003e开头。该属性只允许VBR owner指定/修改。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ClientToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大不值过64个ASCII字符。      "
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：CreateVirtualBorderRouter"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ClientToken",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {},
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     }
-  ],
-  "Product": null
+  ]
 }

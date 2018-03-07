@@ -1,179 +1,150 @@
 {
-  "Name": "UploadServerCertificate",
-  "Protocol": "HTTP|HTTPS",
-  "Method": "POST|GET",
-  "Description": {
+  "name": "UploadServerCertificate",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "descriptions": {
     "zh": "上传服务器证书。\n\n一次只能上传一份服务器证书和对应的PrivateKey。该接口保证事务性，即上传的证书和PrivateKey要么都上传成功，要么都不成功。上传成功后，返回该用户的所有服务器证书列表的Fingerprint。"
   },
-  "Parameters": [
+  "parameters": [
     {
-      "Name": "Action",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "系统规定参数，取值：UploadServerCertificate。"
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "OwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "OwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceOwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "ResourceOwnerId",
-      "Position": "Query",
-      "Type": "Long",
-      "Description": {
+      "name": "ResourceOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "RegionId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e负载均衡实例的地域。\n\u003cp\u003e您可以从[地域和可用区](~~40654~~)列表或通过调用[DescribeRegions](~~25609~~)接口查询地域ID。"
       },
-      "Required": true,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": true,
+      "hidden": false
     },
     {
-      "Name": "AliCloudCertificateId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AliCloudCertificateId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e阿里云的云上证书ID。\u003cp\u003e如果使用阿里云的云上证书，该参数必选。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "AliCloudCertificateName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "AliCloudCertificateName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "阿里云的云上证书名称。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ServerCertificate",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ServerCertificate",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "p\u003e要上传的安全证书。\u003cp\u003e如果不使用阿里云的云上证书，该参数必填。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "PrivateKey",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "PrivateKey",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "需要上传的私钥。  "
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ServerCertificateName",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ServerCertificateName",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "\u003cp\u003e要上传的安全证书的名称。 \u003cp\u003e如果不使用阿里云的云上证书，该参数必填。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "OwnerAccount",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "OwnerAccount",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": ""
       },
-      "Required": false,
-      "Hidden": true,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": true
     },
     {
-      "Name": "access_key_id",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "access_key_id",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "Tags",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "Tags",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "用户标签。"
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     },
     {
-      "Name": "ResourceGroupId",
-      "Position": "Query",
-      "Type": "String",
-      "Description": {
+      "name": "ResourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "description": {
         "zh": "企业资源组ID。  "
       },
-      "Required": false,
-      "Hidden": false,
-      "Example": "",
-      "SubParameters": null
+      "required": false,
+      "hidden": false
     }
-  ],
-  "Product": null
+  ]
 }

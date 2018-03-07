@@ -1,22 +1,22 @@
 {
-  "Products": [
+  "products": [
     {
-      "Code": "BatchCompute",
-      "Version": "2015-11-11",
-      "Catalog1": {
+      "code": "BatchCompute",
+      "version": "2015-11-11",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Elastic Computing",
         "zh": "弹性计算"
       },
-      "Name": {
+      "name": {
         "en": "BatchCompute",
         "zh": "批量计算"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {
+      "location_service_code": "",
+      "regional_endpoints": {
         "ap-southeast-1": "batchcompute.ap-southeast-1.aliyuncs.com",
         "cn-beijing": "batchcompute.cn-beijing.aliyuncs.com",
         "cn-hangzhou": "batchcompute.cn-hangzhou.aliyuncs.com",
@@ -27,140 +27,140 @@
         "cn-zhangjiakou": "batchcompute.cn-zhangjiakou.aliyuncs.com",
         "us-west-1": "batchcompute.us-west-1.aliyuncs.com"
       },
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "batchcompute.[RegionId].aliyuncs.com",
-      "ApiStyle": "restful",
-      "ApiNames": []
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "batchcompute.[RegionId].aliyuncs.com",
+      "api_style": "restful",
+      "apis": []
     },
     {
-      "Code": "Cds",
-      "Version": "2017-09-25",
-      "Catalog1": {
+      "code": "Cds",
+      "version": "2017-09-25",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "CodePipeline",
         "zh": "CodePipeline"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "cds.cn-beijing.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "restful",
-      "ApiNames": []
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "cds.cn-beijing.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "restful",
+      "apis": []
     },
     {
-      "Code": "CS",
-      "Version": "2015-12-15",
-      "Catalog1": {
+      "code": "cr",
+      "version": "2016-06-07",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Elastic Computing",
         "zh": "弹性计算"
       },
-      "Name": {
-        "en": "Container Service",
-        "zh": "容器服务"
-      },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "cs.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "restful",
-      "ApiNames": []
-    },
-    {
-      "Code": "cr",
-      "Version": "2016-06-07",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
-        "en": "Elastic Computing",
-        "zh": "弹性计算"
-      },
-      "Name": {
+      "name": {
         "en": "Container Registry",
         "zh": "容器镜像服务"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "cr.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "restful",
-      "ApiNames": []
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "cr.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "restful",
+      "apis": []
     },
     {
-      "Code": "Chatbot",
-      "Version": "2017-10-11",
-      "Catalog1": {
+      "code": "CS",
+      "version": "2015-12-15",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
+        "en": "Elastic Computing",
+        "zh": "弹性计算"
+      },
+      "name": {
+        "en": "Container Service",
+        "zh": "容器服务"
+      },
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "cs.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "restful",
+      "apis": []
+    },
+    {
+      "code": "Chatbot",
+      "version": "2017-10-11",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "BeeBot",
         "zh": "云小蜜"
       },
-      "LocationServiceCode": "beebot",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "chatbot.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "beebot",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "chatbot.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "Chat"
       ]
     },
     {
-      "Code": "Green",
-      "Version": "2017-01-12",
-      "Catalog1": {
+      "code": "Green",
+      "version": "2017-01-12",
+      "catalog1": {
         "en": "Security",
         "zh": "安全（云盾）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Security",
         "zh": "云安全防御"
       },
-      "Name": {
+      "name": {
         "en": "Alibaba Content Security Service",
         "zh": "内容安全"
       },
-      "LocationServiceCode": "green",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "green.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "restful",
-      "ApiNames": []
+      "location_service_code": "green",
+      "regional_endpoints": {},
+      "global_endpoint": "green.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "restful",
+      "apis": []
     },
     {
-      "Code": "ARMS",
-      "Version": "2016-11-25",
-      "Catalog1": {
+      "code": "ARMS",
+      "version": "2016-11-25",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Middleware",
         "zh": "互联网中间件"
       },
-      "Name": {
+      "name": {
         "en": "Application Real-Time Monitoring Service",
         "zh": "业务实时监控服务 ARMS"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {
+      "location_service_code": "",
+      "regional_endpoints": {
         "ap-southeast-1": "arms.ap-southeast-1.aliyuncs.com",
         "cn-beijing": "arms.cn-beijing.aliyuncs.com",
         "cn-hangzhou": "arms.cn-hangzhou.aliyuncs.com",
@@ -169,35 +169,35 @@
         "cn-shanghai": "arms.cn-shanghai.aliyuncs.com",
         "cn-shenzhen": "arms.cn-shenzhen.aliyuncs.com"
       },
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "arms.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "arms.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "WhereInDimQuery",
         "ARMSQueryDataSet"
       ]
     },
     {
-      "Code": "Cloudauth",
-      "Version": "2017-10-10",
-      "Catalog1": {
+      "code": "Cloudauth",
+      "version": "2017-10-10",
+      "catalog1": {
         "en": "Security",
         "zh": "安全（云盾）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Security",
         "zh": "云安全防御"
       },
-      "Name": {
+      "name": {
         "en": "ID Verification",
         "zh": "实人认证"
       },
-      "LocationServiceCode": "cloudauth",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "cloudauth.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "cloudauth",
+      "regional_endpoints": {},
+      "global_endpoint": "cloudauth.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "SubmitMaterials",
         "GetVerifyToken",
         "GetStatus",
@@ -206,26 +206,26 @@
       ]
     },
     {
-      "Code": "Httpdns",
-      "Version": "2016-02-01",
-      "Catalog1": {
+      "code": "Httpdns",
+      "version": "2016-02-01",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Mobile Services**",
         "zh": "移动服务"
       },
-      "Name": {
+      "name": {
         "en": "HttpDNS",
         "zh": "HTTPDNS"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "httpdns-api.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "httpdns-api.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "GetResolveCountSummary",
         "ListDomains",
         "GetResolveStatistics",
@@ -236,26 +236,26 @@
       ]
     },
     {
-      "Code": "HPC",
-      "Version": "2016-12-13",
-      "Catalog1": {
+      "code": "HPC",
+      "version": "2016-12-13",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Elastic Computing",
         "zh": "弹性计算"
       },
-      "Name": {
+      "name": {
         "en": "Alibaba Cloud HPC",
         "zh": "高性能计算 HPC"
       },
-      "LocationServiceCode": "hpc",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "hpc.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "hpc",
+      "regional_endpoints": {},
+      "global_endpoint": "hpc.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "StopJumpserver",
         "StartJumpserver",
         "RevokeSecurityGroup",
@@ -270,26 +270,26 @@
       ]
     },
     {
-      "Code": "jaq",
-      "Version": "2016-11-23",
-      "Catalog1": {
+      "code": "jaq",
+      "version": "2016-11-23",
+      "catalog1": {
         "en": "Security",
         "zh": "安全（云盾）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Security",
         "zh": "云安全防御"
       },
-      "Name": {
+      "name": {
         "en": "Mobile Security",
         "zh": "移动安全"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "jaq.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "jaq.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "MessagePrevention",
         "SpamRegisterPrevention",
         "OtherPrevention",
@@ -302,26 +302,26 @@
       ]
     },
     {
-      "Code": "Domain",
-      "Version": "2016-05-11",
-      "Catalog1": {
+      "code": "Domain",
+      "version": "2016-05-11",
+      "catalog1": {
         "en": "Domains and Websites",
         "zh": "域名与网站（万网）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Domains",
         "zh": "域名"
       },
-      "Name": {
+      "name": {
         "en": "domain",
         "zh": "域名"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "domain.aliyuncs.com",
-      "RegionalEndpointPattern": "domain.aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "domain.aliyuncs.com",
+      "regional_endpoint_patterns": "domain.aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "SaveTaskForUpdatingContactByTempateId",
         "SaveTaskForUpdatingContactByTemplateId",
         "SaveTaskForSubmittingDomainNameCredentialByTemplateId",
@@ -346,29 +346,29 @@
       ]
     },
     {
-      "Code": "CCC",
-      "Version": "2017-07-05",
-      "Catalog1": {
+      "code": "CCC",
+      "version": "2017-07-05",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "cloud call center",
         "zh": "云呼叫中心"
       },
-      "LocationServiceCode": "ccc",
-      "RegionalEndpoints": {
+      "location_service_code": "ccc",
+      "regional_endpoints": {
         "cn-hangzhou": "ccc.cn-hangzhou.aliyuncs.com",
         "cn-shanghai": "ccc.cn-shanghai.aliyuncs.com"
       },
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "ccc.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "ccc.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "ListRecordingsByContactId",
         "ListCallDetailRecords",
         "ListRecordings",
@@ -398,29 +398,29 @@
       ]
     },
     {
-      "Code": "CSB",
-      "Version": "2017-11-18",
-      "Catalog1": {
+      "code": "CSB",
+      "version": "2017-11-18",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Middleware",
         "zh": "互联网中间件"
       },
-      "Name": {
+      "name": {
         "en": "Cloud Service Bus",
         "zh": "云服务总线 CSB"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {
+      "location_service_code": "",
+      "regional_endpoints": {
         "cn-beijing": "csb.cn-beijing.aliyuncs.com",
         "cn-hangzhou": "csb.cn-hangzhou.aliyuncs.com"
       },
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "csb.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "csb.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "DeleteUnionCasService",
         "PublishUnionCasService",
         "UpdateServiceQPS",
@@ -458,26 +458,26 @@
       ]
     },
     {
-      "Code": "Domain-intl",
-      "Version": "2017-12-18",
-      "Catalog1": {
+      "code": "Domain-intl",
+      "version": "2017-12-18",
+      "catalog1": {
         "en": "Domains and Websites",
         "zh": "域名与网站（万网）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Domains",
         "zh": "域名"
       },
-      "Name": {
+      "name": {
         "en": "domain",
         "zh": "域名"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "domain-intl.aliyuncs.com",
-      "RegionalEndpointPattern": "domain-intl.aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "domain-intl.aliyuncs.com",
+      "regional_endpoint_patterns": "domain-intl.aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "QueryTaskInfoHistory",
         "QueryTaskDetailHistory",
         "SaveBatchTaskForCreatingOrderRenew",
@@ -518,26 +518,86 @@
       ]
     },
     {
-      "Code": "aegis",
-      "Version": "2016-11-11",
-      "Catalog1": {
+      "code": "Drds",
+      "version": "2015-04-13",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
+        "en": "Middleware",
+        "zh": "互联网中间件"
+      },
+      "name": {
+        "en": "Distributed Relational Database Service",
+        "zh": "分布式关系型数据库服务 DRDS"
+      },
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "drds.aliyuncs.com",
+      "regional_endpoint_patterns": "drds.aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
+        "QueryInstanceInfoByConn",
+        "ProductInfoComplement",
+        "DrdsApiValidateOrder",
+        "CancleDDLTask",
+        "DescribeRegions",
+        "DescribeDrdsInstanceNetInfoForInner",
+        "RemoveReadOnlyAccount",
+        "ModifyReadOnlyAccountPassword",
+        "DescribeReadOnlyAccount",
+        "CreateReadOnlyAccount",
+        "ModifyRdsReadWeight",
+        "ModifyFullTableScan",
+        "DescribeShardDBs",
+        "DescribeShardDbConnectionInfo",
+        "DescribeRdsList",
+        "DeleteFailedDrdsDB",
+        "DescribeDrdsDBIpWhiteList",
+        "ModifyDrdsIpWhiteList",
+        "RemoveDrdsInstance",
+        "DescribeCreateDrdsInstanceStatus",
+        "ModifyDrdsInstanceDescription",
+        "ModifyDrdsDBPasswd",
+        "ListUnCompleteTasks",
+        "DropTables",
+        "DropIndexes",
+        "DescribeDrdsInstances",
+        "DescribeDrdsInstance",
+        "DescribeDrdsDBs",
+        "DescribeDrdsDB",
+        "DescribeDDLTask",
+        "DeleteDrdsDB",
+        "CreateTable",
+        "CreateIndex",
+        "CreateDrdsInstance",
+        "CreateDrdsDB",
+        "CancelDDLTask",
+        "AlterTable"
+      ]
+    },
+    {
+      "code": "aegis",
+      "version": "2016-11-11",
+      "catalog1": {
         "en": "Security",
         "zh": "安全（云盾）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Security",
         "zh": "云安全防御"
       },
-      "Name": {
+      "name": {
         "en": "Server Guard",
         "zh": "服务器安全（安骑士）"
       },
-      "LocationServiceCode": "vipaegis",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "aegis.cn-hangzhou.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "vipaegis",
+      "regional_endpoints": {},
+      "global_endpoint": "aegis.cn-hangzhou.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "OperateWarning",
         "ModifyMachineConfig",
         "ExportWarning",
@@ -581,86 +641,26 @@
       ]
     },
     {
-      "Code": "Drds",
-      "Version": "2015-04-13",
-      "Catalog1": {
+      "code": "Ess",
+      "version": "2014-08-28",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
-        "en": "Middleware",
-        "zh": "互联网中间件"
-      },
-      "Name": {
-        "en": "Distributed Relational Database Service",
-        "zh": "分布式关系型数据库服务 DRDS"
-      },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "drds.aliyuncs.com",
-      "RegionalEndpointPattern": "drds.aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "QueryInstanceInfoByConn",
-        "ProductInfoComplement",
-        "DrdsApiValidateOrder",
-        "CancleDDLTask",
-        "DescribeRegions",
-        "DescribeDrdsInstanceNetInfoForInner",
-        "RemoveReadOnlyAccount",
-        "ModifyReadOnlyAccountPassword",
-        "DescribeReadOnlyAccount",
-        "CreateReadOnlyAccount",
-        "ModifyRdsReadWeight",
-        "ModifyFullTableScan",
-        "DescribeShardDBs",
-        "DescribeShardDbConnectionInfo",
-        "DescribeRdsList",
-        "DeleteFailedDrdsDB",
-        "DescribeDrdsDBIpWhiteList",
-        "ModifyDrdsIpWhiteList",
-        "RemoveDrdsInstance",
-        "DescribeCreateDrdsInstanceStatus",
-        "ModifyDrdsInstanceDescription",
-        "ModifyDrdsDBPasswd",
-        "ListUnCompleteTasks",
-        "DropTables",
-        "DropIndexes",
-        "DescribeDrdsInstances",
-        "DescribeDrdsInstance",
-        "DescribeDrdsDBs",
-        "DescribeDrdsDB",
-        "DescribeDDLTask",
-        "DeleteDrdsDB",
-        "CreateTable",
-        "CreateIndex",
-        "CreateDrdsInstance",
-        "CreateDrdsDB",
-        "CancelDDLTask",
-        "AlterTable"
-      ]
-    },
-    {
-      "Code": "Ess",
-      "Version": "2014-08-28",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
+      "catalog2": {
         "en": "Elastic Computing",
         "zh": "弹性计算"
       },
-      "Name": {
+      "name": {
         "en": "Auto Scaling",
         "zh": "弹性伸缩"
       },
-      "LocationServiceCode": "ess",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "ess.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "ess",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "ess.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "DeactivateScalingConfiguration",
         "ModifyAlertConfig",
         "DescribeAlertConfig",
@@ -697,26 +697,26 @@
       ]
     },
     {
-      "Code": "Iot",
-      "Version": "2016-05-30",
-      "Catalog1": {
+      "code": "Iot",
+      "version": "2016-05-30",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "Alibaba Cloud IoT",
         "zh": "物联网套件"
       },
-      "LocationServiceCode": "iot",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "iot.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "iot",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "iot.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "SaveServerCallback",
         "QueryServerCallback",
         "UpdateProductTopic",
@@ -767,26 +767,26 @@
       ]
     },
     {
-      "Code": "ITaaS",
-      "Version": "2017-05-09",
-      "Catalog1": {
+      "code": "ITaaS",
+      "version": "2017-05-09",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "Cloud Display",
         "zh": "云投屏"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "itaas.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "itaas.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "ShareGuestSendMessageUrl",
         "ShareGuestSenderRegister",
         "BoxLoginoutReport4Appkey",
@@ -835,22 +835,198 @@
       ]
     },
     {
-      "Code": "Dm",
-      "Version": "2015-11-23",
-      "Catalog1": {
+      "code": "Cms",
+      "version": "2017-03-01",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
+        "en": "Management and Monitoring",
+        "zh": "管理与监控"
+      },
+      "name": {
+        "en": "Cloud Monitor",
+        "zh": "云监控"
+      },
+      "location_service_code": "cms",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
+        "EnableActiveAlert",
+        "DisableActiveAlert",
+        "ListProductOfActiveAlert",
+        "ListProductOfActiceAlert",
+        "ListActiveAlertRule",
+        "EnableActiceAlert",
+        "DisableActiceAlert",
+        "QuerySystemEventHistogram",
+        "QuerySystemEventDetail",
+        "QuerySystemEventCount",
+        "QueryCustomEventHistogram",
+        "QueryCustomEventDetail",
+        "QueryCustomEventCount",
+        "ListMyGroups",
+        "GetMyGroups",
+        "ListMyGroupCategories",
+        "AddMyGroupInstances",
+        "ListMyGroupInstancesDetails",
+        "DeleteMyGroupInstances",
+        "CreateMyGroups",
+        "ListMyGroupInstances",
+        "DeleteMyGroups",
+        "UpdateMyGroups",
+        "UpdateMyGroupInstances",
+        "PutSystemEvent",
+        "PutCustomMetric",
+        "QueryCustomMetricList",
+        "DeleteCustomMetric",
+        "ListNotifyPolicy",
+        "GetNotifyPolicy",
+        "DescribeAlarmHistory",
+        "DeleteNotifyPolicy",
+        "CreateNotifyPolicy",
+        "PutEvent",
+        "UpdateAlarm",
+        "QueryMetricList",
+        "QueryMetricLast",
+        "PutMetricData",
+        "ProfileSet",
+        "ProfileGet",
+        "NodeUninstall",
+        "NodeStatusList",
+        "NodeStatus",
+        "NodeProcesses",
+        "NodeProcessDelete",
+        "NodeProcessCreate",
+        "NodeList",
+        "NodeInstall",
+        "ListContactGroup",
+        "ListAlarmHistory",
+        "ListAlarm",
+        "EnableAlarm",
+        "DisableAlarm",
+        "DeleteAlarm",
+        "CreateAlarm",
+        "AccessKeyGet"
+      ]
+    },
+    {
+      "code": "Dds",
+      "version": "2015-12-01",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
+        "en": "Database",
+        "zh": "数据库"
+      },
+      "name": {
+        "en": "ApsaraDB for MongoDB",
+        "zh": "云数据库 MongoDB 版"
+      },
+      "location_service_code": "dds",
+      "regional_endpoints": {},
+      "global_endpoint": "mongodb.aliyuncs.com",
+      "regional_endpoint_patterns": "mongodb.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
+        "ModifyDBInstanceMonitor",
+        "DescribeDBInstanceMonitor",
+        "SwitchDBInstanceHA",
+        "SwithcDBInstanceHA",
+        "ModifyReplicaRelation",
+        "ModifyReplicaMode",
+        "ModifyGuardDomainMode",
+        "ModifyParameters",
+        "DescribeParameterTemplates",
+        "DescribeParameters",
+        "DescribeParameterModificationHistory",
+        "UpgradeDBInstanceEngineVersion",
+        "ReleasePublicNetworkAddress",
+        "AllocatePublicNetworkAddress",
+        "ModifyDBInstanceMaintainTime",
+        "DescribeShardingNetworkAddress",
+        "DescribeAuditRecords",
+        "DescribeAuditFiles",
+        "ModifyDBInstanceNetExpireTime",
+        "DescribeReplicas",
+        "ReleaseReplica",
+        "ModifyReplicaDescription",
+        "DescribeReplicaUsage",
+        "DescribeReplicaPerformance",
+        "DescribeReplicaInitializeProgress",
+        "ModifyNodeSpec",
+        "DeleteNode",
+        "CreateShardingDBInstance",
+        "CreateNode",
+        "Sample",
+        "ModifyDBInstanceNetworkType",
+        "RenewDBInstance",
+        "CreateBackup",
+        "DescribeDBInstancePerformance",
+        "DescribeDBInstanceAttribute",
+        "DescribeBackups",
+        "DescribeBackupPolicy",
+        "DescribeAccounts",
+        "DeleteDBInstance",
+        "CreateDBInstance",
+        "DescribeSecurityIps",
+        "DescribeReplicaSetRole",
+        "DescribeRegions",
+        "DescribeDBInstances",
+        "RestoreDBInstance",
+        "RestartDBInstance",
+        "ResetAccountPassword",
+        "ModifySecurityIps",
+        "ModifyDBInstanceSpec",
+        "ModifyDBInstanceDescription",
+        "ModifyBackupPolicy",
+        "ModifyAccountDescription"
+      ]
+    },
+    {
+      "code": "ROS",
+      "version": "2015-09-01",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
+        "en": "Management and Monitoring",
+        "zh": "管理与监控"
+      },
+      "name": {
+        "en": "Resource Orchestration Service",
+        "zh": "资源编排"
+      },
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "ros.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "restful",
+      "apis": []
+    },
+    {
+      "code": "Dm",
+      "version": "2015-11-23",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "Direct Mail",
         "zh": "邮件推送"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {
+      "location_service_code": "",
+      "regional_endpoints": {
         "ap-southeast-1": "dm.aliyuncs.com",
         "ap-southeast-2": "dm.ap-southeast-2.aliyuncs.com",
         "cn-beijing": "dm.aliyuncs.com",
@@ -862,10 +1038,10 @@
         "us-east-1": "dm.aliyuncs.com",
         "us-west-1": "dm.aliyuncs.com"
       },
-      "GlobalEndpoint": "dm.aliyuncs.com",
-      "RegionalEndpointPattern": "dm.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "global_endpoint": "dm.aliyuncs.com",
+      "regional_endpoint_patterns": "dm.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "DescAccountSummary2",
         "MigrateMarket",
         "EnableAccount",
@@ -930,225 +1106,49 @@
       ]
     },
     {
-      "Code": "Dds",
-      "Version": "2015-12-01",
-      "Catalog1": {
+      "code": "Sts",
+      "version": "2015-04-01",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
-        "en": "Database",
-        "zh": "数据库"
-      },
-      "Name": {
-        "en": "ApsaraDB for MongoDB",
-        "zh": "云数据库 MongoDB 版"
-      },
-      "LocationServiceCode": "dds",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "mongodb.aliyuncs.com",
-      "RegionalEndpointPattern": "mongodb.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "ModifyDBInstanceMonitor",
-        "DescribeDBInstanceMonitor",
-        "SwitchDBInstanceHA",
-        "SwithcDBInstanceHA",
-        "ModifyReplicaRelation",
-        "ModifyReplicaMode",
-        "ModifyGuardDomainMode",
-        "ModifyParameters",
-        "DescribeParameterTemplates",
-        "DescribeParameters",
-        "DescribeParameterModificationHistory",
-        "UpgradeDBInstanceEngineVersion",
-        "ReleasePublicNetworkAddress",
-        "AllocatePublicNetworkAddress",
-        "ModifyDBInstanceMaintainTime",
-        "DescribeShardingNetworkAddress",
-        "DescribeAuditRecords",
-        "DescribeAuditFiles",
-        "ModifyDBInstanceNetExpireTime",
-        "DescribeReplicas",
-        "ReleaseReplica",
-        "ModifyReplicaDescription",
-        "DescribeReplicaUsage",
-        "DescribeReplicaPerformance",
-        "DescribeReplicaInitializeProgress",
-        "ModifyNodeSpec",
-        "DeleteNode",
-        "CreateShardingDBInstance",
-        "CreateNode",
-        "Sample",
-        "ModifyDBInstanceNetworkType",
-        "RenewDBInstance",
-        "CreateBackup",
-        "DescribeDBInstancePerformance",
-        "DescribeDBInstanceAttribute",
-        "DescribeBackups",
-        "DescribeBackupPolicy",
-        "DescribeAccounts",
-        "DeleteDBInstance",
-        "CreateDBInstance",
-        "DescribeSecurityIps",
-        "DescribeReplicaSetRole",
-        "DescribeRegions",
-        "DescribeDBInstances",
-        "RestoreDBInstance",
-        "RestartDBInstance",
-        "ResetAccountPassword",
-        "ModifySecurityIps",
-        "ModifyDBInstanceSpec",
-        "ModifyDBInstanceDescription",
-        "ModifyBackupPolicy",
-        "ModifyAccountDescription"
-      ]
-    },
-    {
-      "Code": "ROS",
-      "Version": "2015-09-01",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
+      "catalog2": {
         "en": "Management and Monitoring",
         "zh": "管理与监控"
       },
-      "Name": {
-        "en": "Resource Orchestration Service",
-        "zh": "资源编排"
-      },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "ros.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "restful",
-      "ApiNames": []
-    },
-    {
-      "Code": "Cms",
-      "Version": "2017-03-01",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
-        "en": "Management and Monitoring",
-        "zh": "管理与监控"
-      },
-      "Name": {
-        "en": "Cloud Monitor",
-        "zh": "云监控"
-      },
-      "LocationServiceCode": "cms",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "EnableActiveAlert",
-        "DisableActiveAlert",
-        "ListProductOfActiveAlert",
-        "ListProductOfActiceAlert",
-        "ListActiveAlertRule",
-        "EnableActiceAlert",
-        "DisableActiceAlert",
-        "QuerySystemEventHistogram",
-        "QuerySystemEventDetail",
-        "QuerySystemEventCount",
-        "QueryCustomEventHistogram",
-        "QueryCustomEventDetail",
-        "QueryCustomEventCount",
-        "ListMyGroups",
-        "GetMyGroups",
-        "ListMyGroupCategories",
-        "AddMyGroupInstances",
-        "ListMyGroupInstancesDetails",
-        "DeleteMyGroupInstances",
-        "CreateMyGroups",
-        "ListMyGroupInstances",
-        "DeleteMyGroups",
-        "UpdateMyGroups",
-        "UpdateMyGroupInstances",
-        "PutSystemEvent",
-        "PutCustomMetric",
-        "QueryCustomMetricList",
-        "DeleteCustomMetric",
-        "ListNotifyPolicy",
-        "GetNotifyPolicy",
-        "DescribeAlarmHistory",
-        "DeleteNotifyPolicy",
-        "CreateNotifyPolicy",
-        "PutEvent",
-        "UpdateAlarm",
-        "QueryMetricList",
-        "QueryMetricLast",
-        "PutMetricData",
-        "ProfileSet",
-        "ProfileGet",
-        "NodeUninstall",
-        "NodeStatusList",
-        "NodeStatus",
-        "NodeProcesses",
-        "NodeProcessDelete",
-        "NodeProcessCreate",
-        "NodeList",
-        "NodeInstall",
-        "ListContactGroup",
-        "ListAlarmHistory",
-        "ListAlarm",
-        "EnableAlarm",
-        "DisableAlarm",
-        "DeleteAlarm",
-        "CreateAlarm",
-        "AccessKeyGet"
-      ]
-    },
-    {
-      "Code": "Sts",
-      "Version": "2015-04-01",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
-        "en": "Management and Monitoring",
-        "zh": "管理与监控"
-      },
-      "Name": {
+      "name": {
         "en": "Resource Access Management",
         "zh": "访问控制"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "sts.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "sts.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "GenerateSessionAccessKey",
         "GetCallerIdentity",
         "AssumeRole"
       ]
     },
     {
-      "Code": "Sas-api",
-      "Version": "2017-07-05",
-      "Catalog1": {
+      "code": "Sas-api",
+      "version": "2017-07-05",
+      "catalog1": {
         "en": "Security",
         "zh": "安全（云盾）"
       },
-      "Catalog2": {},
-      "Name": {
+      "catalog2": {},
+      "name": {
         "en": "Situation Awareness Service",
         "zh": "态势感知"
       },
-      "LocationServiceCode": "sas",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "sas",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "GetAccountProfile",
         "GetInstanceCount",
         "GetPhoneProfile",
@@ -1156,26 +1156,26 @@
       ]
     },
     {
-      "Code": "CloudPhoto",
-      "Version": "2017-07-11",
-      "Catalog1": {
+      "code": "CloudPhoto",
+      "version": "2017-07-11",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Storage and CDN",
         "zh": "存储与CDN"
       },
-      "Name": {
+      "name": {
         "en": "Cloud Photos",
         "zh": "智能云相册"
       },
-      "LocationServiceCode": "cloudphoto",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "cloudphoto.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "cloudphoto",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "cloudphoto.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "GetAlbumsByNames",
         "GetEvent",
         "EditEvent",
@@ -1245,80 +1245,26 @@
       ]
     },
     {
-      "Code": "Qualitycheck",
-      "Version": "2016-08-01",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
-        "en": "Application Services",
-        "zh": "应用服务"
-      },
-      "Name": {
-        "en": "Smart Conversation Analysis",
-        "zh": "智能对话分析服务"
-      },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {
-        "cn-hangzhou": "qualitycheck.cn-hangzhou.aliyuncs.com"
-      },
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "DoPhysicalDeleteResource",
-        "DoLogicalDeleteResource",
-        "DoCheckResource",
-        "GetAsrVocab",
-        "DeleteAsrVocab",
-        "CreateAsrVocab",
-        "GetBusinessCategoryList",
-        "DeleteBusinessCategory",
-        "AddBusinessCategory",
-        "UpdateRule",
-        "SaveReviewResult",
-        "GetScoreInfo",
-        "GetDataSetList",
-        "GetAccAsrResult",
-        "UploadAudioDataWithRules4Pre",
-        "UploadAudioData4Pre",
-        "RegisterNotice",
-        "UpdateOnPurchaseSuccess",
-        "UploadAudioDataWithRules",
-        "UploadDataWithRules",
-        "UploadAudioData",
-        "InvalidRule",
-        "GetRuleDetail",
-        "GetRule",
-        "GetResultCount",
-        "GetAudioDataStatus",
-        "UploadRule",
-        "UploadData",
-        "GetResult"
-      ]
-    },
-    {
-      "Code": "Alidns",
-      "Version": "2015-01-09",
-      "Catalog1": {
+      "code": "Alidns",
+      "version": "2015-01-09",
+      "catalog1": {
         "en": "Domains and Websites",
         "zh": "域名与网站（万网）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Domains",
         "zh": "域名解析"
       },
-      "Name": {
+      "name": {
         "en": "Alibaba Cloud DNS",
         "zh": "云解析DNS"
       },
-      "LocationServiceCode": "alidns",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "alidns.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "alidns",
+      "regional_endpoints": {},
+      "global_endpoint": "alidns.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "DescribeSupportLines",
         "DescribeDomainNs",
         "DescribeDnsProductInstance",
@@ -1360,29 +1306,165 @@
       ]
     },
     {
-      "Code": "polardb",
-      "Version": "2017-08-01",
-      "Catalog1": {
+      "code": "Push",
+      "version": "2016-08-01",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
+        "en": "Mobile Services**",
+        "zh": "移动服务"
+      },
+      "name": {
+        "en": "Alibaba Cloud Mobile Push",
+        "zh": "移动推送"
+      },
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "cloudpush.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
+        "UnbindPhone",
+        "BindPhone",
+        "RemoveTag",
+        "CheckDevices",
+        "QueryPushList",
+        "CheckDevice",
+        "QueryPushDetail",
+        "UnbindTag",
+        "UnbindAlias",
+        "QueryUniqueDeviceStat",
+        "QueryTags",
+        "QueryPushStatByMsg",
+        "QueryPushStatByApp",
+        "QueryDeviceStat",
+        "QueryDeviceInfo",
+        "QueryAliases",
+        "PushNoticeToiOS",
+        "PushNoticeToAndroid",
+        "PushMessageToiOS",
+        "PushMessageToAndroid",
+        "Push",
+        "ListTags",
+        "ListSummaryApps",
+        "ListPushRecords",
+        "BindTag",
+        "BindAlias",
+        "CancelPush"
+      ]
+    },
+    {
+      "code": "Qualitycheck",
+      "version": "2016-08-01",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
+        "en": "Application Services",
+        "zh": "应用服务"
+      },
+      "name": {
+        "en": "Smart Conversation Analysis",
+        "zh": "智能对话分析服务"
+      },
+      "location_service_code": "",
+      "regional_endpoints": {
+        "cn-hangzhou": "qualitycheck.cn-hangzhou.aliyuncs.com"
+      },
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
+        "DoPhysicalDeleteResource",
+        "DoLogicalDeleteResource",
+        "DoCheckResource",
+        "GetAsrVocab",
+        "DeleteAsrVocab",
+        "CreateAsrVocab",
+        "GetBusinessCategoryList",
+        "DeleteBusinessCategory",
+        "AddBusinessCategory",
+        "UpdateRule",
+        "SaveReviewResult",
+        "GetScoreInfo",
+        "GetDataSetList",
+        "GetAccAsrResult",
+        "UploadAudioDataWithRules4Pre",
+        "UploadAudioData4Pre",
+        "RegisterNotice",
+        "UpdateOnPurchaseSuccess",
+        "UploadAudioDataWithRules",
+        "UploadDataWithRules",
+        "UploadAudioData",
+        "InvalidRule",
+        "GetRuleDetail",
+        "GetRule",
+        "GetResultCount",
+        "GetAudioDataStatus",
+        "UploadRule",
+        "UploadData",
+        "GetResult"
+      ]
+    },
+    {
+      "code": "waf",
+      "version": "2016-07-18",
+      "catalog1": {
+        "en": "Security",
+        "zh": "安全（云盾）"
+      },
+      "catalog2": {
+        "en": "Security",
+        "zh": "云安全防御"
+      },
+      "name": {
+        "en": "Web Application Firewall",
+        "zh": "Web应用防火墙"
+      },
+      "location_service_code": "waf",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
+        "WhetherBuy",
+        "WebAttackCount",
+        "UserIsBuyWaf",
+        "UpdateDomain",
+        "GetDomainList",
+        "GetDomainInfo",
+        "AddDomain",
+        "SummaryStatistics",
+        "IsBuyWaf"
+      ]
+    },
+    {
+      "code": "polardb",
+      "version": "2017-08-01",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
         "en": "Database",
         "zh": "数据库"
       },
-      "Name": {
+      "name": {
         "en": "ApsaraDB for POLARDB",
         "zh": "云数据库 PolarDB 版"
       },
-      "LocationServiceCode": "polardb",
-      "RegionalEndpoints": {
+      "location_service_code": "polardb",
+      "regional_endpoints": {
         "ap-south-1": "polardb.ap-south-1.aliyuncs.com",
         "ap-southeast-5": "polardb.ap-southeast-5.aliyuncs.com"
       },
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "polardb.aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "polardb.aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "DescribeSlowLogs",
         "DescribeSlowLogRecords",
         "DescribeErrorLogs",
@@ -1428,108 +1510,26 @@
       ]
     },
     {
-      "Code": "waf",
-      "Version": "2016-07-18",
-      "Catalog1": {
-        "en": "Security",
-        "zh": "安全（云盾）"
-      },
-      "Catalog2": {
-        "en": "Security",
-        "zh": "云安全防御"
-      },
-      "Name": {
-        "en": "Web Application Firewall",
-        "zh": "Web应用防火墙"
-      },
-      "LocationServiceCode": "waf",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "WhetherBuy",
-        "WebAttackCount",
-        "UserIsBuyWaf",
-        "UpdateDomain",
-        "GetDomainList",
-        "GetDomainInfo",
-        "AddDomain",
-        "SummaryStatistics",
-        "IsBuyWaf"
-      ]
-    },
-    {
-      "Code": "Push",
-      "Version": "2016-08-01",
-      "Catalog1": {
+      "code": "Ons",
+      "version": "2016-05-03",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
-        "en": "Mobile Services**",
-        "zh": "移动服务"
-      },
-      "Name": {
-        "en": "Alibaba Cloud Mobile Push",
-        "zh": "移动推送"
-      },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "cloudpush.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "UnbindPhone",
-        "BindPhone",
-        "RemoveTag",
-        "CheckDevices",
-        "QueryPushList",
-        "CheckDevice",
-        "QueryPushDetail",
-        "UnbindTag",
-        "UnbindAlias",
-        "QueryUniqueDeviceStat",
-        "QueryTags",
-        "QueryPushStatByMsg",
-        "QueryPushStatByApp",
-        "QueryDeviceStat",
-        "QueryDeviceInfo",
-        "QueryAliases",
-        "PushNoticeToiOS",
-        "PushNoticeToAndroid",
-        "PushMessageToiOS",
-        "PushMessageToAndroid",
-        "Push",
-        "ListTags",
-        "ListSummaryApps",
-        "ListPushRecords",
-        "BindTag",
-        "BindAlias",
-        "CancelPush"
-      ]
-    },
-    {
-      "Code": "Ons",
-      "Version": "2016-05-03",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
+      "catalog2": {
         "en": "Middleware",
         "zh": "互联网中间件"
       },
-      "Name": {
+      "name": {
         "en": "Message Queue",
         "zh": "消息队列 MQ"
       },
-      "LocationServiceCode": "ons",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "ons",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "OnsClusterList",
         "OnsSubscriptionUpdate",
         "OnsTopicUpdate",
@@ -1579,26 +1579,26 @@
       ]
     },
     {
-      "Code": "NAS",
-      "Version": "2016-02-29",
-      "Catalog1": {
+      "code": "NAS",
+      "version": "2016-02-29",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Storage and CDN",
         "zh": "存储与CDN"
       },
-      "Name": {
+      "name": {
         "en": "Network Attached Storage",
         "zh": "文件存储"
       },
-      "LocationServiceCode": "nas",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "nas",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "ListNasBeta",
         "ApplyNasBeta",
         "DeleteMountTargetInternal",
@@ -1665,29 +1665,29 @@
       ]
     },
     {
-      "Code": "CloudAPI",
-      "Version": "2016-07-14",
-      "Catalog1": {
+      "code": "CloudAPI",
+      "version": "2016-07-14",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "API Gateway",
         "zh": "API 网关"
       },
-      "LocationServiceCode": "apigateway",
-      "RegionalEndpoints": {
+      "location_service_code": "apigateway",
+      "regional_endpoints": {
         "ap-northeast-1": "apigateway.ap-northeast-1.aliyuncs.com",
         "us-west-1": "apigateway.us-west-1.aliyuncs.com"
       },
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "apigateway.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "apigateway.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "SetIpControlApis",
         "RemoveIpControlPolicyItem",
         "RemoveIpControlApis",
@@ -1797,26 +1797,107 @@
       ]
     },
     {
-      "Code": "Ram",
-      "Version": "2015-05-01",
-      "Catalog1": {
+      "code": "R-kvstore",
+      "version": "2015-01-01",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
+        "en": "Database",
+        "zh": "数据库"
+      },
+      "name": {
+        "en": "ApsaraDB for Redis",
+        "zh": "云数据库 Redis 版"
+      },
+      "location_service_code": "redisa",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
+        "DescribeInstancesByExpireTime",
+        "ModifyReplicaRelation",
+        "ModifyReplicaMode",
+        "ModifyGuardDomainMode",
+        "ModifyInstanceSSL",
+        "DescribeInstanceSSL",
+        "DescribeLogicInstanceTopology",
+        "ModifyInstanceSpec",
+        "ModifyInstanceSpecPreCheck",
+        "ModifyInstanceNetExpireTime",
+        "ReleaseReplica",
+        "ModifyReplicaDescription",
+        "DescribeReplicaUsage",
+        "DescribeReplicas",
+        "DescribeReplicaPerformance",
+        "DescribeReplicaInitializeProgress",
+        "ModifyInstanceMinorVersion",
+        "ModifyCertification",
+        "DescribeCertification",
+        "DescribeDBInstanceNetInfo",
+        "DescribeMonthlyServiceStatusDetail",
+        "DescribeMonthlyServiceStatus",
+        "ModifySecurityIps",
+        "DescribeSecurityIps",
+        "ModifyInstanceMaintainTime",
+        "DescribeInstanceAttribute",
+        "RestoreInstance",
+        "ModifyBackupPolicy",
+        "DescribeBackups",
+        "DescribeBackupPolicy",
+        "CreateBackup",
+        "SwitchNetwork",
+        "DeleteSnapshot",
+        "CreateTempInstance",
+        "CreateSnapshot",
+        "DeleteTempInstance",
+        "DeleteSnapshotSettings",
+        "GetSnapshotSettings",
+        "DescribeTempInstance",
+        "DescribeSnapshots",
+        "RestoreSnapshot",
+        "QueryTask",
+        "SwitchTempInstance",
+        "SetSnapshotSettings",
+        "RenewMultiInstance",
+        "TransformToPrePaid",
+        "RenewInstance",
+        "VerifyPassword",
+        "ModifyInstanceConfig",
+        "ModifyInstanceAttribute",
+        "FlushInstance",
+        "DescribeRegions",
+        "DescribeMonitorItems",
+        "DescribeInstances",
+        "DescribeInstanceConfig",
+        "DescribeHistoryMonitorValues",
+        "DeleteInstance",
+        "CreateInstance"
+      ]
+    },
+    {
+      "code": "Ram",
+      "version": "2015-05-01",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
         "en": "Management and Monitoring",
         "zh": "管理与监控"
       },
-      "Name": {
+      "name": {
         "en": "Resource Access Management",
         "zh": "访问控制"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "ram.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "ram.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "UploadPublicKey",
         "UpdatePublicKey",
         "ListPublicKeys",
@@ -1885,107 +1966,26 @@
       ]
     },
     {
-      "Code": "R-kvstore",
-      "Version": "2015-01-01",
-      "Catalog1": {
+      "code": "vod",
+      "version": "2017-03-21",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
-        "en": "Database",
-        "zh": "数据库"
-      },
-      "Name": {
-        "en": "ApsaraDB for Redis",
-        "zh": "云数据库 Redis 版"
-      },
-      "LocationServiceCode": "redisa",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "DescribeInstancesByExpireTime",
-        "ModifyReplicaRelation",
-        "ModifyReplicaMode",
-        "ModifyGuardDomainMode",
-        "ModifyInstanceSSL",
-        "DescribeInstanceSSL",
-        "DescribeLogicInstanceTopology",
-        "ModifyInstanceSpec",
-        "ModifyInstanceSpecPreCheck",
-        "ModifyInstanceNetExpireTime",
-        "ReleaseReplica",
-        "ModifyReplicaDescription",
-        "DescribeReplicaUsage",
-        "DescribeReplicas",
-        "DescribeReplicaPerformance",
-        "DescribeReplicaInitializeProgress",
-        "ModifyInstanceMinorVersion",
-        "ModifyCertification",
-        "DescribeCertification",
-        "DescribeDBInstanceNetInfo",
-        "DescribeMonthlyServiceStatusDetail",
-        "DescribeMonthlyServiceStatus",
-        "ModifySecurityIps",
-        "DescribeSecurityIps",
-        "ModifyInstanceMaintainTime",
-        "DescribeInstanceAttribute",
-        "RestoreInstance",
-        "ModifyBackupPolicy",
-        "DescribeBackups",
-        "DescribeBackupPolicy",
-        "CreateBackup",
-        "SwitchNetwork",
-        "DeleteSnapshot",
-        "CreateTempInstance",
-        "CreateSnapshot",
-        "DeleteTempInstance",
-        "DeleteSnapshotSettings",
-        "GetSnapshotSettings",
-        "DescribeTempInstance",
-        "DescribeSnapshots",
-        "RestoreSnapshot",
-        "QueryTask",
-        "SwitchTempInstance",
-        "SetSnapshotSettings",
-        "RenewMultiInstance",
-        "TransformToPrePaid",
-        "RenewInstance",
-        "VerifyPassword",
-        "ModifyInstanceConfig",
-        "ModifyInstanceAttribute",
-        "FlushInstance",
-        "DescribeRegions",
-        "DescribeMonitorItems",
-        "DescribeInstances",
-        "DescribeInstanceConfig",
-        "DescribeHistoryMonitorValues",
-        "DeleteInstance",
-        "CreateInstance"
-      ]
-    },
-    {
-      "Code": "vod",
-      "Version": "2017-03-21",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
+      "catalog2": {
         "en": "Media Services",
         "zh": "视频服务"
       },
-      "Name": {
+      "name": {
         "en": "ApsaraVideo for VOD",
         "zh": "视频点播"
       },
-      "LocationServiceCode": "vod",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "vod",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "DescribePlayVideoStatis",
         "DescribePlayUserTotal",
         "DescribePlayUserAvg",
@@ -2052,26 +2052,26 @@
       ]
     },
     {
-      "Code": "live",
-      "Version": "2016-11-01",
-      "Catalog1": {
+      "code": "live",
+      "version": "2016-11-01",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Media Services",
         "zh": "视频服务"
       },
-      "Name": {
+      "name": {
         "en": "ApsaraVideo for Live",
         "zh": "视频直播"
       },
-      "LocationServiceCode": "live",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "live.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "live",
+      "regional_endpoints": {},
+      "global_endpoint": "live.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "DescribeLiveDomainTrafficData",
         "DescribeLiveDomainBpsData",
         "AddTrancodeSEI",
@@ -2168,26 +2168,122 @@
       ]
     },
     {
-      "Code": "Emr",
-      "Version": "2016-04-08",
-      "Catalog1": {
+      "code": "Slb",
+      "version": "2014-05-15",
+      "catalog1": {
+        "en": "Cloud Compute Basic Service**",
+        "zh": "云计算基础服务"
+      },
+      "catalog2": {
+        "en": "Networking",
+        "zh": "网络"
+      },
+      "name": {
+        "en": "Server Load Balancer",
+        "zh": "负载均衡"
+      },
+      "location_service_code": "slb",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
+        "SetAccessLogsDownloadAttribute",
+        "DescribeAccessLogsDownloadAttribute",
+        "DeleteAccessLogsDownloadAttribute",
+        "DescribeLoadBalancersRelatedEcs",
+        "ModifyLoadBalancerPayType",
+        "MoveResourceGroup",
+        "ModifyLoadBalancerInstanceSpec",
+        "DescribeMasterSlaveServerGroups",
+        "DescribeMasterSlaveServerGroupAttribute",
+        "DeleteMasterSlaveServerGroup",
+        "CreateMasterSlaveServerGroup",
+        "DescribeMasterSlaveVServerGroups",
+        "DescribeMasterSlaveVServerGroupAttribute",
+        "DeleteMasterSlaveVServerGroup",
+        "CreateMasterSlaveVServerGroup",
+        "SetLoadBalancerAutoReleaseTime",
+        "DescribeLoadBalancerAutoReleaseTime",
+        "UploadCACertificate",
+        "SetCACertificateName",
+        "DescribeCACertificates",
+        "DeleteCACertificate",
+        "RemoveTags",
+        "DescribeTags",
+        "AddTags",
+        "SetVServerGroupAttribute",
+        "SetRule",
+        "RemoveVServerGroupBackendServers",
+        "ModifyVServerGroupBackendServers",
+        "DescribeVServerGroups",
+        "DescribeVServerGroupAttribute",
+        "DescribeRules",
+        "DescribeRuleAttribute",
+        "DeleteVServerGroup",
+        "DeleteRules",
+        "CreateVServerGroup",
+        "CreateRules",
+        "AddVServerGroupBackendServers",
+        "DescribeZones",
+        "SetLoadBalancerUDPListenerAttribute",
+        "DescribeLoadBalancerUDPListenerAttribute",
+        "CreateLoadBalancerUDPListener",
+        "UploadServerCertificate",
+        "StopLoadBalancerListener",
+        "StartLoadBalancerListener",
+        "SetServerCertificateName",
+        "SetLoadBalancerTCPListenerAttribute",
+        "SetLoadBalancerStatus",
+        "SetLoadBalancerName",
+        "SetLoadBalancerHTTPSListenerAttribute",
+        "SetLoadBalancerHTTPListenerAttribute",
+        "SetListenerAccessControlStatus",
+        "SetBackendServers",
+        "RemoveListenerWhiteListItem",
+        "RemoveBackendServers",
+        "ModifyLoadBalancerInternetSpec",
+        "DescribeServerCertificates",
+        "DescribeRegions",
+        "DescribeLoadBalancerTCPListenerAttribute",
+        "DescribeLoadBalancers",
+        "DescribeLoadBalancerHTTPSListenerAttribute",
+        "DescribeLoadBalancerHTTPListenerAttribute",
+        "DescribeLoadBalancerAttribute",
+        "DescribeListenerAccessControlAttribute",
+        "DescribeHealthStatus",
+        "DeleteServerCertificate",
+        "DeleteLoadBalancerListener",
+        "DeleteLoadBalancer",
+        "CreateLoadBalancerTCPListener",
+        "CreateLoadBalancerHTTPSListener",
+        "CreateLoadBalancerHTTPListener",
+        "CreateLoadBalancer",
+        "AddListenerWhiteListItem",
+        "AddBackendServers"
+      ]
+    },
+    {
+      "code": "Emr",
+      "version": "2016-04-08",
+      "catalog1": {
         "en": "Analytics \u0026 Big Data",
         "zh": "大数据（数加）"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Analytics \u0026 Big Data",
         "zh": "大数据基础服务"
       },
-      "Name": {
+      "name": {
         "en": "E-MapReduce",
         "zh": "E-MapReduce"
       },
-      "LocationServiceCode": "emr",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "emr.[RegionId].aliyuncs.com",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "emr",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "emr.[RegionId].aliyuncs.com",
+      "api_style": "rpc",
+      "apis": [
         "RunOpsCommand",
         "ListOpsOperationTask",
         "ListOpsOperation",
@@ -2330,122 +2426,26 @@
       ]
     },
     {
-      "Code": "Slb",
-      "Version": "2014-05-15",
-      "Catalog1": {
+      "code": "Mts",
+      "version": "2014-06-18",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
-        "en": "Networking",
-        "zh": "网络"
-      },
-      "Name": {
-        "en": "Server Load Balancer",
-        "zh": "负载均衡"
-      },
-      "LocationServiceCode": "slb",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
-        "SetAccessLogsDownloadAttribute",
-        "DescribeAccessLogsDownloadAttribute",
-        "DeleteAccessLogsDownloadAttribute",
-        "DescribeLoadBalancersRelatedEcs",
-        "ModifyLoadBalancerPayType",
-        "MoveResourceGroup",
-        "ModifyLoadBalancerInstanceSpec",
-        "DescribeMasterSlaveServerGroups",
-        "DescribeMasterSlaveServerGroupAttribute",
-        "DeleteMasterSlaveServerGroup",
-        "CreateMasterSlaveServerGroup",
-        "DescribeMasterSlaveVServerGroups",
-        "DescribeMasterSlaveVServerGroupAttribute",
-        "DeleteMasterSlaveVServerGroup",
-        "CreateMasterSlaveVServerGroup",
-        "SetLoadBalancerAutoReleaseTime",
-        "DescribeLoadBalancerAutoReleaseTime",
-        "UploadCACertificate",
-        "SetCACertificateName",
-        "DescribeCACertificates",
-        "DeleteCACertificate",
-        "RemoveTags",
-        "DescribeTags",
-        "AddTags",
-        "SetVServerGroupAttribute",
-        "SetRule",
-        "RemoveVServerGroupBackendServers",
-        "ModifyVServerGroupBackendServers",
-        "DescribeVServerGroups",
-        "DescribeVServerGroupAttribute",
-        "DescribeRules",
-        "DescribeRuleAttribute",
-        "DeleteVServerGroup",
-        "DeleteRules",
-        "CreateVServerGroup",
-        "CreateRules",
-        "AddVServerGroupBackendServers",
-        "DescribeZones",
-        "SetLoadBalancerUDPListenerAttribute",
-        "DescribeLoadBalancerUDPListenerAttribute",
-        "CreateLoadBalancerUDPListener",
-        "UploadServerCertificate",
-        "StopLoadBalancerListener",
-        "StartLoadBalancerListener",
-        "SetServerCertificateName",
-        "SetLoadBalancerTCPListenerAttribute",
-        "SetLoadBalancerStatus",
-        "SetLoadBalancerName",
-        "SetLoadBalancerHTTPSListenerAttribute",
-        "SetLoadBalancerHTTPListenerAttribute",
-        "SetListenerAccessControlStatus",
-        "SetBackendServers",
-        "RemoveListenerWhiteListItem",
-        "RemoveBackendServers",
-        "ModifyLoadBalancerInternetSpec",
-        "DescribeServerCertificates",
-        "DescribeRegions",
-        "DescribeLoadBalancerTCPListenerAttribute",
-        "DescribeLoadBalancers",
-        "DescribeLoadBalancerHTTPSListenerAttribute",
-        "DescribeLoadBalancerHTTPListenerAttribute",
-        "DescribeLoadBalancerAttribute",
-        "DescribeListenerAccessControlAttribute",
-        "DescribeHealthStatus",
-        "DeleteServerCertificate",
-        "DeleteLoadBalancerListener",
-        "DeleteLoadBalancer",
-        "CreateLoadBalancerTCPListener",
-        "CreateLoadBalancerHTTPSListener",
-        "CreateLoadBalancerHTTPListener",
-        "CreateLoadBalancer",
-        "AddListenerWhiteListItem",
-        "AddBackendServers"
-      ]
-    },
-    {
-      "Code": "Mts",
-      "Version": "2014-06-18",
-      "Catalog1": {
-        "en": "Cloud Compute Basic Service**",
-        "zh": "云计算基础服务"
-      },
-      "Catalog2": {
+      "catalog2": {
         "en": "Media Services",
         "zh": "视频服务"
       },
-      "Name": {
+      "name": {
         "en": "ApsaraVideo for Media Processing",
         "zh": "媒体处理"
       },
-      "LocationServiceCode": "mts",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "mts",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "SubmitVideoGifJob",
         "QueryVideoGifJobList",
         "UpdateMediaWorkflowTriggerMode",
@@ -2575,26 +2575,26 @@
       ]
     },
     {
-      "Code": "Cdn",
-      "Version": "2014-11-11",
-      "Catalog1": {
+      "code": "Cdn",
+      "version": "2014-11-11",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Storage and CDN",
         "zh": "存储与CDN"
       },
-      "Name": {
+      "name": {
         "en": "Alibaba Cloud CDN",
         "zh": "CDN"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "cdn.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "cdn.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "DescribeDomainCname",
         "DescribeUserCustomLogConfig",
         "SetWaitingRoomConfig",
@@ -2766,26 +2766,26 @@
       ]
     },
     {
-      "Code": "cloudwf",
-      "Version": "2017-03-28",
-      "Catalog1": {
+      "code": "cloudwf",
+      "version": "2017-03-28",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Application Services",
         "zh": "应用服务"
       },
-      "Name": {
+      "name": {
         "en": "CloudAP",
         "zh": "云AP"
       },
-      "LocationServiceCode": "",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "cloudwf.aliyuncs.com",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "",
+      "regional_endpoints": {},
+      "global_endpoint": "cloudwf.aliyuncs.com",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "ModifySubAccountPermission",
         "ListSubAccountPermission",
         "ListBusinesses",
@@ -3004,26 +3004,26 @@
       ]
     },
     {
-      "Code": "Vpc",
-      "Version": "2016-04-28",
-      "Catalog1": {
+      "code": "Vpc",
+      "version": "2016-04-28",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Networking",
         "zh": "网络"
       },
-      "Name": {
+      "name": {
         "en": "Virtual Private Cloud",
         "zh": "专有网络VPC"
       },
-      "LocationServiceCode": "vpc",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "vpc",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "DescribeVpnConnectionLogs",
         "MoveResourceGroup",
         "ModifySslVpnServer",
@@ -3168,20 +3168,20 @@
       ]
     },
     {
-      "Code": "Rds",
-      "Version": "2014-08-15",
-      "Catalog1": {},
-      "Catalog2": {},
-      "Name": {
+      "code": "Rds",
+      "version": "2014-08-15",
+      "catalog1": {},
+      "catalog2": {},
+      "name": {
         "en": "ApsaraDB for RDS",
         "zh": "云数据库RDS版"
       },
-      "LocationServiceCode": "rds",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "rds",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "DescribeSecurityGroupConfiguration",
         "ModifySecurityGroupConfiguration",
         "DescribeDampPolicyByComment",
@@ -3352,26 +3352,26 @@
       ]
     },
     {
-      "Code": "Ecs",
-      "Version": "2014-05-26",
-      "Catalog1": {
+      "code": "Ecs",
+      "version": "2014-05-26",
+      "catalog1": {
         "en": "Cloud Compute Basic Service**",
         "zh": "云计算基础服务"
       },
-      "Catalog2": {
+      "catalog2": {
         "en": "Elastic Computing",
         "zh": "弹性计算"
       },
-      "Name": {
+      "name": {
         "en": "Elastic Compute Service",
         "zh": "云服务器 ECS"
       },
-      "LocationServiceCode": "ecs",
-      "RegionalEndpoints": {},
-      "GlobalEndpoint": "",
-      "RegionalEndpointPattern": "",
-      "ApiStyle": "rpc",
-      "ApiNames": [
+      "location_service_code": "ecs",
+      "regional_endpoints": {},
+      "global_endpoint": "",
+      "regional_endpoint_patterns": "",
+      "api_style": "rpc",
+      "apis": [
         "DescribeResourcesModification",
         "DescribeBandwidthLimitation",
         "DescribeAvailableResource",
