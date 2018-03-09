@@ -1,7 +1,0 @@
-name: ListProductOfActiceAlert
-parameters:
-- name: UserId
-  type: String
-  required: false
-  hidden: false
-  subparameters: []

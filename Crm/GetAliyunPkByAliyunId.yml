@@ -1,6 +1,0 @@
-name: GetAliyunPkByAliyunId
-parameters:
-- name: AliyunId
-  type: String
-  required: true
-  subparameters: []

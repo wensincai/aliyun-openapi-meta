@@ -1,7 +1,0 @@
-name: GetResult
-parameters:
-- name: JsonStr
-  type: String
-  required: true
-  hidden: false
-  subparameters: []

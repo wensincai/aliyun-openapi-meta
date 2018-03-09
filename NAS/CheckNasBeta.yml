@@ -1,7 +1,0 @@
-name: CheckNasBeta
-parameters:
-- name: Feature
-  type: String
-  required: true
-  hidden: false
-  subparameters: []

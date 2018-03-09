@@ -1,6 +1,0 @@
-name: DescribeOrder
-parameters:
-- name: OrderId
-  type: String
-  required: true
-  subparameters: []

@@ -1,7 +1,0 @@
-name: UploadAudioData4Pre
-parameters:
-- name: JsonStr
-  type: String
-  required: true
-  hidden: false
-  subparameters: []

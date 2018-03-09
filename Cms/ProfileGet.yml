@@ -1,7 +1,0 @@
-name: ProfileGet
-parameters:
-- name: UserId
-  type: Long
-  required: true
-  hidden: false
-  subparameters: []

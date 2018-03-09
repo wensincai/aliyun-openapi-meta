@@ -1,7 +1,0 @@
-name: GetAccountInfo
-parameters:
-- name: AccessKeyId
-  type: String
-  required: false
-  hidden: false
-  subparameters: []

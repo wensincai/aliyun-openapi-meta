@@ -1,7 +1,0 @@
-name: WhetherBuy
-parameters:
-- name: Region
-  type: String
-  required: false
-  hidden: false
-  subparameters: []

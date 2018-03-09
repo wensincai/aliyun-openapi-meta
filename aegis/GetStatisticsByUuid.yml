@@ -1,7 +1,0 @@
-name: GetStatisticsByUuid
-parameters:
-- name: Uuid
-  type: String
-  required: true
-  hidden: false
-  subparameters: []

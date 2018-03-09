@@ -1,7 +1,0 @@
-name: ListVirtualMFADevices
-parameters:
-- name: Action
-  type: String
-  required: false
-  hidden: true
-  subparameters: []

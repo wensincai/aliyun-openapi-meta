@@ -1,7 +1,0 @@
-name: PutSystemEvent
-parameters:
-- name: EventInfo
-  type: String
-  required: false
-  hidden: false
-  subparameters: []

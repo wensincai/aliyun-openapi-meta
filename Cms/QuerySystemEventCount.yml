@@ -1,7 +1,0 @@
-name: QuerySystemEventCount
-parameters:
-- name: QueryJson
-  type: String
-  required: false
-  hidden: false
-  subparameters: []

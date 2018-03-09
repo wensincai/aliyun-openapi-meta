@@ -1,7 +1,0 @@
-name: ClearAccountAlias
-parameters:
-- name: Action
-  type: String
-  required: false
-  hidden: true
-  subparameters: []

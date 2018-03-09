@@ -1,6 +1,0 @@
-name: SubscribeImage
-parameters:
-- name: ProductCode
-  type: String
-  required: true
-  subparameters: []

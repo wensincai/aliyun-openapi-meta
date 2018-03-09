@@ -1,7 +1,0 @@
-name: ListNasBeta
-parameters:
-- name: Feature
-  type: String
-  required: true
-  hidden: false
-  subparameters: []
