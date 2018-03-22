@@ -51,7 +51,7 @@
       "position": "Query",
       "type": "Long",
       "description": {
-        "zh": "每页大小，默认值：1000"
+        "zh": "每页大小，默认值为100，最大值为1000"
       },
       "required": false,
       "hidden": false

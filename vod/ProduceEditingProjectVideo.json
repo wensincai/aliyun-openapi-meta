@@ -72,6 +72,20 @@
       "type": "String",
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "MediaMetadata",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "ProduceConfig",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }

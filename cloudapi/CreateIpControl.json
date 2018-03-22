@@ -40,14 +40,14 @@
       "sub_parameters": [
         {
           "name": "AppId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "CidrIp",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

@@ -75,42 +75,42 @@
       "sub_parameters": [
         {
           "name": "ConfigKey",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "ConfigValue",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "configType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "TargetId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Category",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Note",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

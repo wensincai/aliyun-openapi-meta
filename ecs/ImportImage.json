@@ -12,42 +12,42 @@
       "sub_parameters": [
         {
           "name": "Format",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "OSSBucket",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "OSSObject",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskImSize",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskImageSize",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "Device",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

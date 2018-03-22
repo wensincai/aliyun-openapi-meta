@@ -61,21 +61,21 @@
       "sub_parameters": [
         {
           "name": "Name",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Type",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Comment",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

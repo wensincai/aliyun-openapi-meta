@@ -118,7 +118,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "经典网络类型的实例可出现“Inner”和“Public”，VPC实例可出现“Private”和“Public”。"
+        "zh": "经典网络类型的实例可出现“Inner”（内网）和“Public”（外网），VPC实例可出现“Private（私网）”和“Public（公网）”"
       },
       "required": false,
       "hidden": false

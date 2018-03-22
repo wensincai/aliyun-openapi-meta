@@ -40,21 +40,21 @@
       "sub_parameters": [
         {
           "name": "EcsId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "EcsPeriod",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "EmrPeriod",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

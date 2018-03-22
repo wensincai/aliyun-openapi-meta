@@ -47,21 +47,21 @@
       "sub_parameters": [
         {
           "name": "Key",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Value",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Type",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

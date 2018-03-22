@@ -68,7 +68,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "数据中心，长度不超过50个字符；通过函数DescribeRegions查看可用的数据中心。"
+        "zh": "地域名称的ID，例如：cn-hangzhou"
       },
       "required": true,
       "hidden": false
@@ -178,7 +178,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "可用区ID，通过函数DescribeRegions查看可用的可用区。"
+        "zh": "可用区ID。"
       },
       "required": false,
       "hidden": false
@@ -198,7 +198,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "Performance为标准访问模式；Safty为高安全访问模式；默认为RDS系统分配。"
+        "zh": "Performance为标准访问模式；Safty为高安全访问模式；"
       },
       "required": false,
       "hidden": false

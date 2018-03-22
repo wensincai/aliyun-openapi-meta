@@ -65,6 +65,13 @@
       "type": "Long",
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "TakenAt",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": false
     }
   ]
 }

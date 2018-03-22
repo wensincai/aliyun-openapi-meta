@@ -85,7 +85,7 @@
       "sub_parameters": [
         {
           "name": "HeightNormalized",
-          "position": "",
+          "position": "Query",
           "type": "Float",
           "description": {
             "zh": "设置该layer元素的高度归一化比例值，其中元素的宽度会按照该高度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。"
@@ -95,7 +95,7 @@
         },
         {
           "name": "WidthNormalized",
-          "position": "",
+          "position": "Query",
           "type": "Float",
           "description": {
             "zh": "设置该layer元素的宽度归一化比例值，其中元素的高度会按照该宽度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。该字段和heightNormalized有冲突，一旦heightNormalized和widthNormalized都设置了，则只有heightNormalized有效。如果heightNormalized和widthNormalized设置只能同时设置一个，后面设置的值会影响前面设置的。"
@@ -105,7 +105,7 @@
         },
         {
           "name": "PositionRefer",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "设置元素的position 参考坐标值，取值范围\"topLeft\"/\"topRight\"/\"bottomLeft\"/\"bottomRight\"以及\"center/topCenter/bottomCenter/leftCenter/rightCenter\", 默认\"topLeft\"."
@@ -115,7 +115,7 @@
         },
         {
           "name": "PositionNormalized",
-          "position": "",
+          "position": "Query",
           "type": "RepeatList",
           "required": false,
           "hidden": false
@@ -131,7 +131,7 @@
       "sub_parameters": [
         {
           "name": "VolumeRate",
-          "position": "",
+          "position": "Query",
           "type": "Float",
           "description": {
             "zh": "设置该layer元素的高度归一化比例值，其中元素的宽度会按照该高度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。"
@@ -141,7 +141,7 @@
         },
         {
           "name": "ValidChannel",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "确定哪些声道可以作为音量输入，取值范围\"leftChannel/rightChannel/all\"默认是\"all\"。"

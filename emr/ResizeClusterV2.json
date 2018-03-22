@@ -33,84 +33,84 @@
       "sub_parameters": [
         {
           "name": "ClusterId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "HostGroupId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "HostGroupName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "HostGroupType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Comment",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "CreateType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "InstanceType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "NodeCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": true,
           "hidden": false
         },
         {
           "name": "DiskType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskCapacity",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "SysDiskCapacity",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
@@ -124,28 +124,28 @@
         },
         {
           "name": "Period",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "AutoRenew",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": false,
           "hidden": false
         },
         {
           "name": "VswitchId",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "SystemDiskType",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false

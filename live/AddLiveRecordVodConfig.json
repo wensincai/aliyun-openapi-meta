@@ -4,13 +4,6 @@
   "method": "POST|GET",
   "parameters": [
     {
-      "name": "AccessKeyId",
-      "position": "Query",
-      "type": "String",
-      "required": false,
-      "hidden": false
-    },
-    {
       "name": "Action",
       "position": "Query",
       "type": "String",
@@ -23,13 +16,6 @@
       "type": "Long",
       "required": false,
       "hidden": true
-    },
-    {
-      "name": "SecurityToken",
-      "position": "Query",
-      "type": "String",
-      "required": false,
-      "hidden": false
     },
     {
       "name": "DomainName",
@@ -63,6 +49,20 @@
       "name": "CycleDuration",
       "position": "Query",
       "type": "Integer",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AutoCompose",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "ComposeVodTranscodeGroupId",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     }

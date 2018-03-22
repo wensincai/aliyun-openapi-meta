@@ -33,7 +33,7 @@
       "sub_parameters": [
         {
           "name": "ServiceName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false

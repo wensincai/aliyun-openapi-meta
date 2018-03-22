@@ -40,35 +40,35 @@
       "sub_parameters": [
         {
           "name": "EcsId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "EcsAutoRenew",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": true,
           "hidden": false
         },
         {
           "name": "EcsAutoRenewDuration",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "EmrAutoRenew",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": true,
           "hidden": false
         },
         {
           "name": "EmrAutoRenewDuration",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false

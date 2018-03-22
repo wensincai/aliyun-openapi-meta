@@ -12,14 +12,14 @@
       "sub_parameters": [
         {
           "name": "NextHopType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "NextHopId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

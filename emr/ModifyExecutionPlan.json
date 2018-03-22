@@ -180,49 +180,49 @@
       "sub_parameters": [
         {
           "name": "Index",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "NodeCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": true,
           "hidden": false
         },
         {
           "name": "InstanceType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "DiskType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "DiskCapacity",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": true,
           "hidden": false
         },
         {
           "name": "NodeType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "DiskCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": true,
           "hidden": false
@@ -238,21 +238,21 @@
       "sub_parameters": [
         {
           "name": "Name",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Path",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Arg",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

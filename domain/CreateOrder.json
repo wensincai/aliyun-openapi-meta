@@ -19,35 +19,35 @@
       "sub_parameters": [
         {
           "name": "SaleID",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "RelatedName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Action",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": true
         },
         {
           "name": "Period",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "DomainTemplateID",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

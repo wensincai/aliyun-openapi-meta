@@ -10,9 +10,6 @@
       "name": "AccessKeyId",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": " 阿里云颁发给用户的访问服务所用的密钥ID。"
-      },
       "required": false,
       "hidden": false
     },
@@ -37,9 +34,6 @@
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",
-      "description": {
-        "zh": ""
-      },
       "required": false,
       "hidden": true
     },
@@ -47,9 +41,6 @@
       "name": "ResourceOwnerAccount",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": ""
-      },
       "required": false,
       "hidden": true
     },
@@ -77,9 +68,6 @@
       "name": "OwnerAccount",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": " 用户主账号。"
-      },
       "required": false,
       "hidden": true
     },
@@ -87,9 +75,6 @@
       "name": "ResourceGroupId",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "资源组id"
-      },
       "required": false,
       "hidden": false
     }

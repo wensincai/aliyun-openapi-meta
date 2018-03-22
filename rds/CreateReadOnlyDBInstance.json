@@ -78,7 +78,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "数据中心，长度不超过50个字符；通过函数DescribeRegions查看可用的数据中心"
+        "zh": "地域名称的ID，例如：cn-hangzhou"
       },
       "required": true,
       "hidden": false
@@ -88,7 +88,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "可用区id，通过函数DescribeRegions查看可用的可用区"
+        "zh": "可用区id。"
       },
       "required": true,
       "hidden": false
@@ -138,7 +138,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "Postpaid"
+        "zh": "付费类型，取值如下：\nPostpaid:按量付费；\nPrepaid：预付费。"
       },
       "required": true,
       "hidden": false

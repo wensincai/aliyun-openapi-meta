@@ -2,11 +2,17 @@
   "name": "DeleteBgpGroup",
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
+  "descriptions": {
+    "zh": "\n删除指定的BGP组。\n\n"
+  },
   "parameters": [
     {
       "name": "Action",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "系统规定参数，取值：DeleteBgpGroup"
+      },
       "required": false,
       "hidden": true
     },
@@ -14,6 +20,9 @@
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     },
@@ -21,6 +30,9 @@
       "name": "ResourceOwnerAccount",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     },
@@ -28,6 +40,9 @@
       "name": "ResourceOwnerId",
       "position": "Query",
       "type": "Long",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     },
@@ -35,6 +50,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "BGP组所属的Region ID。Region ID的列表详见\u003ca href=\"~~40654~~\"\u003e地域和可用区\u003c/a\u003e。"
+      },
       "required": true,
       "hidden": false
     },
@@ -42,6 +60,9 @@
       "name": "BgpGroupId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "BGP组的ID。"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +70,9 @@
       "name": "ClientToken",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，最大值不超过 64 个 ASCII 字符。 \u003cbr\u003e 具体参见附录"
+      },
       "required": false,
       "hidden": false
     },
@@ -56,6 +80,9 @@
       "name": "OwnerAccount",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     }

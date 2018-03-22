@@ -194,42 +194,42 @@
       "sub_parameters": [
         {
           "name": "HostGroupId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "HostGroupName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "HostGroupType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "ClusterId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Comment",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "CreateType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
@@ -250,42 +250,42 @@
         },
         {
           "name": "NodeCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": true,
           "hidden": false
         },
         {
           "name": "InstanceType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "DiskType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskCapacity",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "SysDiskCapacity",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
@@ -315,21 +315,21 @@
       "sub_parameters": [
         {
           "name": "Name",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Path",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": true,
           "hidden": false
         },
         {
           "name": "Arg",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

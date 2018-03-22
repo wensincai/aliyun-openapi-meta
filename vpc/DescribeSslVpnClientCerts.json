@@ -53,6 +53,13 @@
       "hidden": false
     },
     {
+      "name": "SslVpnClientCertId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "Name",
       "position": "Query",
       "type": "String",

@@ -82,21 +82,21 @@
       "sub_parameters": [
         {
           "name": "IpCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "Bandwidth",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "Zone",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

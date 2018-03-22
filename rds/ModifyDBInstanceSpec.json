@@ -108,7 +108,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "计费方式，取值为Postpaid，意思是按时付费。"
+        "zh": "付费类型，取值如下：\nPostpaid:按量付费；\nPrepaid：预付费。"
       },
       "required": true,
       "hidden": false

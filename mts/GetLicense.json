@@ -65,6 +65,20 @@
       "type": "String",
       "required": true,
       "hidden": false
+    },
+    {
+      "name": "Header",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Type",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }

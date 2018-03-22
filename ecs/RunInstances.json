@@ -166,49 +166,49 @@
       "sub_parameters": [
         {
           "name": "Size",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "SnapshotId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Category",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Encrypted",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Description",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DeleteWithInstance",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": false,
           "hidden": false
@@ -231,35 +231,35 @@
       "sub_parameters": [
         {
           "name": "PrimaryIpAddress",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "VSwitchId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "SecurityGroupId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "NetworkInterfaceName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Description",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
@@ -338,14 +338,14 @@
       "sub_parameters": [
         {
           "name": "Key",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Value",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

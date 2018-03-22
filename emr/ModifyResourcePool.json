@@ -68,35 +68,35 @@
       "sub_parameters": [
         {
           "name": "Id",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "ConfigKey",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "ConfigValue",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Category",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Note",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

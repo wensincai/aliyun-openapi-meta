@@ -58,6 +58,13 @@
       "type": "String",
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "EncryptConfig",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }

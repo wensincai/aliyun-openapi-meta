@@ -26,35 +26,35 @@
       "sub_parameters": [
         {
           "name": "DomainName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "SubscriptionDuration",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "RegistrantProfileId",
-          "position": "",
+          "position": "Query",
           "type": "Long",
           "required": false,
           "hidden": false
         },
         {
           "name": "EnableDomainProxy",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": false,
           "hidden": false
         },
         {
           "name": "PermitPremiumActivation",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": false,
           "hidden": false

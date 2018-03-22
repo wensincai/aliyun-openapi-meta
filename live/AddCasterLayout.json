@@ -75,7 +75,7 @@
       "sub_parameters": [
         {
           "name": "HeightNormalized",
-          "position": "",
+          "position": "Query",
           "type": "Float",
           "description": {
             "zh": "Videolayer配置列表，元素为视频画面的配置信息-高度。设置该layer元素的高度归一化比例值，其中元素的宽度会按照该高度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示"
@@ -85,7 +85,7 @@
         },
         {
           "name": "WidthNormalized",
-          "position": "",
+          "position": "Query",
           "type": "Float",
           "description": {
             "zh": "Videolayer配置列表，元素为视频画面的配置信息-宽度。设置该layer元素的宽度归一化比例值，其中元素的高度会按照该宽度来进行等比缩放。默认值 0 表示按照元素的原始尺寸进行显示。"
@@ -95,7 +95,7 @@
         },
         {
           "name": "PositionRefer",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "Videolayer配置列表，元素为视频画面的配置信息-参考坐标，设置元素的position 参考坐标值，取值范围\"topLeft\"/\"topRight\"/\"bottomLeft\"/\"bottomRight\"以及\"center/topCenter/bottomCenter/leftCenter/rightCenter\", 默认\"topLeft\""
@@ -105,7 +105,7 @@
         },
         {
           "name": "PositionNormalized",
-          "position": "",
+          "position": "Query",
           "type": "RepeatList",
           "required": false,
           "hidden": false
@@ -121,7 +121,7 @@
       "sub_parameters": [
         {
           "name": "VolumeRate",
-          "position": "",
+          "position": "Query",
           "type": "Float",
           "description": {
             "zh": "Audiolayer配置列表，元素为音频配置信息-音量。调节音频流的音量大小倍数，1.0表示保持原有音量，小于1表示降低音量的倍数，\u003e1表示放大的倍数，取值范围\\[0,10.0]，默认 1.0"
@@ -131,7 +131,7 @@
         },
         {
           "name": "ValidChannel",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "Audiolayer配置列表，元素为音频配置信息-输入声道，确定哪些声道可以作为音量输入，取值范围\"leftChannel/rightChannel/all\"默认是\"all\"。"

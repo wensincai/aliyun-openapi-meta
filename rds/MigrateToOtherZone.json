@@ -78,7 +78,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "通过函数DescribeRegions查看可用的可用区。"
+        "zh": "可用区ID。"
       },
       "required": true,
       "hidden": false

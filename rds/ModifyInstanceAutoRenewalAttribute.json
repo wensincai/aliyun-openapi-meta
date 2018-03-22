@@ -3,7 +3,7 @@
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
-    "zh": "\n\n设置或者取消实例的自动续费行为。对于国内站用户而言，当实例到期前7天，触发自动续费行为。\n\n限制条件如下：\n\n- 仅支持包年包月实例。\n\n### 请求参数\n\n|名称   |类型   |是否必须   |描述   |\n| ------------ | ------------ | ------------ | ------------ |\n|Action   |String   |是   |系统规定参数，取值：ModifyInstanceAutoRenewalAttribute。|\n|DBInstanceId   |String   |是   |实例名。   |\n|Duration   |String   |否   |自动续费周期，当AutoRenew=\"True\"时，该值有效且必填。取值为1-12。表示实例到期时，自动续费1-12个月。   |\n|AutoRenew   |String   |是   |取值为：\u003c/br\u003eAutoRenew=\"True\"设置自动续费;\u003c/br\u003eAutoRenew=\"False\" 取消自动续费。|\n\n### 返回参数\n\n|名称   |类型   |描述   |\n| ------------ | ------------ | ------------ |\n|\u003c公共返回参数\u003e   |   |详见[公共参数](~~26224~~)。  |\n\n## 查询自动续费的实例\n\n#"
+    "zh": "\n\n设置或者取消实例的自动续费行为。对于国内站用户而言，当实例到期前7天，触发自动续费行为。\n\n限制条件如下：\n\n- 仅支持包年包月实例。\n"
   },
   "parameters": [
     {
@@ -68,7 +68,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "集群名称，如“cn-hangzhou”。"
+        "zh": "地域名称的ID，例如：cn-hangzhou"
       },
       "required": true,
       "hidden": false

@@ -15,7 +15,7 @@
       "sub_parameters": [
         {
           "name": "Key",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "第n个过滤器的类型。N取值\\[1,5)。"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Value",
-          "position": "",
+          "position": "Query",
           "type": "RepeatList",
           "required": false,
           "hidden": false

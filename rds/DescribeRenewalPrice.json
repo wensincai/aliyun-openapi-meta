@@ -68,7 +68,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "用户主账号"
+        "zh": "用于保证请求的幂等性。"
       },
       "required": false,
       "hidden": false
@@ -108,7 +108,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "集群名称，如“cn-hangzhou”。"
+        "zh": "地域名称ID，如“cn-hangzhou”。"
       },
       "required": false,
       "hidden": false

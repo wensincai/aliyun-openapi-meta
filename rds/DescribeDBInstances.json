@@ -10,9 +10,6 @@
       "name": "AccessKeyId",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "阿里云颁发给用户的访问服务所用的密钥ID。"
-      },
       "required": false,
       "hidden": false
     },
@@ -37,9 +34,6 @@
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",
-      "description": {
-        "zh": ""
-      },
       "required": false,
       "hidden": true
     },
@@ -47,9 +41,6 @@
       "name": "ResourceOwnerAccount",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": ""
-      },
       "required": false,
       "hidden": true
     },
@@ -67,9 +58,6 @@
       "name": "ClientToken",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "用于保证幂等性。"
-      },
       "required": false,
       "hidden": false
     },
@@ -77,9 +65,6 @@
       "name": "proxyId",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "无"
-      },
       "required": false,
       "hidden": false
     },
@@ -87,9 +72,6 @@
       "name": "Engine",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "数据库类型，取值范围MySQL/SQLServer/PostgreSQL/PPAS，不填则返回所有。"
-      },
       "required": false,
       "hidden": false
     },
@@ -97,9 +79,6 @@
       "name": "DBInstanceStatus",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "详见附录"
-      },
       "required": false,
       "hidden": false
     },
@@ -107,9 +86,6 @@
       "name": "SearchKey",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "无"
-      },
       "required": false,
       "hidden": false
     },
@@ -117,9 +93,6 @@
       "name": "DBInstanceId",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "\t实例名。"
-      },
       "required": false,
       "hidden": false
     },
@@ -138,7 +111,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "实例的region，通过函数DescribeRegions查看。"
+        "zh": "地域名称的ID，例如：cn-hangzhou"
       },
       "required": true,
       "hidden": false
@@ -177,9 +150,6 @@
       "name": "VpcId",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "VPC ID。"
-      },
       "required": false,
       "hidden": false
     },
@@ -187,9 +157,6 @@
       "name": "VSwitchId",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "VSwitch ID。"
-      },
       "required": false,
       "hidden": false
     },
@@ -207,9 +174,6 @@
       "name": "Tag.1.key",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第1组key。"
-      },
       "required": false,
       "hidden": false
     },
@@ -217,9 +181,6 @@
       "name": "Tag.2.key",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第2组key。"
-      },
       "required": false,
       "hidden": false
     },
@@ -227,9 +188,6 @@
       "name": "Tag.3.key",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第3组key。"
-      },
       "required": false,
       "hidden": false
     },
@@ -237,9 +195,6 @@
       "name": "Tag.4.key",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第4组key。"
-      },
       "required": false,
       "hidden": false
     },
@@ -247,9 +202,6 @@
       "name": "Tag.5.key",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第5组key。"
-      },
       "required": false,
       "hidden": false
     },
@@ -257,9 +209,6 @@
       "name": "Tag.1.value",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第1组value。"
-      },
       "required": false,
       "hidden": false
     },
@@ -267,9 +216,6 @@
       "name": "Tag.2.value",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入2组，当前第5组value。"
-      },
       "required": false,
       "hidden": false
     },
@@ -277,9 +223,6 @@
       "name": "Tag.3.value",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第3组value。"
-      },
       "required": false,
       "hidden": false
     },
@@ -287,9 +230,6 @@
       "name": "Tag.4.value",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第4组value。"
-      },
       "required": false,
       "hidden": false
     },
@@ -297,9 +237,6 @@
       "name": "Tag.5.value",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "查询绑定有该标签的实例，传入值格式为Json string，包括TagKey和TagValue，TagKey不能为空，TagValue可以为空。最对传入5组，当前第5组value。"
-      },
       "required": false,
       "hidden": false
     },
@@ -317,9 +254,6 @@
       "name": "OwnerAccount",
       "position": "Query",
       "type": "String",
-      "description": {
-        "zh": "用户主账号。"
-      },
       "required": false,
       "hidden": true
     }

@@ -239,56 +239,56 @@
       "sub_parameters": [
         {
           "name": "Size",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "SnapshotId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Category",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Description",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Device",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DeleteWithInstance",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": false,
           "hidden": false
         },
         {
           "name": "Encrypted",
-          "position": "",
+          "position": "Query",
           "type": "Boolean",
           "required": false,
           "hidden": false

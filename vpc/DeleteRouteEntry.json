@@ -105,7 +105,7 @@
       "sub_parameters": [
         {
           "name": "NextHopType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "下一跳的类型，可选值为Instance|Tunnel|HaVip|RouterInterface|VpnGateway，默认值为Instance，即ECS实例"
@@ -115,7 +115,7 @@
         },
         {
           "name": "NextHopId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "RouteEntry 指向的下一跳实例的Id，非 ECMP 路由必须指定NextHopId 而且必须与被删除路由的 NextHopId 匹配。"

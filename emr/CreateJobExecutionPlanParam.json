@@ -40,14 +40,14 @@
       "sub_parameters": [
         {
           "name": "Name",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Value",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

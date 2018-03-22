@@ -88,7 +88,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "地域。"
+        "zh": "地域名称的ID，例如：cn-hangzhou"
       },
       "required": true,
       "hidden": false

@@ -26,14 +26,14 @@
       "sub_parameters": [
         {
           "name": "DomainName",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "CurrentExpirationDate",
-          "position": "",
+          "position": "Query",
           "type": "Long",
           "required": false,
           "hidden": false

@@ -659,6 +659,7 @@
       "regional_endpoint_patterns": "cloudphoto.[RegionId].aliyuncs.com",
       "api_style": "rpc",
       "apis": [
+        "FetchAlbumTagPhotos",
         "GetAlbumsByNames",
         "GetEvent",
         "EditEvent",
@@ -748,6 +749,7 @@
       "regional_endpoint_patterns": "",
       "api_style": "rpc",
       "apis": [
+        "GetPageProperties",
         "ModifySubAccountPermission",
         "ListSubAccountPermission",
         "ListBusinesses",
@@ -1112,6 +1114,10 @@
       "regional_endpoint_patterns": "csb.[RegionId].aliyuncs.com",
       "api_style": "rpc",
       "apis": [
+        "DeleteCasService",
+        "FindInstanceList",
+        "PublishCasService",
+        "CommitSuccessedServices",
         "DeleteUnionCasService",
         "PublishUnionCasService",
         "UpdateServiceQPS",
@@ -1498,11 +1504,35 @@
         "zh": "云服务器 ECS"
       },
       "location_service_code": "ecs",
-      "regional_endpoints": {},
+      "regional_endpoints": {
+        "ap-northeast-1": "ecs.ap-northeast-1.aliyuncs.com",
+        "ap-south-1": "ecs.ap-south-1.aliyuncs.com",
+        "ap-southeast-1": "ecs-cn-hangzhou.aliyuncs.com",
+        "ap-southeast-2": "ecs.ap-southeast-2.aliyuncs.com",
+        "ap-southeast-3": "ecs.ap-southeast-3.aliyuncs.com",
+        "ap-southeast-5": "ecs.ap-southeast-5.aliyuncs.com",
+        "cn-beijing": "ecs-cn-hangzhou.aliyuncs.com",
+        "cn-hangzhou": "ecs-cn-hangzhou.aliyuncs.com",
+        "cn-hongkong": "ecs-cn-hangzhou.aliyuncs.com",
+        "cn-huhehaote": "ecs.cn-huhehaote.aliyuncs.com",
+        "cn-qingdao": "ecs-cn-hangzhou.aliyuncs.com",
+        "cn-shanghai": "ecs-cn-hangzhou.aliyuncs.com",
+        "cn-shenzhen": "ecs-cn-hangzhou.aliyuncs.com",
+        "cn-zhangjiakou": "ecs.cn-zhangjiakou.aliyuncs.com",
+        "eu-central-1": "ecs.eu-central-1.aliyuncs.com",
+        "me-east-1": "ecs.me-east-1.aliyuncs.com",
+        "us-east-1": "ecs-cn-hangzhou.aliyuncs.com",
+        "us-west-1": "ecs-cn-hangzhou.aliyuncs.com"
+      },
       "global_endpoint": "",
       "regional_endpoint_patterns": "",
       "api_style": "rpc",
       "apis": [
+        "ModifyUserEventAttribute",
+        "DescribeEvents",
+        "DescribeEventDetail",
+        "CreateUserEvent",
+        "CancelUserEvent",
         "DescribeResourcesModification",
         "DescribeBandwidthLimitation",
         "DescribeAvailableResource",
@@ -1911,6 +1941,8 @@
       "regional_endpoint_patterns": "ess.[RegionId].aliyuncs.com",
       "api_style": "rpc",
       "apis": [
+        "ExitStandby",
+        "EnterStandby",
         "DeactivateScalingConfiguration",
         "ModifyAlertConfig",
         "DescribeAlertConfig",
@@ -2223,6 +2255,7 @@
       "regional_endpoint_patterns": "",
       "api_style": "rpc",
       "apis": [
+        "RealTimeRecordCommand",
         "DescribeLiveDomainTrafficData",
         "DescribeLiveDomainBpsData",
         "AddTrancodeSEI",
@@ -2339,6 +2372,7 @@
       "regional_endpoint_patterns": "",
       "api_style": "rpc",
       "apis": [
+        "SubmitImageQualityJob",
         "SubmitVideoGifJob",
         "QueryVideoGifJobList",
         "UpdateMediaWorkflowTriggerMode",
@@ -2763,6 +2797,8 @@
       "regional_endpoint_patterns": "",
       "api_style": "rpc",
       "apis": [
+        "UploadRuleForAnt",
+        "UpdateRuleForAnt",
         "DoPhysicalDeleteResource",
         "DoLogicalDeleteResource",
         "DoCheckResource",
@@ -3214,9 +3250,6 @@
       "regional_endpoint_patterns": "",
       "api_style": "rpc",
       "apis": [
-        "SetAccessLogsDownloadAttribute",
-        "DescribeAccessLogsDownloadAttribute",
-        "DeleteAccessLogsDownloadAttribute",
         "DescribeLoadBalancersRelatedEcs",
         "ModifyLoadBalancerPayType",
         "MoveResourceGroup",
@@ -3336,6 +3369,10 @@
       "regional_endpoint_patterns": "",
       "api_style": "rpc",
       "apis": [
+        "DescribeRefreshQuota",
+        "PushObjectCache",
+        "RefreshObjectCaches",
+        "DescribeRefreshTasks",
         "DescribePlayVideoStatis",
         "DescribePlayUserTotal",
         "DescribePlayUserAvg",

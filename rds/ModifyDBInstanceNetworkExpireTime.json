@@ -78,7 +78,7 @@
       "position": "Query",
       "type": "String",
       "description": {
-        "zh": "要延期的经典网络连接串，经典网络字符串有两种：当前实例的经典网络字符串，读写分离的经典网络字符串。"
+        "zh": "\t\n实例的连接串。"
       },
       "required": true,
       "hidden": false

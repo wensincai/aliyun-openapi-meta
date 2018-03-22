@@ -96,7 +96,7 @@
       "sub_parameters": [
         {
           "name": "Class",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
@@ -112,14 +112,14 @@
       "sub_parameters": [
         {
           "name": "Class",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Storage",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
@@ -135,14 +135,14 @@
       "sub_parameters": [
         {
           "name": "Class",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Storage",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false

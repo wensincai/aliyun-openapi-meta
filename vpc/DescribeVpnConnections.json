@@ -87,6 +87,13 @@
       "hidden": false
     },
     {
+      "name": "VpnConnectionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "PageNumber",
       "position": "Query",
       "type": "Integer",

@@ -7,16 +7,6 @@
   },
   "parameters": [
     {
-      "name": "AccessKeyId",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": "阿里云颁发给用户的访问服务所用的密钥ID"
-      },
-      "required": false,
-      "hidden": false
-    },
-    {
       "name": "Action",
       "position": "Query",
       "type": "String",
@@ -35,16 +25,6 @@
       },
       "required": false,
       "hidden": true
-    },
-    {
-      "name": "SecurityToken",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": ""
-      },
-      "required": false,
-      "hidden": false
     },
     {
       "name": "DomainName",

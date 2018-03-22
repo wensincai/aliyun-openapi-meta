@@ -127,6 +127,9 @@
       "name": "WhitelistNetworkType",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "白名单的网络类型。取值范围：Classic：经典网络；VPC：专有网络; MIX:混访模式，默认是MIX 注意：当ModifyMode的值为Cover的时候，WhitelistNetworkType不能为MIX。"
+      },
       "required": false,
       "hidden": false
     },
@@ -134,6 +137,9 @@
       "name": "SecurityGroupId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "源安全组编码"
+      },
       "required": false,
       "hidden": false
     },

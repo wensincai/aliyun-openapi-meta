@@ -125,7 +125,7 @@
       "sub_parameters": [
         {
           "name": "IpCount",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "description": {
             "zh": "本参数仅支持在2017年11月3日23:59之前账户下存在NAT带宽包的用户指定。2017年11月3日23:59之前账户下不存在NAT带宽包的用户请参考绑定弹性公网IP，在NAT网关上绑定弹性公网IP。\n\n第n个共享带宽包中的公网IP数量（n最大为4）。\n\n取值范围：\\[1,50]。"
@@ -135,7 +135,7 @@
         },
         {
           "name": "Bandwidth",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "description": {
             "zh": "本参数仅支持在2017年11月3日23:59之前账户下存在NAT带宽包的用户指定。2017年11月3日23:59之前账户下不存在NAT带宽包的用户请参考绑定弹性公网IP，在NAT网关上绑定弹性公网IP。\n\n第n个共享带宽包的带宽值（n最大为4）。\n\n取值范围：\\[5,5000]。"
@@ -145,7 +145,7 @@
         },
         {
           "name": "Zone",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "本参数仅支持在2017年11月3日23:59之前账户下存在NAT带宽包的用户指定。2017年11月3日23:59之前账户下不存在NAT带宽包的用户请参考绑定弹性公网IP，在NAT网关上绑定弹性公网IP。\n第n个共享带宽包位于的可用区（n最大为4）。\n\n不指定该参数时，系统将随机分配一个可用区。\n\n注意：共享带宽包上的IP与后端ECS不处于同一个可用区，并不影响其连通性；但是位于相同可用区时，可减小延迟。"
@@ -155,7 +155,7 @@
         },
         {
           "name": "ISP",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "第n个共享带宽包中的线路ISP类型，默认为BGP（多线）"
@@ -165,7 +165,7 @@
         },
         {
           "name": "InternetChargeType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "description": {
             "zh": "PayByBandwidth 和 PayByTraffic，默认是 PayByBandwidth"

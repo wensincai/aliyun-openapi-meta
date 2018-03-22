@@ -72,6 +72,13 @@
       "type": "String",
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "PeriodUnit",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }

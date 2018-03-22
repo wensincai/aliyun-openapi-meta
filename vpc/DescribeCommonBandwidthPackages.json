@@ -2,11 +2,17 @@
   "name": "DescribeCommonBandwidthPackages",
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
+  "descriptions": {
+    "zh": "查询共享带宽列表\n\n\n"
+  },
   "parameters": [
     {
       "name": "Action",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "系统规定参数，取值：DescribeCommonBandwidthPackages"
+      },
       "required": false,
       "hidden": true
     },
@@ -14,6 +20,9 @@
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     },
@@ -21,6 +30,9 @@
       "name": "ResourceOwnerAccount",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     },
@@ -28,6 +40,9 @@
       "name": "ResourceOwnerId",
       "position": "Query",
       "type": "Long",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     },
@@ -35,6 +50,9 @@
       "name": "OwnerAccount",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": ""
+      },
       "required": false,
       "hidden": true
     },
@@ -42,6 +60,9 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "region no"
+      },
       "required": true,
       "hidden": false
     },
@@ -49,6 +70,9 @@
       "name": "BandwidthPackageId",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "共享带宽Id"
+      },
       "required": false,
       "hidden": false
     },
@@ -56,6 +80,9 @@
       "name": "Name",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "名称"
+      },
       "required": false,
       "hidden": false
     },
@@ -63,6 +90,9 @@
       "name": "PageNumber",
       "position": "Query",
       "type": "Integer",
+      "description": {
+        "zh": "默认 1，"
+      },
       "required": false,
       "hidden": false
     },
@@ -70,6 +100,9 @@
       "name": "PageSize",
       "position": "Query",
       "type": "Integer",
+      "description": {
+        "zh": "默认10 ，最大50"
+      },
       "required": false,
       "hidden": false
     }

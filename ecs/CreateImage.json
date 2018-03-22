@@ -12,28 +12,28 @@
       "sub_parameters": [
         {
           "name": "Size",
-          "position": "",
+          "position": "Query",
           "type": "Integer",
           "required": false,
           "hidden": false
         },
         {
           "name": "SnapshotId",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "Device",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
           "name": "DiskType",
-          "position": "",
+          "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false

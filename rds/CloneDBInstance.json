@@ -70,7 +70,7 @@
       "description": {
         "zh": "用于保证幂等性。"
       },
-      "required": true,
+      "required": false,
       "hidden": false
     },
     {
