@@ -179,6 +179,20 @@
       "hidden": false
     },
     {
+      "name": "DepositType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "MachineType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "MasterPwdEnable",
       "position": "Query",
       "type": "Boolean",

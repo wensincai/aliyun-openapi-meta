@@ -74,6 +74,20 @@
       "hidden": false
     },
     {
+      "name": "MigrateAcrossZone",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "SystemDisk.Category",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "OwnerAccount",
       "position": "Query",
       "type": "String",

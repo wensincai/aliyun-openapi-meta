@@ -47,6 +47,13 @@
       "hidden": true
     },
     {
+      "name": "Force",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "RegionId",
       "position": "Query",
       "type": "String",

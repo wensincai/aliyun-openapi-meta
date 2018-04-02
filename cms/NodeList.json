@@ -1,8 +1,15 @@
 {
   "name": "NodeList",
-  "protocol": "HTTP|HTTPS",
+  "protocol": "HTTPS|HTTP",
   "method": "GET",
   "parameters": [
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
+    },
     {
       "name": "UserId",
       "position": "Query",
@@ -12,13 +19,6 @@
     },
     {
       "name": "HostName",
-      "position": "Query",
-      "type": "String",
-      "required": false,
-      "hidden": false
-    },
-    {
-      "name": "KeyWord",
       "position": "Query",
       "type": "String",
       "required": false,
@@ -39,9 +39,9 @@
       "hidden": false
     },
     {
-      "name": "PageNumber",
+      "name": "KeyWord",
       "position": "Query",
-      "type": "Integer",
+      "type": "String",
       "required": false,
       "hidden": false
     },

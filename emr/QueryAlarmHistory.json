@@ -44,6 +44,20 @@
       "type": "Long",
       "required": true,
       "hidden": false
+    },
+    {
+      "name": "Cursor",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Size",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     }
   ]
 }

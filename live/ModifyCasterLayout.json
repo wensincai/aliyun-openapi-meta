@@ -7,16 +7,6 @@
   },
   "parameters": [
     {
-      "name": "AccessKeyId",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
-      },
-      "required": false,
-      "hidden": false
-    },
-    {
       "name": "Action",
       "position": "Query",
       "type": "String",
@@ -27,16 +17,6 @@
       "hidden": true
     },
     {
-      "name": "Version",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
-      },
-      "required": false,
-      "hidden": false
-    },
-    {
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",
@@ -45,16 +25,6 @@
       },
       "required": false,
       "hidden": true
-    },
-    {
-      "name": "SecurityToken",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": ""
-      },
-      "required": false,
-      "hidden": false
     },
     {
       "name": "CasterId",
@@ -117,6 +87,16 @@
           "name": "PositionNormalized",
           "position": "Query",
           "type": "RepeatList",
+          "description": {
+            "zh": "设置该layer 元素的位置归一化值[x,y], 默认为[0,0]。注意x,y需要进行归一化计算。"
+          },
+          "required": false,
+          "hidden": false
+        },
+        {
+          "name": "FixedDelayDuration",
+          "position": "Query",
+          "type": "Integer",
           "required": false,
           "hidden": false
         }
@@ -148,6 +128,13 @@
           },
           "required": false,
           "hidden": false
+        },
+        {
+          "name": "FixedDelayDuration",
+          "position": "Query",
+          "type": "Integer",
+          "required": false,
+          "hidden": false
         }
       ]
     },
@@ -155,6 +142,9 @@
       "name": "BlendList",
       "position": "Query",
       "type": "RepeatList",
+      "description": {
+        "zh": "位置关联列表，与VideoLayers顺序保持一致"
+      },
       "required": true,
       "hidden": false
     },
@@ -162,6 +152,9 @@
       "name": "MixList",
       "position": "Query",
       "type": "RepeatList",
+      "description": {
+        "zh": "位置关联列表，与AudioLayers顺序保持一致"
+      },
       "required": true,
       "hidden": false
     }

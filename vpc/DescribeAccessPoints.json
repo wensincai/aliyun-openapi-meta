@@ -27,6 +27,9 @@
           "name": "Value",
           "position": "Query",
           "type": "RepeatList",
+          "description": {
+            "zh": "第n个过滤器的第m个值。M取值[1，5)"
+          },
           "required": false,
           "hidden": false
         }

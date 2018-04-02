@@ -353,6 +353,13 @@
       ]
     },
     {
+      "name": "HpcClusterId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "DryRun",
       "position": "Query",
       "type": "Boolean",

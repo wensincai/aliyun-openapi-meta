@@ -7,16 +7,6 @@
   },
   "parameters": [
     {
-      "name": "AccessKeyId",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": "当认证方式为Accesskey时必填，用户需要显式指定，校验签名使用，不指定则不校验签名"
-      },
-      "required": false,
-      "hidden": false
-    },
-    {
       "name": "Action",
       "position": "Query",
       "type": "String",
@@ -27,16 +17,6 @@
       "hidden": true
     },
     {
-      "name": "Version",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": "API 版本号为日期形式：YYYY-MM-DD。本版本对应为：2016-11-01。"
-      },
-      "required": false,
-      "hidden": false
-    },
-    {
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",
@@ -45,16 +25,6 @@
       },
       "required": false,
       "hidden": true
-    },
-    {
-      "name": "SecurityToken",
-      "position": "Query",
-      "type": "String",
-      "description": {
-        "zh": ""
-      },
-      "required": false,
-      "hidden": false
     },
     {
       "name": "CasterId",
@@ -103,6 +73,27 @@
       "description": {
         "zh": "媒资库素材Id，视频源类型为视频点播素材时必填"
       },
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "VodUrl",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "BeginOffset",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "EndOffset",
+      "position": "Query",
+      "type": "Integer",
       "required": false,
       "hidden": false
     },

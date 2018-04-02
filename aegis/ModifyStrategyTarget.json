@@ -11,13 +11,6 @@
       "hidden": false
     },
     {
-      "name": "ResourceOwnerId",
-      "position": "Query",
-      "type": "Long",
-      "required": false,
-      "hidden": true
-    },
-    {
       "name": "Type",
       "position": "Query",
       "type": "String",

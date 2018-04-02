@@ -11,16 +11,16 @@
       "hidden": false
     },
     {
-      "name": "ResourceOwnerId",
-      "position": "Query",
-      "type": "Long",
-      "required": false,
-      "hidden": true
-    },
-    {
-      "name": "FrequencyByDays",
+      "name": "InvalidWarningKeepDays",
       "position": "Query",
       "type": "Integer",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AlertLevels",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     }

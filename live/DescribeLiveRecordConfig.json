@@ -67,6 +67,13 @@
       "hidden": false
     },
     {
+      "name": "StreamName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "PageNum",
       "position": "Query",
       "type": "Integer",

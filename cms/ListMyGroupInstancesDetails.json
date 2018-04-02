@@ -4,6 +4,13 @@
   "method": "POST|GET",
   "parameters": [
     {
+      "name": "Total",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "PageSize",
       "position": "Query",
       "type": "Integer",
@@ -14,13 +21,6 @@
       "name": "PageNumber",
       "position": "Query",
       "type": "Integer",
-      "required": false,
-      "hidden": false
-    },
-    {
-      "name": "Total",
-      "position": "Query",
-      "type": "Boolean",
       "required": false,
       "hidden": false
     },

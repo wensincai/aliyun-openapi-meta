@@ -110,6 +110,9 @@
       "name": "Scene",
       "position": "Query",
       "type": "RepeatList",
+      "description": {
+        "zh": "检测场景 包括”porn”,”terrorism”,”ad”,”live”,默认值为“porn”"
+      },
       "required": false,
       "hidden": false
     }

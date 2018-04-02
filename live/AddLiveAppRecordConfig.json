@@ -134,6 +134,34 @@
           "hidden": false
         }
       ]
+    },
+    {
+      "name": "StreamName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "OnDemand",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     }
   ]
 }

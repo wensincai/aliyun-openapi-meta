@@ -310,6 +310,36 @@
       "type": "String",
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "SpotStrategy",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "SpotPriceLimit",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false,
+      "sub_parameters": [
+        {
+          "name": "InstanceType",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "name": "PriceLimit",
+          "position": "Query",
+          "type": "Float",
+          "required": false,
+          "hidden": false
+        }
+      ]
     }
   ]
 }

@@ -74,16 +74,30 @@
           "hidden": false
         },
         {
-          "name": "InstanceType",
+          "name": "ChargeType",
           "position": "Query",
           "type": "String",
-          "required": true,
+          "required": false,
+          "hidden": false
+        },
+        {
+          "name": "Period",
+          "position": "Query",
+          "type": "Integer",
+          "required": false,
           "hidden": false
         },
         {
           "name": "NodeCount",
           "position": "Query",
           "type": "Integer",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "InstanceType",
+          "position": "Query",
+          "type": "String",
           "required": true,
           "hidden": false
         },
@@ -109,21 +123,14 @@
           "hidden": false
         },
         {
-          "name": "SysDiskCapacity",
-          "position": "Query",
-          "type": "Integer",
-          "required": false,
-          "hidden": false
-        },
-        {
-          "name": "ChargeType",
+          "name": "SysDiskType",
           "position": "Query",
           "type": "String",
           "required": false,
           "hidden": false
         },
         {
-          "name": "Period",
+          "name": "SysDiskCapacity",
           "position": "Query",
           "type": "Integer",
           "required": false,
@@ -138,13 +145,6 @@
         },
         {
           "name": "VswitchId",
-          "position": "Query",
-          "type": "Integer",
-          "required": false,
-          "hidden": false
-        },
-        {
-          "name": "SystemDiskType",
           "position": "Query",
           "type": "Integer",
           "required": false,

@@ -17,16 +17,6 @@
       "hidden": false
     },
     {
-      "name": "ResourceOwnerId",
-      "position": "Query",
-      "type": "Long",
-      "description": {
-        "zh": "资源拥有者Uid，StSToken时该字段必须传"
-      },
-      "required": false,
-      "hidden": true
-    },
-    {
       "name": "TypeNames",
       "position": "Query",
       "type": "String",

@@ -57,6 +57,9 @@
           "name": "Value",
           "position": "Query",
           "type": "RepeatList",
+          "description": {
+            "zh": "第n个过滤器的第m个值。M从1开始，不大于5。"
+          },
           "required": false,
           "hidden": false
         }

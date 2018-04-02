@@ -2,13 +2,5 @@
   "name": "GetAccountAlias",
   "protocol": "HTTPS",
   "method": "POST|GET",
-  "parameters": [
-    {
-      "name": "Action",
-      "position": "Query",
-      "type": "String",
-      "required": false,
-      "hidden": true
-    }
-  ]
+  "parameters": []
 }

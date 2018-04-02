@@ -179,12 +179,33 @@
       "hidden": false
     },
     {
+      "name": "DepositType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "MachineType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "HostGroup",
       "position": "Query",
       "type": "RepeatList",
       "required": true,
       "hidden": false,
       "sub_parameters": [
+        {
+          "name": "ClusterId",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        },
         {
           "name": "HostGroupId",
           "position": "Query",
@@ -204,13 +225,6 @@
           "position": "Query",
           "type": "String",
           "required": true,
-          "hidden": false
-        },
-        {
-          "name": "ClusterId",
-          "position": "Query",
-          "type": "String",
-          "required": false,
           "hidden": false
         },
         {

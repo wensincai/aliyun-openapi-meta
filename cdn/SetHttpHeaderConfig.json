@@ -75,6 +75,13 @@
       },
       "required": true,
       "hidden": false
+    },
+    {
+      "name": "ConfigId",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": false
     }
   ]
 }

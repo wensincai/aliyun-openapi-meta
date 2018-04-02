@@ -4,16 +4,16 @@
   "method": "POST|GET",
   "parameters": [
     {
-      "name": "Type",
+      "name": "Keyword",
       "position": "Query",
       "type": "String",
       "required": false,
       "hidden": false
     },
     {
-      "name": "SelectContactGroups",
+      "name": "Type",
       "position": "Query",
-      "type": "Boolean",
+      "type": "String",
       "required": false,
       "hidden": false
     },
@@ -32,9 +32,9 @@
       "hidden": false
     },
     {
-      "name": "Keyword",
+      "name": "SelectContactGroups",
       "position": "Query",
-      "type": "String",
+      "type": "Boolean",
       "required": false,
       "hidden": false
     },

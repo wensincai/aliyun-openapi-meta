@@ -11,13 +11,6 @@
       "hidden": false
     },
     {
-      "name": "ResourceOwnerId",
-      "position": "Query",
-      "type": "Long",
-      "required": false,
-      "hidden": true
-    },
-    {
       "name": "RiskIdList",
       "position": "Query",
       "type": "String",
@@ -25,7 +18,7 @@
       "hidden": false
     },
     {
-      "name": "RiskIdList",
+      "name": "Reason",
       "position": "Query",
       "type": "String",
       "required": false,

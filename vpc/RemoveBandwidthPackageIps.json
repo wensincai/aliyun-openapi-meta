@@ -90,6 +90,9 @@
       "name": "RemovedIpAddresses",
       "position": "Query",
       "type": "RepeatList",
+      "description": {
+        "zh": "移除的IP 列表"
+      },
       "required": true,
       "hidden": false
     }

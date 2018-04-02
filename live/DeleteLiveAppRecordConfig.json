@@ -65,6 +65,13 @@
       },
       "required": true,
       "hidden": false
+    },
+    {
+      "name": "StreamName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }
