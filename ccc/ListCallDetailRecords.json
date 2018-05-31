@@ -4,6 +4,13 @@
   "method": "POST|GET",
   "parameters": [
     {
+      "name": "StopTime",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "AccessKeyId",
       "position": "Query",
       "type": "String",
@@ -26,13 +33,6 @@
     },
     {
       "name": "StartTime",
-      "position": "Query",
-      "type": "Long",
-      "required": false,
-      "hidden": false
-    },
-    {
-      "name": "StopTime",
       "position": "Query",
       "type": "Long",
       "required": false,

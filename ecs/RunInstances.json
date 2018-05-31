@@ -49,21 +49,21 @@
       "name": "ImageId",
       "position": "Query",
       "type": "String",
-      "required": true,
+      "required": false,
       "hidden": false
     },
     {
       "name": "InstanceType",
       "position": "Query",
       "type": "String",
-      "required": true,
+      "required": false,
       "hidden": false
     },
     {
       "name": "SecurityGroupId",
       "position": "Query",
       "type": "String",
-      "required": true,
+      "required": false,
       "hidden": false
     },
     {
@@ -112,6 +112,13 @@
       "name": "Password",
       "position": "Query",
       "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "PasswordInherit",
+      "position": "Query",
+      "type": "Boolean",
       "required": false,
       "hidden": false
     },
@@ -201,6 +208,13 @@
         },
         {
           "name": "Description",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "name": "Device",
           "position": "Query",
           "type": "String",
           "required": false,
@@ -316,6 +330,13 @@
       "hidden": false
     },
     {
+      "name": "SpotInterruptionBehavior",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "SecurityEnhancementStrategy",
       "position": "Query",
       "type": "String",
@@ -363,6 +384,34 @@
       "name": "DryRun",
       "position": "Query",
       "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "DedicatedHostId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "LaunchTemplateId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "LaunchTemplateName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "LaunchTemplateVersion",
+      "position": "Query",
+      "type": "Long",
       "required": false,
       "hidden": false
     }

@@ -115,6 +115,20 @@
       },
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "StreamType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "QueryType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }

@@ -74,6 +74,13 @@
       "hidden": false
     },
     {
+      "name": "InstanceEventType",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "EventType",
       "position": "Query",
       "type": "String",

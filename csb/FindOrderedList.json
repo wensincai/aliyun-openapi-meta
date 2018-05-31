@@ -4,7 +4,7 @@
   "method": "GET",
   "parameters": [
     {
-      "name": "Alias",
+      "name": "ProjectName",
       "position": "Query",
       "type": "String",
       "required": false,
@@ -32,7 +32,7 @@
       "hidden": false
     },
     {
-      "name": "ProjectName",
+      "name": "Alias",
       "position": "Query",
       "type": "String",
       "required": false,

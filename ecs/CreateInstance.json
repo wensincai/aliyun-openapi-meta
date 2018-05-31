@@ -146,6 +146,13 @@
       "hidden": false
     },
     {
+      "name": "PasswordInherit",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "DeploymentSetId",
       "position": "Query",
       "type": "String",
@@ -470,6 +477,13 @@
       "hidden": false
     },
     {
+      "name": "SpotInterruptionBehavior",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "RamRoleName",
       "position": "Query",
       "type": "String",
@@ -501,6 +515,13 @@
       "name": "DryRun",
       "position": "Query",
       "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "DedicatedHostId",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     }

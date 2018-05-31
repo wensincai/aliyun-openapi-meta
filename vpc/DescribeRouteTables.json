@@ -17,6 +17,13 @@
       "hidden": true
     },
     {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",

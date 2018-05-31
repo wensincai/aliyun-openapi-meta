@@ -2,11 +2,17 @@
   "name": "DescribeRisks",
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
+  "descriptions": {
+    "zh": "根据风险项名称模糊查询系统基线风险项信息"
+  },
   "parameters": [
     {
       "name": "SourceIp",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "接口访问者源IP"
+      },
       "required": false,
       "hidden": false
     },
@@ -14,6 +20,9 @@
       "name": "RiskId",
       "position": "Query",
       "type": "Long",
+      "description": {
+        "zh": "基线风险id ， 这个查询条件和RiskName 二选一"
+      },
       "required": false,
       "hidden": false
     },
@@ -21,6 +30,9 @@
       "name": "RiskName",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "基线风险名称， 模糊匹配。 这个查询条件和RiskId 二选一"
+      },
       "required": false,
       "hidden": false
     },
@@ -28,6 +40,9 @@
       "name": "Limit",
       "position": "Query",
       "type": "Integer",
+      "description": {
+        "zh": "返回数量限制"
+      },
       "required": false,
       "hidden": false
     }

@@ -4,17 +4,17 @@
   "method": "GET",
   "parameters": [
     {
-      "name": "ServiceName",
+      "name": "ServiceId",
       "position": "Query",
-      "type": "String",
+      "type": "Long",
       "required": false,
       "hidden": false
     },
     {
-      "name": "PageNum",
+      "name": "ServiceName",
       "position": "Query",
-      "type": "Integer",
-      "required": true,
+      "type": "String",
+      "required": false,
       "hidden": false
     },
     {
@@ -39,10 +39,10 @@
       "hidden": false
     },
     {
-      "name": "ServiceId",
+      "name": "PageNum",
       "position": "Query",
-      "type": "Long",
-      "required": false,
+      "type": "Integer",
+      "required": true,
       "hidden": false
     },
     {

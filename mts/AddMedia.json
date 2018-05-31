@@ -88,9 +88,23 @@
       "hidden": false
     },
     {
+      "name": "InputUnbind",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "CateId",
       "position": "Query",
       "type": "Long",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "OverrideParams",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     },

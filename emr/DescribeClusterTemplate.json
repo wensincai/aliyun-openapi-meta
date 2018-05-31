@@ -18,7 +18,7 @@
       "hidden": false
     },
     {
-      "name": "Id",
+      "name": "BizId",
       "position": "Query",
       "type": "String",
       "required": true,

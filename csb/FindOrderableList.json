@@ -4,6 +4,13 @@
   "method": "GET",
   "parameters": [
     {
+      "name": "PageNum",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "hidden": false
+    },
+    {
       "name": "CsbId",
       "position": "Query",
       "type": "Long",
@@ -29,13 +36,6 @@
       "position": "Query",
       "type": "String",
       "required": false,
-      "hidden": false
-    },
-    {
-      "name": "PageNum",
-      "position": "Query",
-      "type": "Integer",
-      "required": true,
       "hidden": false
     },
     {

@@ -4,9 +4,9 @@
   "method": "GET",
   "parameters": [
     {
-      "name": "showDelService",
+      "name": "approveLevel",
       "position": "Query",
-      "type": "Boolean",
+      "type": "String",
       "required": false,
       "hidden": false
     },
@@ -39,9 +39,9 @@
       "hidden": false
     },
     {
-      "name": "approveLevel",
+      "name": "showDelService",
       "position": "Query",
-      "type": "String",
+      "type": "Boolean",
       "required": false,
       "hidden": false
     },

@@ -1,6 +1,6 @@
 {
   "name": "GetMezzanineInfo",
-  "protocol": "HTTPS|HTTP",
+  "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
     "zh": "\n\n获取视频源文件地址。\n\n注：当一路流转码完成后才可以获取到完整的源文件信息\n\n"

@@ -105,6 +105,13 @@
       },
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "Order",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }

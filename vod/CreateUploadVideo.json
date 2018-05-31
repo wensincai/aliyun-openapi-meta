@@ -1,6 +1,6 @@
 {
   "name": "CreateUploadVideo",
-  "protocol": "HTTPS|HTTP",
+  "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
     "zh": "\n\n获取视频上传地址和凭证，并创建视频信息。\n\n"
@@ -153,6 +153,13 @@
       "description": {
         "zh": "模板组ID，当不为空时，视频转码使用当前指定的模板组进行转码。可在控制台转码设置里查看模版组ID。"
       },
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "StorageLocation",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     }

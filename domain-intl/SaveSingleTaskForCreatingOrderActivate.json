@@ -4,6 +4,13 @@
   "method": "POST|GET",
   "parameters": [
     {
+      "name": "Dns2",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "UserClientIp",
       "position": "Query",
       "type": "String",
@@ -35,7 +42,7 @@
       "name": "RegistrantProfileId",
       "position": "Query",
       "type": "Long",
-      "required": true,
+      "required": false,
       "hidden": false
     },
     {
@@ -49,6 +56,97 @@
       "name": "PermitPremiumActivation",
       "position": "Query",
       "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AliyunDns",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Dns1",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Country",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "City",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "RegistrantOrganization",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "RegistrantName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Province",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Address",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Email",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "PostalCode",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "TelArea",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Telephone",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "TelExt",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     }

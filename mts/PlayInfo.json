@@ -93,6 +93,13 @@
       "type": "String",
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "Terminal",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
     }
   ]
 }

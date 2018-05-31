@@ -139,6 +139,9 @@
       "name": "StreamName",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "流名称"
+      },
       "required": false,
       "hidden": false
     },
@@ -146,6 +149,9 @@
       "name": "StartTime",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "录制开始时间，设置时间必须从当前时间开始15天之内的时间, 只在流级别录制(StreamName不为空)有效"
+      },
       "required": false,
       "hidden": false
     },
@@ -153,6 +159,9 @@
       "name": "EndTime",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "录制结束时间，设置时间必须从当前时间开始15天之内的时间, 只在流级别录制(StreamName不为空)有效，且时间\n应晚于录制开始时间"
+      },
       "required": false,
       "hidden": false
     },
@@ -160,6 +169,9 @@
       "name": "OnDemand",
       "position": "Query",
       "type": "Integer",
+      "description": {
+        "zh": "按需录制，0表示关闭，1表示通过HTTP回调方式，2表示通过推流参数方式，使用1方式时候需要设置OnDemandCallback, 否则默认不录制"
+      },
       "required": false,
       "hidden": false
     }

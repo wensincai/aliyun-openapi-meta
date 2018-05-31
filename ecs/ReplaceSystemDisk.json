@@ -93,6 +93,13 @@
       "hidden": false
     },
     {
+      "name": "PasswordInherit",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "KeyPairName",
       "position": "Query",
       "type": "String",

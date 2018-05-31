@@ -4,6 +4,13 @@
   "method": "POST|GET",
   "parameters": [
     {
+      "name": "SkillGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
+    },
+    {
       "name": "AccessKeyId",
       "position": "Query",
       "type": "String",
@@ -12,13 +19,6 @@
     },
     {
       "name": "InstanceId",
-      "position": "Query",
-      "type": "String",
-      "required": true,
-      "hidden": false
-    },
-    {
-      "name": "SkillGroupId",
       "position": "Query",
       "type": "String",
       "required": true,

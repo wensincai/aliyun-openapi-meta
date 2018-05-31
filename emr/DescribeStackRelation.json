@@ -25,6 +25,13 @@
       "hidden": false
     },
     {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "EmrVersion",
       "position": "Query",
       "type": "String",

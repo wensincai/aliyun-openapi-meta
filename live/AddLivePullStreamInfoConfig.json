@@ -3,7 +3,7 @@
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
-    "zh": "添加直播拉流信息，仅支持拉取直播流。\n"
+    "zh": "添加直播拉流信息，仅支持拉取直播流。\n支持rtmp，http，flv格式的"
   },
   "parameters": [
     {

@@ -335,6 +335,48 @@
       },
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "AclId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AclType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AclStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "VpcIds",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "IdleTimeout",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "RequestTimeout",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
     }
   ]
 }

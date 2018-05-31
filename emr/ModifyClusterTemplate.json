@@ -18,7 +18,7 @@
       "hidden": false
     },
     {
-      "name": "Id",
+      "name": "BizId",
       "position": "Query",
       "type": "String",
       "required": true,
@@ -158,7 +158,7 @@
       "hidden": false
     },
     {
-      "name": "lIoOptimized",
+      "name": "IoOptimized",
       "position": "Query",
       "type": "Boolean",
       "required": false,
@@ -284,6 +284,13 @@
           "hidden": false
         },
         {
+          "name": "SysDiskType",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        },
+        {
           "name": "SysDiskCapacity",
           "position": "Query",
           "type": "Integer",
@@ -349,6 +356,85 @@
       "type": "Boolean",
       "required": false,
       "hidden": false
+    },
+    {
+      "name": "DepositType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "MachineType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "UseCustomHiveMetaDb",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "InitCustomHiveMetaDb",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Config",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false,
+      "sub_parameters": [
+        {
+          "name": "ServiceName",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "FileName",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "ConfigKey",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "ConfigValue",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "Encrypt",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "name": "Replace",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        }
+      ]
     }
   ]
 }

@@ -73,7 +73,7 @@
       "description": {
         "zh": "\u003cp\u003e监听的带宽峰值。\u003cp\u003e取值：-1 | [1,5000]\n\t  \u003cul\u003e\n\t  \u003cli\u003e\u003cp\u003e-1：对于按流量计费的公网负载均衡实例，可以将带宽峰值设置为`-1`，即不限制带宽峰值。\u003c/li\u003e\n\t  \u003cli\u003e\u003cp\u003e1-5000Mbps： 对于按带宽计费的公网负载均衡实例，可以设置每个监听的带宽峰值，但所有监听的带宽峰值之和不能超过实例的带宽峰值。详情参见[共享实例带宽](~~57846~~)。\u003c/p\u003e\u003c/li\u003e\u003c/ul\u003e"
       },
-      "required": true,
+      "required": false,
       "hidden": false
     },
     {
@@ -333,6 +333,62 @@
       "description": {
         "zh": "\u003cp\u003e是否开启Gzip压缩，对特定文件类型进行压缩。\u003cp\u003e取值：on（默认值）| off"
       },
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AclId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AclType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "AclStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "VpcIds",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "ListenerForward",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "ForwardPort",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "IdleTimeout",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "RequestTimeout",
+      "position": "Query",
+      "type": "Integer",
       "required": false,
       "hidden": false
     }

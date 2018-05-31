@@ -3,7 +3,7 @@
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
-    "zh": "\n\n查询直播流历史在线人数\n\n"
+    "zh": "查询指定直播流在指定时间段的历史在线人数，即拉流数的时间序列\n"
   },
   "parameters": [
     {

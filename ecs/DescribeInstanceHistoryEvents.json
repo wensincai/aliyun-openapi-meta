@@ -49,7 +49,7 @@
       "name": "InstanceId",
       "position": "Query",
       "type": "String",
-      "required": true,
+      "required": false,
       "hidden": false
     },
     {
@@ -60,9 +60,23 @@
       "hidden": false
     },
     {
+      "name": "InstanceEventCycleStatus",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "EventCycleStatus",
       "position": "Query",
       "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "InstanceEventType",
+      "position": "Query",
+      "type": "RepeatList",
       "required": false,
       "hidden": false
     },

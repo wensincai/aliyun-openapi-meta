@@ -1,6 +1,6 @@
 {
   "name": "DescribeDnsProductInstances",
-  "protocol": "HTTP|HTTPS",
+  "protocol": "HTTPS|HTTP",
   "method": "POST|GET",
   "parameters": [
     {

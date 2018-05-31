@@ -3,7 +3,7 @@
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
-    "zh": "查询在线人数"
+    "zh": "查询实时直播流的当前在线人数，即实时拉流数"
   },
   "parameters": [
     {

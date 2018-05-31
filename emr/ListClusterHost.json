@@ -53,6 +53,20 @@
       "hidden": false
     },
     {
+      "name": "PublicIp",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "GroupType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "ComponentName",
       "position": "Query",
       "type": "String",

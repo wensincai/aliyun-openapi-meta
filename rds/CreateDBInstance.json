@@ -274,12 +274,26 @@
       "hidden": false
     },
     {
+      "name": "DBInstanceStorageType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "TunnelId",
       "position": "Query",
       "type": "String",
       "description": {
         "zh": "该云服务实例的tunnelid。"
       },
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "BusinessInfo",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     }

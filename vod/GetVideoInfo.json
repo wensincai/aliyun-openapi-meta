@@ -1,6 +1,6 @@
 {
   "name": "GetVideoInfo",
-  "protocol": "HTTPS|HTTP",
+  "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
     "zh": "\n\n通过视频ID获取视频的基本信息，包括：视频标题、描述、时长、封面URL、状态、创建时间、大小、截图、分类和标签等信息。\n\n"

@@ -260,6 +260,71 @@
       ]
     },
     {
+      "name": "UseCustomHiveMetaDB",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "InitCustomHiveMetaDB",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "Config",
+      "position": "Query",
+      "type": "RepeatList",
+      "required": false,
+      "hidden": false,
+      "sub_parameters": [
+        {
+          "name": "ServiceName",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "FileName",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "ConfigKey",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "ConfigValue",
+          "position": "Query",
+          "type": "String",
+          "required": true,
+          "hidden": false
+        },
+        {
+          "name": "Encrypt",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "name": "Replace",
+          "position": "Query",
+          "type": "String",
+          "required": false,
+          "hidden": false
+        }
+      ]
+    },
+    {
       "name": "Configurations",
       "position": "Query",
       "type": "String",

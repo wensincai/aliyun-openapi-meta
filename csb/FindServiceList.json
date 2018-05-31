@@ -4,9 +4,16 @@
   "method": "GET",
   "parameters": [
     {
-      "name": "ShowDelService",
+      "name": "PageNum",
       "position": "Query",
-      "type": "Boolean",
+      "type": "Integer",
+      "required": true,
+      "hidden": false
+    },
+    {
+      "name": "CasShowType",
+      "position": "Query",
+      "type": "Integer",
       "required": false,
       "hidden": false
     },
@@ -39,17 +46,10 @@
       "hidden": false
     },
     {
-      "name": "CasShowType",
+      "name": "ShowDelService",
       "position": "Query",
-      "type": "Integer",
+      "type": "Boolean",
       "required": false,
-      "hidden": false
-    },
-    {
-      "name": "PageNum",
-      "position": "Query",
-      "type": "Integer",
-      "required": true,
       "hidden": false
     },
     {

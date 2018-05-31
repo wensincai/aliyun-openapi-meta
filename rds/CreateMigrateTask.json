@@ -104,6 +104,13 @@
       "hidden": false
     },
     {
+      "name": "CheckDBMode",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "hidden": false
+    },
+    {
       "name": "OssObjectPositions",
       "position": "Query",
       "type": "String",
@@ -120,6 +127,13 @@
       "description": {
         "zh": "备份文件所在OSS的共享URL地址（Encode编码后的URL）。当有多个备份文件地址时，每个URL之间使用|隔开，目前只能传入一个URL。"
       },
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "MigrateTaskId",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     }

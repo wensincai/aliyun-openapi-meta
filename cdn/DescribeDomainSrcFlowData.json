@@ -7,6 +7,16 @@
   },
   "parameters": [
     {
+      "name": "Action",
+      "position": "Query",
+      "type": "String",
+      "description": {
+        "zh": "操作接口名，系统规定参数\u003cbr\u003e取值：DescribeDomainSrcFlowData"
+      },
+      "required": false,
+      "hidden": true
+    },
+    {
       "name": "OwnerId",
       "position": "Query",
       "type": "Long",

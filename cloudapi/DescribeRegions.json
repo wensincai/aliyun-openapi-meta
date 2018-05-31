@@ -2,11 +2,17 @@
   "name": "DescribeRegions",
   "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
+  "descriptions": {
+    "zh": "查询支持的区域列表\n\n* 此功能面向开放API和调用API的用户"
+  },
   "parameters": [
     {
       "name": "Action",
       "position": "Query",
       "type": "String",
+      "description": {
+        "zh": "操作接口名，系统规定参数，取值：DescribeRegions"
+      },
       "required": false,
       "hidden": true
     }

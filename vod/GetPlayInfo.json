@@ -1,6 +1,6 @@
 {
   "name": "GetPlayInfo",
-  "protocol": "HTTPS|HTTP",
+  "protocol": "HTTP|HTTPS",
   "method": "POST|GET",
   "descriptions": {
     "zh": "\n\n通过视频ID直接获取媒体文件（支持视频和音频）的播放地址。\n\n"
@@ -113,6 +113,13 @@
       "description": {
         "zh": "播放器版本号"
       },
+      "required": false,
+      "hidden": false
+    },
+    {
+      "name": "OutputType",
+      "position": "Query",
+      "type": "String",
       "required": false,
       "hidden": false
     },

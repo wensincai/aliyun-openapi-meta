@@ -4,6 +4,13 @@
   "method": "POST|GET",
   "parameters": [
     {
+      "name": "DisplayName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "hidden": false
+    },
+    {
       "name": "AccessKeyId",
       "position": "Query",
       "type": "String",
@@ -19,13 +26,6 @@
     },
     {
       "name": "LoginName",
-      "position": "Query",
-      "type": "String",
-      "required": true,
-      "hidden": false
-    },
-    {
-      "name": "DisplayName",
       "position": "Query",
       "type": "String",
       "required": true,
